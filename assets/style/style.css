@@ -25,8 +25,7 @@ body {
 
 /* -------About-Section-------- */
 
-.about {
-    width: 1030px;
+.conteiner {
     text-align: center;
 }
 
@@ -38,7 +37,7 @@ body {
 .text {
     color: rgba(86, 173, 255, 1);
     font-size: 1.2 rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
