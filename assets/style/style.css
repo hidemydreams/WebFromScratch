@@ -13,6 +13,13 @@ body {
     font-family: 'Ropa Sans', 'Oswald', sans-serif;
 }
 
+body {
+    height: 100vh;
+    background-image: url(/assets/img/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* -----SCROLLBAR STYLE------ */
 
@@ -111,10 +118,6 @@ li:nth-last-child() {
 /* --------------------MAIN----------------------- */
 
 .hero-section {
-    height: 100vh;
-    background-image: url(/assets/img/hero-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
 }
 
