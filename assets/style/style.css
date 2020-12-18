@@ -11,6 +11,9 @@ html,
 body {
     height: 100%;
     font-family: 'Ropa Sans', 'Oswald', sans-serif;
+    background: url(/assets/img/herobg.svg) no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 
@@ -34,17 +37,12 @@ body {
   }
 /* -----SCROLLBAR STYLE END------ */
 
-
-
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     padding: 0px 15px;
 }
-
-
 /* -------------------------INDEX.HTML PAGE------------------------------- */
 
 /* --------------------HERO SECTION----------------------- */
@@ -53,8 +51,18 @@ body {
 /* --------------------HEADER----------------------- */
 /* -------NAV-------- */
 
+.header__reg {
+    max-width: 100px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.header__reg a, .header__reg span {
+    color: var(--text-color);
+}
+
 .nav {
-    padding: 30px 0px;
+    padding: 15px 0px 30px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,9 +120,7 @@ li:nth-last-child() {
 
 .hero-section {
     height: 100vh;
-    background-image: url(/assets/img/hero-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -189,11 +195,6 @@ li:nth-last-child() {
     position: absolute;
     top: 50%;
     transform: translateY(-35%);
-}
-
-.hero_text {
-    max-width: 100px;
-    width: 100%;
 }
 
 .hero__title {
@@ -297,6 +298,82 @@ li:nth-last-child() {
 .fa-stack:hover .fa-square {
     color: rgba(58, 160, 255, 0.5);
 }
+
+/* ----POPUPS----- */
+
+/* -LOGIN- */
+
+.hero__popup {
+    position: absolute;
+    background-color: rgba(77, 77, 77, 0.35);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 100;
+}
+
+.hero__modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 250px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(142, 196, 232, 0.44);
+    max-height: 300px;
+    height: 100%;
+    border-radius: 10vh;
+    justify-content: space-evenly;
+}
+
+.popup__title {
+    color: white;
+    font-size: 45px;
+}
+
+.hero__modal input {
+    padding: 1.5vh;
+    border: none;
+    outline: none;
+    border-radius: 10vh;
+    background-color: #74C7FF;
+    font-family: var(--main-font);
+    color: white;
+    transition: .2s;
+}
+
+.hero__modal input:hover {
+    background-color: #51abff;
+}
+
+.hero__modal input::placeholder {
+    color: white;
+}
+
+.modal__btn {
+    padding: 1.5vh 2vh;
+    border: none;
+    border-radius: 10vh;
+    color: white;
+    background-color: #74C7FF;
+    font-family: var(--main-font);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
+}
+
+.modal__btn:hover {
+    transform: scale(1.1);
+    background-color: #51abff;
+}
+
+
+
+
+
 /* -------About-Section-------- */
 
 .about {
@@ -325,6 +402,7 @@ li:nth-last-child() {
     font-size: 130px;
     margin-bottom: 5px;
 }
+
 
 
 /* --------------------FOOTER----------------------- */
