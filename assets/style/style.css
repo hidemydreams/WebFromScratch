@@ -47,10 +47,10 @@ body {
 
 /* -------------------------INDEX.HTML PAGE------------------------------- */
 
+/* --------------------HERO SECTION----------------------- */
+
 
 /* --------------------HEADER----------------------- */
-
-
 /* -------NAV-------- */
 
 .nav {
@@ -107,24 +107,196 @@ li:nth-last-child() {
     margin-left: 150px;
 }
 
-/* .nav__logo {
-    font-size: 50px;
-    font-family: var(--accent-font);
-    text-decoration: none;
-    color: white;
-    background-color: #82CCFF;
-    padding: 15px;
-    border-radius: 50%;
-    letter-spacing: 3px;
-    align-self: flex-start;
-} */
-
-
-
 
 /* --------------------MAIN----------------------- */
 
+.hero-section {
+    height: 100vh;
+    background-image: url(/assets/img/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
 
+.navigation {
+    display: flex;
+    align-items: center;
+    padding: 2vh 7vh;
+}
+
+.hero__nav-logo {
+    margin-right: 2vh;
+
+}
+
+.hero__nav-logo img{
+    max-width: 20vh;
+
+}
+
+.navigation__list {
+    display: flex;
+    width: 100%;
+}
+
+.navigation__list li {
+    margin-right: 30px;
+}
+
+.navigation__links {
+    width: 100%;
+}
+
+.hero__nav-link {
+    font-size: 2.5vh;
+    white-space: nowrap;
+}
+
+.nav__registration {
+    white-space: nowrap;
+    background-color: var(--text-color);
+    padding: 1vh;
+    font-size: 3vh;
+    color: white;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
+}
+
+.nav__registration:hover {
+    transform: scale(1.1);
+    background-color: #51abff;
+}
+
+.nav__registration a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav__login:hover {
+    color: #cfe8ff;
+}
+
+.nav__reg:hover {
+    color: #cfe8ff;
+}
+
+.smh__hero {
+    justify-self: center;
+}
+
+.hero__content {
+    display: flex;
+    left: 9vh;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+}
+
+.hero_text {
+    max-width: 100px;
+    width: 100%;
+}
+
+.hero__title {
+    font-size: 12vh;
+    line-height: 0.8;
+    color: var(--headings-color);
+    margin-bottom: 2.5vh;
+    white-space: nowrap;
+}
+
+.hero__desc {
+    color: var(--text-color);
+    font-size: 3.5vh;
+    margin-bottom: 3vh;
+    max-width: 50vh;
+}
+
+.hero__btn {
+    background-color: #6AB7FF;
+    font-size: 6vh;
+    padding: 2vh 3vh;
+    color: white;
+    border-radius: 10vh;
+    border: none;
+    font-family: var(--main-font);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s;
+}
+
+.hero__btn:hover{
+    transform: scale(1.1);
+    background-color: #51abff;
+}
+
+.hero__img {
+    align-self: center;
+    justify-self: center;
+    margin-left: 10vh;
+    animation-name: img-float;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    position: relative;
+}
+
+.hero__img img {
+    max-width: 120vh;
+    width: 100%;
+}
+
+.vertical__bar {
+    height: 100vh;
+    background-color:rgba(82, 174, 226, 0.6);
+    width: 6vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.vertical__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vertical__search{
+   margin-top: 8vh;
+}
+
+.vertical__search i {
+    font-size: 4vh;
+    color: white;
+    transition: 0.3s;
+}
+
+.vertical__search i:hover {
+    color: rgba(58, 160, 255, 0.5);
+}
+
+.vertical__icons {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6vh;
+    background-color:rgba(172, 208, 243, 0.52);
+    min-height:40vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 100px;
+}
+
+.fa-stack .fa-square {
+    color: rgba(106, 183, 255, 0.5);
+    transition: 0.3s;
+}
+
+.fa-stack:hover .fa-square {
+    color: rgba(58, 160, 255, 0.5);
+}
 /* -------About-Section-------- */
 
 .about {
@@ -258,3 +430,18 @@ li:nth-last-child() {
 
 
 /* -------------------------INDEX.HTML PAGE------------------------------- */
+
+
+
+
+/* -------KEYFRAMES------- */
+
+
+@keyframes img-float {
+    from {
+        transform: translateY(-5px)
+    }
+    to {
+        transform: translateY(5px)
+    }
+}
