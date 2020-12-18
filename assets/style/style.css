@@ -16,6 +16,10 @@ body {
     width: 100%;
 }
 
+body {
+    height: 100vh;
+}
+
 
 /* -----SCROLLBAR STYLE------ */
 
@@ -120,7 +124,9 @@ li:nth-last-child() {
 
 .hero-section {
     height: 100vh;
-    width: 100%;
+    background-image: url(/assets/img/hero-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
