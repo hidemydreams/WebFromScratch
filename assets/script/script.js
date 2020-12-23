@@ -14,11 +14,24 @@ regBtn.addEventListener('click', () => {
   regPopUp.style.display = 'block'
 })
 
+window.addEventListener('click', (e) => {
+  if (e.target == outsidePopUp) {
+    outsidePopUp.style.display = "none";
+  }
+})
+
 outsidePopUp.forEach((modal) => {
-  modal.addEventListener('click', () => {
-    modal.style.display = 'none'
+  modal.addEventListener('click', (e) => {
+    if (e.target == modal) {
+      modal.style.display = 'none';
+    }
   })
 })
+
+
+// Hero Burger
+
+
 
 
 

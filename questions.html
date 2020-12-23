@@ -22,44 +22,124 @@
 <body>
 
 
-    <!-- ------------------------------HEADER-------------------------------- -->
-    <header>
+    <div class="wrapper">
+        <!-- ------------------------------HEADER-------------------------------- -->
 
-    <div class="container">
-        <nav class="nav">
-            <ul class="nav__list">
-                <li>
-                    <a class="nav__link" href="index.html">Main Page</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="questions.html">Faq</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="topic-main.html">Learn Now</a>
-                </li>
-                <a class="nav__logo" href="index.html"><img src="assets/img/logo.svg" alt="">
-                </a>
-                <li>
-                    <a class="nav__link hero__nav-link" href="about.html">About</a>
-                </li>
-                <li>
-                    <a class="nav__link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-            <a class="nav__link-search" href="#!"><img src="assets/img/search-link.svg" alt=""></a>
-        </nav>
-    </div>
 
-    </header>
+        <header>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav__logo hero__nav-logo"><img src="assets/img/logo.svg" alt=""></a>
+                <ul class="navigation__list">
+                    <li>
+                        <a class="nav__link hero__nav-link" href="index.html">Main Page</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="questions.html">Faq</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link"href="topic-cards.html">Learn Now</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav__registration">
+                    <a href="#!" class="nav__login">Login</a>
+                    <span class="bar">|</span>
+                    <a href="#!" class="nav__reg">Sign Up</a>
+                </div>
+            </nav>
+            
+                <div class="vertical__bar">
+                    <div class="vertical__content">
+                        <div class="vertical__menu">
+                            <i class="fas fa-search"></i>
+                            <!-- <i class="fas fa-times"></i> -->
+                            <i class="fas fa-bars vertical__icon-burger"></i>
+                        </div>
+                        <div class="vertical__icons">
+                            <a href="#!" class="vertical__icon">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                                  </span>
+                            </a>
+                            <a href="#!" class="vertical__icon">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                  </span>
+                            </a>
+                            <a href="#!" class="vertical__icon">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                  </span>
+                            </a>
+                            <a href="#!" class="vertical__icon">
+                                <span class="fa-stack fa-4x">
+                                    <i class="fas fa-square fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                                  </span>
+                            </a>      
+                        </div>
+                    </div>
+                </div>
+    
+        </header>
 
 
 
     <!-- --------------------------------MAIN--------------------------------- -->
     <main>
 
-        <!-- -------------... Section------------- -->
+        <!--PopUps-->
+        <div class="hero__popup hero__log-popup">
+            <div class="hero__modal">
+                <h3 class=" modal__item popup__title">Log In</h3>
+                <input placeholder='Email' class=' modal__item log__login' type="text">
+                <input placeholder='Password' class='modal__item log__registr' type="password">
+                <button class="btn modal__item modal__btn">Log in</button>
+            </div>
+        </div>
+        <div class="hero__popup hero__reg-popup">
+            <div class="hero__modal">
+                <h3 class=" modal__item popup__title">Sign Up</h3>
+                <input placeholder='Email' class=' modal__item log__login' type="text">
+                <input placeholder='Password' class='modal__item log__registr' type="password">
+                <input placeholder='Repeat your password' class='modal__item log__registr' type="password">
+                <button class="btn modal__item modal__btn">Sign Up</button>
+            </div>
+        </div>
+
+        <!-- -------------Questions Section------------- -->
         
-        
+        <section class="questions">
+            <div class="container">
+                <div class="questions__welcome">
+                    <h2 class="title questions__title">
+                        Frequently Asked Questions
+                    </h2>
+                    <p class="desc questions__desc">
+                        Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.
+                    </p>
+                </div>
+                <div class="questions__row">
+                    <div class="questions">
+                        <div class="question">
+
+                        </div>
+                    </div>
+                    <div class="question__img">
+                        <img src="assets/img/exclamation-mark.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
@@ -67,8 +147,38 @@
     <!-- ------------------------------FOOTER--------------------------------- -->
     <footer>
 
+        <div class="container">
+            <div class="footer__icons">
+                <a href="#!" class="footer__icon">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                </a>
+                <a href="#!" class="footer__icon">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                      </span>
+                </a>
+                <a href="#!" class="footer__icon">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                      </span>
+                </a>
+                <a href="#!" class="footer__icon">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                      </span>
+                </a>
+            </div>
+        </div>
+
     </footer>
 
+    </div>
 
 
 

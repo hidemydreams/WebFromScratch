@@ -1,0 +1,71 @@
+.form {
+  background-color: rgba(151, 218, 255, 0.6);
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.form input, .form textarea {
+  border: none;
+  background-color: transparent;
+  color: rgba(0, 25, 55, 0.6);
+  font-weight: 600;
+  border-bottom: 4px solid white;
+  padding: 10px 0px 10px 10px;
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+  font-weight: 600;
+  color:rgba(0, 25, 55, 0.6);
+}
+
+.form__name {
+  grid-column: 1/2;
+}
+
+.form__subject {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+.form__email {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.form__btn {
+  grid-row: 4/5;
+  grid-column: 2/3;
+  text-transform: uppercase;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  max-width: 261px;
+  justify-self: center;
+  padding: 20px 90px;
+  font-size: 1.5rem;
+  border-radius: 36px;
+  margin-bottom: -50px;
+  transition: transform 0.1s ease-in, background-color 0.1s ease;
+}
+
+.form__btn:hover {
+  transform: scale(1.05);
+  background-color: #5fb8e8;
+}
+
+.form__message {
+  grid-row: 1/4;
+  grid-column: 2/4;
+  font-family: $text-color;
+  font-weight: 600;
+  border: 2px solid white;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "sass_compile",
+  "version": "1.0.0",
+  "description": "sass_package",
+  "main": "index.js",
+  "scripts": {
+    "compile_sass": "node-sass assets/sass/main.scss assets/style/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hidemydreams/WebFromScratch.git"
+  },
+  "author": "Wild Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hidemydreams/WebFromScratch/issues"
+  },
+  "homepage": "https://github.com/hidemydreams/WebFromScratch#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}
