@@ -1,0 +1,30 @@
+@import "base/normalize";
+
+// Abstract
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+//  Base
+@import "base/base";
+@import "base/typography";
+@import "base/animations";
+// Layouts
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/sidebar";
+// Components
+@import "components/buttons";
+@import "components/forms";
+@import "components/icons";
+@import "components/modals";
+@import "components/links";
+// Pages
+@import "pages/hero";
+@import "pages/about";
+@import "pages/questions";
+@import "pages/cards";
+@import "pages/article";
+@import "pages/contact";
+
+
+
