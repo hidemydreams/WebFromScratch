@@ -1,4 +1,5 @@
-.hero__popup {
+// Main Modals And PopUps Settings
+.popup {
   position: absolute;
   background-color: rgba(77, 77, 77, 0.35);
   left: 0;
@@ -9,33 +10,32 @@
   z-index: 100;
 }
 
-.modal__item {
-  margin-bottom: 10px;
-}
-
-.hero__modal {
+.modal {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 250px;
-  width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(142, 196, 232, 0.44);
-  max-height: 300px;
-  height: 100%;
   border-radius: 10vh;
   justify-content: space-evenly;
 }
 
-.popup__title {
-  color: white;
-  font-size: 45px;
-}
+// Registration Form PopUps CSS
+.log__modal, .reg__modal {
+  max-width: 250px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
 
-.hero__modal input {
+  h3 {
+    color: white;
+    font-size: 45px;
+  }
+
+  input {
   padding: 1.5vh;
   border: none;
   outline: none;
@@ -43,13 +43,31 @@
   background-color: #74C7FF;
   color: white;
   transition: .2s;
+  }
+
+  input:hover {
+    background-color: #51abff;
+  }
+  input::placeholder {
+    color: white;
+  }
 }
 
-.hero__modal input:hover {
-  background-color: #51abff;
-}
+// Contact PopUp CSS
 
-.hero__modal input::placeholder {
-  color: darken(white, 10%)
+.contact__modal {
+  color: white;
+  padding: 20px;
+
+
+  h3 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 
