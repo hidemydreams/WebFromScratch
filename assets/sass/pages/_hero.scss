@@ -10,7 +10,7 @@
   display: flex;
   left: 9vh;
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-35%);
 
   @media (max-width: $medium) {
@@ -19,12 +19,12 @@
     text-align: center;
     justify-content: center;
     top: 20%;
-    margin-top: 40px;
+    margin-top: 100px;
   }
 
   @media (max-width: $smallest) {
     font-size: 10vh;
-    margin-top: 10px;
+    margin-top: 100px;
   }
 }
 
@@ -70,6 +70,11 @@
   border-radius: 10vh;
   white-space: nowrap;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  @media (max-width: $smallest) {
+    padding: 15px 30px;
+    font-size: 30px;
+  }
 }
 
 .hero__btn:hover{

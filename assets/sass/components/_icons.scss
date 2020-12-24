@@ -14,11 +14,9 @@
   font-size: 0.6vh;
   background-color:rgba(172, 208, 243, 0.52);
   min-height:40vh;
-  display: flex;
   justify-content: space-evenly;
   padding: 0 100px;
 }
-
 .fa-stack .fa-square {
   color: rgba(106, 183, 255, 0.5);
   transition: 0.3s;
@@ -28,6 +26,10 @@
   color: rgba(58, 160, 255, 0.5);
 }
 
-.vertical__icon-burger {
+.burger-icon {
   display: none;
+
+  @media (max-width: $small) {
+    display: block;
+  }
 }
