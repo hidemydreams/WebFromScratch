@@ -6,20 +6,21 @@
 
 .nav__logo {
   transition: 0.2s;
-  margin-right: 30px;
+  margin-right: 10px;
 
   &:hover {
     transform: scale(1.05);
   }
+
+  @media (max-width: $small) {
+    display: none;
+  }
+
 }
 
 .nav__list {
   display: flex;
   align-items: center;
-
-  li {
-    margin-right: 60px;
-  }
 }
 
 .nav__link {
@@ -30,12 +31,13 @@
   font-family: 'Oswald', sans-serif;
   transition: 0.5s color ease;
   white-space: nowrap;
+  font-size: 19px;
 
   &::after {
     content: ' ';
     display: block;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: $text-color;
     transition: width .3s;
   }
@@ -53,7 +55,7 @@
     display: none
   }
   li {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 
@@ -70,21 +72,20 @@
 
 .header__reg a, .header__reg span {
   color: white;
-  font-size: 1.2rem;
 }
 
 .nav__registration {
   white-space: nowrap;
-  background-color: $base-color;
+  background-color:#ff4ea4;
   padding: 10px;
-  font-size: 15px;
   color: white;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 20px;
 
   @media (max-width: $small) {
     display: none;
   }
-  
+
 }
 
 .nav__registration:hover {

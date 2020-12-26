@@ -8,6 +8,7 @@
   overflow: hidden;
   z-index: 200;
   position: fixed;
+  transition: 0.5s;
 }
 
 .vertical__content {
@@ -18,16 +19,21 @@
   align-items: center;
 }
 
+
 .vertical__menu{
- margin-top: 8vh;
+ height: 30%;
+justify-content: space-evenly;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
 }
 
-.vertical__menu i {
-  margin-bottom: 20px;
+ .sidebar__logo img {
+   max-width: 50px;
+
+   display: none;
+
+ @media (max-width: $small) {
+   display: block;
  }
-
-.vertical__icon-burger {
-  @media (max-width: $small) {
-    display: block;
-  }
-}
+ }

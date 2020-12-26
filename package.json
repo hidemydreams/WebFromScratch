@@ -4,7 +4,7 @@
   "description": "sass_package",
   "main": "index.js",
   "scripts": {
-    "compile_sass": "node-sass assets/sass/main.scss assets/style/style.css -w"
+    "sass": "sass --watch assets/sass/main.scss assets/style/style.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "node-sass": "^5.0.0"
   },
   "dependencies": {
-    "normalize.scss": "^0.1.0"
+    "normalize.scss": "^0.1.0",
+    "sass": "^1.30.0"
   }
 }
