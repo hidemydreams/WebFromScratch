@@ -1,26 +1,23 @@
 {
-  "name": "sass_compile",
+  "name": "webfromscratch",
   "version": "1.0.0",
-  "description": "sass_package",
+  "description": "WebFromScratch. Educational Project.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch assets/sass/main.scss assets/style/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/sass/main.scss assets/style/style.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hidemydreams/WebFromScratch.git"
   },
-  "author": "Wild Team",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hidemydreams/WebFromScratch/issues"
   },
   "homepage": "https://github.com/hidemydreams/WebFromScratch#readme",
-  "devDependencies": {
-    "node-sass": "^5.0.0"
-  },
   "dependencies": {
-    "normalize.scss": "^0.1.0",
-    "sass": "^1.30.0"
+    "node-sass": "^5.0.0"
   }
 }

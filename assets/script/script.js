@@ -63,6 +63,8 @@ closeBtn.addEventListener('click', () => {
 })
 }
 
+// "sass": "sass --watch assets/sass/main.scss assets/style/style.css"
+
 
 
 
