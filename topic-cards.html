@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--------FONTS------>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap" rel="stylesheet">
     <!-------FONT AWESOME ICONS------->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- -----STYLE.CSS---- -->
     <link rel="stylesheet" href="assets/style/style.css">
     <!-- -----FAVICON-------- -->
@@ -21,7 +19,7 @@
 <body>
 
 
- <div class="wrapper">
+    <div class="wrapper">
         <!-- ------------------------------HEADER-------------------------------- -->
         <header>
 
@@ -35,7 +33,7 @@
                         <a class="nav__link hero__nav-link" href="questions.html">Faq</a>
                     </li>
                     <li>
-                        <a class="nav__link hero__nav-link"href="topic-cards.html">Learn Now</a>
+                        <a class="nav__link hero__nav-link" href="topic-cards.html">Learn Now</a>
                     </li>
                     <li>
                         <a class="nav__link hero__nav-link" href="about.html">About</a>
@@ -50,7 +48,7 @@
                     <a href="#!" class="nav__reg">Sign Up</a>
                 </div>
             </nav>
-            
+
             <div class="vertical__bar">
                 <div class="vertical__content">
                     <div class="vertical__menu">
@@ -96,107 +94,196 @@
                                 <i class="fas fa-square fa-stack-2x"></i>
                                 <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
                               </span>
-                        </a>      
+                        </a>
                     </div>
                 </div>
             </div>
-    
+
         </header>
 
 
 
-<!-- --------------------------------MAIN--------------------------------- -->
-<main>
+        <!-- --------------------------------MAIN--------------------------------- -->
+        <main>
 
-    <!--PopUps-->
-    <div class="popup log__popup">
-        <div class="modal log__modal">
-            <h3 class=" modal__item log__title">Log In</h3>
-            <input placeholder='Email' class=' modal__item log__login' type="text">
-            <input placeholder='Password' class='modal__item log__pass' type="password">
-            <button class="btn modal__item log__btn">Log in</button>
-        </div>
-    </div>
-    <div class="popup reg__popup">
-        <div class="modal reg__modal ">
-            <h3 class=" modal__item reg__title">Sign Up</h3>
-            <input placeholder='Email' class=' modal__item reg__login' type="text">
-            <input placeholder='Password' class='modal__item log__pass' type="password">
-            <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
-            <button class="btn modal__item reg__btn">Sign Up</button>
-        </div>
-    </div>
-    <!-- -------------... Section------------- -->
-    
-    
-</main>
-
-
-
-<!-- ------------------------------FOOTER--------------------------------- -->
-<footer>
-    <div class="container">
-        <div class="footer__row">
-            <div class="footer__column">
-                <h4 class="footer__title">
-                    Menu
-                </h4>
-                <ul class="footer__list">
-                    <li><a href="index.html" class="footer__link">Home</a></li>
-                    <li><a href="questions.html" class="footer__link">Faq</a></li>
-                    <li><a href="topic-cards.html" class="footer__link">Learn Now</a></li>
-                    <li><a href="about.html" class="footer__link">About</a></li>
-                    <li><a href="contact.html" class="footer__link">Contact</a></li>
-                </ul>
+            <!--PopUps-->
+            <div class="popup log__popup">
+                <div class="modal log__modal">
+                    <h3 class=" modal__item log__title">Log In</h3>
+                    <input placeholder='Email' class=' modal__item log__login' type="text">
+                    <input placeholder='Password' class='modal__item log__pass' type="password">
+                    <button class="btn modal__item log__btn">Log in</button>
+                </div>
             </div>
-            <div class="footer__column">
-                <h4 class="footer__title">
-                    Topics
-                </h4>
-                <ul class="footer__list">
-                    <li><a href="html.html" class="footer__link">HTML</a></li>
-                    <li><a href="js.html" class="footer__link">JS</a></li>
-                    <li><a href="css.html" class="footer__link">CSS</a></li>
-                    <li><a href="comp-science.html" class="footer__link">Basic Computer Science</a></li>
-                    <li><a href="sql.html" class="footer__link">SQL</a></li>
-                </ul>
+            <div class="popup reg__popup">
+                <div class="modal reg__modal ">
+                    <h3 class=" modal__item reg__title">Sign Up</h3>
+                    <input placeholder='Email' class=' modal__item reg__login' type="text">
+                    <input placeholder='Password' class='modal__item log__pass' type="password">
+                    <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
+                    <button class="btn modal__item reg__btn">Sign Up</button>
+                </div>
             </div>
-            <div class="footer__info">
-                <p>WebFromScratch</p>
-                <p>Educational Project.</p>
-                <p>Created by Wild Code School Students.</p>
-                <p>All Rights Reserved.</p>
-            </div>
-            <div class="footer__icons">
-                <a href="#!" class="footer__icon">
-                    <span class="fa-stack fa-4x">
+
+            <!-- -------------... Section------------- -->
+
+            <section class="cards">
+                <div class="container">
+                    <div class="cards_item">
+                        <div class="card">
+                            <div class="front">
+                                <a href=" ">
+                                    <h1> HTML</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
+                                        nulla non.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="back">
+                                <button class="view">VIEW</button>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="front">
+                                <a href=" ">
+                                    <h1> CSS</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
+                                        nulla non.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="back">
+                                <button class="view">VIEW</button>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="front">
+                                <a href=" ">
+                                    <h1> JS</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
+                                        nulla non.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="back">
+                                <button class="view">VIEW</button>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="front">
+                                <a href=" ">
+                                    <h1> JS</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
+                                        nulla non.
+
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="back">
+                                <button class="view">VIEW</button>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="front">
+                                <a href=" ">
+                                    <h1> JS</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
+                                        nulla non.
+
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="back">
+                                <button class="view">VIEW</button>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="front">
+                                <a href=" ">
+                                    <h1> JS</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
+                                        nulla non.
+
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="back">
+                                <button class="view">VIEW</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+
+
+        <!-- ------------------------------FOOTER--------------------------------- -->
+        <footer>
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <h4 class="footer__title">
+                            Menu
+                        </h4>
+                        <ul class="footer__list">
+                            <li><a href="index.html" class="footer__link">Home</a></li>
+                            <li><a href="questions.html" class="footer__link">Faq</a></li>
+                            <li><a href="topic-cards.html" class="footer__link">Learn Now</a></li>
+                            <li><a href="about.html" class="footer__link">About</a></li>
+                            <li><a href="contact.html" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">
+                            Topics
+                        </h4>
+                        <ul class="footer__list">
+                            <li><a href="html.html" class="footer__link">HTML</a></li>
+                            <li><a href="js.html" class="footer__link">JS</a></li>
+                            <li><a href="css.html" class="footer__link">CSS</a></li>
+                            <li><a href="comp-science.html" class="footer__link">Basic Computer Science</a></li>
+                            <li><a href="sql.html" class="footer__link">SQL</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info">
+                        <p>WebFromScratch</p>
+                        <p>Educational Project.</p>
+                        <p>Created by Wild Code School Students.</p>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                    <div class="footer__icons">
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
                         <i class="fas fa-square fa-stack-2x"></i>
                         <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
                       </span>
-                </a>
-                <a href="#!" class="footer__icon">
-                    <span class="fa-stack fa-4x">
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
                         <i class="fas fa-square fa-stack-2x"></i>
                         <i class="fab fa-github fa-stack-1x fa-inverse"></i>
                       </span>
-                </a>
-                <a href="#!" class="footer__icon">
-                    <span class="fa-stack fa-4x">
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
                         <i class="fas fa-square fa-stack-2x"></i>
                         <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
                       </span>
-                </a>
-                <a href="#!" class="footer__icon">
-                    <span class="fa-stack fa-4x">
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
                         <i class="fas fa-square fa-stack-2x"></i>
                         <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
                       </span>
-                </a>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
-</footer>
- </div>
 
 
 
