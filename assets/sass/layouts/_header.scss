@@ -76,7 +76,7 @@
 
 .nav__registration {
   white-space: nowrap;
-  background-color: $base-color;
+  background-color:#ff4ea4;
   padding: 10px;
   color: white;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -85,7 +85,7 @@
   @media (max-width: $small) {
     display: none;
   }
-  
+
 }
 
 .nav__registration:hover {
