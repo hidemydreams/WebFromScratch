@@ -582,6 +582,7 @@ footer {
 
 .btn {
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   border: none;
   background-color: #52aee2;
   color: white;
