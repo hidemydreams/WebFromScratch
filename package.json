@@ -1,23 +1,24 @@
 {
-  "name": "webfromscratch",
-  "version": "1.0.0",
-  "description": "WebFromScratch. Educational Project.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch assets/sass/main.scss assets/style/style.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hidemydreams/WebFromScratch.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hidemydreams/WebFromScratch/issues"
-  },
-  "homepage": "https://github.com/hidemydreams/WebFromScratch#readme",
-  "dependencies": {
-    "node-sass": "^5.0.0"
-  }
+    "name": "webfromscratch",
+    "version": "1.0.0",
+    "description": "WebFromScratch. Educational Project.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "sass --watch assets/sass/main.scss assets/style/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hidemydreams/WebFromScratch.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hidemydreams/WebFromScratch/issues"
+    },
+    "homepage": "https://github.com/hidemydreams/WebFromScratch#readme",
+    "dependencies": {
+        "node-sass": "^5.0.0",
+        "sass": "^1.30.0"
+    }
 }
