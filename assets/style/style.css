@@ -680,11 +680,14 @@ footer * {
   text-transform: uppercase;
   border: none;
   background-color: #52aee2;
-  color: white;
+  color: #f1d9d9;
   font-size: 1rem;
   border-radius: 36px;
   padding: 0.5rem;
+<<<<<<< HEAD
   outline: none;
+=======
+>>>>>>> 3b9ec038b7d09b0bc4c40aa9d82221701ed80456
 }
 
 .form {
@@ -742,7 +745,6 @@ footer * {
   grid-column: 2/3;
   text-transform: uppercase;
   border: none;
-  text-transform: uppercase;
   color: white;
   max-width: 261px;
   justify-self: center;
@@ -769,7 +771,11 @@ footer * {
   grid-column: 2/4;
   font-family: #4f91d9;
   font-weight: 600;
+<<<<<<< HEAD
   border: 2px solid white;
+=======
+  border: 2px solid black;
+>>>>>>> 3b9ec038b7d09b0bc4c40aa9d82221701ed80456
 }
 @media (max-width: 575.98px) {
   .form__message {
