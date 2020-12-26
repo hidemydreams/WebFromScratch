@@ -53,14 +53,15 @@ let formBtn = document.querySelector('.form__btn');
 let contactPop = document.querySelector('.contact__popup');
 let closeBtn = document.querySelector('.contact__close');
 
+if (formBtn) {
 formBtn.addEventListener('click', (e) => {
   e.preventDefault();
   contactPop.style.display = 'block';
 })
-
 closeBtn.addEventListener('click', () => {
   contactPop.style.display = 'none';
 })
+}
 
 
 

@@ -376,7 +376,7 @@ body {
   background: #f1f1f1; }
 
 ::-webkit-scrollbar-thumb {
-  background: #4f91d9;
+  background: red;
   border-radius: 10px; }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -411,7 +411,7 @@ footer {
   margin-top: 40px; }
 
 .main-text {
-  color: #4f91d9;
+  color: red;
   font-size: 1.5rem;
   line-height: 1.3; }
 
@@ -422,7 +422,7 @@ footer {
 
 .desc {
   font-size: 1.3rem;
-  color: #4f91d9; }
+  color: red; }
 
 @keyframes img-float {
   from {
@@ -451,7 +451,7 @@ footer {
 .nav__link {
   text-decoration: none;
   text-transform: uppercase;
-  color: #4f91d9;
+  color: red;
   font-weight: 400;
   font-family: 'Oswald', sans-serif;
   transition: 0.5s color ease;
@@ -462,7 +462,7 @@ footer {
     display: block;
     width: 0;
     height: 3px;
-    background-color: #4f91d9;
+    background-color: red;
     transition: width .3s; }
   .nav__link:hover::after {
     width: 100%;
@@ -659,7 +659,7 @@ footer {
 .form__message {
   grid-row: 1/4;
   grid-column: 2/4;
-  font-family: #4f91d9;
+  font-family: red;
   font-weight: 600;
   border: 2px solid white; }
   @media (max-width: 575.98px) {
@@ -835,7 +835,7 @@ footer {
       font-size: 10vh; } }
 
 .hero__desc {
-  color: #4f91d9;
+  color: red;
   font-size: 3.5vh;
   margin-bottom: 4vh;
   max-width: 50vh;
