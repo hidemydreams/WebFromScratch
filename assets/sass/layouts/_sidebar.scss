@@ -9,6 +9,11 @@
   z-index: 200;
   position: fixed;
   transition: 0.5s;
+
+  // @media (max-width: $smallest) {
+  //   width: 5vh;
+  // }
+
 }
 
 .vertical__content {
@@ -29,7 +34,7 @@ justify-content: space-evenly;
 }
 
  .sidebar__logo img {
-   max-width: 50px;
+   max-width: 35px;
 
    display: none;
 
