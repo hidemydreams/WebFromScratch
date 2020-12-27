@@ -1,27 +1,27 @@
 html,
 body {
   height: 100%;
-  font-family: 'Ropa Sans', 'Oswald', sans-serif;
+  font-family: 'Ropa Sans','Oswald', sans-serif;
   width: 100%;
 }
 
 /* -----SCROLLBAR STYLE------ */
 
 ::-webkit-scrollbar {
-  width: 13px;
+  width: 0.5vw;
   }
   
   ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: white;
   }
   
   ::-webkit-scrollbar-thumb {
-  background: $text-color;
+  background: $base-color;
   border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #64a4e9;
+    background: $btn-hover-color;
   }
   /* -----SCROLLBAR STYLE END------ */
 
@@ -32,7 +32,7 @@ body {
     margin: 0 auto;
     width: 100%;
     padding: 0px 15px;
-    padding-left: 45px;
+    padding-left: 50px;
   }
 
   // ------WRAPPER AND SETTINGS TO GET FOOTER DOWN--------

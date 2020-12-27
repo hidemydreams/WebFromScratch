@@ -63,7 +63,37 @@ closeBtn.addEventListener('click', () => {
 })
 }
 
-// "sass": "sass --watch assets/sass/main.scss assets/style/style.css"
+// Accordion Questions
+
+// let btns = document.querySelectorAll('.toggle-btn');
+
+// btns.forEach((btn) => {
+//   btn.addEventListener('click',(e) => {
+//     let question = e.currentTarget.parentElement.parentElement
+//     question.classList.toggle('show-text')
+//   })
+// })
+
+let questions = document.querySelectorAll('.accordion__item');
+
+questions.forEach((question) => {
+  // console.log(question)
+  let btn = question.querySelector('.toggle-btn');
+  // console.log(btn)
+  btn.addEventListener('click', () => {
+
+
+    questions.forEach((item) => {
+      if (item !== question) {
+        item.classList.remove('show-text')
+      }
+    })
+
+
+
+    question.classList.toggle('show-text')
+  })
+})
 
 
 
