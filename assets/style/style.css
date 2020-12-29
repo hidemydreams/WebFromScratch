@@ -1263,15 +1263,15 @@ button {
   margin-left: 1%;
 }
 
-.article_right {
+.article_topic {
+  padding-bottom: 40px;
   float: right;
   width: 74%;
 }
 
-.article_li {
-  background: url(../Img/book_open.png) no-repeat 0 50%;
-  font-size: 10pt;
-  font-family: Arial;
+.topic {
+  text-align: center;
+  margin: 0;
 }
 
 .article_mainmenu1 {
