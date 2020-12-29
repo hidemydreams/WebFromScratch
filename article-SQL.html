@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------FONTS------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <!-------FONT AWESOME ICONS------->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- -----RESET.CSS AND STYLE.CSS---- -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- -----FAVICON-------- -->
+    <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location">
+    <title>WebFromScratch</title>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <!-- ------------------------------HEADER-------------------------------- -->
+        <header>
+
+            <nav class="navigation">
+                <a href="index.html" class="nav__logo hero__nav-logo"><img src="assets/img/logo.svg" alt=""></a>
+                <ul class="navigation__list">
+                    <li>
+                        <a class="nav__link hero__nav-link" href="index.html">Main Page</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="questions.html">Faq</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="topic-cards.html">Learn Now</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="nav__registration">
+                    <a href="#!" class="nav__login">Login</a>
+                    <span class="bar">|</span>
+                    <a href="#!" class="nav__reg">Sign Up</a>
+                </div>
+            </nav>
+
+            <div class="vertical__bar">
+                <div class="vertical__content">
+                    <div class="vertical__menu">
+                        <i class="fas fa-search"></i>
+                        <a href="index.html" class="sidebar__logo">
+                            <img src="assets/img/logo.svg" alt="">
+                        </a>
+                        <i class="burger-icon fas fa-bars"></i>
+                    </div>
+                    <ul class="burger__list">
+                        <li><a href="index.html" class="burger__link">Home</a></li>
+                        <li><a href="questions.html" class="burger__link">Faq</a></li>
+                        <li><a href="topic-cards.html" class="burger__link">Learn Now</a></li>
+                        <li><a href="about.html" class="burger__link">About</a></li>
+                        <li><a href="contact.html" class="burger__link">Contact</a></li>
+                    </ul>
+                    <div class="registration">
+                        <a href="" class="burger__log">Login</a>
+                        <span>|</span>
+                        <a href="" class="burger__reg">Sign Up</a>
+                    </div>
+                    <div class="vertical__icons">
+                        <a href="#!" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                        <a href="https://github.com/hidemydreams/WebFromScratch" target="_blank" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                        <a href="#!" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                        <a href="#!" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+
+        <!-- --------------------------------MAIN--------------------------------- -->
+        <main>
+
+            <!--PopUps-->
+            <div class="popup log__popup">
+                <div class="modal log__modal">
+                    <h3 class=" modal__item log__title">Log In</h3>
+                    <input placeholder='Email' class=' modal__item log__login' type="text">
+                    <input placeholder='Password' class='modal__item log__pass' type="password">
+                    <button class="btn modal__item log__btn">Log in</button>
+                </div>
+            </div>
+            <div class="popup reg__popup">
+                <div class="modal reg__modal ">
+                    <h3 class=" modal__item reg__title">Sign Up</h3>
+                    <input placeholder='Email' class=' modal__item reg__login' type="text">
+                    <input placeholder='Password' class='modal__item log__pass' type="password">
+                    <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
+                    <button class="btn modal__item reg__btn">Sign Up</button>
+                </div>
+            </div>
+
+            <!-- -------------... Section------------- -->
+
+             <!-- -------------Article Section (SQL)------------- -->
+        
+        <section class="article">          
+            <div class="container">
+                <div class="article__welcome">
+                    <h2 class="title article__title">
+                        Structured Query Language
+                    </h2>
+                    <p class="desc article__desc">
+                        SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables. 
+                    </p>
+                </div>
+
+
+
+
+                <div class="article_left_menu">
+
+                    <ul class="article_menu1">                    
+                    <li class="li1"><a href="Sheets/page1.html" class="mainmenu1">SQL Topic1</a></li>                    
+                    <li class="li1"><a href="Sheets/page2.html" class="mainmenu1">SQL Topic2</a></li>                    
+                    <li class="li1"><a href="Sheets/page3.html" class="mainmenu1">SQL Topic3</a></li>                    
+                                 
+                    </ul>
+                    
+                </div>
+                    
+                <div class="article_right">
+                    
+                    SQL ("sequel"; Structured Query Language)[5][6][7] is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.
+
+                    SQL offers two main advantages over older read–write APIs such as ISAM or VSAM. Firstly, it introduced the concept of accessing many records with one single command. Secondly, it eliminates the need to specify how to reach a record, e.g. with or without an index.
+
+                    Originally based upon relational algebra and tuple relational calculus, SQL consists of many types of statements,[8] which may be informally classed as sublanguages, commonly: a data query language (DQL),[a] a data definition language (DDL),[b] a data control language (DCL), and a data manipulation language (DML).[c][9] The scope of SQL includes data query, data manipulation (insert, update and delete), data definition (schema creation and modification), and data access control. Although SQL is essentially a declarative language (4GL), it also includes procedural elements.
+
+                    SQL was one of the first commercial languages to utilize Edgar F. Codd’s relational model. The model was described in his influential 1970 paper, "A Relational Model of Data for Large Shared Data Banks".[10] Despite not entirely adhering to the relational model as described by Codd, it became the most widely used database language.[11][12]
+
+                    SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.[13] Since then the standard has been revised to include a larger set of features. Despite the existence of standards, most SQL code requires at least some changes before being ported to different database systems. 
+                    
+                 </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+        <!-- ------------------------------FOOTER--------------------------------- -->
+        <footer>
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <h4 class="footer__title">
+                            Menu
+                        </h4>
+                        <ul class="footer__list">
+                            <li><a href="index.html" class="footer__link">Home</a></li>
+                            <li><a href="questions.html" class="footer__link">Faq</a></li>
+                            <li><a href="topic-cards.html" class="footer__link">Learn Now</a></li>
+                            <li><a href="about.html" class="footer__link">About</a></li>
+                            <li><a href="contact.html" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">
+                            Topics
+                        </h4>
+                        <ul class="footer__list">
+                            <li><a href="html.html" class="footer__link">HTML</a></li>
+                            <li><a href="js.html" class="footer__link">JS</a></li>
+                            <li><a href="css.html" class="footer__link">CSS</a></li>
+                            <li><a href="comp-science.html" class="footer__link">Basic Computer Science</a></li>
+                            <li><a href="sql.html" class="footer__link">SQL</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info">
+                        <p>WebFromScratch</p>
+                        <p>Educational Project.</p>
+                        <p>Created by Wild Code School Students.</p>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                    <div class="footer__icons">
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                            <i class="fas fa-square fa-stack-2x"></i>
+                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                            <i class="fas fa-square fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                            <i class="fas fa-square fa-stack-2x"></i>
+                            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                            <i class="fas fa-square fa-stack-2x"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+    <!-- ------JS SCRIPT------ -->
+
+    <script src='assets/script/script.js'>
+    </script>
+</body>
+
+</html>
