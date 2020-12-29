@@ -1,0 +1,39 @@
+.article {
+    padding-bottom: 40px;
+}
+
+.article__desc {
+    max-width: 800px;
+    margin: 20px 0px;
+  }
+
+
+.article_left_menu {
+    float:left; 
+    width:24%; 
+    margin-left:1%
+}
+    
+.article_topic {
+    padding-bottom: 40px;
+    float:right;
+    width:74%
+}
+
+
+.topic {
+    text-align: center;
+    margin: 0;
+  }
+  
+
+//.article_li {    background: url(../Img/book_open.png) no-repeat 0 50%;     font-size:10pt;     font-family:Arial}
+    
+ .article_mainmenu1 {
+    display:block; 
+    text-decoration:none; 
+    width:300px; height:35px; 
+    line-height:35px; 
+    //text:indent:50px; 
+    padding-left:28px
+ }
