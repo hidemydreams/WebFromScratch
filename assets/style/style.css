@@ -1271,8 +1271,21 @@ button {
 
 .topic {
   text-align: center;
+  font-size: 2rem;
   margin: 0;
   color: #ff4ba2;
+}
+
+.article_li {
+  color: white;
+  background-color: #52aee2;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 0.4s;
+}
+.article_li:hover {
+  background-color: #269adb;
 }
 
 .article_mainmenu1 {
