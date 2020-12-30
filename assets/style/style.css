@@ -664,6 +664,10 @@ footer * {
   transition: 0.5s;
 }
 
+.vertical__bar.open-search {
+  width: 15vh;
+}
+
 .vertical__content {
   display: flex;
   flex-direction: column;
@@ -799,7 +803,7 @@ button {
   }
 }
 
-.vertical__menu i {
+.vertical__menu > i {
   font-size: 4vh;
   color: white;
   transition: 0.3s;
@@ -849,15 +853,25 @@ button {
   display: none;
 }
 
-.popup {
+.search-close i {
+  color: #52aee2;
+  font-size: 20px;
   position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.popup {
+  position: fixed;
   background-color: rgba(77, 77, 77, 0.35);
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   display: none;
-  z-index: 100;
+  z-index: 200;
+  min-height: 100%;
 }
 
 .modal {
@@ -871,6 +885,7 @@ button {
   background-color: #52aee2;
   border-radius: 10vh;
   justify-content: space-evenly;
+  z-index: 201;
 }
 
 .log__modal, .reg__modal {
@@ -914,6 +929,9 @@ button {
 .contact__modal p {
   font-size: 30px;
   text-align: center;
+}
+.contact__modal button {
+  background-color: #7ec2e9;
 }
 
 .registration {
@@ -1067,6 +1085,8 @@ button {
   padding: 10px;
   margin-bottom: 10px;
   transition: 0.4s;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px -5px 7px -18px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 10px 13px -7px #000000, 5px -5px 7px -18px rgba(0, 0, 0, 0.27);
 }
 .accordion__item:hover {
   background-color: #269adb;
@@ -1095,6 +1115,25 @@ button {
 
 .accordion__question button {
   margin-left: 10px;
+}
+
+.vertical-search {
+  border: none;
+  outline: none;
+  max-width: 90px;
+  border-radius: 20px;
+  padding: 5px 22px 5px 5px;
+  color: #52aee2;
+}
+
+.search-form {
+  position: relative;
+  display: none;
+  transition: 0.2s;
+}
+
+.open-search .search-form {
+  display: block;
 }
 
 .hero-section {

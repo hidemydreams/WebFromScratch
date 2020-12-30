@@ -5,19 +5,25 @@ let regBtn = document.querySelector('.nav__reg');
 let loginPopUp = document.querySelector('.log__popup');
 let regPopUp = document.querySelector('.reg__popup');
 let outsidePopUp = document.querySelectorAll('.popup')
+let sidebarLogin = document.querySelector('.burger__log')
+let sidebarReg = document.querySelector('.burger__reg')
 
 loginBtn.addEventListener('click', () => {
   loginPopUp.style.display = 'block'
 })
 
-regBtn.addEventListener('click', () => {
+sidebarLogin.addEventListener('click', (e) => {
+  e.preventDefault()
+  loginPopUp.style.display = 'block'
+})
+
+sidebarReg.addEventListener('click', (e) => {
+  e.preventDefault()
   regPopUp.style.display = 'block'
 })
 
-window.addEventListener('click', (e) => {
-  if (e.target == outsidePopUp) {
-    outsidePopUp.style.display = "none";
-  }
+regBtn.addEventListener('click', () => {
+  regPopUp.style.display = 'block'
 })
 
 outsidePopUp.forEach((modal) => {
@@ -45,6 +51,21 @@ burgerBtn.addEventListener('click', () => {
   burgerMenu.classList.toggle('burger');
   registration.classList.toggle('burger');
 })
+
+
+// Search Button
+
+let searchBtn = document.querySelector('.search-btn');
+let closeSearch = document.querySelector('.search-close');
+
+searchBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('open-search');
+})
+
+closeSearch.addEventListener('click', () => {
+  sidebar.classList.toggle('open-search');
+})
+
 
 
 // PopUp for Contact Page
@@ -94,6 +115,8 @@ questions.forEach((question) => {
     question.classList.toggle('show-text')
   })
 })
+
+
 
 
 

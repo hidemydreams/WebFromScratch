@@ -1,13 +1,14 @@
 // Main Modals And PopUps Settings
 .popup {
-  position: absolute;
+  position: fixed;
   background-color: rgba(77, 77, 77, 0.35);
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   display: none;
-  z-index: 100;
+  z-index: 200;
+  min-height: 100%;
 }
 
 .modal {
@@ -21,6 +22,7 @@
   background-color: $base-color;
   border-radius: 10vh;
   justify-content: space-evenly;
+  z-index: 201;
 }
 
 // Registration Form PopUps CSS
@@ -72,6 +74,10 @@
   p {
     font-size: 30px;
     text-align: center;
+  }
+
+  button {
+    background-color: lighten($base-color, 10%);
   }
 }
 
