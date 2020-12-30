@@ -1,37 +1,39 @@
 .article {
     padding-bottom: 40px;
+    text-align: center;
 }
 
-.article__desc {
-    max-width: 800px;
-    margin: 20px 0px;
+.article_title {
+  padding: 15px;
+ }
+
+
+.article_title li  {
+  color: $accent-pink ;
   }
+.article_title li  span {
+    color: $base-color ;
+    }
 
-
-.article_left_menu {
-    float:left; 
+.article_right_menu {
+    float:right; 
     width:24%; 
     margin-left:1%
 }
     
-.article_topic {
-    padding-bottom: 40px;
-    float:right;
-    width:74%
-}
-
 
 .topic {
-    text-align: center;
+  
     font-size: 2rem;
-    margin: 0;
+    margin: 10;
     color: $accent-pink ;
+    padding-bottom: 20px;
   }
   
     
 .article_li {
   color: white;
-  background-color: $base-color;
+  background-color: rgb(164, 233, 238);
   font-size: 1rem;
   padding: 10px;
   margin-bottom: 10px;
@@ -41,10 +43,6 @@
       background-color: darken($base-color, 10%)
   }
 }
-
-
-
-
 
  .article_mainmenu1 {
     display:block; 
