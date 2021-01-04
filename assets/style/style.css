@@ -1289,35 +1289,37 @@ button {
 
 .article {
   padding-bottom: 40px;
+  text-align: center;
 }
 
-.article__desc {
-  max-width: 800px;
-  margin: 20px 0px;
+.article_title {
+  padding: 15px;
 }
 
-.article_left_menu {
-  float: left;
+.article_title li {
+  color: #ff4ba2;
+}
+
+.article_title li span {
+  color: #52aee2;
+}
+
+.article_right_menu {
+  float: right;
   width: 24%;
   margin-left: 1%;
 }
 
-.article_topic {
-  padding-bottom: 40px;
-  float: right;
-  width: 74%;
-}
-
 .topic {
-  text-align: center;
-  font-size: 2rem;
-  margin: 0;
-  color: #ff4ba2;
+  font-size: 2.5rem;
+  margin: 10;
+  color: #52aee2;
+  padding-bottom: 20px;
 }
 
 .article_li {
   color: white;
-  background-color: #52aee2;
+  background-color: #a4e9ee;
   font-size: 1rem;
   padding: 10px;
   margin-bottom: 10px;

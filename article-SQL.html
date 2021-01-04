@@ -138,22 +138,28 @@
         
         <section class="article">          
             <div class="container">
-                <div class="article__welcome">
-                    <h2 class="title article__title">
-                        Structured Query Language
-                    </h2>
-                    <p class="desc article__desc">
-                        SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables. 
-                    </p>
+                <div class="title article_title">
+                  <h1 >What is SQL </h1>
+                   <!---- <a href="article-SQL.html" class="title article__title">What is SQL</a></li> -->
+                   <h6>At the end of this topic you will:</h6>
+                  
+                    <ul class="main-text article_title">                    
+                        <li type="disc"><span>to know basic principles SQL</span></li>                    
+                        <li type="disc"><span>make simlpe queries</span></li> 
+                        <li type="disc"><span>to know basic principles SQL</span></li>                    
+                        <li type="disc"><span>make simlpe queries</span></li> 
+                      </ul>
+
                 </div>
 
+                <div class="main-text article_right_menu">
 
-                <div class="article_left_menu">
-
-                    <ul class="article_menu1">                    
-                    <li class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic1</a></li>                    
-                    <li class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic2</a></li>                    
-                    <li class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic3</a></li>                    
+                    <ul class="article_menu1"> 
+                    <li type="disc" class="article_li"><a href="article-SQL.html" class="mainmenu1">SQL History</a></li>                    
+                                     
+                    <li type="disc" class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic1</a></li>                    
+                    <li type="disc" class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic2</a></li>                    
+                    <li type="disc" class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic3</a></li>                    
                     <li class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic4</a></li>                    
                     <li class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic5</a></li>                    
                     <li class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic6</a></li>                              
@@ -162,18 +168,22 @@
                 </div>
                     
                 <div class="article_topic">
-                    <h3 class="topic">SQL Topic 1</h3>
+                    <h3 class="topic">History SQL</h3>
                     
-                    <p class="article__text"> SQL ("sequel"; Structured Query Language)[5][6][7] is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables.
+                    <p class="desc article__text"> 
+                        
+                        SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data, i.e. data incorporating relations among entities and variables. 
+                    
+                        
+                        SQL was initially developed at IBM by Donald D. Chamberlin and Raymond F. Boyce after learning about the relational model from Edgar F. Codd[14] in the early 1970s.[15] This version, initially called SEQUEL (Structured English Query Language), was designed to manipulate and retrieve data stored in IBM's original quasi-relational database management system, System R, which a group at IBM San Jose Research Laboratory had developed during the 1970s.[15]
 
-                        SQL offers two main advantages over older read–write APIs such as ISAM or VSAM. Firstly, it introduced the concept of accessing many records with one single command. Secondly, it eliminates the need to specify how to reach a record, e.g. with or without an index.
-    
-                        Originally based upon relational algebra and tuple relational calculus, SQL consists of many types of statements,[8] which may be informally classed as sublanguages, commonly: a data query language (DQL),[a] a data definition language (DDL),[b] a data control language (DCL), and a data manipulation language (DML).[c][9] The scope of SQL includes data query, data manipulation (insert, update and delete), data definition (schema creation and modification), and data access control. Although SQL is essentially a declarative language (4GL), it also includes procedural elements.
-    
-                        SQL was one of the first commercial languages to utilize Edgar F. Codd’s relational model. The model was described in his influential 1970 paper, "A Relational Model of Data for Large Shared Data Banks".[10] Despite not entirely adhering to the relational model as described by Codd, it became the most widely used database language.[11][12]
-    
-                        SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.[13] Since then the standard has been revised to include a larger set of features. Despite the existence of standards, most SQL code requires at least some changes before being ported to different database systems. 
-                    </p>
+                        Chamberlin and Boyce's first attempt at a relational database language was Square, but it was difficult to use due to subscript notation. After moving to the San Jose Research Laboratory in 1973, they began work on SEQUEL.[14] The acronym SEQUEL was later changed to SQL because "SEQUEL" was a trademark of the UK-based Hawker Siddeley Dynamics Engineering Limited company.[16]
+                        
+                        After testing SQL at customer test sites to determine the usefulness and practicality of the system, IBM began developing commercial products based on their System R prototype including System/38, SQL/DS, and DB2, which were commercially available in 1979, 1981, and 1983, respectively.[17]
+                        
+                        In the late 1970s, Relational Software, Inc. (now Oracle Corporation) saw the potential of the concepts described by Codd, Chamberlin, and Boyce, and developed their own SQL-based RDBMS with aspirations of selling it to the U.S. Navy, Central Intelligence Agency, and other U.S. government agencies. In June 1979, Relational Software, Inc. introduced the first commercially available implementation of SQL, Oracle V2 (Version2) for VAX computers.
+                        
+                        By 1986, ANSI and ISO standard groups officially adopted the standard "Database Language SQL" language definition. New versions of the standard were published in 1989, 1992, 1996, 1999, 2003, 2006, 2008, 2011[14] and, most recently, 2016.[citation needed]    </p>
 
 
                     
@@ -182,10 +192,6 @@
 
 
         </section>
-
-
-
-
 
 
 
