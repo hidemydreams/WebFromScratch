@@ -1,4 +1,6 @@
-.vertical__menu i {
+// Social Icons
+
+.vertical__menu > i {
   font-size: 4vh;
   color: white;
   transition: 0.3s;
@@ -26,6 +28,8 @@
   color: $btn-hover-color;
 }
 
+// Burger Icon
+
 .burger-icon {
   display: none;
 
@@ -33,6 +37,8 @@
     display: block;
   }
 }
+
+// Accordion Icons
 
 .minus-icon {
   display: none;
@@ -45,4 +51,18 @@
 .show-text .plus-icon {
   display: none;
 }
+
+
+// Search Btn
+
+.search-close i {
+  color: $base-color;
+  font-size: 20px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+
 
