@@ -88,3 +88,62 @@
 .card:hover .back {
     transform: rotateY(360deg);
 }
+
+@media (max-width: $smallest) {
+    .card {
+        width: 38%;
+        padding: 30px 20px;
+        height: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card h1 {
+        font-size: 1rem;
+    }
+    .card p {
+        font-size: 10px;
+    }
+    .title {
+        margin-left: 10px;
+    }
+    title p {
+        font-size: 9px;
+    }
+    .title h3 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: $small) {
+    .card {
+        width: 35%;
+    }
+    .card h1 {
+        font-size: 1rem;
+    }
+    .card p {
+        font-size: 14px;
+    }
+    .title {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: $medium) {
+    .cards_item {
+        justify-content: space-around;
+    }
+    .card {
+        width: 35%;
+    }
+    .card h1 {
+        font-size: 1, 2rem;
+    }
+    .card p {
+        font-size: 16px;
+    }
+    .title {
+        margin-left: 10px;
+    }
+}
