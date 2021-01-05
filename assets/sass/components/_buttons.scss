@@ -1,7 +1,7 @@
 .btn {
   text-transform: uppercase;
   border: none;
-  background-color: $base-color;
+  background-color: lighten($base-color, 10%);
   color: white;
   font-size: 1rem;
   border-radius: 36px;

@@ -1,0 +1,84 @@
+.registration-section {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: $smallest) {
+      left: 56%;
+      width: 200px;
+    }
+}
+
+.reg__logo {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.registration__tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  background-color: $base-color;
+  border-radius: 30px;
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  margin: 0px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @media (max-width: $smallest) {
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+    top: -20px;
+  }
+}
+
+// Registration Content
+
+.reg__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $base-color;
+    color: white;
+    justify-content: space-evenly;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    top: -15px;
+    border-radius: 30px;
+    background-color: darken($base-color, 10%);
+
+    input {
+      border: none;
+      background-color: lighten($base-color, 10%);
+      color: white;
+      padding: 10px;
+      border-radius: 20px;
+
+      &::placeholder {
+        color: white;
+      }
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.signup__form {
+  display: none;
+}
+
+.login__tab {
+  background-color: darken($base-color, 10%);
+}

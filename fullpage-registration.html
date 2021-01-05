@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------FONTS------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <!-------FONT AWESOME ICONS------->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- -----STYLE.CSS---- -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- -----FAVICON-------- -->
+    <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location">
+    <title>WebFromScratch</title>
+</head>
+<body>
+
+
+    <header>
+      <nav class="navigation">
+          <a href="index.html" class="nav__logo hero__nav-logo"><img src="assets/img/logo.svg" alt=""></a>
+          <ul class="navigation__list">
+              <li>
+                  <a class="nav__link hero__nav-link" href="index.html">Main Page</a>
+              </li>
+              <li>
+                  <a class="nav__link hero__nav-link" href="questions.html">Faq</a>
+              </li>
+              <li>
+                  <a class="nav__link hero__nav-link" href="topic-cards.html">Learn Now</a>
+              </li>
+              <li>
+                  <a class="nav__link hero__nav-link" href="about.html">About</a>
+              </li>
+              <li>
+                  <a class="nav__link hero__nav-link" href="contact.html">Contact Us</a>
+              </li>
+          </ul>
+          <div class="nav__registration">
+              <a href="#!" class="nav__login">Login</a>
+              <span class="bar">|</span>
+              <a href="#!" class="nav__reg">Sign Up</a>
+          </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+      <div class="container">
+        <div class="registration-section">
+
+          <!-- Tabs  -->
+          <div class="registration__tabs">
+            <div class="login__tab tab">
+              Log In
+            </div>
+            <div class="sign-up__tab tab">
+              Sign Up
+            </div>
+          </div>
+          <!-- Content Tables  -->
+          <div class="tabs__content">
+            <!-- Login  -->
+            <div class="reg__form login__form">
+              <h3 class="reg__title login__title">Log In</h3>
+              <input placeholder='Email' class='login__login' type="text">
+              <input placeholder='Password' class='login__pass' type="password">
+              <button class="btn login__btn">Log in</button>
+            </div>
+            <!-- Registration -->
+            <div class="reg__form signup__form">
+              <h3 class="signup__title">Sign Up</h3>
+              <input placeholder='Email' class='signup__login' type="text">
+              <input placeholder='Password' class='signup__pass' type="password">
+              <input placeholder='Repeat Password' class='signup__pass' type="password">
+              <button class="btn signup__btn">Sign Up</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+
+  <div class="vertical__bar">
+    <div class="vertical__content">
+        <div class="vertical__menu">
+            <i class="search-btn fas fa-search"></i>
+            <!-- Search Form -->
+            <div class="search-form">
+                <input class='vertical-search' type="text" placeholder='I find...'>
+                <div class="search-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <a href="index.html" class="sidebar__logo">
+                <img src="assets/img/logo.svg" alt="">
+            </a>
+            <i class="burger-icon fas fa-bars"></i>
+        </div>
+        <ul class="burger__list">
+            <li><a href="index.html" class="burger__link">Home</a></li>
+            <li><a href="questions.html" class="burger__link">Faq</a></li>
+            <li><a href="topic-cards.html" class="burger__link">Learn Now</a></li>
+            <li><a href="about.html" class="burger__link">About</a></li>
+            <li><a href="contact.html" class="burger__link">Contact</a></li>
+        </ul>
+        <div class="registration">
+            <a href="" class="burger__log">Login</a>
+            <span>|</span>
+            <a href="" class="burger__reg">Sign Up</a>
+        </div>
+        <div class="vertical__icons">
+            <a href="#!" class="vertical__icon">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+            </a>
+            <a href="https://github.com/hidemydreams/WebFromScratch" target="_blank" class="vertical__icon">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+            </a>
+            <a href="#!" class="vertical__icon">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+            </a>
+            <a href="#!" class="vertical__icon">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                  </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        <!-- ------JS SCRIPT------ -->
+
+        <script src='assets/script/script.js'>
+        </script>
+</body>
+
+</html>
