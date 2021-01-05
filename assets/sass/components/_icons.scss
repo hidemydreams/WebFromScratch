@@ -5,7 +5,7 @@
 }
 
 .vertical__menu i:hover {
-  color: rgba(58, 160, 255, 0.5);
+  color: $btn-hover-color;
 }
 
 .vertical__icons {
@@ -18,12 +18,12 @@
   padding: 0 100px;
 }
 .fa-stack .fa-square {
-  color: rgba(106, 183, 255, 0.5);
+  color: $base-color;
   transition: 0.3s;
 }
 
 .fa-stack:hover .fa-square {
-  color: rgba(58, 160, 255, 0.5);
+  color: $btn-hover-color;
 }
 
 .burger-icon {
@@ -33,3 +33,16 @@
     display: block;
   }
 }
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+

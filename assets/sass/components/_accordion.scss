@@ -1,0 +1,38 @@
+.accordion__item {
+    color: white;
+    background-color: $base-color;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: darken($base-color, 10%)
+    }
+}
+.accordion__question {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.accordion__item-answer {
+    font-size: 1rem;
+    // display: none;
+    transition: display 0.3s;
+    margin-top: 10px;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.accordion__item.show-text > .accordion__item-answer {
+    height: 70px;
+    
+}
+
+.accordion__question button {
+    margin-left: 10px;
+  }

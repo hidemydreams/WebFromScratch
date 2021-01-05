@@ -18,7 +18,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(142, 196, 232, 0.44);
+  background-color: $base-color;
   border-radius: 10vh;
   justify-content: space-evenly;
 }
@@ -40,17 +40,21 @@
   border: none;
   outline: none;
   border-radius: 10vh;
-  background-color: #74C7FF;
+  background-color: lighten($base-color, 10%);
   color: white;
   transition: .2s;
   }
 
   input:hover {
-    background-color: #51abff;
+    background-color:  darken($base-color, 10%)
   }
   input::placeholder {
     color: white;
   }
+}
+
+.log__btn, .reg__btn {
+  background-color: lighten($base-color, 10%);
 }
 
 // Contact PopUp CSS

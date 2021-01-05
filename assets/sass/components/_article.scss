@@ -1,0 +1,55 @@
+.about {
+    text-align: center;
+}
+
+.about_HTML p {
+    color: $text-color;
+}
+
+.about h1 {
+    font-size: 90px;
+    font-stretch: ultra-condensed;
+    font-weight: 300;
+    margin: 20px;
+    line-height: 74.1%;
+    color: $headings-color;
+}
+
+.about h3 {
+    font-size: 40px;
+    line-height: 85.6%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: $text-color;
+}
+
+.about li:before {
+    font-weight: 800;
+    color: $accent-pink;
+    content: "•";
+    padding-right: 7px;
+}
+
+.about li {
+    padding: 20px;
+}
+
+.HTML {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side_bar p:before {
+    font-weight: 800;
+    color: rgb(4, 145, 4);
+    content: "•";
+    padding-right: 7px;
+}
+
+.side_bar li:hover .side_bar a {
+    background-color: $base-color;
+}
+
+.about_items li {
+    color: $text-color;
+}
