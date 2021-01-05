@@ -1,0 +1,18 @@
+.vertical-search {
+    border: none;
+    outline: none;
+    max-width: 90px;
+    border-radius: 20px;
+    padding: 5px 22px 5px 5px;
+    color: $base-color;
+}
+
+.search-form {
+    position: relative;
+    display: none;
+    transition: 0.2s;
+}
+
+.open-search .search-form {
+    display: block;
+}

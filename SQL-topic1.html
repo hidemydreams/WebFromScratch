@@ -52,14 +52,7 @@
             <div class="vertical__bar">
                 <div class="vertical__content">
                     <div class="vertical__menu">
-                        <i class="search-btn fas fa-search"></i>
-                        <!-- Search Form -->
-                        <div class="search-form">
-                            <input class='vertical-search' type="text" placeholder='I find...'>
-                            <div class="search-close">
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </div>
+                        <i class="fas fa-search"></i>
                         <a href="index.html" class="sidebar__logo">
                             <img src="assets/img/logo.svg" alt="">
                         </a>
@@ -133,59 +126,80 @@
             </div>
 
             <!-- -------------... Section------------- -->
-            <section class="about_HTML">
+
+             <!-- -------------Article Section (SQL)------------- -->
+        
+             <section class="article">          
                 <div class="container">
-                    <div class="about">
-                        <h1> What is HTML?</h1>
-                        <h3>At the end of this topic<br> you will:</h3>
-                        <ul class="about_items">
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                        </ul>
-                        <div class="HTML">
-                            <div class="about_HTML">
-                                <h1> What is HTML?</h1>
-                                <p>Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be
-                                    dashwoods or an.</p>
-                                <p>
-                                    Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly words widow
-                                    one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly
-                                    words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods
-                                    or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education
-                                    is be dashwoods or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling
-                                    departure education is be dashwoods or an.
-                                </p>
-                                <p>
-                                    Folly words widoFolly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.w
-                                    one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly
-                                    words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods
-                                    or an.
-                                </p>
-                            </div>
-                            <div class="side_bar">
-                                <h1>HTML</h1>
-                                <p>What is HTML?</p>
-                                <ul>
-                                    <li><a>Topic1</a></li>
-                                    <li><a>Topic2</a></li>
-                                    <li><a>Topic3</a></li>
-                                    <li><a>Topic4</a></li>
-                                    <li><a>Topic5</a></li>
-                                    <li><a>Topic6</a></li>
-                                    <li><a>Topic7</a></li>
-                                    <li<a>Topic8</a>
-                                        </li>
-
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="title article_title">
+                      <h1 >What is SQL </h1>
+                       <!---- <a href="article-SQL.html" class="title article__title">What is SQL</a></li> -->
+                       <h6>At the end of this topic you will:</h6>
+                      
+                        <ul class="main-text article_title">                    
+                            <li type="disc"><span>to know basic principles SQL</span></li>                    
+                            <li type="disc"><span>make simlpe queries</span></li> 
+                            <li type="disc"><span>to know basic principles SQL</span></li>                    
+                            <li type="disc"><span>make simlpe queries</span></li> 
+                          </ul>
+    
                     </div>
+    
+                    <div class="main-text article_right_menu">
+    
+                        <ul class="article_menu1">    
+                        <li type="disc" class="article_li"><a href="article-SQL.html" class="mainmenu1">SQL History</a></li>                    
+                        <li type="disc" class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic1</a></li>                    
+                        <li type="disc" class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic2</a></li>                    
+                        <li type="disc" class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic3</a></li>                    
+                        <li class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic4</a></li>                    
+                        <li class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic5</a></li>                    
+                        <li class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic6</a></li>                              
+                        </ul>
+                        
+                    </div>
+                        
+                    <div class="article_topic">
+                        <h3 class="topic">SQL Lesson 1: SELECT queries</h3>
+                        
+                        <p class="desc article__text"> 
+                    
+                         SQL Lesson 1: SELECT queries 101
 
-                </div>
-            </section>
+                        To retrieve data from a SQL database, we need to write SELECT statements, which are often colloquially refered to as queries. A query in itself is just a statement which declares what data we are looking for, where to find it in the database, and optionally, how to transform it before it is returned. It has a specific syntax though, which is what we are going to learn in the following exercises.
+                        
+                        As we mentioned in the introduction, you can think of a table in SQL as a type of an entity (ie. Dogs), and each row in that table as a specific instance of that type (ie. A pug, a beagle, a different colored pug, etc). This means that the columns would then represent the common properties shared by all instances of that entity (ie. Color of fur, length of tail, etc).
+                        
+                        And given a table of data, the most basic query we could write would be one that selects for a couple columns (properties) of the table with all the rows (instances).
+                        Select query for a specific columns
+                        SELECT column, another_column, …
+                        FROM mytable;
+                        
+                        The result of this query will be a two-dimensional set of rows and columns, effectively a copy of the table, but only with the columns that we requested.
+                        
+                        If we want to retrieve absolutely all the columns of data from a table, we can then use the asterisk (*) shorthand in place of listing all the column names individually.
+                        Select query for all columns
+                        SELECT * 
+                        FROM mytable;
+                        
+                        This query, in particular, is really useful because it's a simple way to inspect a table by dumping all the data at once.
+                    </p>
+
+
+                    
+                 </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
 
         </main>
 

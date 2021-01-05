@@ -52,14 +52,7 @@
             <div class="vertical__bar">
                 <div class="vertical__content">
                     <div class="vertical__menu">
-                        <i class="search-btn fas fa-search"></i>
-                        <!-- Search Form -->
-                        <div class="search-form">
-                            <input class='vertical-search' type="text" placeholder='I find...'>
-                            <div class="search-close">
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </div>
+                        <i class="fas fa-search"></i>
                         <a href="index.html" class="sidebar__logo">
                             <img src="assets/img/logo.svg" alt="">
                         </a>
@@ -133,59 +126,99 @@
             </div>
 
             <!-- -------------... Section------------- -->
-            <section class="about_HTML">
+
+             <!-- -------------Article Section (SQL)------------- -->
+        
+             <section class="article">          
                 <div class="container">
-                    <div class="about">
-                        <h1> What is HTML?</h1>
-                        <h3>At the end of this topic<br> you will:</h3>
-                        <ul class="about_items">
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                            <li>Understand the main lorem ipsum</li>
-                        </ul>
-                        <div class="HTML">
-                            <div class="about_HTML">
-                                <h1> What is HTML?</h1>
-                                <p>Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be
-                                    dashwoods or an.</p>
-                                <p>
-                                    Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly words widow
-                                    one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly
-                                    words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods
-                                    or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education
-                                    is be dashwoods or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling
-                                    departure education is be dashwoods or an.
-                                </p>
-                                <p>
-                                    Folly words widoFolly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.w
-                                    one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly
-                                    words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods
-                                    or an.
-                                </p>
-                            </div>
-                            <div class="side_bar">
-                                <h1>HTML</h1>
-                                <p>What is HTML?</p>
-                                <ul>
-                                    <li><a>Topic1</a></li>
-                                    <li><a>Topic2</a></li>
-                                    <li><a>Topic3</a></li>
-                                    <li><a>Topic4</a></li>
-                                    <li><a>Topic5</a></li>
-                                    <li><a>Topic6</a></li>
-                                    <li><a>Topic7</a></li>
-                                    <li<a>Topic8</a>
-                                        </li>
-
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="title article_title">
+                      <h1 >What is SQL </h1>
+                       <!---- <a href="article-SQL.html" class="title article__title">What is SQL</a></li> -->
+                       <h6>At the end of this topic you will:</h6>
+                      
+                        <ul class="main-text article_title">                    
+                            <li type="disc"><span>to know basic principles SQL</span></li>                    
+                            <li type="disc"><span>make simlpe queries</span></li> 
+                            <li type="disc"><span>to know basic principles SQL</span></li>                    
+                            <li type="disc"><span>make simlpe queries</span></li> 
+                          </ul>
+    
                     </div>
+    
+                    <div class="main-text article_right_menu">
+    
+                        <ul class="article_menu1">    
+                        <li type="disc" class="article_li"><a href="article-SQL.html" class="mainmenu1">SQL History</a></li>                    
+                        <li type="disc" class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic1</a></li>                    
+                        <li type="disc" class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic2</a></li>                    
+                        <li type="disc" class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic3</a></li>                    
+                        <li class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic4</a></li>                    
+                        <li class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic5</a></li>                    
+                        <li class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic6</a></li>                              
+                        </ul>
+                        
+                    </div>
+                    
+                <div class="article_topic">
+                    <h3 class="topic">SQL Topic 3</h3>
+                    
+                    <p class="desc article__text"> 
+                        SQL Lesson 3: Filtering and sorting Query results
+                        
+                        Even though the data in a database may be unique, the results of any particular query may not be – take our Movies table for example, many different movies can be released the same year. In such cases, SQL provides a convenient way to discard rows that have a duplicate column value by using the DISTINCT keyword.
+                        Select query with unique results
+                        SELECT DISTINCT column, another_column, …
+                        FROM mytable
+                        WHERE condition(s);
+                        
+                        Since the DISTINCT keyword will blindly remove duplicate rows, we will learn in a future lesson how to discard duplicates based on specific columns using grouping and the GROUP BY clause.
+                        Ordering results
+                        
+                        Unlike our neatly ordered table in the last few lessons, most data in real databases are added in no particular column order. As a result, it can be difficult to read through and understand the results of a query as the size of a table increases to thousands or even millions rows.
+                        
+                        To help with this, SQL provides a way to sort your results by a given column in ascending or descending order using the ORDER BY clause.
+                        Select query with ordered results
+                        SELECT column, another_column, …
+                        FROM mytable
+                        WHERE condition(s)
+                        ORDER BY column ASC/DESC;
+                        
+                        When an ORDER BY clause is specified, each row is sorted alpha-numerically based on the specified column's value. In some databases, you can also specify a collation to better sort data containing international text.
+                        Limiting results to a subset
+                        
+                        Another clause which is commonly used with the ORDER BY clause are the LIMIT and OFFSET clauses, which are a useful optimization to indicate to the database the subset of the results you care about.
+                        The LIMIT will reduce the number of rows to return, and the optional OFFSET will specify where to begin counting the number rows from.
+                        Select query with limited rows
+                        SELECT column, another_column, …
+                        FROM mytable
+                        WHERE condition(s)
+                        ORDER BY column ASC/DESC
+                        LIMIT num_limit OFFSET num_offset;
+                        
+                        If you think about websites like Reddit or Pinterest, the front page is a list of links sorted by popularity and time, and each subsequent page can be represented by sets of links at different offsets in the database. Using these clauses, the database can then execute queries faster and more efficiently by processing and returning only the requested content.
+                        Did you know?
+                        
+                        If you are curious about when the LIMIT and OFFSET are applied relative to the other parts of a query, they are generally done last after the other clauses have been applied. We'll touch more on this in Lesson 12: Order of execution after introducting a few more parts of the query.
+                        Exercise
+                        
+                        There are a few concepts in this lesson, but all are pretty straight-forward to apply. To spice things up, we've gone and scrambled the Movies table for you in the exercise to better mimic what kind of data you might see in real life. Try and use the necessary keywords and clauses introduced above in your queries.
+                         </p>
 
-                </div>
-            </section>
+
+                    
+                 </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
 
         </main>
 
