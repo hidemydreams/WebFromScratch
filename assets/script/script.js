@@ -116,6 +116,29 @@ questions.forEach((question) => {
   })
 })
 
+// Tabs For FullPage Registration
+
+let signUpBtn = document.querySelector('.sign-up__tab');
+let logInBtn = document.querySelector('.login__tab');
+let loginContent = document.querySelector('.login__form');
+let signUpContent = document.querySelector('.signup__form');
+
+if (signUpContent) {
+  signUpBtn.addEventListener('click', () => {
+    logInBtn.style.backgroundColor = '#52aee2';
+    signUpBtn.style.backgroundColor = '#269adb';
+    loginContent.style.display = 'none';
+    signUpContent.style.display = 'flex';
+  })
+  
+  logInBtn.addEventListener('click', () => {
+    logInBtn.style.backgroundColor = '#269adb';
+    signUpBtn.style.backgroundColor = '#52aee2';
+    loginContent.style.display = 'flex';
+    signUpContent.style.display = 'none';
+  })
+  
+}
 
 
 
