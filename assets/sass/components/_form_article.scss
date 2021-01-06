@@ -1,0 +1,66 @@
+.form_article {
+    background-color: rgba(151, 218, 255, 1);
+    border: none;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_article p {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    color: $text-color;
+}
+
+.form_article input {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+    padding: 10px 0px 10px 10px;
+    outline: none;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    transition: border-bottom 0.2s;
+}
+
+.form_article textarea {
+    background-color: transparent;
+    font-weight: 600;
+    border: 2px solid white;
+    padding: 10px 0px 10px 10px;
+    outline: none;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    transition: border-bottom 0.2s;
+    height: 200px;
+}
+
+.btn_article {
+    position: relative;
+}
+
+.btn_article button {
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    justify-self: center;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 36px;
+    background-color: $base-color;
+    position: absolute;
+    left: 45%;
+    top: -90px;
+}
+
+.btn_article button:hover {
+    transform: scale(1.01);
+    background-color: $btn-hover-color;
+}
