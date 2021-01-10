@@ -7,11 +7,12 @@
 }
 
 .rating-area p {
-    text-align: center;
+    padding-left: 28%;
     font-size: 24px;
     padding-top: 10px;
     padding-bottom: 20px;
     color: $text-color;
+    text-indent: 0px;
 }
 
 .rating-area:not(:checked)>input {
