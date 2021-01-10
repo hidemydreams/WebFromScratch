@@ -3,73 +3,66 @@
   background-image: url(/assets/img/bg-png.png);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 .hero__content {
   display: flex;
-  left: 9vh;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-35%);
+  margin-left: 70px;
+  margin-top: 20px;
 
   @media (max-width: $medium) {
-    position: relative;
-    width: 100%;
-    text-align: center;
     justify-content: center;
-    top: 20%;
+    text-align: center;
     margin-top: 100px;
+  }
+
+  @media (max-width: $small) {
+    margin-top: 120px;
   }
 
   @media (max-width: $smallest) {
-    font-size: 10vh;
-    margin-top: 100px;
-  }
-}
-
-.hero__text {
-  max-width: 60vh;
-
-  @media (max-width: $medium) {
-    width: 100%;
-    max-width: 100%;
+    margin-top: 40px;
   }
 }
 
 .hero__title {
-  font-size: 14vh;
+  font-size: 5rem;
   line-height: 0.8;
   color: $headings-color;
-  margin-bottom: 2.5vh;
+  max-width: 400px;
+  margin-bottom: 20px;
   font-weight: 300;
 
+  @media (max-width: $medium) {
+    width: 100%;
+    max-width: initial;
+  }
   @media (max-width: $smallest) {
-    font-size: 10vh;
+    font-size: 4rem;
   }
 }
 
 .hero__desc {
   color: $text-color;
-  font-size: 3.5vh;
-  margin-bottom: 4vh;
-  max-width: 50vh;
-  font-weight: 300;
+  font-size: 1.5rem;
+  max-width: 400px;
+  margin-bottom: 30px;
 
   @media (max-width: $medium) {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 4vh;
+    width: 100%;
+    max-width: initial;
   }
+  
 }
 
 .hero__btn {
-  font-size: 6vh;
-  padding: 2vh 3vh;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
   color: white;
-  border-radius: 10vh;
+  border-radius: 2rem;
   white-space: nowrap;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  align-self: flex-start;
 
   &:hover {
     background-color: $btn-hover-color;
@@ -84,8 +77,8 @@
 .hero__img {
   align-self: center;
   justify-self: center;
-  margin-left: 10vh;
   animation-name: img-float;
+  margin-left: 30px;
   animation-duration: 1s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -94,7 +87,7 @@
 }
 
 .hero__img img {
-  max-width: 120vh;
+  max-width: 700px;
   width: 100%;
 
   @media (max-width: $medium) {
