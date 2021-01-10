@@ -13,6 +13,11 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- -----STYLE.CSS---- -->
     <link rel="stylesheet" href="assets/style/style.css">
+    <!-- ANIMATE CSS  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- -----FAVICON-------- -->
     <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico">
     <title>WebFromScratch</title>
@@ -50,7 +55,7 @@
                     <a href="#!" class="nav__reg">Sign Up</a>
                 </div>
             </nav>
-            <div class="vertical__bar">
+            <div class="vertical__bar animate__animated animate__fadeInLeft animate__delay-1s">
                 <div class="vertical__content">
                     <div class="vertical__menu">
                         <i class="search-btn fas fa-search"></i>
@@ -239,6 +244,10 @@
     <!-- ------JS SCRIPT------ -->
 
     <script src='assets/script/script.js'>
+    </script>
+    <script src="assets/script/wow.min.js"></script>
+    <script>
+    new WOW().init();
     </script>
 </body>
 

@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- -----STYLE.CSS---- -->
     <link rel="stylesheet" href="assets/style/style.css">
+    <!-- ANIMATE CSS  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- -----FAVICON-------- -->
     <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico">
     <title>WebFromScratch</title>
@@ -49,7 +54,7 @@
                 </div>
             </nav>
 
-            <div class="vertical__bar">
+            <div class="vertical__bar animate__animated animate__fadeInLeft animate__delay-1s">
                 <div class="vertical__content">
                     <div class="vertical__menu">
                         <i class="fas fa-search"></i>
@@ -140,10 +145,9 @@
                     <div class="cards_item">
                         <div class="card">
                             <div class="front">
-                                <a href=" ">
+                                <a href="html-page.html">
                                     <h1> HTML</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
-                                        nulla non.
+                                    <p>HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications.
                                     </p>
                                 </a>
                             </div>
@@ -151,12 +155,15 @@
                                 <button class="view">VIEW</button>
                             </div>
                         </div>
+
+
+
                         <div class="card ">
                             <div class="front">
-                                <a href=" ">
+                                <a href="css-page.html">
                                     <h1> CSS</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
-                                        nulla non.
+                                    <p>
+                                        CSS stands for Cascading Style Sheets. It is the coding language that gives a website its look and layout. Along with HTML, CSS is fundamental to web design. Without it, websites would still be plain text on white backgrounds.
                                     </p>
                                 </a>
                             </div>
@@ -164,12 +171,14 @@
                                 <button class="view">VIEW</button>
                             </div>
                         </div>
+
+
+
                         <div class="card ">
                             <div class="front">
-                                <a href=" ">
+                                <a href="js-page.html">
                                     <h1> JS</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
-                                        nulla non.
+                                    <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user.
                                     </p>
                                 </a>
                             </div>
@@ -177,29 +186,30 @@
                                 <button class="view">VIEW</button>
                             </div>
                         </div>
+
+
+
                         <div class="card ">
                             <div class="front">
                                
                                     <h1>SQL</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
-                                        nulla non.
-
+                                    <p>Structured Query Language, commonly known as SQL, is a standard programming language for relational databases. Despite being older than many other types of code, it is the most widely implemented database language.
                                     </p>
                                 
                             </div>
-                            <a href="article-SQL.html" >
+                            <a href="sql-page.html" >
                             <div class="back">
                                 <button class="view">VIEW</button>
                             </div>
                             </a>
                         </div>
-                        <div class="card ">
-                            <div class="front">
-                                <a href=" ">
-                                    <h1> JS</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
-                                        nulla non.
 
+
+                        <div class="card">
+                            <div class="front">
+                                <a href="basic-page.html">
+                                    <h1>Basic</h1>
+                                    <p>Learn the basics of computer programming to truly understand what stays behind multiple processes.
                                     </p>
                                 </a>
                             </div>
@@ -207,13 +217,14 @@
                                 <button class="view">VIEW</button>
                             </div>
                         </div>
+
+
+
                         <div class="card ">
                             <div class="front">
-                                <a href=" ">
-                                    <h1> JS</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde error mollitia facere magni commodi molestias? Error, rerum fugiat harum reprehenderit sapiente unde tenetur cumque recusandae molestias doloribus, enim
-                                        nulla non.
-
+                                <a href="git-page.html">
+                                    <h1>Git</h1>
+                                    <p>Git is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.
                                     </p>
                                 </a>
                             </div>
@@ -224,8 +235,6 @@
                     </div>
                 </div>
             </section>
-
-
         </main>
 
 
@@ -301,6 +310,10 @@
     <!-- ------JS SCRIPT------ -->
 
     <script src='assets/script/script.js'>
+    </script>
+    <script src="assets/script/wow.min.js"></script>
+    <script>
+    new WOW().init();
     </script>
 </body>
 

@@ -39,19 +39,10 @@ outsidePopUp.forEach((modal) => {
 
 let burgerBtn = document.querySelector('.burger-icon');
 let sidebar = document.querySelector('.vertical__bar');
-let icons = document.querySelector('.vertical__icons');
-let verticalContent = document.querySelector('.vertical__menu');
-let burgerMenu = document.querySelector('.burger__list');
-let registration = document.querySelector('.registration');
 
 burgerBtn.addEventListener('click', () => {
   sidebar.classList.toggle('burger');
-  icons.classList.toggle('burger');
-  verticalContent.classList.toggle('burger');
-  burgerMenu.classList.toggle('burger');
-  registration.classList.toggle('burger');
 })
-
 
 // Search Button
 
