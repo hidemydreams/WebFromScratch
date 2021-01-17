@@ -120,14 +120,14 @@ if (signUpContent) {
 }
 
 
-$(window).scroll(function(){
-  if ($(window).scrollTop() > 1) {
-      $('.side_bar').addClass('fixed_side_bar');
-  }
-  else {
-      $('.side_bar').removeClass('fixed_side_bar');
-  }
-});
+// $(window).scroll(function(){
+//   if ($(window).scrollTop() > 1) {
+//       $('.side_bar').addClass('fixed_side_bar');
+//   }
+//   else {
+//       $('.side_bar').removeClass('fixed_side_bar');
+//   }
+// });
 
 
 
