@@ -11,7 +11,15 @@
       list-style: none;
       background-color: $base-color;
       margin-top: 40px;
+   
   }
+
+  .fixed_side_bar {
+   top: 2em;
+  position: sticky;
+  opacity: .4;
+   //top: 0;
+}
   
   .side_bar ul {
       display: flex;

@@ -1,4 +1,4 @@
-// PopUp Windows for Login And Registration
+v// PopUp Windows for Login And Registration
 
 let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
@@ -132,6 +132,14 @@ if (signUpContent) {
 }
 
 
+$(window).scroll(function(){
+  if ($(window).scrollTop() > 1) {
+      $('.side_bar').addClass('fixed_side_bar');
+  }
+  else {
+      $('.side_bar').removeClass('fixed_side_bar');
+  }
+});
 
 
 
