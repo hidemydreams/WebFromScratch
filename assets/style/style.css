@@ -1845,4 +1845,16 @@ span {
   text-align: center;
 }
 
+.messageDialog img {
+  height: 70px;
+  width: 70px;
+  right: 50px;
+  position: absolute;
+  transform: scale(1.01);
+}
+
+.messageDialog img:hover {
+  transform: scale(1.2);
+}
+
 /*# sourceMappingURL=style.css.map */

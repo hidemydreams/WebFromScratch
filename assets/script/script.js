@@ -131,7 +131,7 @@ if (signUpContent) {
   
 }
 
-
+//fixed side_bar with scroll
 $(window).scroll(function(){
   if ($(window).scrollTop() > 1) {
       $('.side_bar').addClass('fixed_side_bar');
@@ -140,6 +140,8 @@ $(window).scroll(function(){
       $('.side_bar').removeClass('fixed_side_bar');
   }
 });
+
+
 
 
 
