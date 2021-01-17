@@ -3,9 +3,9 @@ let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
 let loginPopUp = document.querySelector('.log__popup');
 let regPopUp = document.querySelector('.reg__popup');
-let outsidePopUp = document.querySelectorAll('.popup')
-let sidebarLogin = document.querySelector('.burger__log')
-let sidebarReg = document.querySelector('.burger__reg')
+let outsidePopUp = document.querySelectorAll('.popup');
+let sidebarLogin = document.querySelector('.burger__log');
+let sidebarReg = document.querySelector('.burger__reg');
 
  if (loginBtn) {
   loginBtn.addEventListener('click', () => {
@@ -128,7 +128,7 @@ starBtns.forEach((starBtn) => {
     })
 })
 let ratingBtn = document.querySelector('.btn_rating');
-ratingBtn.addEventListener('click', () => {
+    ratingBtn.addEventListener('click', () => {
     modalComment.style.display = 'none';
 })
 
@@ -147,17 +147,6 @@ let quitBtn = document.querySelector('.btn_quit');
 quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
-
-
-
-// $(window).scroll(function(){
-//   if ($(window).scrollTop() > 1) {
-//       $('.side_bar').addClass('fixed_side_bar');
-//   }
-//   else {
-//       $('.side_bar').removeClass('fixed_side_bar');
-//   }
-// });
 
 //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
