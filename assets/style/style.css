@@ -1579,6 +1579,12 @@ button:hover {
   margin-top: 40px;
 }
 
+.fixed_side_bar {
+  top: 2em;
+  position: sticky;
+  opacity: 0.4;
+}
+
 .side_bar ul {
   display: flex;
   flex-direction: row;
