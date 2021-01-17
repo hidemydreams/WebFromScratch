@@ -37,7 +37,6 @@
     
     .rating-area>input:checked~label {
         color: gold;
-        text-shadow: 1px 1px #c60;
     }
     
     .rating-area:not(:checked)>label:hover,
