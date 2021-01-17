@@ -1234,71 +1234,282 @@ button {
   display: block;
 }
 
-.form_article {
+/*----------Pop Up Raiting------------*/
+.popup_rating {
+  /*display: none;*/
   background-color: #97daff;
   border: none;
-  border-radius: 10px;
-  max-width: 600px;
+  border-radius: 30px;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
   padding: 20px;
+}
+
+.popup_rating_popup {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-.form_article p {
+.popUp_rat {
+  font-size: 2rem;
+}
+
+.popup_text {
+  width: 40%;
   text-align: center;
-  font-size: 24px;
-  padding-top: 10px;
-  color: #4f91d9;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
-.form_article input {
-  border: none;
-  background-color: transparent;
-  font-weight: 600;
-  border-bottom: 2px solid white;
-  padding: 10px 0px 10px 10px;
-  outline: none;
-  margin-bottom: 30px;
-  font-size: 1.3rem;
-  transition: border-bottom 0.2s;
-}
-
-.form_article textarea {
-  background-color: transparent;
-  font-weight: 600;
-  border: 2px solid white;
-  padding: 10px 0px 10px 10px;
-  outline: none;
-  margin-bottom: 30px;
-  font-size: 1.3rem;
-  transition: border-bottom 0.2s;
-  height: 200px;
-}
-
-.btn_article {
-  position: relative;
-}
-
-.btn_article button {
+.ok {
   text-transform: uppercase;
   border: none;
   color: white;
   justify-self: center;
-  padding: 10px 20px;
-  font-size: 2rem;
+  padding: 5px 40px;
+  font-size: 1.5rem;
   border-radius: 36px;
   background-color: #52aee2;
-  position: absolute;
-  left: 45%;
-  top: -90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.btn_article button:hover {
+/*----------------------Pop Up Comments--------------------------------*/
+.popup_comments_popup {
+  /*display: none;*/
+  background-color: #97daff;
+  border: none;
+  border-radius: 30px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.popup_comments_popup h3 {
+  font-size: 24px;
+  padding-top: 5px;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.comments {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.name_comment {
+  border: none;
+  background-color: transparent;
+  border-bottom: 4px solid white;
+  padding: 10px 0px 0px 10px;
+  outline: none;
+  transition: border-bottom 0.2s;
+  width: 15%;
+  margin-right: 5px;
+  color: #001937;
+}
+
+.message_comment {
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 10px 0px 10px 10px;
+  outline: none;
+  transition: border-bottom 0.2s;
+  width: 85%;
+  color: #001937;
+}
+
+.btn_article {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.button_article {
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  justify-self: center;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  border-radius: 36px;
+  background-color: #52aee2;
+}
+
+button:hover {
   transform: scale(1.01);
   background-color: #269adb;
+}
+
+.your_comments {
+  border: 4px solid white;
+  overflow-y: scroll;
+  height: 200px;
+  color: white;
+}
+
+.your_comments::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.commentor {
+  text-align: center;
+  width: 20%;
+  margin-right: 10px;
+  border-right: 4px solid #52aee2;
+  padding-top: 15px;
+}
+
+.comment:hover {
+  border: 4px solid #52aee2;
+}
+
+.btn_quit {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 43%;
+}
+
+.button_quit {
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  justify-self: center;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  border-radius: 36px;
+  background-color: #52aee2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button_quit a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn_quit button:hover {
+  transform: scale(1.01);
+  background-color: #269adb;
+}
+
+/*-------popup_tasks__popup--------------*/
+.popup_tasks_popup {
+  display: none;
+  background-color: #97daff;
+  border: none;
+  border-radius: 30px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.pop_up_title {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.popup_tasks_popup h4 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btn_quit_task {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.button_quit_task {
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  justify-self: center;
+  padding: 5px 20px;
+  font-size: 1.5rem;
+  border-radius: 36px;
+  background-color: #52aee2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button_quit_task a {
+  color: white;
+  text-decoration: none;
+}
+
+.task:hover {
+  border: 4px solid #52aee2;
+}
+
+.mistakes_pop_up {
+  display: none;
+  background-color: #97daff;
+  border: none;
+  border-radius: 30px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.pop_up_mistakes {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.mistakes {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.email {
+  width: 40%;
+  margin-bottom: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 10px 0px 0px 10px;
+  margin-right: 5px;
+  color: #001937;
+}
+
+.message {
+  margin-bottom: 15px;
+  order: none;
+  background-color: transparent;
+  border-bottom: 4px solid white;
+  padding: 10px 0px 0px 10px;
+  border: 2px solid white;
+  color: #001937;
 }
 
 .rating-area {
@@ -1361,17 +1572,23 @@ button {
 }
 
 /*  .about li::before {
-      content: "";
-      background: $accent-pink;
-      border-radius: 1ch;
-      padding-inline: 1ch;
-      margin-inline-end: 1ch;
-      font-size: 50%;
-  }*/
+       content: "";
+       background: $accent-pink;
+       border-radius: 1ch;
+       padding-inline: 1ch;
+       margin-inline-end: 1ch;
+       font-size: 50%;
+   }*/
 .side_bar {
   list-style: none;
   background-color: #52aee2;
   margin-top: 40px;
+}
+
+.fixed_side_bar {
+  top: 2em;
+  position: sticky;
+  opacity: 0.4;
 }
 
 .side_bar ul {
@@ -1822,7 +2039,7 @@ span {
   padding: 10px;
 }
 
-.about_HTML p {
+.html {
   color: #4f91d9;
   text-align: justify;
   text-indent: 15px;

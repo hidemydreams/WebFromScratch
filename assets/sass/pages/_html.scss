@@ -19,7 +19,7 @@
          padding: 10px;
      }
      
-     .about_HTML p {
+     .html {
          color: $text-color;
          text-align: justify;
          text-indent: 15px;
@@ -33,5 +33,6 @@
          color: $text-color;
          text-align: center;
      }
-     
+        
+
      @media (max-width: $smallest) {}
