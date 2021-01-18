@@ -1,8 +1,7 @@
 .vertical__bar {
   height: 100vh;
   background-color:rgba(82, 174, 226, 0.6);
-  width: 6vh;
-  position: absolute;
+  width: 40px;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -10,9 +9,11 @@
   position: fixed;
   transition: 0.5s;
 
-  // @media (max-width: $smallest) {
-  //   width: 5vh;
-  // }
+  @media (max-width: $smallest) {
+    height: 35px;
+    width: 100%;
+    bottom: 0;
+  }
 
 }
 
@@ -26,20 +27,31 @@
   height: 100%;
   justify-content: space-between;
   align-items: center;
+
+//   @media (max-width: $smallest) {
+//     height: initial;
+//  }
 }
 
 
 .vertical__menu{
- height: 30%;
-justify-content: space-evenly;
+  justify-content: space-between;
  display: flex;
  flex-direction: column;
  align-items: center;
+ margin-top: 10px;
+ height: 100px;
+ @media (max-width: $smallest) {
+   flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 7px;
+  height: 20px;
+}
 }
 
  .sidebar__logo img {
    max-width: 35px;
-
    display: none;
 
  @media (max-width: $small) {
@@ -54,3 +66,25 @@ justify-content: space-evenly;
   justify-content: space-between;
   width: 30%;
  }
+
+.vertical__icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 4px;
+  background-color:rgba(172, 208, 243, 0.52);
+  min-height: 300px;
+  justify-content: space-evenly;
+  padding: 0 100px;
+
+  @media (max-width: $smallest) {
+    display: none;
+  }
+}
+.fa-stack .fa-square {
+  color: $base-color;
+  transition: 0.3s;
+}
+
+.fa-stack:hover .fa-square {
+  color: $btn-hover-color;
+}

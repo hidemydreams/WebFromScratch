@@ -4,28 +4,15 @@
   color: white;
   transition: 0.3s;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .vertical__menu i:hover {
-  color: $btn-hover-color;
-}
-
-.vertical__icons {
-  display: flex;
-  flex-direction: column;
-  font-size: 4px;
-  background-color:rgba(172, 208, 243, 0.52);
-  min-height: 300px;
-  justify-content: space-evenly;
-  padding: 0 100px;
-}
-.fa-stack .fa-square {
   color: $base-color;
-  transition: 0.3s;
 }
 
-.fa-stack:hover .fa-square {
-  color: $btn-hover-color;
+.close-burger {
+  display: none;
 }
 
 // Burger Icon
@@ -51,17 +38,16 @@
 .show-text .plus-icon {
   display: none;
 }
-
-
 // Search Btn
 
 .search-close i {
-  color: $base-color;
+  color: white;
   font-size: 20px;
   position: absolute;
-  right: 5px;
+  right: 10px;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 

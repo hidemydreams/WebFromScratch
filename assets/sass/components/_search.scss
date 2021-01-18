@@ -1,18 +1,38 @@
-.vertical-search {
+.search-input {
     border: none;
     outline: none;
-    max-width: 90px;
+    max-width: 200px;
     border-radius: 20px;
-    padding: 5px 22px 5px 5px;
-    color: $base-color;
+    padding: 10px 22px 10px 10px;
+    color: white;
+    background-color: $base-color;
+    opacity: 0.5;
+    transition: 0.3s;
+
+
+    &::placeholder {
+        color: white;
+    }
+
+    &:hover, &:active, &:focus {
+        opacity: 1;
+    }
 }
 
 .search-form {
-    position: relative;
-    display: none;
-    transition: 0.2s;
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
 }
 
-.open-search .search-form {
-    display: block;
+.open-search.search-form {
+    height: auto;
+    top: 20px;
+    transition: 0.4s;
+
+    @media (max-width: $smallest) {
+        top: 40px;
+      }
 }

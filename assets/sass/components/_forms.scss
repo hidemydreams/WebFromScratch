@@ -1,54 +1,52 @@
 .form {
-  background-color: transparent;
-  border: 2px solid $base-color;
-  border-radius: 10px;
-  max-width: 850px;
-  margin: 0 auto;
   padding: 20px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
   position: relative;
-  margin-bottom: 100px;
-
+  margin-bottom: 40px;
   @media (max-width: $smallest) {
     display: flex;
     flex-direction: column;
   }
+  text-align: center;
 }
 
 .form input, .form textarea {
-  border: none;
   background-color: transparent;
-  font-weight: 600;
-  border-bottom: 2px solid $base-color;
+  font-weight: 300;
   padding: 10px 0px 10px 10px;
   outline: none;
   margin-bottom: 30px;
-  font-size: 1.3rem;
-  transition: border-bottom 0.2s;
-
-  &:focus {
-    border-bottom: 4px solid $btn-hover-color;
-  }
+  font-size: 1rem;
+  color: $base-color;
 }
 
 .form input::placeholder, .form textarea::placeholder {
-  font-weight: 600;
+  font-weight: 300;
+  color: $base-color;
 }
 
 .form__name {
-  grid-column: 1/2;
-}
-
-.form__subject {
-  grid-row: 2/3;
-  grid-column: 1/2;
+  border: none;
+  border-bottom: 1px solid $base-color;
 }
 
 .form__email {
-  grid-row: 3/4;
-  grid-column: 1/2;
+  border: none;
+  border-bottom: 1px solid $base-color;
+}
+
+.form__message {
+  display: block;
+  resize: none;
+  font-weight: 600;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid $base-color;
+
+
+  @media (max-width: $smallest) {
+    margin-bottom: 30px;
+  }
 }
 
 .form__btn {
@@ -57,33 +55,12 @@
   color: white;
   justify-self: center;
   padding: 10px 60px;
-  font-size: 2rem;
+  font-size: 1rem;
   border-radius: 36px;
   transition: transform 0.1s ease-in, background-color 0.1s ease;
-
-  @media (max-width: $smallest) {
-    grid-row: 5/6;
-  grid-column: 1/2;
-  align-self: center;
-  }
 }
 
 .form__btn:hover {
   transform: scale(1.01);
   background-color: $btn-hover-color;
-}
-
-.form__message {
-  resize: none;
-  grid-row: 1/4;
-  grid-column: 2/4;
-  font-family: $text-color;
-  font-weight: 600;
-  border: 2px solid black;
-
-  @media (max-width: $smallest) {
-    grid-row: 4/6;
-    grid-column: 1/2;
-    margin-bottom: 30px;
-  }
 }

@@ -1,8 +1,12 @@
 .hero-section {
   height: 100vh;
-  background-image: url(/WebFromScratch/assets/img/bg-png.png);
+  // background-image: url(/WebFromScratch/assets/img/bg-png.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (max-width: $smallest) {
+    height: auto;
+  }
 }
 
 .hero__content {
@@ -11,8 +15,6 @@
   margin-top: 20px;
 
   @media (max-width: $medium) {
-    justify-content: center;
-    text-align: center;
     margin-top: 100px;
   }
 
@@ -21,7 +23,10 @@
   }
 
   @media (max-width: $smallest) {
-    margin-top: 40px;
+    align-items: flex-start;
+    padding: 0 15px;
+    margin-top: 80px;
+    margin-left: 0px;
   }
 }
 
@@ -39,7 +44,7 @@
   }
 
   @media (max-width: $smallest) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -51,7 +56,11 @@
 
   @media (max-width: $medium) {
     width: 100%;
-    max-width: initial;
+  }
+
+  @media (max-width: $smallest) {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
   }
 
 }
@@ -70,8 +79,7 @@
   }
 
   @media (max-width: $smallest) {
-    padding: 15px 30px;
-    font-size: 30px;
+    font-size: 1rem;
   }
 }
 
