@@ -1363,7 +1363,7 @@ button:hover {
 }
 
 .comment:hover {
-  border: 4px solid #52aee2;
+  /* border: 4px solid $headings-color;*/
 }
 
 .btn_quit {
@@ -1483,7 +1483,7 @@ button:hover {
 }
 
 .link_popups:hover {
-  border: 4px solid #52aee2;
+  /*border: 4px solid $headings-color;*/
 }
 
 .link_popups a {
@@ -1553,6 +1553,14 @@ button:hover {
   position: relative;
 }
 
+/*  .about li::before {
+       content: "";
+       background: $accent-pink;
+       border-radius: 1ch;
+       padding-inline: 1ch;
+       margin-inline-end: 1ch;
+       font-size: 50%;
+   }*/
 .side_bar {
   list-style: none;
   background-color: #52aee2;

@@ -1,4 +1,4 @@
-v// PopUp Windows for Login And Registration
+// PopUp Windows for Login And Registration
 
 let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
@@ -162,27 +162,23 @@ quitBtn.addEventListener('click', () => {
 
 
 
-$(window).scroll(function(){
-  if ($(window).scrollTop() > 1) {
-      $('.side_bar').addClass('fixed_side_bar');
-  }
-  else {
-      $('.side_bar').removeClass('fixed_side_bar');
-  }
-});
+
 
 //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
-
+console.log(tasksBtn);
 tasksBtn.addEventListener('click', (e) => {
     e.preventDefault()
     tasksModal.style.display = 'block';
 })
+
 let taskBtnQuit = document.querySelector('.btn_tasks');
-taskBtnQuit.addEventListener('click', () => {
-    tasksModal.style.display = 'none';
-})
+if (taskBtnQuit) {
+    taskBtnQuit.addEventListener('click', () => {
+        tasksModal.style.display = 'none';
+    })
+}
 
 
 
