@@ -71,16 +71,18 @@
 }
 
 .header__reg a, .header__reg span {
-  color: white;
+  color: $base-color;
 }
 
 .nav__registration {
   white-space: nowrap;
-  background-color: $base-color;
   padding: 10px;
-  color: white;
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: $base-color;
   font-size: 20px;
+
+  span {
+    color: $text-color;
+  }
 
   @media (max-width: $small) {
     display: none;
@@ -88,20 +90,8 @@
 
 }
 
-.nav__registration:hover {
-  transform: scale(1.05);
-  background-color: darken($base-color, 10%)
-}
-
 .nav__registration a{
-  color: white;
+  color: $text-color;
   text-decoration: none;
-}
 
-.nav__login:hover {
-  color: darken(white, 10%)
-}
-
-.nav__reg:hover {
-  color:  darken(white, 10%);
 }

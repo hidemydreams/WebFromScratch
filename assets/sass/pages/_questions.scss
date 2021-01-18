@@ -1,3 +1,9 @@
+.questions__title {
+  @media (max-width: $smallest) {
+    margin-top: 20px;
+  }
+}
+
 .questions__desc {
   max-width: 800px;
   margin: 20px 0px;

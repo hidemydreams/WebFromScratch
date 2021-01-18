@@ -5,6 +5,10 @@ body {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* -----SCROLLBAR STYLE------ */
 
 ::-webkit-scrollbar {
@@ -33,6 +37,10 @@ body {
     width: 100%;
     padding: 0px 15px;
     padding-left: 50px;
+
+    @media (max-width: $smallest) {
+      padding: 0px 15px;
+    }
   }
 
   // ------WRAPPER AND SETTINGS TO GET FOOTER DOWN--------

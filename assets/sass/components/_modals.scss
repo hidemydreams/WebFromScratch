@@ -19,8 +19,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: $base-color;
-  border-radius: 10vh;
+  background-color: darken($base-color, 10%);
+  border-radius: 20px;
   justify-content: space-evenly;
   z-index: 201;
 }
@@ -29,7 +29,7 @@
 .log__modal, .reg__modal {
   max-width: 250px;
   width: 100%;
-  max-height: 300px;
+  max-height: 400px;
   height: 100%;
 
   h3 {
@@ -42,13 +42,13 @@
   border: none;
   outline: none;
   border-radius: 10vh;
-  background-color: lighten($base-color, 10%);
+  background-color: lighten($base-color, 5%);
   color: white;
   transition: .2s;
   }
 
   input:hover {
-    background-color:  darken($base-color, 10%)
+    background-color: lighten($base-color, 10%);
   }
   input::placeholder {
     color: white;
@@ -56,28 +56,48 @@
 }
 
 .log__btn, .reg__btn {
-  background-color: lighten($base-color, 10%);
+  background-color: lighten($base-color, 5%);
+
+  &:hover {
+    background-color: lighten($base-color, 10%);
+  }
 }
 
 // Contact PopUp CSS
 
 .contact__modal {
   color: white;
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-evenly;
+
+  @media (max-width: $smallest) {
+    padding: 10px 20px;
+    width: 100%;
+  }
 
 
   h3 {
     font-size: 40px;
     text-align: center;
+    margin-bottom: 20px;
+
+    @media (max-width: $smallest) {
+      font-size: 20px;
+    }
   }
 
   p {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 20px;
+    @media (max-width: $smallest) {
+      font-size: 13px;
+    }
   }
 
   button {
-    background-color: lighten($base-color, 10%);
+    background-color: lighten($base-color, 5%);
   }
 }
 
@@ -88,7 +108,7 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  background-color: rgba(151, 218, 255, 1);
+  background-color: darken($base-color, 10%);
   border: none;
   border-radius: 30px;
   max-width: 750px;

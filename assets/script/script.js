@@ -1,4 +1,5 @@
 // PopUp Windows for Login And Registration
+let body = document.querySelector('body')
 let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
 let loginPopUp = document.querySelector('.log__popup');
@@ -9,7 +10,8 @@ let sidebarReg = document.querySelector('.burger__reg');
 
  if (loginBtn) {
   loginBtn.addEventListener('click', () => {
-    loginPopUp.style.display = 'block'
+    loginPopUp.style.display = 'block';
+    body.style.overflow = 'hidden';
   })
   
   sidebarLogin.addEventListener('click', (e) => {
@@ -24,12 +26,14 @@ let sidebarReg = document.querySelector('.burger__reg');
   
   regBtn.addEventListener('click', () => {
     regPopUp.style.display = 'block'
+    body.style.overflow = 'hidden';
   })
   
   outsidePopUp.forEach((modal) => {
     modal.addEventListener('click', (e) => {
       if (e.target == modal) {
         modal.style.display = 'none';
+        body.style.overflow = 'auto';
       }
     })
   })
@@ -38,25 +42,29 @@ let sidebarReg = document.querySelector('.burger__reg');
 // Hero Burger
 let burgerBtn = document.querySelector('.burger-icon');
 let sidebar = document.querySelector('.vertical__bar');
+let closeBurger = document.querySelector('.close-burger');
 
 burgerBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('burger');
+    sidebar.classList.add('burger');
+})
+
+closeBurger.addEventListener('click', () => {
+    sidebar.classList.remove('burger');
 })
 
 // Search Button
 
 let searchBtn = document.querySelector('.search-btn');
 let closeSearch = document.querySelector('.search-close');
+let searchForm = document.querySelector('.search-form')
 
 searchBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('open-search');
+    searchForm.classList.add('open-search');
 })
 
 closeSearch.addEventListener('click', () => {
-    sidebar.classList.toggle('open-search');
+    searchForm.classList.remove('open-search');
 })
-
-
 
 // PopUp for Contact Page
 
@@ -68,32 +76,30 @@ if (formBtn) {
     formBtn.addEventListener('click', (e) => {
         e.preventDefault();
         contactPop.style.display = 'block';
+        body.style.overflow = 'hidden';
+
     })
     closeBtn.addEventListener('click', () => {
         contactPop.style.display = 'none';
+        body.style.overflow = 'auto';
     })
 }
 
 // Accordion Questions
 
 let questions = document.querySelectorAll('.accordion__item');
-
 questions.forEach((question) => {
-  let btn = question.querySelector('.toggle-btn');
-  btn.addEventListener('click', () => {
-
-
-        questions.forEach((item) => {
-            if (item !== question) {
-                item.classList.remove('show-text')
-            }
-        })
-
-
-
+    question.addEventListener('click', () => {
         question.classList.toggle('show-text')
-    })
-})
+
+  
+          questions.forEach((item) => {
+              if (item !== question) {
+                  item.classList.remove('show-text')
+              }
+          })
+      })
+  })
 
 // Tabs For FullPage Registration
 
@@ -116,7 +122,6 @@ if (signUpContent) {
         loginContent.style.display = 'flex';
         signUpContent.style.display = 'none';
     })
-
 }
 //PopUp for rating
 let starBtns = document.querySelectorAll('.star');

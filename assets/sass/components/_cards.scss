@@ -1,6 +1,17 @@
 
 .cards__title {
     margin-bottom: 20px;
+
+    @media (max-width: $smallest) {
+        margin-top: 20px;
+        text-align: center;
+      }
+}
+
+.cards__desc {
+    @media (max-width: $smallest) {
+        text-align: center;
+      }
 }
 .cards_item {
     display: flex;
@@ -100,9 +111,6 @@
     .card p {
         font-size: 16px;
     }
-    .title {
-        margin-left: 10px;
-    }
 }
 
 @media (max-width: $small) {
@@ -114,9 +122,6 @@
     }
     .card p {
         font-size: 14px;
-    }
-    .title {
-        margin-left: 10px;
     }
 }
 
@@ -136,16 +141,6 @@
     }
     .card p {
         display: none;
-    }
-    .title {
-        margin-left: 10px;
-    }
-    title p {
-        font-size: 9px;
-    }
-    .title h3 {
-        font-size: 2rem;
-        margin-bottom: 10px;
     }
 }
 

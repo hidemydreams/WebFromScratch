@@ -10,7 +10,7 @@
         rel="stylesheet">
     <!-------FONT AWESOME ICONS------->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- -----STYLE.CSS---- -->
     <link rel="stylesheet" href="assets/style/style.css">
     <!-- ANIMATE CSS  -->
@@ -22,7 +22,6 @@
     <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico">
     <title>WebFromScratch</title>
 </head>
-
 <body>
 
 
@@ -34,13 +33,12 @@
                 <a href="index.html" class="nav__logo"><img src="assets/img/logo.svg" alt=""></a>
                 <ul class="navigation__list">
                     <li>
-                        <a class="nav__link" href="index.html">Main Page</a>
-                    </li>
+                        <a class="nav__link hero__nav-link" href="articles.html">Articles</a>                    </li>
                     <li>
                         <a class="nav__link" href="questions.html">Faq</a>
                     </li>
                     <li>
-                        <a class="nav__link"href="topic-cards.html">Learn Now</a>
+                        <a class="nav__link"href="topic-cards.html">Learning</a>
                     </li>
                     <li>
                         <a class="nav__link" href="about.html">About</a>
@@ -59,20 +57,14 @@
                 <div class="vertical__content">
                     <div class="vertical__menu">
                         <i class="search-btn fas fa-search"></i>
-                        <!-- Search Form -->
-                        <div class="search-form">
-                            <input class='vertical-search' type="text" placeholder='I find...'>
-                            <div class="search-close">
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </div>
                         <a href="index.html" class="sidebar__logo">
                             <img src="assets/img/logo.svg" alt="">
                         </a>
                         <i class="burger-icon fas fa-bars"></i>
+                        <i class="close-burger fas fa-times"></i>
                     </div>
                     <ul class="burger__list">
-                        <li><a href="index.html" class="burger__link">Home</a></li>
+                        <li><a href="articles.html" class="burger__link">Articles</a></li>
                         <li><a href="questions.html" class="burger__link">Faq</a></li>
                         <li><a href="topic-cards.html" class="burger__link">Learn Now</a></li>
                         <li><a href="about.html" class="burger__link">About</a></li>
@@ -128,13 +120,17 @@
             <h2 class="title form-section__title">
               Feel Free To Ask Your Questions!
             </h2>
-            <form action="#!" class="form">
-            <input class="form__name" placeholder="Name" type="text">
-            <input class="form__subject" placeholder="Subject" type="text">
-            <input class="form__email" placeholder="Email" type="email">
-              <textarea placeholder="Your Message" type="email" class="form__message" name=""></textarea>
-              <button class="btn form__btn">Send</button>
-            </form>
+            <div class="form-section__content">
+                <form action="#!" class="form">
+                    <input class="form__name" placeholder="Name" type="text">
+                    <input class="form__email" placeholder="Email" type="email">
+                    <textarea placeholder="Your Message" type="email" class="form__message" name=""></textarea>
+                    <button class="btn form__btn">Send</button>
+                </form>
+                <div class='form-section__img'>
+                    <img src="assets/img/envelope2.svg" alt="Envelope">
+                </div>
+            </div>
           </div>
         </section> 
     </main>
@@ -235,6 +231,14 @@
             We will try to answer to you as soon as it is possible. Thank your for your patience!
         </p>
         <button class="btn contact__close">OK !</button>
+    </div>
+</div>
+
+<!-- Search Form -->
+<div class="search-form">
+    <input class='search-input' type="text" placeholder='I am serching for...'>
+    <div class="search-close">
+        <i class="fas fa-times"></i>
     </div>
 </div>
 

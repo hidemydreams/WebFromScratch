@@ -14,8 +14,13 @@
 }
 
 .burger.vertical__bar {
+
+  @media (max-width: $smallest) {
+    height: 100%;
+  }
     width: 100vw;
     transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: darken($base-color, 10%);
   }
   
    .burger .vertical__menu {
@@ -51,8 +56,16 @@
 
   .burger .vertical__icons {
     background-color: transparent;
-    align-items: flex-end;
     margin-bottom: 30px;
     flex-direction: row;
+    display: flex;
+  }
+
+  .burger .burger-icon {
+    display: none;
+  }
+
+  .burger .close-burger {
+    display: block;
   }
 
