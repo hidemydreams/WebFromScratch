@@ -1,63 +1,70 @@
 // PopUp Windows for Login And Registration
-
+let body = document.querySelector('body')
 let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
 let loginPopUp = document.querySelector('.log__popup');
 let regPopUp = document.querySelector('.reg__popup');
-let outsidePopUp = document.querySelectorAll('.popup')
-let sidebarLogin = document.querySelector('.burger__log')
-let sidebarReg = document.querySelector('.burger__reg')
+let outsidePopUp = document.querySelectorAll('.popup');
+let sidebarLogin = document.querySelector('.burger__log');
+let sidebarReg = document.querySelector('.burger__reg');
 
-loginBtn.addEventListener('click', () => {
-    loginPopUp.style.display = 'block'
-})
-
-sidebarLogin.addEventListener('click', (e) => {
-    e.preventDefault()
-    loginPopUp.style.display = 'block'
-})
-
-sidebarReg.addEventListener('click', (e) => {
-    e.preventDefault()
-    regPopUp.style.display = 'block'
-})
-
-regBtn.addEventListener('click', () => {
-    regPopUp.style.display = 'block'
-})
-
-outsidePopUp.forEach((modal) => {
-    modal.addEventListener('click', (e) => {
-        if (e.target == modal) {
-            modal.style.display = 'none';
-        }
+if (loginBtn) {
+    loginBtn.addEventListener('click', () => {
+        loginPopUp.style.display = 'block';
+        body.style.overflow = 'hidden';
     })
-})
+
+    sidebarLogin.addEventListener('click', (e) => {
+        e.preventDefault()
+        loginPopUp.style.display = 'block'
+    })
+
+    sidebarReg.addEventListener('click', (e) => {
+        e.preventDefault()
+        regPopUp.style.display = 'block'
+    })
+
+    regBtn.addEventListener('click', () => {
+        regPopUp.style.display = 'block'
+        body.style.overflow = 'hidden';
+    })
+
+    outsidePopUp.forEach((modal) => {
+        modal.addEventListener('click', (e) => {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+                body.style.overflow = 'auto';
+            }
+        })
+    })
+}
 
 // Hero Burger
-
-
 let burgerBtn = document.querySelector('.burger-icon');
 let sidebar = document.querySelector('.vertical__bar');
+let closeBurger = document.querySelector('.close-burger');
 
 burgerBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('burger');
+    sidebar.classList.add('burger');
+})
+
+closeBurger.addEventListener('click', () => {
+    sidebar.classList.remove('burger');
 })
 
 // Search Button
 
 let searchBtn = document.querySelector('.search-btn');
 let closeSearch = document.querySelector('.search-close');
+let searchForm = document.querySelector('.search-form')
 
 searchBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('open-search');
+    searchForm.classList.add('open-search');
 })
 
 closeSearch.addEventListener('click', () => {
-    sidebar.classList.toggle('open-search');
+    searchForm.classList.remove('open-search');
 })
-
-
 
 // PopUp for Contact Page
 
@@ -69,30 +76,21 @@ if (formBtn) {
     formBtn.addEventListener('click', (e) => {
         e.preventDefault();
         contactPop.style.display = 'block';
+        body.style.overflow = 'hidden';
+
     })
     closeBtn.addEventListener('click', () => {
         contactPop.style.display = 'none';
+        body.style.overflow = 'auto';
     })
 }
 
 // Accordion Questions
 
-// let btns = document.querySelectorAll('.toggle-btn');
-
-// btns.forEach((btn) => {
-//   btn.addEventListener('click',(e) => {
-//     let question = e.currentTarget.parentElement.parentElement
-//     question.classList.toggle('show-text')
-//   })
-// })
-
 let questions = document.querySelectorAll('.accordion__item');
-
 questions.forEach((question) => {
-    // console.log(question)
-    let btn = question.querySelector('.toggle-btn');
-    // console.log(btn)
-    btn.addEventListener('click', () => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('show-text')
 
 
         questions.forEach((item) => {
@@ -100,10 +98,6 @@ questions.forEach((question) => {
                 item.classList.remove('show-text')
             }
         })
-
-
-
-        question.classList.toggle('show-text')
     })
 })
 
@@ -128,7 +122,6 @@ if (signUpContent) {
         loginContent.style.display = 'flex';
         signUpContent.style.display = 'none';
     })
-
 }
 //PopUp for rating
 let starBtns = document.querySelectorAll('.star');
@@ -160,11 +153,16 @@ quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
 
+<<
+<< << < HEAD
 
 
 
 
-//PopUp for tasks
+    ===
+    === = >>>
+    >>> > 81791611 cbb4a66eeeecc36dbf5da67590d7656d
+    //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
 console.log(tasksBtn);
