@@ -1337,11 +1337,10 @@ button:hover {
 .card {
   width: 28%;
   padding: 60px 40px;
-  margin: 20px;
+  margin-bottom: 20px;
   /*-------Shadow------*/
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
   position: relative;
-  perspective: 1000px;
   height: 350px;
   background: #52aee2;
   border-top-right-radius: 30px;
@@ -1361,9 +1360,7 @@ button:hover {
 .card h1 {
   color: white;
   font-size: 4rem;
-  /*padding-bottom: 15px;*/
   text-align: center;
-  /*padding-top: 42%;*/
 }
 
 .front {
@@ -1378,11 +1375,8 @@ button:hover {
   top: 0;
   transition: 1s;
   border-top-right-radius: 30px;
-}
-
-.back {
   display: none;
-  background: #52aee2;
+  /* background: $base-color;*/
   background-color: rgba(253, 253, 253, 0.5);
 }
 
@@ -1413,43 +1407,21 @@ button:hover {
   .cards_item {
     justify-content: space-around;
   }
-
-  .card {
-    width: 35%;
-  }
-
-  .card h1 {
-    font-size: 4rem;
-  }
-
-  .card p {
-    font-size: 16px;
-  }
 }
 @media (max-width: 767.98px) {
   .card {
-    width: 35%;
-  }
-
-  .card h1 {
-    font-size: 3 rem;
-  }
-
-  .card p {
-    font-size: 15px;
+    width: 45%;
   }
 }
 @media (max-width: 575.98px) {
-  .card {
+  .cards_item {
     display: flex;
-    flex-direction: column;
-    height: 250px;
-    width: 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .card h1 {
-    font-size: 3rem;
-    margin-top: 40%;
+  .card {
+    width: 65%;
   }
 }
 .accordion {
