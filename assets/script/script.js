@@ -123,56 +123,61 @@ if (signUpContent) {
         signUpContent.style.display = 'none';
     })
 }
-//PopUp for rating
-let starBtns = document.querySelectorAll('.star');
-let modalComment = document.querySelector('.rating_popup');
+// //PopUp for rating
+// let starBtns = document.querySelectorAll('.star');
+// let modalComment = document.querySelector('.rating_popup');
 
-starBtns.forEach((starBtn) => {
-    starBtn.addEventListener('click', () => {
-        modalComment.style.display = 'block';
-    })
-})
-let ratingBtn = document.querySelector('.btn_rating');
-    ratingBtn.addEventListener('click', () => {
-    modalComment.style.display = 'none';
-})
+// if (starBtns) {
+//     console.log('ok')
+// }
 
-
-
-//PopUp for comments
-let taskBtn = document.querySelector('.link_comments');
-let taskModal = document.querySelector('.comments_popup');
-if (taskBtn) {
-    taskBtn.addEventListener('click', (e) => {
-        e.preventDefault()
-        taskModal.style.display = 'block';
-    })
-}
-let quitBtn = document.querySelector('.btn_quit');
-quitBtn.addEventListener('click', () => {
-    taskModal.style.display = 'none';
-})
-
-//PopUp for tasks
-let tasksBtn = document.querySelector('.tasks');
-let tasksModal = document.querySelector('.tasks_popup');
-
-tasksBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    tasksModal.style.display = 'block';
-})
-let taskBtnQuit = document.querySelector('.btn_tasks');
-taskBtnQuit.addEventListener('click', () => {
-    tasksModal.style.display = 'none';
-})
+// starBtns.forEach((starBtn) => {
+//     starBtn.addEventListener('click', () => {
+//         modalComment.style.display = 'block';
+//     })
+// })
+// let ratingBtn = document.querySelector('.btn_rating');
+//     ratingBtn.addEventListener('click', () => {
+//     modalComment.style.display = 'none';
+// })
 
 
 
-//PopUp for mistake
-let mistakePopup = document.querySelector('.mistake');
-let mistakeModal = document.querySelector('.mistake_popup');
-let mistakeBtn = document.querySelector('.btn_article');
-mistakePopup.addEventListener('click', (e) => {
-    e.preventDefault()
-    mistakeModal.style.display = 'block';
-})
+// //PopUp for comments
+// let taskBtn = document.querySelector('.link_comments');
+// let taskModal = document.querySelector('.comments_popup');
+// if (taskBtn) {
+//     taskBtn.addEventListener('click', (e) => {
+//         e.preventDefault()
+//         taskModal.style.display = 'block';
+//     })
+// }
+// let quitBtn = document.querySelector('.btn_quit');
+// quitBtn.addEventListener('click', () => {
+//     taskModal.style.display = 'none';
+// })
+
+// //PopUp for tasks
+// let tasksBtn = document.querySelector('.tasks');
+// let tasksModal = document.querySelector('.tasks_popup');
+
+// tasksBtn.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     tasksModal.style.display = 'block';
+// })
+// let taskBtnQuit = document.querySelector('.btn_tasks');
+// taskBtnQuit.addEventListener('click', () => {
+//     tasksModal.style.display = 'none';
+// })
+
+
+
+// //PopUp for mistake
+// let mistakePopup = document.querySelector('.mistake');
+// let mistakeModal = document.querySelector('.mistake_popup');
+// let mistakeBtn = document.querySelector('.btn_article');
+
+// mistakePopup.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     mistakeModal.style.display = 'block';
+// })
