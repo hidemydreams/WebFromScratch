@@ -8,36 +8,36 @@ let outsidePopUp = document.querySelectorAll('.popup');
 let sidebarLogin = document.querySelector('.burger__log');
 let sidebarReg = document.querySelector('.burger__reg');
 
- if (loginBtn) {
-  loginBtn.addEventListener('click', () => {
-    loginPopUp.style.display = 'block';
-    body.style.overflow = 'hidden';
-  })
-  
-  sidebarLogin.addEventListener('click', (e) => {
-    e.preventDefault()
-    loginPopUp.style.display = 'block'
-  })
-  
-  sidebarReg.addEventListener('click', (e) => {
-    e.preventDefault()
-    regPopUp.style.display = 'block'
-  })
-  
-  regBtn.addEventListener('click', () => {
-    regPopUp.style.display = 'block'
-    body.style.overflow = 'hidden';
-  })
-  
-  outsidePopUp.forEach((modal) => {
-    modal.addEventListener('click', (e) => {
-      if (e.target == modal) {
-        modal.style.display = 'none';
-        body.style.overflow = 'auto';
-      }
+if (loginBtn) {
+    loginBtn.addEventListener('click', () => {
+        loginPopUp.style.display = 'block';
+        body.style.overflow = 'hidden';
     })
-  })
- }
+
+    sidebarLogin.addEventListener('click', (e) => {
+        e.preventDefault()
+        loginPopUp.style.display = 'block'
+    })
+
+    sidebarReg.addEventListener('click', (e) => {
+        e.preventDefault()
+        regPopUp.style.display = 'block'
+    })
+
+    regBtn.addEventListener('click', () => {
+        regPopUp.style.display = 'block'
+        body.style.overflow = 'hidden';
+    })
+
+    outsidePopUp.forEach((modal) => {
+        modal.addEventListener('click', (e) => {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+                body.style.overflow = 'auto';
+            }
+        })
+    })
+}
 
 // Hero Burger
 let burgerBtn = document.querySelector('.burger-icon');
@@ -92,14 +92,14 @@ questions.forEach((question) => {
     question.addEventListener('click', () => {
         question.classList.toggle('show-text')
 
-  
-          questions.forEach((item) => {
-              if (item !== question) {
-                  item.classList.remove('show-text')
-              }
-          })
-      })
-  })
+
+        questions.forEach((item) => {
+            if (item !== question) {
+                item.classList.remove('show-text')
+            }
+        })
+    })
+})
 
 // Tabs For FullPage Registration
 
@@ -133,7 +133,7 @@ starBtns.forEach((starBtn) => {
     })
 })
 let ratingBtn = document.querySelector('.btn_rating');
-    ratingBtn.addEventListener('click', () => {
+ratingBtn.addEventListener('click', () => {
     modalComment.style.display = 'none';
 })
 
@@ -153,18 +153,30 @@ quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
 
-//PopUp for tasks
+<<
+<< << < HEAD
+
+
+
+
+    ===
+    === = >>>
+    >>> > 81791611 cbb4a66eeeecc36dbf5da67590d7656d
+    //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
-
+console.log(tasksBtn);
 tasksBtn.addEventListener('click', (e) => {
     e.preventDefault()
     tasksModal.style.display = 'block';
 })
+
 let taskBtnQuit = document.querySelector('.btn_tasks');
-taskBtnQuit.addEventListener('click', () => {
-    tasksModal.style.display = 'none';
-})
+if (taskBtnQuit) {
+    taskBtnQuit.addEventListener('click', () => {
+        tasksModal.style.display = 'none';
+    })
+}
 
 
 
