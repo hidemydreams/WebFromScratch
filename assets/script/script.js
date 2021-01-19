@@ -153,16 +153,16 @@ quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
 
-<<
-<< << < HEAD
+// <<
+// << << < HEAD
 
 
 
 
-    ===
-    === = >>>
-    >>> > 81791611 cbb4a66eeeecc36dbf5da67590d7656d
-    //PopUp for tasks
+//     ===
+//     === = >>>
+//     >>> > 81791611 cbb4a66eeeecc36dbf5da67590d7656d
+//PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
 console.log(tasksBtn);
