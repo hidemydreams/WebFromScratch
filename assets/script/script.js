@@ -8,36 +8,36 @@ let outsidePopUp = document.querySelectorAll('.popup');
 let sidebarLogin = document.querySelector('.burger__log');
 let sidebarReg = document.querySelector('.burger__reg');
 
- if (loginBtn) {
-  loginBtn.addEventListener('click', () => {
-    loginPopUp.style.display = 'block';
-    body.style.overflow = 'hidden';
-  })
-  
-  sidebarLogin.addEventListener('click', (e) => {
-    e.preventDefault()
-    loginPopUp.style.display = 'block'
-  })
-  
-  sidebarReg.addEventListener('click', (e) => {
-    e.preventDefault()
-    regPopUp.style.display = 'block'
-  })
-  
-  regBtn.addEventListener('click', () => {
-    regPopUp.style.display = 'block'
-    body.style.overflow = 'hidden';
-  })
-  
-  outsidePopUp.forEach((modal) => {
-    modal.addEventListener('click', (e) => {
-      if (e.target == modal) {
-        modal.style.display = 'none';
-        body.style.overflow = 'auto';
-      }
+if (loginBtn) {
+    loginBtn.addEventListener('click', () => {
+        loginPopUp.style.display = 'block';
+        body.style.overflow = 'hidden';
     })
-  })
- }
+
+    sidebarLogin.addEventListener('click', (e) => {
+        e.preventDefault()
+        loginPopUp.style.display = 'block'
+    })
+
+    sidebarReg.addEventListener('click', (e) => {
+        e.preventDefault()
+        regPopUp.style.display = 'block'
+    })
+
+    regBtn.addEventListener('click', () => {
+        regPopUp.style.display = 'block'
+        body.style.overflow = 'hidden';
+    })
+
+    outsidePopUp.forEach((modal) => {
+        modal.addEventListener('click', (e) => {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+                body.style.overflow = 'auto';
+            }
+        })
+    })
+}
 
 // Hero Burger
 let burgerBtn = document.querySelector('.burger-icon');
@@ -92,14 +92,14 @@ questions.forEach((question) => {
     question.addEventListener('click', () => {
         question.classList.toggle('show-text')
 
-  
-          questions.forEach((item) => {
-              if (item !== question) {
-                  item.classList.remove('show-text')
-              }
-          })
-      })
-  })
+
+        questions.forEach((item) => {
+            if (item !== question) {
+                item.classList.remove('show-text')
+            }
+        })
+    })
+})
 
 // Tabs For FullPage Registration
 
@@ -123,61 +123,59 @@ if (signUpContent) {
         signUpContent.style.display = 'none';
     })
 }
-// //PopUp for rating
-// let starBtns = document.querySelectorAll('.star');
-// let modalComment = document.querySelector('.rating_popup');
+//PopUp for rating
+let starBtns = document.querySelectorAll('.star');
+let modalComment = document.querySelector('.rating_popup');
 
-// if (starBtns) {
-//     console.log('ok')
-// }
-
-// starBtns.forEach((starBtn) => {
-//     starBtn.addEventListener('click', () => {
-//         modalComment.style.display = 'block';
-//     })
-// })
-// let ratingBtn = document.querySelector('.btn_rating');
-//     ratingBtn.addEventListener('click', () => {
-//     modalComment.style.display = 'none';
-// })
+starBtns.forEach((starBtn) => {
+    starBtn.addEventListener('click', () => {
+        modalComment.style.display = 'block';
+    })
+})
+let ratingBtn = document.querySelector('.btn_rating');
+ratingBtn.addEventListener('click', () => {
+    modalComment.style.display = 'none';
+})
 
 
 
-// //PopUp for comments
-// let taskBtn = document.querySelector('.link_comments');
-// let taskModal = document.querySelector('.comments_popup');
-// if (taskBtn) {
-//     taskBtn.addEventListener('click', (e) => {
-//         e.preventDefault()
-//         taskModal.style.display = 'block';
-//     })
-// }
-// let quitBtn = document.querySelector('.btn_quit');
-// quitBtn.addEventListener('click', () => {
-//     taskModal.style.display = 'none';
-// })
-
-// //PopUp for tasks
-// let tasksBtn = document.querySelector('.tasks');
-// let tasksModal = document.querySelector('.tasks_popup');
-
-// tasksBtn.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     tasksModal.style.display = 'block';
-// })
-// let taskBtnQuit = document.querySelector('.btn_tasks');
-// taskBtnQuit.addEventListener('click', () => {
-//     tasksModal.style.display = 'none';
-// })
+//PopUp for comments
+let taskBtn = document.querySelector('.link_comments');
+let taskModal = document.querySelector('.comments_popup');
+if (taskBtn) {
+    taskBtn.addEventListener('click', (e) => {
+        e.preventDefault()
+        taskModal.style.display = 'block';
+    })
+}
+let quitBtn = document.querySelector('.btn_quit');
+quitBtn.addEventListener('click', () => {
+    taskModal.style.display = 'none';
+})
 
 
+    //PopUp for tasks
+let tasksBtn = document.querySelector('.tasks');
+let tasksModal = document.querySelector('.tasks_popup');
+tasksBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    tasksModal.style.display = 'block';
+})
 
-// //PopUp for mistake
-// let mistakePopup = document.querySelector('.mistake');
-// let mistakeModal = document.querySelector('.mistake_popup');
-// let mistakeBtn = document.querySelector('.btn_article');
+let taskBtnQuit = document.querySelector('.btn_tasks');
+if (taskBtnQuit) {
+    taskBtnQuit.addEventListener('click', () => {
+        tasksModal.style.display = 'none';
+    })
+}
 
-// mistakePopup.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     mistakeModal.style.display = 'block';
-// })
+
+
+//PopUp for mistake
+let mistakePopup = document.querySelector('.mistake');
+let mistakeModal = document.querySelector('.mistake_popup');
+let mistakeBtn = document.querySelector('.btn_article');
+mistakePopup.addEventListener('click', (e) => {
+    e.preventDefault()
+    mistakeModal.style.display = 'block';
+})

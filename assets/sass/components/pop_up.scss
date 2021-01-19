@@ -1,0 +1,262 @@
+    /*----------Pop Up Raiting------------*/
+    
+    .rating_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background-color: rgba(151, 218, 255, 1);
+        border: none;
+        border-radius: 30px;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        padding: 20px;
+    }
+    
+    .popup_rat {
+        font-size: 2rem;
+    }
+    
+    .popup_text {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .btn_rating {
+        padding: 5px 40px;
+        font-size: 1.5rem;
+    }
+    /*----------------------Pop Up Comments--------------------------------*/
+    
+    .comments_modal {
+        background-color: rgba(151, 218, 255, 1);
+        border: none;
+        border-radius: 30px;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        padding: 20px;
+    }
+    
+    .comments_title {
+        font-size: 24px;
+        padding-top: 5px;
+        color: white;
+        text-align: center;
+        padding-bottom: 10px;
+        font-weight: 300;
+    }
+    
+    .comments_comment {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    
+    .name_comment {
+        border: none;
+        background-color: transparent;
+        border-bottom: 4px solid white;
+        padding: 10px 0px 0px 10px;
+        outline: none;
+        width: 15%;
+        margin-right: 5px;
+        color: rgba(0, 25, 55, 1);
+    }
+    
+    .message_comment {
+        background-color: transparent;
+        border: 3px solid white;
+        padding: 10px 0px 10px 10px;
+        outline: none;
+        transition: border-bottom 0.2s;
+        width: 85%;
+        color: rgba(0, 25, 55, 1)
+    }
+    
+    .btn_article {
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        justify-self: center;
+        padding: 5px 30px;
+        font-size: 1.5rem;
+        border-radius: 36px;
+        background-color: $base-color;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    button:hover {
+        transform: scale(1.01);
+        background-color: $btn-hover-color;
+    }
+    
+    .items_comments {
+        border: 4px solid white;
+        overflow-y: scroll;
+        height: 200px;
+        color: white;
+    }
+    
+    .items_comments::-webkit-scrollbar {
+        width: 0.8vw;
+    }
+    
+    .comment {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 10px;
+    }
+    
+    .comment_name {
+        text-align: center;
+        width: 20%;
+        margin-right: 10px;
+        border-right: 4px solid $headings-color;
+        padding-top: 15px;
+    }
+    
+    .comment:hover {
+        /* border: 4px solid $headings-color;*/
+    }
+    
+    .btn_quit {
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        justify-self: center;
+        padding: 5px 30px;
+        font-size: 1.5rem;
+        border-radius: 36px;
+        background-color: $base-color;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    /*-------popup_tasks__popup--------------*/
+    
+    .tasks_modal {
+        background-color: rgba(151, 218, 255, 1);
+        border: none;
+        border-radius: 30px;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    .popup_title {
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .tasks_modal h4 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    .btn_tasks {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        border: none;
+        color: white;
+        justify-self: center;
+        padding: 5px 20px;
+        font-size: 1.5rem;
+        border-radius: 36px;
+        background-color: $base-color;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .task:hover {
+        border: 4px solid $headings-color;
+    }
+    /*---------Pop Up---------*/
+    
+    .mistake_modal {
+        background-color: rgba(151, 218, 255, 1);
+        border: none;
+        border-radius: 30px;
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+    
+    .pop_up_mistakes {
+        font-size: 24px;
+        color: white;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .mistakes {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    .email {
+        width: 50%;
+        margin-bottom: 10px;
+        border: 2px solid white;
+        background-color: transparent;
+        padding: 10px 0px 0px 10px;
+        margin-right: 5px;
+        color: rgba(0, 25, 55, 1);
+    }
+    
+    .message {
+        margin-bottom: 15px;
+        order: none;
+        background-color: transparent;
+        border-bottom: 4px solid white;
+        padding: 10px 0px 0px 10px;
+        border: 2px solid white;
+        color: rgba(0, 25, 55, 1);
+    }
+    /*----Links pop ups -------*/
+    
+    .link_popups {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 4px solid $headings-color;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .link_popups:hover {
+        /*border: 4px solid $headings-color;*/
+    }
+    
+    .link_popups a {
+        color: $text-color;
+    }
+    
+    .tasks,
+    .mistake {
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+    }
