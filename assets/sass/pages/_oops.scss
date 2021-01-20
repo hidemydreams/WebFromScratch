@@ -1,0 +1,41 @@
+.oops {
+
+  &__content {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $text-color;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  &__desc {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    color: $text-color;
+    border: 1px $text-color solid;
+    max-width: 100px;
+    text-align: center;
+    transition: .1s;
+    padding: 5px;
+
+    &:hover {
+      background-color: $text-color;
+      color: white;
+    }
+  }
+}

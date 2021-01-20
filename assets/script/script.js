@@ -132,10 +132,13 @@ starBtns.forEach((starBtn) => {
         modalComment.style.display = 'block';
     })
 })
-let ratingBtn = document.querySelector('.btn_rating');
-ratingBtn.addEventListener('click', () => {
-    modalComment.style.display = 'none';
-})
+
+    let ratingBtn = document.querySelector('.btn_rating');
+    if (ratingBtn) {
+      ratingBtn.addEventListener('click', () => {
+        modalComment.style.display = 'none';
+    })
+    }
 
 
 
@@ -149,18 +152,24 @@ if (taskBtn) {
     })
 }
 let quitBtn = document.querySelector('.btn_quit');
-quitBtn.addEventListener('click', () => {
+
+if (quitBtn) {
+  quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
+}
+
 
 
     //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
-tasksBtn.addEventListener('click', (e) => {
+if (taskBtn) {
+  tasksBtn.addEventListener('click', (e) => {
     e.preventDefault()
     tasksModal.style.display = 'block';
 })
+}
 
 let taskBtnQuit = document.querySelector('.btn_tasks');
 if (taskBtnQuit) {
@@ -169,13 +178,24 @@ if (taskBtnQuit) {
     })
 }
 
-
-
 //PopUp for mistake
 let mistakePopup = document.querySelector('.mistake');
 let mistakeModal = document.querySelector('.mistake_popup');
 let mistakeBtn = document.querySelector('.btn_article');
-mistakePopup.addEventListener('click', (e) => {
+if (mistakePopup) {
+  mistakePopup.addEventListener('click', (e) => {
     e.preventDefault()
     mistakeModal.style.display = 'block';
+})
+}
+
+
+// Redirection for articles 
+
+let articles = document.querySelectorAll('.articles__item');
+
+articles.forEach((article) => {
+  article.addEventListener('click', () => {
+    window.location.href = 'oops.html'
+  })
 })
