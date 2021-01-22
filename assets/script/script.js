@@ -7,32 +7,33 @@ let regPopUp = document.querySelector('.reg__popup');
 let outsidePopUp = document.querySelectorAll('.popup');
 let sidebarLogin = document.querySelector('.burger__log');
 let sidebarReg = document.querySelector('.burger__reg');
+// let showModal = document.querySelector('.show-modal')
 
 if (loginBtn) {
     loginBtn.addEventListener('click', () => {
-        loginPopUp.style.display = 'block';
+        loginPopUp.classList.add('show-modal');
         body.style.overflow = 'hidden';
     })
 
     sidebarLogin.addEventListener('click', (e) => {
         e.preventDefault()
-        loginPopUp.style.display = 'block'
+        loginPopUp.classList.add('show-modal');
     })
 
     sidebarReg.addEventListener('click', (e) => {
         e.preventDefault()
-        regPopUp.style.display = 'block'
+        loginPopUp.classList.add('show-modal');
     })
 
     regBtn.addEventListener('click', () => {
-        regPopUp.style.display = 'block'
+        regPopUp.classList.add('show-modal');
         body.style.overflow = 'hidden';
     })
 
     outsidePopUp.forEach((modal) => {
         modal.addEventListener('click', (e) => {
             if (e.target == modal) {
-                modal.style.display = 'none';
+                modal.classList.remove('show-modal');
                 body.style.overflow = 'auto';
             }
         })
@@ -45,10 +46,12 @@ let sidebar = document.querySelector('.vertical__bar');
 let closeBurger = document.querySelector('.close-burger');
 
 burgerBtn.addEventListener('click', () => {
+    body.style.overflow = 'hidden';
     sidebar.classList.add('burger');
 })
 
 closeBurger.addEventListener('click', () => {
+    body.style.overflow = 'auto';
     sidebar.classList.remove('burger');
 })
 
@@ -75,12 +78,12 @@ let closeBtn = document.querySelector('.contact__close');
 if (formBtn) {
     formBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        contactPop.style.display = 'block';
+        contactPop.classList.add('show-modal');
         body.style.overflow = 'hidden';
 
     })
     closeBtn.addEventListener('click', () => {
-        contactPop.style.display = 'none';
+        contactPop.classList.remove('show-modal');
         body.style.overflow = 'auto';
     })
 }
@@ -129,14 +132,16 @@ let modalComment = document.querySelector('.rating_popup');
 
 starBtns.forEach((starBtn) => {
     starBtn.addEventListener('click', () => {
-        modalComment.style.display = 'block';
+        body.style.overflow = 'hidden'
+        modalComment.classList.add('show-modal')
     })
 })
 
     let ratingBtn = document.querySelector('.btn_rating');
     if (ratingBtn) {
       ratingBtn.addEventListener('click', () => {
-        modalComment.style.display = 'none';
+        body.style.overflow = 'auto'
+        modalComment.classList.remove('show-modal')
     })
     }
 
@@ -147,15 +152,17 @@ let taskBtn = document.querySelector('.link_comments');
 let taskModal = document.querySelector('.comments_popup');
 if (taskBtn) {
     taskBtn.addEventListener('click', (e) => {
+        body.style.overflow = 'hidden'
         e.preventDefault()
-        taskModal.style.display = 'block';
+        taskModal.classList.add('show-modal');
     })
 }
 let quitBtn = document.querySelector('.btn_quit');
 
 if (quitBtn) {
   quitBtn.addEventListener('click', () => {
-    taskModal.style.display = 'none';
+    body.style.overflow = 'auto'
+    taskModal.classList.remove('show-modal');
 })
 }
 
@@ -166,15 +173,17 @@ let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
 if (taskBtn) {
   tasksBtn.addEventListener('click', (e) => {
+    body.style.overflow = 'hidden'
     e.preventDefault()
-    tasksModal.style.display = 'block';
+    tasksModal.classList.add('show-modal')
 })
 }
 
 let taskBtnQuit = document.querySelector('.btn_tasks');
 if (taskBtnQuit) {
     taskBtnQuit.addEventListener('click', () => {
-        tasksModal.style.display = 'none';
+        body.style.overflow = 'auto'
+        tasksModal.classList.remove('show-modal')
     })
 }
 
@@ -185,7 +194,8 @@ let mistakeBtn = document.querySelector('.btn_article');
 if (mistakePopup) {
   mistakePopup.addEventListener('click', (e) => {
     e.preventDefault()
-    mistakeModal.style.display = 'block';
+    body.style.overflow = 'hidden'
+    mistakeModal.classList.add('show-modal')
 })
 }
 

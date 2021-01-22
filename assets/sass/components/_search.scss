@@ -1,13 +1,30 @@
+
+.search-form {
+    position: fixed;
+    z-index: 400;
+    padding: 0px 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(white, 0.9);
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
 .search-input {
+    display: block;
     border: none;
     outline: none;
-    max-width: 200px;
+    max-width: 800px;
+    width: 100%;
     border-radius: 20px;
     padding: 10px 22px 10px 10px;
     color: white;
     background-color: $base-color;
-    opacity: 0.5;
-    transition: 0.3s;
+    margin: 0 auto;
+    margin-top: 40px;
 
 
     &::placeholder {
@@ -19,20 +36,81 @@
     }
 }
 
-.search-form {
-    position: fixed;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.4s;
-}
-
 .open-search.search-form {
-    height: auto;
-    top: 20px;
-    transition: 0.4s;
-
-    @media (max-width: $smallest) {
-        top: 40px;
-      }
+   height: 100%;
+    overflow: auto;
 }
+
+.search-close i {
+    color: $base-color;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        transform: scale(1.05);
+        color: darken($base-color, 10%)
+    }
+
+  }
+
+  .search {
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 70px;
+      flex-wrap: wrap;
+    }
+  
+    &__column {
+        color: $base-color;
+        margin-bottom: 30px;
+    }
+  
+    &__title {
+
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+
+
+        &::after {
+            content: '';
+            background-color: $base-color;
+            width: 40px;
+            height: 3px;
+            display: block;
+            margin-top: 5px;
+        }
+    }
+  
+    &__results {
+
+        li {
+            margin-bottom: 20px;
+            transition: all .3s;
+
+            &:hover {
+                transform: translateX(5px)
+            }
+        }
+    }
+  
+    &__result {
+
+        color: $base-color;
+
+        &::after {
+            content: '';
+            background-color: $base-color;
+            width: 40px;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+        }
+    }
+  }
+  

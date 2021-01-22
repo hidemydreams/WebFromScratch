@@ -7,10 +7,6 @@
   border-radius: 36px;
   padding: 0.5rem;
   outline: none;
-
-  &:hover {
-    background-color: lighten($base-color, 10%);
-  }
 }
 button {
   border: none;
