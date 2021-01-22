@@ -1,5 +1,7 @@
 // PopUp Windows for Login And Registration
+
 let body = document.querySelector('body')
+
 let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
 let loginPopUp = document.querySelector('.log__popup');
@@ -159,6 +161,20 @@ if (taskBtn) {
 }
 let quitBtn = document.querySelector('.btn_quit');
 
+
+//fixed top-baw with onscroll
+
+ window.onscroll = function() {myFunction()};
+ function myFunction() {
+   if ( document.documentElement.scrollTop > 200 ) {
+     document.getElementById("fixedSB").className = "fixed_side_bar";
+   } else {
+     document.getElementById("fixedSB").className = "";
+   }
+ }
+ 
+
+ //
 if (quitBtn) {
   quitBtn.addEventListener('click', () => {
     body.style.overflow = 'auto'
@@ -185,6 +201,7 @@ if (taskBtnQuit) {
         body.style.overflow = 'auto'
         tasksModal.classList.remove('show-modal')
     })
+
 }
 
 //PopUp for mistake
