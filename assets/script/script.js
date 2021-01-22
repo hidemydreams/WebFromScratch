@@ -1,9 +1,7 @@
 // PopUp Windows for Login And Registration
-<<<<<<< HEAD
 
-=======
 let body = document.querySelector('body')
->>>>>>> 09a76b9e2263471b64633df68303de10c909939c
+
 let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
 let loginPopUp = document.querySelector('.log__popup');
