@@ -878,6 +878,29 @@ button {
   display: none;
 }
 
+.icon_message {
+  position: fixed;
+  bottom: 200px;
+  right: 80px;
+}
+
+.icon_message img {
+  width: 100px;
+  height: 100px;
+  color: gray;
+  background: white;
+  border-radius: 50%;
+  animation: radial-pulse 1s infinite;
+}
+
+@keyframes radial-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+  }
+}
 .popup {
   position: fixed;
   background-color: rgba(77, 77, 77, 0.35);

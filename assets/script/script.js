@@ -166,7 +166,7 @@ let quitBtn = document.querySelector('.btn_quit');
 
  window.onscroll = function() {myFunction()};
  function myFunction() {
-   if ( document.documentElement.scrollTop > 200 ) {
+   if ( document.documentElement.scrollTop > 180 ) {
      document.getElementById("fixedSB").className = "fixed_side_bar";
    } else {
      document.getElementById("fixedSB").className = "";
