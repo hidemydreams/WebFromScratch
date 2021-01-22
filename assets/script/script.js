@@ -162,31 +162,19 @@ if (taskBtn) {
 let quitBtn = document.querySelector('.btn_quit');
 
 
-// //fixed side_bar with scroll
-// // $(window).scroll(function(){
-// //   if ($(window).scrollTop() > 1) {
-// //       $('.side_bar').addClass('fixed_side_bar');
-// //   }
-// //   else {
-// //       $('.side_bar').removeClass('fixed_side_bar');
-// //   }
-// // });
+//fixed top-baw with onscroll
 
+ window.onscroll = function() {myFunction()};
+ function myFunction() {
+   if ( document.documentElement.scrollTop > 200 ) {
+     document.getElementById("fixedSB").className = "fixed_side_bar";
+   } else {
+     document.getElementById("fixedSB").className = "";
+   }
+ }
+ 
 
-
-
-
-// window.onscroll = function() {myFunction()};
-
-// function myFunction() {
-//   if (window.scrollTop > 200 ) {
-//     document.getElementById("fixedSB").className = "";
-//     console.log('hiiii');
-
-//   } else {
-//     document.getElementById("fixedSB").className = "fixed_side_bar";
-//   }
-
+ //
 if (quitBtn) {
   quitBtn.addEventListener('click', () => {
     body.style.overflow = 'auto'
