@@ -1,25 +1,22 @@
 .btn {
-    font-family: $main-font;
-    text-transform: uppercase;
-    border: none;
-    background-color: $base-color;
-    color: white;
-    font-size: 1rem;
-    border-radius: 36px;
-    padding: 0.5rem;
-    outline: none;
   text-transform: uppercase;
   border: none;
-  background-color: lighten($base-color, 10%);
+  background-color: lighten($base-color, 5%);
   color: white;
   font-size: 1rem;
   border-radius: 36px;
   padding: 0.5rem;
   outline: none;
 }
-
 button {
   border: none;
   outline: none;
   background: transparent;
+}
+
+.search-btn {
+color: black;
+  &:hover {
+    color: $base-color;
+  }
 }

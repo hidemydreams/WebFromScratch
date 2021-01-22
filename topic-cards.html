@@ -29,20 +29,10 @@
                 <a href="index.html" class="nav__logo hero__nav-logo"><img src="assets/img/logo.svg" alt=""></a>
                 <ul class="navigation__list">
                     <li>
-                        <a class="nav__link hero__nav-link" href="index.html">Main Page</a>
-                    </li>
-                    <li>
-                        <a class="nav__link hero__nav-link" href="questions.html">Faq</a>
-                    </li>
-                    <li>
-                        <a class="nav__link hero__nav-link" href="topic-cards.html">Learn Now</a>
-                    </li>
-                    <li>
-                        <a class="nav__link hero__nav-link" href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a class="nav__link hero__nav-link" href="contact.html">Contact Us</a>
-                    </li>
+                        <a class="nav__link hero__nav-link" href="articles.html">Articles</a>                </li>
+                        <li>
+                            <a class="nav__link hero__nav-link" href="topic-cards.html">Learning</a>
+                        </li>
                 </ul>
                 <div class="nav__registration">
                     <a href="#!" class="nav__login">Login</a>
@@ -55,20 +45,14 @@
                 <div class="vertical__content">
                     <div class="vertical__menu">
                         <i class="search-btn fas fa-search"></i>
-                    <!-- Search Form -->
-                    <div class="search-form">
-                        <input class='vertical-search' type="text" placeholder='I find...'>
-                        <div class="search-close">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
                         <a href="index.html" class="sidebar__logo">
-                            <img src="assets/img/logo.svg" alt="">
+                            <img src="assets/img/small-logo.svg" alt="">
                         </a>
                         <i class="burger-icon fas fa-bars"></i>
+                        <i class="close-burger fas fa-times"></i>
                     </div>
                     <ul class="burger__list">
-                        <li><a href="index.html" class="burger__link">Home</a></li>
+                        <li><a href="articles.html" class="burger__link">Articles</a></li>
                         <li><a href="questions.html" class="burger__link">Faq</a></li>
                         <li><a href="topic-cards.html" class="burger__link">Learn Now</a></li>
                         <li><a href="about.html" class="burger__link">About</a></li>
@@ -115,40 +99,15 @@
         <!-- --------------------------------MAIN--------------------------------- -->
         <main>
 
-            <!--PopUps-->
-            <div class="popup log__popup">
-                <div class="modal log__modal">
-                    <h3 class=" modal__item log__title">Log In</h3>
-                    <input placeholder='Email' class=' modal__item log__login' type="text">
-                    <input placeholder='Password' class='modal__item log__pass' type="password">
-                    <button class="btn modal__item log__btn">Log in</button>
-                    <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
-                </div>
-            </div>
-            <div class="popup reg__popup">
-                <div class="modal reg__modal ">
-                    <h3 class=" modal__item reg__title">Sign Up</h3>
-                    <input placeholder='Email' class=' modal__item reg__login' type="text">
-                    <input placeholder='Password' class='modal__item log__pass' type="password">
-                    <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
-                    <button class="btn modal__item reg__btn">Sign Up</button>
-                    <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
-                </div>
-            </div>
 
-            <!-- -------------... Section------------- -->
-            <div class="title">
-                <div class="container">
-                    <h3>Choose The Topic You Need</h3>
-                    <p>Folly words widow one downs few age every seven. If miss part by fact he park just shew.<br> Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. <br>Unwilling departure education is be dashwoods
-                        or an.</p>
-                </div>
-            </div>
+            <!-- -------------Cards Section-------------
             <section class="cards">
                 <div class="container">
+                    <h3 class="title cards__title">Choose The Topic You Need</h3>
+                    <p class="desc cards__desc">Here you can choose any topic you would like. Some brief information with short explanations and main concepts are waiting for you.</p>
                     <div class="cards_item">
                         <div class="card">
-                            <a class="article" href="html-page.html">
+                            <a href="html-page.html">
                                 <div class="front">
                                     <h1> HTML</h1>
                                 </div>
@@ -156,20 +115,20 @@
                                 <div class="back">
                                     <p>HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications.
                                     </p>
-                                    <button class="view">VIEW</button>
+                                    <button class="btn btn-view">VIEW</button>
                                 </div>
                             </a>
                         </div>
-                        <div class="card ">
+                        <div class="card">
                             <a href="css-page.html">
                                 <div class="front">
                                     <h1> CSS</h1>
                                 </div>
                                 <div class="back">
                                     <p>
-                                        CSS stands for Cascading Style Sheets. It is the coding language that gives a website its look and layout. 
+                                        CSS stands for Cascading Style Sheets. It is the coding language that gives a website its look and layout.
                                     </p>
-                                    <button class="view">VIEW</button>
+                                    <button class="btn btn-view">VIEW</button>
                                 </div>
                             </a>
                         </div>
@@ -179,9 +138,9 @@
                                     <h1> JS</h1>
                                 </div>
                                 <div class="back">
-                                    <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. 
+                                    <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
                                     </p>
-                                    <button class="view">VIEW</button>
+                                    <button class="btn btn-view">VIEW</button>
                                 </div>
                             </a>
                         </div>
@@ -193,7 +152,7 @@
                                 <div class="back">
                                     <p>Structured Query Language, commonly known as SQL, is a standard programming language for relational databases.
                                     </p>
-                                    <button class="view">VIEW</button>
+                                    <button class="btn btn-view">VIEW</button>
                                 </div>
                             </a>
                         </div>
@@ -205,7 +164,7 @@
                                 <div class="back">
                                     <p>Learn the basics of computer programming to truly understand what stays behind multiple processes.
                                     </p>
-                                    <button class="view">VIEW</button>
+                                    <button class="btn btn-view">VIEW</button>
                                 </div>
                             </a>
                         </div>
@@ -217,12 +176,100 @@
                                 <div class="back">
                                     <p>Git is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.
                                     </p>
-                                    <button class="view">VIEW</button>
+                                    <button class="btn btn-view">VIEW</button>
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
+            </section> -->
+
+
+            <section class="topics">
+                <div class="container">
+                    <h3 class="title topics__title">Choose The Topic You Need</h3>
+                    <p class="desc topics__desc">Here you can choose any topic you would like. Some brief information with short explanations and main concepts are waiting for you.</p>
+                <div class="topics__items">
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            HTML
+                        </h3>
+                        <p class="card__desc">
+                            HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications.
+                        </p>
+                        <div class="card__lower">
+                            <a href="html-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            CSS
+                        </h3>
+                        <p class="card__desc">
+                            CSS stands for Cascading Style Sheets. It is the coding language that gives a website its look and layout.
+                        </p>
+                        <div class="card__lower">
+                            <a href="css-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            Javascript
+                        </h3>
+                        <p class="card__desc">
+                            JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
+                        </p>
+                        <div class="card__lower">
+                            <a href="js-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            SQL
+                        </h3>
+                        <p class="card__desc">
+                            Structured Query Language, commonly known as SQL, is a standard programming language for relational databases.
+                        </p>
+                        <div class="card__lower">
+                            <a href="sql-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            Basics
+                        </h3>
+                        <p class="card__desc">
+                            Learn the basics of computer programming to truly understand what stays behind multiple processes.
+                        </p>
+                        <div class="card__lower">
+                            <a href="basic-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            GIT
+                        </h3>
+                        <p class="card__desc">
+                            Git is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.
+                        </p>
+                        <div class="card__lower">
+                            <a href="git-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </section>
         </main>
 
@@ -250,11 +297,11 @@
                             Topics
                         </h4>
                         <ul class="footer__list">
-                            <li><a href="html.html" class="footer__link">HTML</a></li>
-                            <li><a href="js.html" class="footer__link">JS</a></li>
-                            <li><a href="css.html" class="footer__link">CSS</a></li>
-                            <li><a href="comp-science.html" class="footer__link">Basic Computer Science</a></li>
-                            <li><a href="sql.html" class="footer__link">SQL</a></li>
+                            <li><a href="html-page.html" class="footer__link">HTML</a></li>
+                            <li><a href="js-page.html" class="footer__link">JS</a></li>
+                            <li><a href="css-page.html" class="footer__link">CSS</a></li>
+                            <li><a href="basic-page.html" class="footer__link">Basic Computer Science</a></li>
+                            <li><a href="sql-page.html" class="footer__link">SQL</a></li>
                         </ul>
                     </div>
                     <div class="footer__info">
@@ -296,6 +343,76 @@
 
 
 
+    <!--PopUps-->
+    <div class="popup log__popup">
+        <div class="modal log__modal">
+            <h3 class=" modal__item log__title">Log In</h3>
+            <input placeholder='Email' class=' modal__item log__login' type="text">
+            <input placeholder='Password' class='modal__item log__pass' type="password">
+            <button class="btn modal__item log__btn">Log in</button>
+            <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="popup reg__popup">
+        <div class="modal reg__modal ">
+            <h3 class=" modal__item reg__title">Sign Up</h3>
+            <input placeholder='Email' class=' modal__item reg__login' type="text">
+            <input placeholder='Password' class='modal__item log__pass' type="password">
+            <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
+            <button class="btn modal__item reg__btn">Sign Up</button>
+            <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+    </div>
+
+      <!-- Search Form -->
+      <div class="search-form">
+        <input class='search-input' type="text" placeholder='I am serching for...'>
+        <div class="search__content">
+            <div class="search__column">
+                <h3 class="search__title">
+                    Learning
+                </h3>
+                <div class="search__results">
+                    <ul>
+                        <li><a href="#!" class="search__result">HTML</a></li>
+                        <li><a href="#!" class="search__result">CSS</a></li>
+                        <li><a href="#!" class="search__result">Basics</a></li>
+                        <li><a href="#!" class="search__result">SQl</a></li>
+                        <li><a href="#!" class="search__result">Javascript</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search__column">
+                <h3 class="search__title">
+                    Articles
+                </h3>
+                <div class="search__results">
+                    <ul>
+                        <li><a href="#!" class="search__result">Animations Crash Course</a></li>
+                        <li><a href="#!" class="search__result">Margin Collapse</a></li>
+                        <li><a href="#!" class="search__result">Small guide to SCSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search__column">
+                <h3 class="search__title">
+                    Cheatsheets
+                </h3>
+                <div class="search__results">
+                    <ul>
+                        <li><a href="#!" class="search__result">HTML Cheatsheet</a></li>
+                        <li><a href="#!" class="search__result">CS Cheatsheets</a></li>
+                        <li><a href="#!" class="search__result">JS Cheatsheet</a></li>
+                        <li><a href="#!" class="search__result">:nth-child Cheatsheet</a></li>
+                        <li><a href="#!" class="search__result"></a>SQL Cheatsheet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search-close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
 
     <!-- ------JS SCRIPT------ -->
 

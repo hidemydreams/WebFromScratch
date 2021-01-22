@@ -1,7 +1,8 @@
 footer {
   background-color: $base-color;
-  padding: 50px 0px;
   color: white;
+  padding-top: 30px;
+  margin-top: 20px;
 
   * {
     margin-bottom: 20px;
@@ -45,7 +46,7 @@ footer {
   transition: .2s;
 
   &:hover {
-    color: darken(white, 20%)
+    color: darken(white, 5%)
   }
 }
 

@@ -26,6 +26,7 @@
   .side_bar ul {
       display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: space-around;
       list-style-type: disc;
   }
@@ -42,7 +43,6 @@
   span {
       color: white;
       padding-top: 3px;
-      font-size: 26px;
   }
   
   .side_bar li::marker {
