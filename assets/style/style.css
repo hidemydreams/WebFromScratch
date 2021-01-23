@@ -2177,6 +2177,12 @@ span {
   margin-left: 1%;
 }
 
+.fixed_article_menu {
+  position: sticky;
+  opacity: 0.6;
+  top: 0;
+}
+
 .topic {
   font-size: 2rem;
   margin: 10;

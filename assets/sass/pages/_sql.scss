@@ -19,10 +19,16 @@
     float:right; 
     width:24%; 
     margin-left:1%;
-
     
 }
     
+
+.fixed_article_menu {
+  position: sticky;
+  opacity: .6;
+  top : 0;
+    }
+
 
 .topic {
   
