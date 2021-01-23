@@ -164,14 +164,14 @@ let quitBtn = document.querySelector('.btn_quit');
 
 //fixed top-baw with onscroll
 
- window.onscroll = function() {myFunction()};
- function myFunction() {
-   if ( document.documentElement.scrollTop > 180 ) {
-     document.getElementById("fixedSB").className = "fixed_side_bar";
-   } else {
-     document.getElementById("fixedSB").className = "";
-   }
- }
+//  window.onscroll = function() {myFunction()};
+//  function myFunction() {
+//    if ( document.documentElement.scrollTop > 180 ) {
+//      document.getElementById("fixedSB").className = "fixed_side_bar";
+//    } else {
+//      document.getElementById("fixedSB").className = "";
+//    }
+//  }
  
 
  //
@@ -181,9 +181,6 @@ if (quitBtn) {
     taskModal.classList.remove('show-modal');
 })
 }
-
-
-
     //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
@@ -226,3 +223,13 @@ articles.forEach((article) => {
     window.location.href = 'oops.html'
   })
 })
+
+// Cards Links 
+
+let cards = document.querySelectorAll(".topics__card");
+for (let i=0; i<cards.length; i++) {
+  cards[i].addEventListener('click', function(e) {
+    let link = this.querySelector(".card__link");
+    link.click();
+  });
+};
