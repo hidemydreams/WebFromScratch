@@ -883,11 +883,16 @@ button {
   bottom: 50px;
   right: 50px;
 }
+@media (max-width: 575.98px) {
+  .icon_message {
+    bottom: 30px;
+    right: 30px;
+  }
+}
 
 .icon_message img {
   width: 100px;
   height: 100px;
-  color: gray;
   background: white;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
