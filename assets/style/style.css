@@ -2180,7 +2180,7 @@ span {
 .fixed_article_menu {
   position: sticky;
   opacity: 0.6;
-  top: 0;
+  top: 3em;
 }
 
 .topic {

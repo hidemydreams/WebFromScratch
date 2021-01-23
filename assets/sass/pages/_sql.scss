@@ -26,7 +26,9 @@
 .fixed_article_menu {
   position: sticky;
   opacity: .6;
-  top : 0;
+ // min-height: 2em;
+   top:  3em;
+
     }
 
 
@@ -49,8 +51,6 @@
 //list-style: none;
     //background-color: $base-color;
     //margin-top: 40px;
-
-
 
   &:hover {
       background-color: darken($base-color, 20%);

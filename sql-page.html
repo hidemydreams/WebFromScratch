@@ -130,7 +130,7 @@
         <section class="sql">          
             <div class="container">
                 <div class="title article_title">
-                  <h1 >What is SQL </h1>
+                  <h1 id="#homeSQL">What is SQL </h1>
                    <!---- <a href="article-SQL.html" class="title article__title">What is SQL</a></li> -->
                    <h6>At the end of this topic you will:</h6>
                   
@@ -146,9 +146,10 @@
                 <div id="article_menu" class="main-text article_right_menu">
 
                     <ul class="article_menu1"> 
+                    <li type="disc" class="article_li"><a href="#homeSQL" class="mainmenu1">Home SQL</a></li>   
                     <li type="disc" class="article_li"><a href="#topic1" class="mainmenu1">TABLE</a></li>                    
                                      
-                    <li type="disc" class="article_li"><a href="#topic2" class="mainmenu1">DATA ENTRY</a></li>                    
+                    <li type="disc"  class="article_li"><a href="#topic2" class="mainmenu1">DATA ENTRY</a></li>                    
                     <li type="disc" class="article_li"><a href="#topic3" class="mainmenu1">SELECT</a></li>                    
                     <li type="disc" class="article_li"><a href="#topic4" class="mainmenu1">WHERE</a></li>                    
                     <li type="disc" class="article_li"><a href="#topic5" class="mainmenu1">AND/OR</a></li>   
@@ -222,21 +223,21 @@
                     <h1 id="topic3" class="topic">SELECT    </h1>
                     <p class="desc article__text"> 
                                                 
-                        This query is used when we need to show data in a table. Probably the easiest example of SELECT usage is the following query:
+                        This query is used when we need to show data in a table. Probably the easiest example of SELECT usage is the following query:<br>
 
-                        SELECT * FROM characters
+                        <b>SELECT * FROM characters </b><br><br>
 
-                        The result of this query is a table with all data in the table. An asterisk (*) sign means that we want to show all columns from the table without exception.
+                        The result of this query is a table with all data in the table. An asterisk (*) sign means that we want to show all columns from the table without exception.<br>
 
-                        Since there is usually more than one table in the database, we need to specify the name of the table from which we want to see the data. We can do this by using the FROM keyword.
+                        Since there is usually more than one table in the database, we need to specify the name of the table from which we want to see the data. We can do this by using the FROM keyword.<br>
 
-                        When you only need some columns from a table, you can specify their names by comma instead of an asterisk.
+                        When you only need some columns from a table, you can specify their names by comma instead of an asterisk.<br>
 
-                        SELECT name, weapon FROM characters
+                        <b>SELECT name, weapon FROM characters</b><br><br>
 
-                        Also, sometimes we need to sort the output. For this we use ORDER BY “column name”. ORDER BY has two modifiers: ASC (ascending) (default) and DESC (descending).
+                        Also, sometimes we need to sort the output. For this we use ORDER BY “column name”. ORDER BY has two modifiers: ASC (ascending) (default) and DESC (descending).<br>
 
-                        SELECT name, weapon FROM "characters" ORDER BY name DESC
+                        <b>SELECT name, weapon FROM "characters" ORDER BY name DESC</b>
 
                     </p>
                     <br>
@@ -244,54 +245,54 @@
                     <h1 id="topic4" class="topic">WHERE </h1>
                     <p class="desc article__text"> 
                                                 
-                        Now we know how to show only specific columns, but what if we want to include only some specific rows in the output? We use WHERE for that. This keyword allows us to filter the data by a specific condition.
+                        Now we know how to show only specific columns, but what if we want to include only some specific rows in the output? We use WHERE for that. This keyword allows us to filter the data by a specific condition.</b>
 
-                        In the next query, we will only output characters that use the gun as a weapon.
+                        In the next query, we will only output characters that use the gun as a weapon.</br>
 
-                        SELECT *
-                        FROM characters
-                        WHERE weapon = 'pistol';
+                        <b>SELECT *<br>
+                        FROM characters<br>
+                        WHERE weapon = 'pistol';<br></b>
                     </p>
                     <br>
 
                     <h1 id="topic5" class="topic">AND/OR</h1>
                     <p class="desc article__text"> 
                                                 
-                        Conditions in WHERE can be written using logical operators (AND/OR) and mathematical comparison operators (=, <, >, <=, >=, <>).
+                        Conditions in WHERE can be written using logical operators (AND/OR) and mathematical comparison operators (=, <, >, <=, >=, <>).<br>
 
-                        For example, we have a tablet that records data on 4 of the best selling music albums of all time. Let’s display only those that are rock genre, and sales were less than 50 million copies.
+                        For example, we have a tablet that records data on 4 of the best selling music albums of all time. Let’s display only those that are rock genre, and sales were less than 50 million copies.<br>
 
-                        SELECT *
-                        FROM albums
-                        WHERE genre = 'rock' AND sales_in_millions <= 50
-                        ORDER BY released
+                        <b>SELECT *<br>
+                        FROM albums<br>
+                        WHERE genre = 'rock' AND sales_in_millions <= 50<br>
+                        ORDER BY released<br></b>
                     </p>
                     <br>
 
                     <h1 id="topic6" class="topic">IN/BETWEEN/LIKE</h1>
                     <p class="desc article__text"> 
-                        Conditions in WHERE can be written using several other commands, which are:
+                        Conditions in WHERE can be written using several other commands, which are:<br>
 
-                        IN – compares the value in a column with several possible values and returns true if the value matches at least one value
-                        BETWEEN – checks if the value is in a certain interval
-                        LIKE – looking for a pattern
-                        For example, we can make a query to display data about albums in pop or soul genre:
+                        <b>IN </b>– compares the value in a column with several possible values and returns true if the value matches at least one value<br>
+                        <b>BETWEEN </b>– checks if the value is in a certain interval<br>
+                        <b>LIKE </b>– looking for a pattern<br><br>
+                        For example, we can make a query to display data about albums in pop or soul genre:<br>
                         
-                        SELECT * FROM albums WHERE genre IN ('pop', 'soul');
+                        <b>SELECT * FROM albums WHERE genre IN ('pop', 'soul');</b><br><br>
                         
-                        If we want to output all albums that were released between 1975 and 1985, we can use the following record:
+                        If we want to output all albums that were released between 1975 and 1985, we can use the following record:<br>
                         
-                        SELECT * FROM albums WHERE released BETWEEN 1975 AND 1985;
+                        <b>SELECT * FROM albums WHERE released BETWEEN 1975 AND 1985;</b><br><br>
                         
-                        Also, if we want to output all albums that have an ‘R’ in their title, we can use the following record:
+                        Also, if we want to output all albums that have an ‘R’ in their title, we can use the following record:<br>
                         
-                        SELECT * FROM albums WHERE album LIKE '%R%';
+                        <b>SELECT * FROM albums WHERE album LIKE '%R%';</b><br><br>
                         
                         The % sign means any sequence of characters (0 characters also counts as a sequence).
                         
-                        If we want to output all albums with ‘R’ as the first letter in their title, the record will change slightly:
+                        If we want to output all albums with ‘R’ as the first letter in their title, the record will change slightly:<br>
                         
-                        SELECT * FROM albums WHERE album LIKE 'R%';
+                        <b>SELECT * FROM albums WHERE album LIKE 'R%';</b><br><br>
                         
                         SQL also has an inversion. For example, try to write NOT before any logical expression in the condition (NOT BETWEEN and so on).
                     </p>
@@ -300,25 +301,25 @@
                     <h1 id="topic7" class="topic">FUNCTIONS</h1>
                     <p class="desc article__text"> 
                                                 
-                        SQL is full of built-in functions for performing various operations. We will show you only the most frequently used functions:
+                        SQL is full of built-in functions for performing various operations. We will show you only the most frequently used functions:<br>
 
-                        COUNT() – returns the number of lines
-                        SUM() – returns the sum of all fields with numerical values in them
-                        AVG() – returns the average value among rows
-                        MIN()/MAX() – returns minimum/maximum value among rows
-                        To display the year of release of the oldest album, you can use the following query in the table:
+                        <b>COUNT()</b> – returns the number of lines<br>
+                        <b>SUM() </b>– returns the sum of all fields with numerical values in them<br>
+                        <b>AVG()</b> – returns the average value among rows<br>
+                        <b>MIN()/MAX() </b>– returns minimum/maximum value among rows<br><br>
+                        To display the year of release of the oldest album, you can use the following query in the table:<br>
 
-                        SELECT MAX(released) FROM albums;
+                        <b>SELECT MAX(released) FROM albums;</b><br><br>
 
                         Note that if you write a query asking, for example, for the name and average of something, you will get an error in the output.
 
-                        Let’s say that you are writing such a query:
+                        Let’s say that you are writing such a query:<br>
 
-                        SELECT name, avg(age) FROM students;
+                        <b>SELECT name, avg(age) FROM students;</b><br><br>
 
-                        To avoid the error, you should add the following line:
+                        To avoid the error, you should add the following line:<br>
 
-                        GROUP BY name
+                        <b>GROUP BY name</b><br><br>
 
                         The reason for this is that the avg(age) record is aggregated and you need to group the values by name.
                      </p>
