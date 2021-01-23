@@ -1,19 +1,11 @@
 .hero-section {
-  height: 100vh;
-  // background-image: url(/WebFromScratch/assets/img/bg-png.png);
   background-repeat: no-repeat;
   background-size: cover;
-
-  @media (max-width: $smallest) {
-    height: auto;
-  }
 }
 
 .hero__content {
   display: flex;
-  margin-left: 70px;
   margin-top: 20px;
-
   @media (max-width: $medium) {
     margin-top: 100px;
   }

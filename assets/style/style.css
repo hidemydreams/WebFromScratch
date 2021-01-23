@@ -880,6 +880,7 @@ button {
 
 .icon_message {
   position: fixed;
+
   bottom: 50px;
   right: 50px;
 }
@@ -893,6 +894,7 @@ button {
 .icon_message img {
   width: 100px;
   height: 100px;
+
   background: white;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
@@ -906,10 +908,13 @@ button {
 
 @keyframes radial-pulse {
   0% {
+
     box-shadow: 0 0 0 0px rgba(79, 145, 217, 0.5);
   }
   100% {
     box-shadow: 0 0 0 40px rgba(79, 145, 217, 0);
+
+
   }
 }
 .popup {
@@ -1356,9 +1361,13 @@ button {
   padding: 20px;
   margin-bottom: 30px;
   overflow: hidden;
+  cursor: pointer;
 }
 .topics__link {
   color: white;
+}
+.topics__wrapper {
+  display: block;
 }
 
 .card {
@@ -1653,19 +1662,12 @@ span {
 }
 
 .hero-section {
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media (max-width: 575.98px) {
-  .hero-section {
-    height: auto;
-  }
 }
 
 .hero__content {
   display: flex;
-  margin-left: 70px;
   margin-top: 20px;
 }
 @media (max-width: 991.98px) {
@@ -2294,10 +2296,6 @@ span {
 
 .login__tab {
   background-color: #269adb;
-}
-
-.history {
-  text-align: center;
 }
 
 .history h1 {

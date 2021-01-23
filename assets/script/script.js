@@ -164,6 +164,7 @@ let quitBtn = document.querySelector('.btn_quit');
 
 //fixed top-baw with onscroll
 
+
  window.onscroll = function() {myFunction()};
  
  function myFunction() {
@@ -185,6 +186,7 @@ let quitBtn = document.querySelector('.btn_quit');
     }
 }
 
+
  //
 if (quitBtn) {
   quitBtn.addEventListener('click', () => {
@@ -192,9 +194,6 @@ if (quitBtn) {
     taskModal.classList.remove('show-modal');
 })
 }
-
-
-
     //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
@@ -237,3 +236,13 @@ articles.forEach((article) => {
     window.location.href = 'oops.html'
   })
 })
+
+// Cards Links 
+
+let cards = document.querySelectorAll(".topics__card");
+for (let i=0; i<cards.length; i++) {
+  cards[i].addEventListener('click', function(e) {
+    let link = this.querySelector(".card__link");
+    link.click();
+  });
+};
