@@ -2179,8 +2179,14 @@ span {
   margin-left: 1%;
 }
 
+.fixed_article_menu {
+  position: sticky;
+  opacity: 0.6;
+  top: 3em;
+}
+
 .topic {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 10;
   color: #52aee2;
   padding-bottom: 20px;
@@ -2188,14 +2194,18 @@ span {
 
 .article_li {
   color: white;
-  background-color: #a4e9ee;
+  background-color: #52aee2;
   font-size: 1rem;
   padding: 10px;
   margin-bottom: 10px;
   transition: 0.4s;
 }
 .article_li:hover {
-  background-color: #269adb;
+  background-color: #1e7bb0;
+}
+
+.article_li a {
+  color: white;
 }
 
 .article_mainmenu1 {

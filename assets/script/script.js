@@ -52,10 +52,10 @@ burgerBtn.addEventListener('click', () => {
     sidebar.classList.add('burger');
 })
 
-closeBurger.addEventListener('click', () => {
-    body.style.overflow = 'auto';
-    sidebar.classList.remove('burger');
-})
+//  closeBurger.addEventListener('click', () => {
+//     body.style.overflow = 'auto';
+//     sidebar.classList.remove('burger');
+//  })
 
 // Search Button
 
@@ -164,15 +164,28 @@ let quitBtn = document.querySelector('.btn_quit');
 
 //fixed top-baw with onscroll
 
-//  window.onscroll = function() {myFunction()};
-//  function myFunction() {
-//    if ( document.documentElement.scrollTop > 180 ) {
-//      document.getElementById("fixedSB").className = "fixed_side_bar";
-//    } else {
-//      document.getElementById("fixedSB").className = "";
-//    }
-//  }
+
+ window.onscroll = function() {myFunction()};
  
+ function myFunction() {
+   if ( document.documentElement.scrollTop > 180 ) {
+     document.getElementById("fixedSB").className = "fixed_side_bar";
+   } else {
+     document.getElementById("fixedSB").className = "";
+   }
+ }
+ ///fixed top bar sql
+ if (document.getElementById("fix_menu")) {
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+      if ( document.documentElement.scrollTop > 350 ) {
+        document.getElementById("fix_menu").className = "fixed_article_menu";
+      } else {
+        document.getElementById("fix_menu").className = "";
+      }
+    }
+}
+
 
  //
 if (quitBtn) {
