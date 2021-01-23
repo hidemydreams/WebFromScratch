@@ -15,9 +15,12 @@
     }
 
 .article_right_menu {
+  
     float:right; 
     width:24%; 
-    margin-left:1%
+    margin-left:1%;
+
+    
 }
     
 
@@ -32,15 +35,25 @@
     
 .article_li {
   color: white;
-  background-color: rgb(164, 233, 238);
+  background-color:$base-color ;
   font-size: 1rem;
   padding: 10px;
   margin-bottom: 10px;
   transition: 0.4s;
+//list-style: none;
+    //background-color: $base-color;
+    //margin-top: 40px;
+
+
 
   &:hover {
-      background-color: darken($base-color, 10%)
+      background-color: darken($base-color, 10%);
+      
   }
+}
+
+.article_li a {
+  color: white;
 }
 
  .article_mainmenu1 {

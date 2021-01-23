@@ -2186,7 +2186,7 @@ span {
 
 .article_li {
   color: white;
-  background-color: #a4e9ee;
+  background-color: #52aee2;
   font-size: 1rem;
   padding: 10px;
   margin-bottom: 10px;
@@ -2194,6 +2194,10 @@ span {
 }
 .article_li:hover {
   background-color: #269adb;
+}
+
+.article_li a {
+  color: white;
 }
 
 .article_mainmenu1 {
