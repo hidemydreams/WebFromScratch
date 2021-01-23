@@ -52,10 +52,10 @@ burgerBtn.addEventListener('click', () => {
     sidebar.classList.add('burger');
 })
 
- closeBurger.addEventListener('click', () => {
-    body.style.overflow = 'auto';
-    sidebar.classList.remove('burger');
- })
+//  closeBurger.addEventListener('click', () => {
+//     body.style.overflow = 'auto';
+//     sidebar.classList.remove('burger');
+//  })
 
 // Search Button
 
