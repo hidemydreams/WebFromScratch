@@ -136,7 +136,7 @@
                   
                     <ul class="main-text article_title">                    
                         <li type="disc"><span>to know basic principles SQL</span></li>                    
-                        <li type="disc"><span>make simlpe queries</span></li> 
+                        <li type="disc"><span>create tables</span></li> 
                         <li type="disc"><span>to know basic principles SQL</span></li>                    
                         <li type="disc"><span>make simlpe queries</span></li> 
                       </ul>
@@ -146,9 +146,9 @@
                 <div class="main-text article_right_menu">
 
                     <ul class="article_menu1"> 
-                    <li type="disc" class="article_li"><a href="article-SQL.html" class="mainmenu1">SQL History</a></li>                    
+                    <li type="disc" class="article_li"><a href="article-SQL.html" class="mainmenu1">Table</a></li>                    
                                      
-                    <li type="disc" class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic1</a></li>                    
+                    <li type="disc" class="article_li"><a href="SQL-topic1.html" class="mainmenu1">Data Entry</a></li>                    
                     <li type="disc" class="article_li"><a href="SQL-topic2.html" class="mainmenu1">SQL Topic2</a></li>                    
                     <li type="disc" class="article_li"><a href="SQL-topic3.html" class="mainmenu1">SQL Topic3</a></li>                    
                     <li class="article_li"><a href="SQL-topic1.html" class="mainmenu1">SQL Topic4</a></li>                    
@@ -170,42 +170,42 @@
                         That is why we have prepared a short introduction, in which we will walk through the fundamental things in SQL. We strongly recommend you to try all the examples below yourself, because, as you know, theory is nothing without practice.
                         Well, here we go!
                     </p>
-                    <br>
+                    <br><br>
 
                     <h1 class="topic">LET’S CREATE A TABLE </h1>
                     <p class="desc article__text"> 
                                                 
                         In order to create a table in SQL, the expression CREATE TABLE is used. It accepts as parameters all columns that we want to enter, as well as their data types.
 
-                        Let’s create a table called “Months”, which will have three columns:
+                        Let’s create a table called “Months”, which will have three columns:<br><br>
 
-                        id – in other words, the ordinal number of the month (integer type or int)
-                        name – month name (string or varchar(10) (10 characters – maximum string length))
-                        days – number of days in a certain month (integer type or int)
-                        The code will look like this:
+                        <b>id</b> – in other words, the ordinal number of the month (integer type or int)<br>
+                        <b>name</b> – month name (string or varchar(10) (10 characters – maximum string length))<br>
+                        <b>days</b> – number of days in a certain month (integer type or int)<br><br>
+                        The code will look like this:<br>
 
-                        CREATE TABLE months (id int, name varchar(10), days int);
+                        <b>CREATE TABLE months (id int, name varchar(10), days int);</b><br><br>
 
                         Also, when creating tables, it’s customary to add the so-called primary key. This is a column where the values are unique.
 
                         Most often, the primary key column is id, but in our case it can also be name, since the names of all months are unique. For more information, please follow this link.
                     </p>
-                    <br>
+                    <br><br>
                     
                     <h1 class="topic">DATA ENTRY           </h1>
                     <p class="desc article__text"> 
                                                 
-                        Now let’s add a couple of months to our plaque. You can do that with the INSERT command. There are two different ways to use INSERT:
+                        Now let’s add a couple of months to our plaque. You can do that with the <b>&lt;INSERT></INSERT></b> command. There are two different ways to use INSERT:<br><br>
 
-                        The first method does not involve specifying column names, but only takes the values in the order they are in the table.
+                        The first method does not involve specifying column names, but only takes the values in the order they are in the table.<br>
                         
-                        INSERT INTO months VALUES (1, 'January',31);
+                        <b>INSERT INTO months VALUES (1, 'January',31);</b><br><br>
                         
-                        The first method is shorter than the second, but if we want to add more columns in the future, all previous requests will not work. We should use the second method to solve this problem.
+                        The first method is shorter than the second, but if we want to add more columns in the future, all previous requests will not work. We should use the second method to solve this problem.<br>
                         
-                        Its essence is that we specify the names of columns before entering the data.
+                        Its essence is that we specify the names of columns before entering the data.<br>
                         
-                        INSERT INTO months (id,name,days) VALUES (2,'February',29);
+                        <b>INSERT INTO months (id,name,days) VALUES (2,'February',29);</b><br><br>
                         
                         If we don’t specify one of the columns, we’ll write NULL or the default value, but that’s a different story.
                     
@@ -317,18 +317,118 @@
                      </p>
                      <br>
 
-                    <h1 class="topic">WHERE </h1>
+                    <h1 class="topic">ATTACHED SELECT </h1>
                     <p class="desc article__text"> 
                                                 
-                        Now we know how to show only specific columns, but what if we want to include only some specific rows in the output? We use WHERE for that. This keyword allows us to filter the data by a specific condition.
+                        In the previous steps, we learned how to make simple calculations with data. If we want to use the result of these calculations, we often need to use so-called nested queries. Let’s say we need to display the artist, the album and the year of the oldest album in the table.
 
-                        In the next query, we will only output characters that use the gun as a weapon.
+                        You can display these columns using the following query:
 
-                        SELECT *
-                        FROM characters
-                        WHERE weapon = 'pistol';
+                        SELECT artist, album, released FROM albums;
+
+                        We also know how to get the earliest year available:
+
+                        SELECT MIN(released) FROM album;
+
+                        You can merge these queries in WHERE:
+
+                        SELECT artist,album,released
+                        FROM albums
+                        WHERE released = (
+                        SELECT MIN(released) FROM albums
+                        );
                     </p>
                     <br>
+
+                    <h1 class="topic">ATTACHMENT OF TABLES</h1>
+                    <p class="desc article__text"> 
+                                                
+                        In complex databases, we most often have several linked tables. For example, we have two tables: about video games and about developers.
+
+                        In video_games table we have developer_id column, in this case it is so called foreign_key. To make it easier to understand, developer_id is a link between two tables.
+
+                        If we want to display all information about the game, including information about its developer, we need to connect the second table. To do this, we can use INNER JOIN:
+
+                        SELECT video_games.name, video_games.genre, game_developers.name, game_developers.country.
+                        FROM video_games
+                        INNER JOIN game_developers
+                        ON video_games.developer_id = game_developers.id;
+
+                        This is probably the simplest example of using JOIN. There are several other ways to use it. For more information, please follow this link.
+
+                    </p>
+                    <br>
+
+
+                    <h1 class="topic">ALIASES</h1>
+                    <p class="desc article__text"> 
+                                                
+                        If you look at the previous example, you will notice that there are two columns named equally: “name”. This can often be confusing. The solution to this problem are pseudonyms. By the way, they help make the column name more beautiful or understandable when necessary.
+
+                        To assign an alias to a column, you can use the keyword AS:
+                        
+                        SELECT games.name, games.genre, devs.name AS developer, devs.country
+                        FROM video_games AS games
+                        INNER JOIN game_developers AS devs
+                        ON games.developer_id = devs.id;
+                    </p>
+                    <br>
+
+                    <h1 class="topic">UPDATE </h1>
+                    <p class="desc article__text"> 
+                                                
+                        Often, we need to change the data in the table. In SQL, this is done using UPDATE.
+
+                        Using UPDATE includes:
+
+                        selecting the table that contains the field we want to change
+                        new value entry
+                        using WHERE to indicate a specific location in the table
+                        Let’s say we have a table of the most highly regarded shows of all time. However, we have a problem: “Game of Thrones” is marked as a comedy and we definitely need to change that:
+
+                        UPDATE tv_series.
+                        SET genre = 'drama'
+                        WHERE name = 'Game of Thrones';
+                    </p>
+                    <br>
+
+                    <h1 class="topic">REMOVING RECORDS FROM THE TABLE </h1>
+                    <p class="desc article__text"> 
+                                                
+                        Deleting a record from a table via SQL is a very simple operation. All you need to do is designate what we want to delete.
+
+                        DELETE FROM tv_series
+                        WHERE id = 4;
+
+                        Note: make sure you use WHERE when you delete an entry from the table. Otherwise, you will delete all records from the table without wanting to.
+
+
+                    </p>
+                    <br>
+
+                    <h1 class="topic">DELETING TABLES</h1>
+                    <p class="desc article__text"> 
+                                                
+                        If we want to remove all data from the table, but leave the table itself, we should use the TRUNCATE command:
+
+                        TRUNCATE TABLE table_name;
+
+                        If we want to remove the table itself, we should use the DROP command:
+
+                        DROP TABLE table_name;
+
+                    </p>
+                    <br>
+
+                    <h1 class="topic">CONCLUSION</h1>
+                    <p class="desc article__text"> 
+                                                
+                        On this note, we conclude this SQL tutorial. Of course, that’s not all, and there is still a lot to learn to fully master, but this introduction will give you an incentive to further explore.
+
+
+                    </p>
+                    <br>
+
 
                  </div>
             </div>
