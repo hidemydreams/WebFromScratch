@@ -40,15 +40,48 @@
 }
 // Search Btn
 
-.search-close i {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
+
+
+// Message Btn
+.icon_message {
+   position: fixed;
+
+   bottom: 50px;
+   right: 50px;
+
+   @media (max-width: $smallest) {
+   bottom: 30px;
+   right: 30px;
+  }
+
+  }
 
 
 
+.icon_message img {
+  //position: absolute; 
+ width: 50px;
+ height: 50px;
+ 
+  color: $base-color;
+  background: white;
+  border-radius: 50%;
+  animation: radial-pulse 1s infinite;
+  @media (max-width: $smallest) {
+    width: 60px;
+ height: 60px;
+   }
+
+  }
+
+  @keyframes radial-pulse {
+    0% {
+
+      box-shadow: 0 0 0 0px rgba(79, 145, 217, 0.5);
+    }
+       100% {
+      box-shadow: 0 0 0 40px rgba(79, 145, 217, 0);
+    }
+  }
+
+  

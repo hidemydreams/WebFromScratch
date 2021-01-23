@@ -1,5 +1,7 @@
 // PopUp Windows for Login And Registration
+
 let body = document.querySelector('body')
+
 let loginBtn = document.querySelector('.nav__login');
 let regBtn = document.querySelector('.nav__reg');
 let loginPopUp = document.querySelector('.log__popup');
@@ -7,32 +9,33 @@ let regPopUp = document.querySelector('.reg__popup');
 let outsidePopUp = document.querySelectorAll('.popup');
 let sidebarLogin = document.querySelector('.burger__log');
 let sidebarReg = document.querySelector('.burger__reg');
+// let showModal = document.querySelector('.show-modal')
 
 if (loginBtn) {
     loginBtn.addEventListener('click', () => {
-        loginPopUp.style.display = 'block';
+        loginPopUp.classList.add('show-modal');
         body.style.overflow = 'hidden';
     })
 
     sidebarLogin.addEventListener('click', (e) => {
         e.preventDefault()
-        loginPopUp.style.display = 'block'
+        loginPopUp.classList.add('show-modal');
     })
 
     sidebarReg.addEventListener('click', (e) => {
         e.preventDefault()
-        regPopUp.style.display = 'block'
+        loginPopUp.classList.add('show-modal');
     })
 
     regBtn.addEventListener('click', () => {
-        regPopUp.style.display = 'block'
+        regPopUp.classList.add('show-modal');
         body.style.overflow = 'hidden';
     })
 
     outsidePopUp.forEach((modal) => {
         modal.addEventListener('click', (e) => {
             if (e.target == modal) {
-                modal.style.display = 'none';
+                modal.classList.remove('show-modal');
                 body.style.overflow = 'auto';
             }
         })
@@ -45,12 +48,23 @@ let sidebar = document.querySelector('.vertical__bar');
 let closeBurger = document.querySelector('.close-burger');
 
 burgerBtn.addEventListener('click', () => {
+    body.style.overflow = 'hidden';
     sidebar.classList.add('burger');
 })
 
+<<
+<< << < HEAD
 // closeBurger.addEventListener('click', () => {
 //     sidebar.classList.remove('burger');
 // })
+    ===
+    === =
+    //  closeBurger.addEventListener('click', () => {
+    //     body.style.overflow = 'auto';
+    //     sidebar.classList.remove('burger');
+    //  })
+    >>>
+    >>> > 15e10 f993bd8efd98299940ae953e7e93663b964
 
 // Search Button
 
@@ -75,12 +89,12 @@ let closeBtn = document.querySelector('.contact__close');
 if (formBtn) {
     formBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        contactPop.style.display = 'block';
+        contactPop.classList.add('show-modal');
         body.style.overflow = 'hidden';
 
     })
     closeBtn.addEventListener('click', () => {
-        contactPop.style.display = 'none';
+        contactPop.classList.remove('show-modal');
         body.style.overflow = 'auto';
     })
 }
@@ -129,13 +143,18 @@ let modalComment = document.querySelector('.rating_popup');
 
 starBtns.forEach((starBtn) => {
     starBtn.addEventListener('click', () => {
-        modalComment.style.display = 'block';
+        body.style.overflow = 'hidden'
+        modalComment.classList.add('show-modal')
     })
 })
+
 let ratingBtn = document.querySelector('.btn_rating');
-ratingBtn.addEventListener('click', () => {
-    modalComment.style.display = 'none';
-})
+if (ratingBtn) {
+    ratingBtn.addEventListener('click', () => {
+        body.style.overflow = 'auto'
+        modalComment.classList.remove('show-modal')
+    })
+}
 
 
 
@@ -144,47 +163,106 @@ let taskBtn = document.querySelector('.link_comments');
 let taskModal = document.querySelector('.comments_popup');
 if (taskBtn) {
     taskBtn.addEventListener('click', (e) => {
+        body.style.overflow = 'hidden'
         e.preventDefault()
-        taskModal.style.display = 'block';
+        taskModal.classList.add('show-modal');
     })
 }
-let quitBtn = document.querySelector('.btn_quit');
+let quitBtn = document.querySelector('.btn_quit'); <<
+<< << < HEAD
 quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
 
 // <<
 // << << < HEAD
+===
+=== = >>>
+>>> > 15e10 f993bd8efd98299940ae953e7e93663b964
 
 
+//fixed top-baw with onscroll
 
 
-//     ===
-//     === = >>>
-//     >>> > 81791611 cbb4a66eeeecc36dbf5da67590d7656d
+window.onscroll = function() { myFunction() };
+
+function myFunction() {
+    if (document.documentElement.scrollTop > 180) {
+        document.getElementById("fixedSB").className = "fixed_side_bar";
+    } else {
+        document.getElementById("fixedSB").className = "";
+    }
+}
+///fixed top bar sql
+if (document.getElementById("fix_menu")) {
+    window.onscroll = function() { myFunction() };
+
+    function myFunction() {
+        if (document.documentElement.scrollTop > 350) {
+            document.getElementById("fix_menu").className = "fixed_article_menu";
+        } else {
+            document.getElementById("fix_menu").className = "";
+        }
+    }
+}
+
+
+//
+if (quitBtn) {
+    quitBtn.addEventListener('click', () => {
+        body.style.overflow = 'auto'
+        taskModal.classList.remove('show-modal');
+    })
+}
 //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
-console.log(tasksBtn);
-tasksBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    tasksModal.style.display = 'block';
-})
+if (taskBtn) {
+    tasksBtn.addEventListener('click', (e) => {
+        body.style.overflow = 'hidden'
+        e.preventDefault()
+        tasksModal.classList.add('show-modal')
+    })
+}
 
 let taskBtnQuit = document.querySelector('.btn_tasks');
 if (taskBtnQuit) {
     taskBtnQuit.addEventListener('click', () => {
-        tasksModal.style.display = 'none';
+        body.style.overflow = 'auto'
+        tasksModal.classList.remove('show-modal')
     })
+
 }
-
-
 
 //PopUp for mistake
 let mistakePopup = document.querySelector('.mistakes');
 let mistakeModal = document.querySelector('.mistake_popup');
 let mistakeBtn = document.querySelector('.btn_article');
-mistakePopup.addEventListener('click', (e) => {
-    e.preventDefault()
-    mistakeModal.style.display = 'block';
+if (mistakePopup) {
+    mistakePopup.addEventListener('click', (e) => {
+        e.preventDefault()
+        body.style.overflow = 'hidden'
+        mistakeModal.classList.add('show-modal')
+    })
+}
+
+
+// Redirection for articles 
+
+let articles = document.querySelectorAll('.articles__item');
+
+articles.forEach((article) => {
+    article.addEventListener('click', () => {
+        window.location.href = 'oops.html'
+    })
 })
+
+// Cards Links 
+
+let cards = document.querySelectorAll(".topics__card");
+for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('click', function(e) {
+        let link = this.querySelector(".card__link");
+        link.click();
+    });
+};
