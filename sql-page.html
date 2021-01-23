@@ -109,11 +109,11 @@
                     <h1 id="topic0" class="topic">Every self-respecting web developer should know SQL. </h1>
                     <p class="desc article__text"> 
                                                 
-                        Although it has existed since the 70s of last century, it is still very widely used, and without it it will be difficult to create something serious.
+                        Although it has existed since the 70s of last century, it is still very widely used, and without it it will be difficult to create something serious.<br>
                         
-                        Most full-stack frameworks are able to work with SQL. Among them: ActiveRecord, Doctrine, Hibernate and many others. Despite this, sometimes you have to “dirty hands” and go into real SQL.
+                        Most full-stack frameworks are able to work with SQL. Among them: ActiveRecord, Doctrine, Hibernate and many others. Despite this, sometimes you have to “dirty hands” and go into real SQL.<br>
                         
-                        That is why we have prepared a short introduction, in which we will walk through the fundamental things in SQL. We strongly recommend you to try all the examples below yourself, because, as you know, theory is nothing without practice.
+                        That is why we have prepared a short introduction, in which we will walk through the fundamental things in SQL. We strongly recommend you to try all the examples below yourself, because, as you know, theory is nothing without practice.<br>
                         Well, here we go!
                     </p>
                     <br><br>
@@ -266,41 +266,41 @@
                     <h1 id="topic8" class="topic">ATTACHED SELECT </h1>
                     <p class="desc article__text"> 
                                                 
-                        In the previous steps, we learned how to make simple calculations with data. If we want to use the result of these calculations, we often need to use so-called nested queries. Let’s say we need to display the artist, the album and the year of the oldest album in the table.
+                        In the previous steps, we learned how to make simple calculations with data. If we want to use the result of these calculations, we often need to use so-called nested queries. Let’s say we need to display the artist, the album and the year of the oldest album in the table.<br>
 
-                        You can display these columns using the following query:
+                        You can display these columns using the following query:<br>
 
-                        SELECT artist, album, released FROM albums;
+                        <b>SELECT artist, album, released FROM albums;<br><br></b>
 
-                        We also know how to get the earliest year available:
+                        We also know how to get the earliest year available:<br>
 
-                        SELECT MIN(released) FROM album;
+                        <b>SELECT MIN(released) FROM album;<br><br></b>
 
-                        You can merge these queries in WHERE:
+                        You can merge these queries in WHERE:<br>
 
-                        SELECT artist,album,released
-                        FROM albums
-                        WHERE released = (
-                        SELECT MIN(released) FROM albums
-                        );
+                        <b>SELECT artist,album,released<br>
+                        FROM albums<br>
+                        WHERE released = (<br>
+                        SELECT MIN(released) FROM albums<br>
+                        );</b>
                     </p>
                     <br>
 
                     <h1 id="topic9" class="topic">ATTACHMENT OF TABLES</h1>
                     <p class="desc article__text"> 
                                                 
-                        In complex databases, we most often have several linked tables. For example, we have two tables: about video games and about developers.
+                        In complex databases, we most often have several linked tables. For example, we have two tables: about video games and about developers.<br>
 
-                        In video_games table we have developer_id column, in this case it is so called foreign_key. To make it easier to understand, developer_id is a link between two tables.
+                        In video_games table we have developer_id column, in this case it is so called foreign_key. To make it easier to understand, developer_id is a link between two tables.<br>
 
-                        If we want to display all information about the game, including information about its developer, we need to connect the second table. To do this, we can use INNER JOIN:
+                        If we want to display all information about the game, including information about its developer, we need to connect the second table. To do this, we can use INNER JOIN:<br><br>
 
-                        SELECT video_games.name, video_games.genre, game_developers.name, game_developers.country.
-                        FROM video_games
-                        INNER JOIN game_developers
-                        ON video_games.developer_id = game_developers.id;
+                        <b>SELECT video_games.name, video_games.genre, game_developers.name, game_developers.country.<br>
+                        FROM video_games<br>
+                        INNER JOIN game_developers<br>
+                        ON video_games.developer_id = game_developers.id;</b><br><br>
 
-                        This is probably the simplest example of using JOIN. There are several other ways to use it. For more information, please follow this link.
+                        This is probably the simplest example of using JOIN. There are several other ways to use it. For more information, please follow this link.<br>
 
                     </p>
                     <br>
@@ -309,14 +309,14 @@
                     <h1 id="topic10" class="topic">ALIASES</h1>
                     <p class="desc article__text"> 
                                                 
-                        If you look at the previous example, you will notice that there are two columns named equally: “name”. This can often be confusing. The solution to this problem are pseudonyms. By the way, they help make the column name more beautiful or understandable when necessary.
+                        If you look at the previous example, you will notice that there are two columns named equally: “name”. This can often be confusing. The solution to this problem are pseudonyms. By the way, they help make the column name more beautiful or understandable when necessary.<br>
 
-                        To assign an alias to a column, you can use the keyword AS:
+                        To assign an alias to a column, you can use the keyword AS:<br><br>
                         
-                        SELECT games.name, games.genre, devs.name AS developer, devs.country
-                        FROM video_games AS games
-                        INNER JOIN game_developers AS devs
-                        ON games.developer_id = devs.id;
+                        <b>SELECT games.name, games.genre, devs.name AS developer, devs.country<br>
+                        FROM video_games AS games<br>
+                        INNER JOIN game_developers AS devs<br>
+                        ON games.developer_id = devs.id;</b><br>
                     </p>
                     <br>
 
@@ -325,26 +325,26 @@
                                                 
                         Often, we need to change the data in the table. In SQL, this is done using UPDATE.
 
-                        Using UPDATE includes:
+                        Using UPDATE includes:<br>
 
-                        selecting the table that contains the field we want to change
-                        new value entry
-                        using WHERE to indicate a specific location in the table
-                        Let’s say we have a table of the most highly regarded shows of all time. However, we have a problem: “Game of Thrones” is marked as a comedy and we definitely need to change that:
+                        selecting the table that contains the field we want to change<br>
+                        new value entry<br>
+                        using WHERE to indicate a specific location in the table<br><br>
+                        Let’s say we have a table of the most highly regarded shows of all time. However, we have a problem: “Game of Thrones” is marked as a comedy and we definitely need to change that:<br><br>
 
-                        UPDATE tv_series.
-                        SET genre = 'drama'
-                        WHERE name = 'Game of Thrones';
+                        <b>UPDATE tv_series.<br>
+                        SET genre = 'drama'<br>
+                        WHERE name = 'Game of Thrones';</b><br>
                     </p>
                     <br>
 
                     <h1 id="topic12" class="topic">REMOVING RECORDS FROM THE TABLE </h1>
                     <p class="desc article__text"> 
                                                 
-                        Deleting a record from a table via SQL is a very simple operation. All you need to do is designate what we want to delete.
+                        Deleting a record from a table via SQL is a very simple operation. All you need to do is designate what we want to delete.<br>
 
-                        DELETE FROM tv_series
-                        WHERE id = 4;
+                        <b>DELETE FROM tv_series<br>
+                        WHERE id = 4;</b><br><br>
 
                         Note: make sure you use WHERE when you delete an entry from the table. Otherwise, you will delete all records from the table without wanting to.
 
@@ -357,11 +357,11 @@
                                                 
                         If we want to remove all data from the table, but leave the table itself, we should use the TRUNCATE command:
 
-                        TRUNCATE TABLE table_name;
+                        <b>TRUNCATE TABLE table_name;</b><br><br>
 
                         If we want to remove the table itself, we should use the DROP command:
 
-                        DROP TABLE table_name;
+                        <b>DROP TABLE table_name;</b><br>
 
                     </p>
                     <br>
