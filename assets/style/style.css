@@ -880,25 +880,41 @@ button {
 
 .icon_message {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+
+  bottom: 50px;
+  right: 50px;
+}
+@media (max-width: 575.98px) {
+  .icon_message {
+    bottom: 30px;
+    right: 30px;
+  }
 }
 
 .icon_message img {
-  width: 50px;
-  height: 50px;
-  color: #52aee2;
+  width: 100px;
+  height: 100px;
+
   background: white;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
 }
+@media (max-width: 575.98px) {
+  .icon_message img {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 @keyframes radial-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(82, 174, 226, 0.5);
+
+    box-shadow: 0 0 0 0px rgba(79, 145, 217, 0.5);
   }
   100% {
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 40px rgba(79, 145, 217, 0);
+
+
   }
 }
 .popup {
