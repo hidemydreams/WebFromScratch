@@ -48,9 +48,9 @@ burgerBtn.addEventListener('click', () => {
     sidebar.classList.add('burger');
 })
 
-closeBurger.addEventListener('click', () => {
-    sidebar.classList.remove('burger');
-})
+// closeBurger.addEventListener('click', () => {
+//     sidebar.classList.remove('burger');
+// })
 
 // Search Button
 
@@ -181,7 +181,7 @@ if (taskBtnQuit) {
 
 
 //PopUp for mistake
-let mistakePopup = document.querySelector('.mistake');
+let mistakePopup = document.querySelector('.mistakes');
 let mistakeModal = document.querySelector('.mistake_popup');
 let mistakeBtn = document.querySelector('.btn_article');
 mistakePopup.addEventListener('click', (e) => {
