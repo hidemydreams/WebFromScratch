@@ -45,16 +45,16 @@
 // Message Btn
 .icon_message {
    position: fixed;
-   bottom: 200px;
-   right: 80px
+   bottom: 20px;
+   right: 20px
   }
 
 .icon_message img {
   //position: absolute; 
- width: 100px;
- height: 100px;
+ width: 50px;
+ height: 50px;
  
-  color:gray;
+  color: $base-color;
   background: white;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
@@ -62,10 +62,10 @@
 
   @keyframes radial-pulse {
     0% {
-      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 0 0px rgba($base-color, 0.5);
     }
    
     100% {
-      box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
     }
   }
