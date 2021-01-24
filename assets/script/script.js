@@ -182,7 +182,7 @@ quitBtn.addEventListener('click', () => {
  if (document.getElementById("fix_menu")) {
     window.onscroll = function() {myFunction()};
     function myFunction() {
-      if ( document.documentElement.scrollTop > 135 ) {
+      if ( document.documentElement.scrollTop > 120) {
         document.getElementById("fix_menu").className = "fixed_article_menu";
       } else {
         document.getElementById("fix_menu").className = "";
