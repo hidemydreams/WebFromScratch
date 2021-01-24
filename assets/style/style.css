@@ -2188,6 +2188,14 @@ span {
   top: 3em;
 }
 
+.article_topic {
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 110%;
+}
+
 .topic {
   font-size: 2rem;
   margin: 10;
