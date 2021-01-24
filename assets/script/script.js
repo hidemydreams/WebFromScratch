@@ -169,18 +169,27 @@ quitBtn.addEventListener('click', () => {
 //fixed top-baw with onscroll
 
 
-// window.onscroll = function() { myFunction() };
+ window.onscroll = function() {myFunction()};
+ 
+ function myFunction() {
+   if ( document.documentElement.scrollTop > 180 ) {
+     document.getElementById("fixedSB").className = "fixed_side_bar";
+   } else {
+     document.getElementById("fixedSB").className = "";
+   }
+ }
+ ///fixed top bar sql
+ if (document.getElementById("fix_menu")) {
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+      if ( document.documentElement.scrollTop > 135 ) {
+        document.getElementById("fix_menu").className = "fixed_article_menu";
+      } else {
+        document.getElementById("fix_menu").className = "";
+      }
+    }
+}
 
-// function myFunction() {
-//     if (document.documentElement.scrollTop > 180) {
-//         document.getElementById("fixedSB").className = "fixed_side_bar";
-//     } else {
-//         document.getElementById("fixedSB").className = "";
-//     }
-// }
-///fixed top bar sql
-// if (document.getElementById("fix_menu")) {
-//     window.onscroll = function() { myFunction() };
 
 //     function myFunction() {
 //         if (document.documentElement.scrollTop > 350) {
