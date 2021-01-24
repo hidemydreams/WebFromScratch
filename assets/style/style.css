@@ -2279,6 +2279,12 @@ span {
 .article_li:hover {
   background-color: #1e7bb0;
 }
+@media (max-width: 575.98px) {
+  .article_li {
+    display: block;
+    font-size: 1rem;
+  }
+}
 
 .article_li a {
   color: white;

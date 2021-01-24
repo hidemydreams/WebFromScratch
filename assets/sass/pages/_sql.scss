@@ -21,6 +21,7 @@
 //   float:right; 
  width:44%; 
  margin-left:1%;
+
  }
 
 .fixed_article_menu {
@@ -85,6 +86,7 @@ padding-bottom: 20px;
 }
   
 .article_li {
+  
   color: white;
   background-color:$base-color ;
   font-size: 1.5rem;
@@ -99,6 +101,10 @@ padding-bottom: 20px;
 &:hover {
   background-color: darken($base-color, 20%);
      
+  }
+  @media (max-width: $smallest) {
+    display: block;
+    font-size: 1rem;
   }
 }
 .article_li a {
