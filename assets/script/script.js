@@ -178,7 +178,7 @@ let quitBtn = document.querySelector('.btn_quit');
  if (document.getElementById("fix_menu")) {
     window.onscroll = function() {myFunction()};
     function myFunction() {
-      if ( document.documentElement.scrollTop > 135 ) {
+      if ( document.documentElement.scrollTop > 125) {
         document.getElementById("fix_menu").className = "fixed_article_menu";
       } else {
         document.getElementById("fix_menu").className = "";
