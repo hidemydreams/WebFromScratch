@@ -164,20 +164,6 @@ quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
 
-
-
-//fixed top-baw with onscroll
-
-
- window.onscroll = function() {myFunction()};
- 
- function myFunction() {
-   if ( document.documentElement.scrollTop > 180 ) {
-     document.getElementById("fixedSB").className = "fixed_side_bar";
-   } else {
-     document.getElementById("fixedSB").className = "";
-   }
- }
  ///fixed top bar sql
  if (document.getElementById("fix_menu")) {
     window.onscroll = function() {myFunction()};
