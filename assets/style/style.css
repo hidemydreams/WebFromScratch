@@ -2154,11 +2154,18 @@ span {
 }
 
 .sql {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .article_title {
-  padding: 15px;
+  padding: 30px;
+}
+
+#title2 {
+  margin-top: 20px;
 }
 
 .article_title li {
