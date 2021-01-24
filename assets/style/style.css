@@ -880,7 +880,6 @@ button {
 
 .icon_message {
   position: fixed;
-
   bottom: 50px;
   right: 50px;
 }
@@ -892,9 +891,9 @@ button {
 }
 
 .icon_message img {
-  width: 100px;
-  height: 100px;
-
+  width: 50px;
+  height: 50px;
+  color: #52aee2;
   background: white;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
@@ -908,13 +907,10 @@ button {
 
 @keyframes radial-pulse {
   0% {
-
     box-shadow: 0 0 0 0px rgba(79, 145, 217, 0.5);
   }
   100% {
     box-shadow: 0 0 0 40px rgba(79, 145, 217, 0);
-
-
   }
 }
 .popup {
@@ -949,17 +945,20 @@ button {
   opacity: 1;
 }
 
-.log__modal, .reg__modal {
+.log__modal,
+.reg__modal {
   max-width: 250px;
   width: 100%;
   max-height: 400px;
   height: 100%;
 }
-.log__modal h3, .reg__modal h3 {
+.log__modal h3,
+.reg__modal h3 {
   color: white;
   font-size: 45px;
 }
-.log__modal input, .reg__modal input {
+.log__modal input,
+.reg__modal input {
   padding: 1.5vh;
   border: none;
   outline: none;
@@ -968,17 +967,21 @@ button {
   color: white;
   transition: 0.2s;
 }
-.log__modal input:hover, .reg__modal input:hover {
+.log__modal input:hover,
+.reg__modal input:hover {
   background-color: #7ec2e9;
 }
-.log__modal input::placeholder, .reg__modal input::placeholder {
+.log__modal input::placeholder,
+.reg__modal input::placeholder {
   color: white;
 }
 
-.log__btn, .reg__btn {
+.log__btn,
+.reg__btn {
   background-color: #68b8e6;
 }
-.log__btn:hover, .reg__btn:hover {
+.log__btn:hover,
+.reg__btn:hover {
   background-color: #7ec2e9;
 }
 
@@ -1198,6 +1201,7 @@ button {
   border: none;
   border-radius: 30px;
   max-width: 750px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
@@ -1213,30 +1217,37 @@ button {
   margin-bottom: 15px;
 }
 
-.mistakes {
+.mistake_item {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  align-items: flex-start;
+  max-width: 700px;
+  width: 100%;
 }
 
-.email {
+.mistake_item input {
   width: 50%;
   margin-bottom: 10px;
   border: 2px solid white;
   background-color: transparent;
   padding: 10px 0px 0px 10px;
   margin-right: 5px;
-  color: #001937;
+  color: white;
 }
 
-.message {
+.mistake_item input::placeholder {
+  color: white;
+}
+
+.mistake_item textarea {
   margin-bottom: 15px;
   order: none;
   background-color: transparent;
   border-bottom: 4px solid white;
   padding: 10px 0px 0px 10px;
   border: 2px solid white;
-  color: #001937;
+  max-width: 750px;
+  width: 100%;
 }
 
 /*----Links pop ups -------*/
@@ -1253,13 +1264,34 @@ button {
   color: #4f91d9;
 }
 
+.link_comments {
+  display: flex;
+  align-items: center;
+}
+
+.fas {
+  padding-left: 5px;
+}
+
 .tasks,
-.mistake {
+.mistakes {
   display: inline-block;
   width: 100px;
   text-align: center;
 }
 
+@media (max-width: 767.98px) {
+  .link_popups {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .link_tasks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .read-more {
   color: white;
 }
@@ -1562,6 +1594,13 @@ button {
   padding-left: 110px;
 }
 
+@media (max-width: 767.98px) {
+  .rating-area {
+    padding-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
 .rate_article {
   font-size: 18px;
   padding-top: 10px;
@@ -1817,6 +1856,8 @@ span {
 
 .articles {
   margin-bottom: 50px;
+  /*&__item {
+  }*/
 }
 .articles__title {
   margin-bottom: 30px;
@@ -1832,6 +1873,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 .article {
   color: white;
   background-color: #ff9ecd;
@@ -1944,7 +1986,8 @@ span {
   }
 }
 
-.about__img, .about__img-round {
+.about__img,
+.about__img-round {
   position: relative;
 }
 
@@ -2310,7 +2353,13 @@ span {
   color: #52aee2;
 }
 
-.about_items li {
+.about_items li::marker {
+  color: #ff4ba2;
+  margin-left: 10px;
+  font-size: 50px;
+}
+
+.about_items li span {
   color: #4f91d9;
   padding: 10px;
 }
@@ -2330,18 +2379,85 @@ span {
   text-align: center;
 }
 
-.messageDialog img {
-  height: 70px;
-  width: 70px;
-  right: 50px;
-  position: absolute;
-  transform: scale(1.01);
-}
+/* .messageDialog img {
+        height: 70px;
+        width: 70px;
+        right:50px;
+        position: absolute;
+        transform: scale(1.01);
+    }
 
-.messageDialog img:hover {
-  transform: scale(1.2);
-}
 
+    .messageDialog img:hover {       
+        transform: scale(1.2);
+        //-webkit-animation: 0.1s tremor ease-out infinite;  
+        //animation: 0.1s tremor ease-out infinite;    
+
+    }
+
+//   vibro messageDialog
+//     @-webkit-keyframes tremor {
+//         0%, 25% {
+//             left: -1px;
+//             top:-1px;
+//             -webkit-transform: translateX(-4%);
+//             transform: translateX(-4%);
+//         }
+//         50%, 100% {
+//             left: 1px;
+//             top: 1px;
+//             -webkit-transform: translateX(4%);
+//             transform: translateX(4%);
+//         }
+//     }
+//     @-moz-keyframes tremor {
+//         0%, 25% {
+//             left: -1px;
+//             -webkit-transform: translateX(-4%);
+//             transform: translateX(-4%);
+//         }
+//         50%, 100% {
+//             left: 1px;
+//             -webkit-transform: translateX(4%);
+//             transform: translateX(4%);
+//         }
+//     }
+//     @-ms-keyframes tremor {
+//         0%, 25% {
+//             left: -1px;
+//             -webkit-transform: translateX(-4%);
+//             transform: translateX(-4%);
+//         }
+//         50%, 100% {
+//             left: 1px;
+//             -webkit-transform: translateX(4%);
+//             transform: translateX(4%);
+//         }
+//     }
+//     @-o-keyframes tremor {
+//         0%, 25% {
+//             left: -1px;
+//             -webkit-transform: translateX(-4%);
+//             transform: translateX(-4%);
+//         }
+//         50%, 100% {
+//             left: 1px;
+//             -webkit-transform: translateX(4%);
+//             transform: translateX(4%);
+//         }
+//     }
+//     @keyframes tremor {
+//         0%, 25% {
+//             left: -1px;
+//             -webkit-transform: translateX(-4%);
+//             transform: translateX(-4%);
+//         }
+//         50%, 100% {
+//             left: 1px;
+//             -webkit-transform: translateX(4%);
+//             transform: translateX(4%);
+//         }
+//     }*/
 .oops__content {
   height: 100vh;
   display: flex;

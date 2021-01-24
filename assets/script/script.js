@@ -52,19 +52,7 @@ burgerBtn.addEventListener('click', () => {
     sidebar.classList.add('burger');
 })
 
-<<
-<< << < HEAD
-// closeBurger.addEventListener('click', () => {
-//     sidebar.classList.remove('burger');
-// })
-    ===
-    === =
-    //  closeBurger.addEventListener('click', () => {
-    //     body.style.overflow = 'auto';
-    //     sidebar.classList.remove('burger');
-    //  })
-    >>>
-    >>> > 15e10 f993bd8efd98299940ae953e7e93663b964
+
 
 // Search Button
 
@@ -168,43 +156,40 @@ if (taskBtn) {
         taskModal.classList.add('show-modal');
     })
 }
-let quitBtn = document.querySelector('.btn_quit'); <<
-<< << < HEAD
+let quitBtn = document.querySelector('.btn_quit');
+
+
+
 quitBtn.addEventListener('click', () => {
     taskModal.style.display = 'none';
 })
 
-// <<
-// << << < HEAD
-===
-=== = >>>
->>> > 15e10 f993bd8efd98299940ae953e7e93663b964
 
 
 //fixed top-baw with onscroll
 
 
-window.onscroll = function() { myFunction() };
+// window.onscroll = function() { myFunction() };
 
-function myFunction() {
-    if (document.documentElement.scrollTop > 180) {
-        document.getElementById("fixedSB").className = "fixed_side_bar";
-    } else {
-        document.getElementById("fixedSB").className = "";
-    }
-}
+// function myFunction() {
+//     if (document.documentElement.scrollTop > 180) {
+//         document.getElementById("fixedSB").className = "fixed_side_bar";
+//     } else {
+//         document.getElementById("fixedSB").className = "";
+//     }
+// }
 ///fixed top bar sql
-if (document.getElementById("fix_menu")) {
-    window.onscroll = function() { myFunction() };
+// if (document.getElementById("fix_menu")) {
+//     window.onscroll = function() { myFunction() };
 
-    function myFunction() {
-        if (document.documentElement.scrollTop > 350) {
-            document.getElementById("fix_menu").className = "fixed_article_menu";
-        } else {
-            document.getElementById("fix_menu").className = "";
-        }
-    }
-}
+//     function myFunction() {
+//         if (document.documentElement.scrollTop > 350) {
+//             document.getElementById("fix_menu").className = "fixed_article_menu";
+//         } else {
+//             document.getElementById("fix_menu").className = "";
+//         }
+//     }
+// }
 
 
 //
