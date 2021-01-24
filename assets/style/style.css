@@ -2154,11 +2154,29 @@ span {
 }
 
 .sql {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .article_title {
-  padding: 15px;
+  padding: 30px;
+}
+
+#title1 {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 85px;
+  line-height: 74.1%;
+}
+
+#title2 {
+  margin-top: 20px;
+  font-size: 34px;
+  line-height: 85.6%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .article_title li {
@@ -2181,6 +2199,14 @@ span {
   top: 3em;
 }
 
+.article_topic {
+  font-family: Ropa Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 110%;
+}
+
 .topic {
   font-size: 2rem;
   margin: 10;
@@ -2193,7 +2219,6 @@ span {
   background-color: #52aee2;
   font-size: 1rem;
   padding: 10px;
-  margin-bottom: 10px;
   transition: 0.4s;
 }
 .article_li:hover {
