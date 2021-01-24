@@ -2229,18 +2229,15 @@ span {
 }
 
 #article_title1 {
-  font-family: Oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 85px;
-  line-height: 74.1%;
+  line-height: 110%;
 }
 
 #article_title2 {
   margin-top: 20px;
   font-size: 34px;
-  line-height: 85%;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 120%;
 }
 
 .article_title li {
@@ -2254,11 +2251,14 @@ span {
 
 .article_topic {
   text-align: justify;
-  font-family: Ropa Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 27px;
   line-height: 120%;
+}
+
+.article__text {
+  font-family: Ropa Sans;
 }
 
 .topic {
@@ -2271,7 +2271,7 @@ span {
 .article_li {
   color: white;
   background-color: #52aee2;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 15px;
   text-align: center;
   transition: 0.4s;
