@@ -2219,6 +2219,7 @@ span {
   background-color: #52aee2;
   font-size: 1rem;
   padding: 10px;
+  margin-bottom: 1px;
   transition: 0.4s;
 }
 .article_li:hover {
