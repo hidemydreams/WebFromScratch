@@ -10,15 +10,17 @@
     color: $headings-color;
 }
 
-.about_items li::marker {
+.about_items {
+    padding: 15px;
+}
+
+.about_items li {
     color: $accent-pink;
-    margin-left: 10px;
-    font-size: 50px;
+    padding-bottom: 15px;
 }
 
 .about_items li span {
     color: $text-color;
-    padding: 10px;
 }
 
 .html {

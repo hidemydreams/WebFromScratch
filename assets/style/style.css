@@ -2353,15 +2353,17 @@ span {
   color: #52aee2;
 }
 
-.about_items li::marker {
+.about_items {
+  padding: 15px;
+}
+
+.about_items li {
   color: #ff4ba2;
-  margin-left: 10px;
-  font-size: 50px;
+  padding-bottom: 15px;
 }
 
 .about_items li span {
   color: #4f91d9;
-  padding: 10px;
 }
 
 .html {
