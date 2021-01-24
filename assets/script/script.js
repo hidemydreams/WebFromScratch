@@ -52,10 +52,7 @@ burgerBtn.addEventListener('click', () => {
     sidebar.classList.add('burger');
 })
 
-//  closeBurger.addEventListener('click', () => {
-//     body.style.overflow = 'auto';
-//     sidebar.classList.remove('burger');
-//  })
+
 
 // Search Button
 
@@ -139,13 +136,13 @@ starBtns.forEach((starBtn) => {
     })
 })
 
-    let ratingBtn = document.querySelector('.btn_rating');
-    if (ratingBtn) {
-      ratingBtn.addEventListener('click', () => {
+let ratingBtn = document.querySelector('.btn_rating');
+if (ratingBtn) {
+    ratingBtn.addEventListener('click', () => {
         body.style.overflow = 'auto'
         modalComment.classList.remove('show-modal')
     })
-    }
+}
 
 
 
@@ -160,6 +157,13 @@ if (taskBtn) {
     })
 }
 let quitBtn = document.querySelector('.btn_quit');
+
+
+
+quitBtn.addEventListener('click', () => {
+    taskModal.style.display = 'none';
+})
+
 
 
 //fixed top-baw with onscroll
@@ -187,22 +191,32 @@ let quitBtn = document.querySelector('.btn_quit');
 }
 
 
- //
+//     function myFunction() {
+//         if (document.documentElement.scrollTop > 350) {
+//             document.getElementById("fix_menu").className = "fixed_article_menu";
+//         } else {
+//             document.getElementById("fix_menu").className = "";
+//         }
+//     }
+// }
+
+
+//
 if (quitBtn) {
-  quitBtn.addEventListener('click', () => {
-    body.style.overflow = 'auto'
-    taskModal.classList.remove('show-modal');
-})
+    quitBtn.addEventListener('click', () => {
+        body.style.overflow = 'auto'
+        taskModal.classList.remove('show-modal');
+    })
 }
-    //PopUp for tasks
+//PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
 if (taskBtn) {
-  tasksBtn.addEventListener('click', (e) => {
-    body.style.overflow = 'hidden'
-    e.preventDefault()
-    tasksModal.classList.add('show-modal')
-})
+    tasksBtn.addEventListener('click', (e) => {
+        body.style.overflow = 'hidden'
+        e.preventDefault()
+        tasksModal.classList.add('show-modal')
+    })
 }
 
 let taskBtnQuit = document.querySelector('.btn_tasks');
@@ -215,15 +229,15 @@ if (taskBtnQuit) {
 }
 
 //PopUp for mistake
-let mistakePopup = document.querySelector('.mistake');
+let mistakePopup = document.querySelector('.mistakes');
 let mistakeModal = document.querySelector('.mistake_popup');
 let mistakeBtn = document.querySelector('.btn_article');
 if (mistakePopup) {
-  mistakePopup.addEventListener('click', (e) => {
-    e.preventDefault()
-    body.style.overflow = 'hidden'
-    mistakeModal.classList.add('show-modal')
-})
+    mistakePopup.addEventListener('click', (e) => {
+        e.preventDefault()
+        body.style.overflow = 'hidden'
+        mistakeModal.classList.add('show-modal')
+    })
 }
 
 
@@ -232,17 +246,17 @@ if (mistakePopup) {
 let articles = document.querySelectorAll('.articles__item');
 
 articles.forEach((article) => {
-  article.addEventListener('click', () => {
-    window.location.href = 'oops.html'
-  })
+    article.addEventListener('click', () => {
+        window.location.href = 'oops.html'
+    })
 })
 
 // Cards Links 
 
 let cards = document.querySelectorAll(".topics__card");
-for (let i=0; i<cards.length; i++) {
-  cards[i].addEventListener('click', function(e) {
-    let link = this.querySelector(".card__link");
-    link.click();
-  });
+for (let i = 0; i < cards.length; i++) {
+    cards[i].addEventListener('click', function(e) {
+        let link = this.querySelector(".card__link");
+        link.click();
+    });
 };
