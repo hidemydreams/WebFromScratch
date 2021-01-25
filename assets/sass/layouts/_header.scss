@@ -1,16 +1,12 @@
 .navigation {
   display: flex;
   align-items: center;
-  padding: 2vh 7vh;
+  padding: 40px 80px;
 }
 
 .nav__logo {
   transition: 0.2s;
   margin-right: 10px;
-
-  &:hover {
-    transform: scale(1.05);
-  }
 
   @media (max-width: $small) {
     display: none;

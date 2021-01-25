@@ -6,7 +6,7 @@ Simple and easy to use website, which offers you the best information and newest
 
 ## For who is this website?
 
-Mainly this website aims those who are new to web development. It contains a lot of information for those who just started. But in addition we have got a section with newest features and useful information for those who have been already studying for a while.
+Mainly this website aims those who are new to web development. It contains a lot of information for those who just started. But in addition we have got plenty of information about newest features and useful information for those who have been already studying or practicing for a while.
 
 ## Learning Materials
 
