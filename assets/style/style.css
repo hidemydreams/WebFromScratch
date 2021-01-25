@@ -1080,6 +1080,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  color: white;
 }
 
 .name_comment {
@@ -1093,6 +1094,10 @@ button {
   color: #001937;
 }
 
+.comments_comment input::placeholder {
+  color: white;
+}
+
 .message_comment {
   background-color: transparent;
   border: 3px solid white;
@@ -1101,6 +1106,10 @@ button {
   transition: border-bottom 0.2s;
   width: 85%;
   color: #001937;
+}
+
+.comments_comment textarea::placeholder {
+  color: white;
 }
 
 .btn_article {
@@ -1231,7 +1240,6 @@ button {
   border: 2px solid white;
   background-color: transparent;
   padding: 10px 0px 0px 10px;
-  margin-right: 5px;
   color: white;
 }
 
@@ -1248,6 +1256,10 @@ button {
   border: 2px solid white;
   max-width: 750px;
   width: 100%;
+}
+
+.mistake_item textarea::placeholder {
+  color: white;
 }
 
 /*----Links pop ups -------*/
@@ -2342,15 +2354,21 @@ span {
 }
 
 .history h1 {
-  font-size: 90px;
-  font-weight: 300;
-  margin: 20px;
+  font-size: 70px;
+  margin-bottom: 20px;
   line-height: 74.1%;
   color: #52aee2;
 }
 
 .history h3 {
   color: #52aee2;
+}
+
+.about_HTML h2 {
+  color: #52aee2;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about_items {
@@ -2368,8 +2386,7 @@ span {
 
 .html {
   color: #4f91d9;
-  text-align: justify;
-  text-indent: 15px;
+  line-height: 1.5rem;
 }
 
 .HTML h2 {
@@ -2378,6 +2395,29 @@ span {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #4f91d9;
+  text-align: center;
+}
+
+code {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list_tags {
+  overflow: auto;
+  height: 200px;
+  color: #ff4ba2;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 200px;
+  width: 100%;
+  margin-left: 45%;
+}
+
+.main_tags {
+  font-size: 24px;
+  color: #52aee2;
+  font-weight: 600;
   text-align: center;
 }
 

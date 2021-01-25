@@ -163,6 +163,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    color: white;
 }
 
 .name_comment {
@@ -176,6 +177,10 @@
     color: rgba(0, 25, 55, 1);
 }
 
+.comments_comment input::placeholder {
+    color: white;
+}
+
 .message_comment {
     background-color: transparent;
     border: 3px solid white;
@@ -184,6 +189,10 @@
     transition: border-bottom 0.2s;
     width: 85%;
     color: rgba(0, 25, 55, 1)
+}
+
+.comments_comment textarea::placeholder {
+    color: white;
 }
 
 .btn_article {
@@ -318,7 +327,6 @@
     border: 2px solid white;
     background-color: transparent;
     padding: 10px 0px 0px 10px;
-    margin-right: 5px;
     color: white;
 }
 
@@ -335,6 +343,10 @@
     border: 2px solid white;
     max-width: 750px;
     width: 100%;
+}
+
+.mistake_item textarea::placeholder {
+    color: white;
 }
 
 
