@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--------FONTS------>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <!-------FONT AWESOME ICONS------->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- -----RESET.CSS AND STYLE.CSS---- -->
+    <link rel="stylesheet" href="/src/style/style.css">
+    <!-- -----FAVICON-------- -->
+    <link rel="shortcut icon" type="image/jpg" href="src/img/favicon.ico">
+    <title>WebFromScratch</title>
+    <link rel="icon" href="/src/img/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <!-- ------------------------------HEADER-------------------------------- -->
+        <header>
+            <nav class="navigation">
+                <a href="/index.html" class="nav__logo hero__nav-logo"><svg id="hero__nav-logo" width="150" height="70" viewBox="0 0 732 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id='logo-w' d="M22.428 3.36996H80.99L135.191 365.956L203.098 5.23897H252.938L321.468 367.825L374.423 3.36996H431.739L350.749 508H299.663L229.264 134.2L158.242 508H104.664L22.428 3.36996Z"/>
+                    <path id='logo-f' d="M596.718 510.553C554.762 510.553 522.678 497.596 500.466 471.682C478.665 445.768 466.531 410.188 464.063 364.941L525.763 348.282C527.82 380.366 533.99 406.28 544.273 426.024C554.968 445.768 572.449 455.64 596.718 455.64C614.817 455.64 628.391 450.704 637.44 440.832C646.901 430.549 651.631 415.946 651.631 397.025C651.631 376.458 647.312 359.388 638.674 345.814C630.036 332.24 616.256 317.226 597.335 300.773L513.423 226.733C496.558 211.925 484.218 196.089 476.403 179.224C468.999 161.948 465.297 140.97 465.297 116.29C465.297 79.6813 475.786 51.2993 496.764 31.144C517.742 10.9887 546.33 0.910981 582.527 0.910981C622.015 0.910981 651.837 11.4 671.992 32.378C692.147 53.356 704.282 85.8513 708.395 129.864L649.163 145.906C647.106 116.701 641.348 94.2836 631.887 78.653C622.838 62.611 606.384 54.59 582.527 54.59C564.84 54.59 551.266 59.3203 541.805 68.781C532.344 77.8303 527.614 91.4043 527.614 109.503C527.614 124.311 530.082 136.857 535.018 147.14C539.954 157.012 548.386 167.09 560.315 177.373L644.844 251.413C666.645 270.746 683.921 291.724 696.672 314.347C709.835 336.97 716.416 362.679 716.416 391.472C716.416 428.081 705.31 457.08 683.098 478.469C660.886 499.858 632.093 510.553 596.718 510.553Z"/>
+                    <path id='logo-s' d="M402.871 5.22996H595.992V55.207H472.592V221.797H568.227V271.157H472.592V505H402.871V5.22996Z" fill-opacity="0.35"/>
+            </svg></a>
+                <ul class="navigation__list">
+                    <li>
+                        <a class="nav__link hero__nav-link" href="articles.html">Articles</a> </li>
+                    <li>
+                        <a class="nav__link hero__nav-link" href="topic-cards.html">Learning</a>
+                    </li>
+                </ul>
+                <div class="nav__registration">
+                    <a href="#!" class="nav__login">Login</a>
+                    <span class="bar">|</span>
+                    <a href="#!" class="nav__reg">Sign Up</a>
+                </div>
+            </nav>
+
+            <div class="vertical__bar">
+                <div class="vertical__content">
+                    <div class="vertical__menu">
+                        <i class="search-btn fas fa-search"></i>
+                        <a href="index.html" class="sidebar__logo">
+                            <img src="src/img/small-logo.svg" alt="">
+                        </a>
+                        <i class="burger-icon fas fa-bars"></i>
+                        <i class="close-burger fas fa-times"></i>
+                    </div>
+                    <ul class="burger__list">
+                        <li><a href="articles.html" class="burger__link">Articles</a></li>
+                        <li><a href="questions.html" class="burger__link">Faq</a></li>
+                        <li><a href="topic-cards.html" class="burger__link">Learn Now</a></li>
+                        <li><a href="about.html" class="burger__link">About</a></li>
+                        <li><a href="contact.html" class="burger__link">Contact</a></li>
+                    </ul>
+                    <div class="registration">
+                        <a href="" class="burger__log">Login</a>
+                        <span>|</span>
+                        <a href="" class="burger__reg">Sign Up</a>
+                    </div>
+                    <div class="vertical__icons">
+                        <a href="#!" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                        <a href="https://github.com/hidemydreams/WebFromScratch" target="_blank" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                        <a href="#!" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                        <a href="#!" class="vertical__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                              </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- MAIN-->
+        <main>
+
+            <!-- About HTML -->
+            <section class="about_HTML">
+                <div class="containner">
+                    <div class="about">
+                        <div class="history">
+                            <h1> What is HTML?</h1>
+                            <h3>At the end of this topic<br> you will:</h3>
+                            <ul class="about_items">
+                                <li type="disc"><span>Understand the main lorem ipsum</span></li>
+                                <li type="disc"><span>Understand the main lorem ipsum</span></li>
+                                <li type="disc"><span>Understand the main lorem ipsum</span></li>
+                                <li type="disc"><span>Understand the main lorem ipsum</span></li>
+                                <li type="disc"><span>Understand the main lorem ipsum</span></li>
+                            </ul>
+                        </div>
+                        <div class="HTML">
+                            <div class="about_HTML">
+                                <h2> What is HTML?</h2>
+                                <p class="html">Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be
+                                    dashwoods or an.</p>
+                                <p class="html">
+                                    Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly words widow
+                                    one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly
+                                    words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods
+                                    or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education
+                                    is be dashwoods or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling
+                                    departure education is be dashwoods or an.
+                                </p>
+                                <p class="html">
+                                    Folly words widoFolly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.w
+                                    one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods or an.Folly
+                                    words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be dashwoods
+                                    or an.
+                                </p>
+                                <p class="html">Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be
+                                    dashwoods or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure
+                                    educ ation is be dashwoods or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably.
+                                    Unwilling departure education is be dashwoods or an.</p>
+                                <p class="html">Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure education is be
+                                    dashwoods or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably. Unwilling departure
+                                    educ ation is be dashwoods or an.Folly words widow one downs few age every seven. If miss part by fact he park just shew. Discovered had get considered projection who favourable. Necessary up knowledge it tolerably.
+                                    Unwilling departure education is be dashwoods or an.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!-----link pop up-------->
+                    <div class="link_popups">
+
+                        <a href="" class="link_comments">Comments<i class="fas fa-comment"></i></a>
+
+
+                        <div class="rating-area">
+                            <p class=rate_article> Rate This Article!</p>
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label class="star" for="star-5" title="mark «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label class="star" for="star-4" title="mark «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label class="star" for="star-3" title="mark «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label class="star" for="star-2" title="mark «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label class="star" for="star-1" title="mark «1»"></label>
+                        </div>
+                        <div class="link_tasks">
+                            <p class="tasks">
+                                <a href="">Tasks to Practice</a>
+                            </p>
+                            <p class="mistakes">
+                                <a href="">Found Mistakes? Help Us!</a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!----Pop Up rating------->
+                    <div class="popup rating_popup">
+                        <div class="modal rating_modal">
+                            <p class="popup_rat">Thank Your For Your Grading</p>
+                            <button class="btn_rating"><i class="far fa-times-circle"></i></button>
+                        </div>
+                    </div>
+
+
+                    <!----Pop Up comments-------->
+
+                    <div class="popup comments_popup">
+                        <div class="modal comments_modal">
+                            <p class=" comments_title ">Leave Your Comment!</p>
+                            <div class=" comments_comment">
+                                <input class="name_comment " placeholder="Name " type="text ">
+                                <textarea placeholder="Your Comment" class="message_comment " name=" "></textarea>
+                            </div>
+
+                            <button class="btn button_article ">Send</button>
+
+                            <div class=" items_comments ">
+                                <div class="item_comment comment ">
+                                    <p class=" comment_name ">Nazar</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                        to make a type specimen book.</p>
+                                </div>
+                                <div class="item_comments comment ">
+                                    <p class=" comment_name ">Tatsiana</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                        to make a type specimen book.</p>
+                                </div>
+                                <div class="item_comments comment ">
+                                    <p class=" comment_name">Natalia</p>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                        to make a type specimen book.</p>
+                                </div>
+                            </div>
+                            <button class="btn btn_quit">Quit</button>
+
+                        </div>
+                    </div>
+
+
+
+                    <!-----Pop up Tasks-->
+                    <div class="popup tasks_popup">
+                        <div class="modal tasks_modal">
+                            <p class="popup_title ">Tasks for Topic 1:</p>
+                            <div class="task ">
+                                <h4>Task1</h4>
+                                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="task ">
+                                <h4>Task1</h4>
+                                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="task ">
+                                <h4>Task1</h4>
+                                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.
+                                </p>
+                            </div>
+                            <div class="task ">
+                                <h4>Task1</h4>
+                                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.
+                                </p>
+                            </div>
+
+                            <button class="btn btn_tasks">Quit</button>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!----------Pop Up Mistake-->
+                    <div class="popup mistake_popup">
+                        <div class="modal mistake_modal ">
+                            <p class="pop_up_mistakes ">Found Mistakes? Help Us!</p>
+
+                            <div class="mistakes ">
+                                <input class="email " placeholder="Your name " type="text ">
+                                <textarea placeholder="Describe any mistakes you found, or maybe some material is outdated... " type="email " class="message " name=" "></textarea>
+                            </div>
+
+                            <button class="btn btn_article ">Send</button>
+
+                        </div>
+                     
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- ------------------------------FOOTER--------------------------------- -->
+        <footer>
+            <div class="container ">
+                <div class="footer__row ">
+                    <div class="footer__column ">
+                        <h4 class="footer__title ">
+                            Menu
+                        </h4>
+                        <ul class="footer__list ">
+                            <li><a href="index.html " class="footer__link ">Home</a></li>
+                            <li><a href="questions.html " class="footer__link ">Faq</a></li>
+                            <li><a href="topic-cards.html " class="footer__link ">Learn Now</a></li>
+                            <li><a href="about.html " class="footer__link ">About</a></li>
+                            <li><a href="contact.html " class="footer__link ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column ">
+                        <h4 class="footer__title ">
+                            Topics
+                        </h4>
+                        <ul class="footer__list">
+                            <li><a href="html-page.html" class="footer__link">HTML</a></li>
+                            <li><a href="js-page.html" class="footer__link">JS</a></li>
+                            <li><a href="css-page.html" class="footer__link">CSS</a></li>
+                            <li><a href="basic-page.html" class="footer__link">Basic Computer Science</a></li>
+                            <li><a href="sql-page.html" class="footer__link">SQL</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info ">
+                        <p>WebFromScratch</p>
+                        <p>Educational Project.</p>
+                        <p>Created by Wild Code School Students.</p>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                    <div class="footer__icons ">
+                        <a href="#! " class="footer__icon ">
+                            <span class="fa-stack fa-4x ">
+                            <i class="fas fa-square fa-stack-2x "></i>
+                            <i class="fas fa-envelope fa-stack-1x fa-inverse "></i>
+                          </span>
+                        </a>
+                        <a href="#! " class="footer__icon ">
+                            <span class="fa-stack fa-4x ">
+                            <i class="fas fa-square fa-stack-2x "></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse "></i>
+                          </span>
+                        </a>
+                        <a href="#! " class="footer__icon ">
+                            <span class="fa-stack fa-4x ">
+                            <i class="fas fa-square fa-stack-2x "></i>
+                            <i class="fab fa-facebook fa-stack-1x fa-inverse "></i>
+                          </span>
+                        </a>
+                        <a href="#! " class="footer__icon ">
+                            <span class="fa-stack fa-4x ">
+                            <i class="fas fa-square fa-stack-2x "></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse "></i>
+                          </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Not Visible  -->
+    <!--PopUps-->
+    <div class="popup log__popup">
+        <div class="modal log__modal">
+            <h3 class=" modal__item log__title">Log In</h3>
+            <input placeholder='Email' class=' modal__item log__login' type="text">
+            <input placeholder='Password' class='modal__item log__pass' type="password">
+            <button class="btn modal__item log__btn">Log in</button>
+            <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="popup reg__popup">
+        <div class="modal reg__modal ">
+            <h3 class=" modal__item reg__title">Sign Up</h3>
+            <input placeholder='Email' class=' modal__item reg__login' type="text">
+            <input placeholder='Password' class='modal__item log__pass' type="password">
+            <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
+            <button class="btn modal__item reg__btn">Sign Up</button>
+            <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
+        </div>
+    </div>
+
+
+
+    <!-- Search Form -->
+    <div class="search-form">
+        <input class='search-input' type="text" placeholder='I am serching for...'>
+        <div class="search__content">
+            <div class="search__column">
+                <h3 class="search__title">
+                    Learning
+                </h3>
+                <div class="search__results">
+                    <ul>
+                        <li><a href="#!" class="search__result">HTML</a></li>
+                        <li><a href="#!" class="search__result">CSS</a></li>
+                        <li><a href="#!" class="search__result">Basics</a></li>
+                        <li><a href="#!" class="search__result">SQl</a></li>
+                        <li><a href="#!" class="search__result">Javascript</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search__column">
+                <h3 class="search__title">
+                    Articles
+                </h3>
+                <div class="search__results">
+                    <ul>
+                        <li><a href="#!" class="search__result">Animations Crash Course</a></li>
+                        <li><a href="#!" class="search__result">Margin Collapse</a></li>
+                        <li><a href="#!" class="search__result">Small guide to SCSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search__column">
+                <h3 class="search__title">
+                    Cheatsheets
+                </h3>
+                <div class="search__results">
+                    <ul>
+                        <li><a href="#!" class="search__result">HTML Cheatsheet</a></li>
+                        <li><a href="#!" class="search__result">CS Cheatsheets</a></li>
+                        <li><a href="#!" class="search__result">JS Cheatsheet</a></li>
+                        <li><a href="#!" class="search__result">:nth-child Cheatsheet</a></li>
+                        <li>
+                            <a href="#!" class="search__result"></a>SQL Cheatsheet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="search-close">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+    <!----Pop Up rating------->
+    <div class="popup rating_popup">
+        <div class="modal rating_modal">
+            <p class="popup_rat">Thank Your For Your Grading</p>
+            <button class="btn_rating"><i class="far fa-times-circle"></i></button>
+        </div>
+    </div>
+
+
+    <!----Pop Up comments-------->
+
+    <div class="popup comments_popup">
+        <div class="modal comments_modal">
+            <p class=" comments_title ">Leave Your Comment!</p>
+            <div class=" comments_comment">
+                <input class="name_comment " placeholder="Name " type="text ">
+                <textarea placeholder="Your Comment" class="message_comment " name=" "></textarea>
+            </div>
+
+            <button class="btn btn_article ">Send</button>
+
+            <div class=" items_comments ">
+                <div class="item_comment comment ">
+                    <p class=" comment_name ">Nazar</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.</p>
+                </div>
+                <div class="item_comments comment ">
+                    <p class=" comment_name ">Tatsiana</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.</p>
+                </div>
+                <div class="item_comments comment ">
+                    <p class=" comment_name">Natalia</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.</p>
+                </div>
+            </div>
+            <button class="btn btn_quit">Quit</button>
+
+        </div>
+    </div>
+
+
+
+    <!-----Pop up Tasks-->
+    <div class="popup tasks_popup">
+        <div class="modal tasks_modal">
+            <p class="popup_title ">Tasks for Topic 1:</p>
+            <div class="task ">
+                <h4>Task1</h4>
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
+                </p>
+            </div>
+            <div class="task ">
+                <h4>Task1</h4>
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
+                </p>
+            </div>
+            <div class="task ">
+                <h4>Task1</h4>
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
+                </p>
+            </div>
+            <div class="task ">
+                <h4>Task1</h4>
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
+                </p>
+            </div>
+
+            <button class="btn btn_tasks">Quit</button>
+
+        </div>
+    </div>
+
+
+    <!----------Pop Up Mistake-->
+    <div class="popup mistake_popup">
+        <div class="modal mistake_modal">
+            <p class="pop_up_mistakes">Found Mistakes? Help Us!</p>
+
+            <div class="mistake_item ">
+                <input class="email " placeholder="Your name " type="text ">
+                <textarea placeholder="Describe any mistakes you found, or maybe some material is outdated... " type="email " class="message " name=" "></textarea>
+            </div>
+
+            <button class="btn btn_article ">Send</button>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ------JS SCRIPT------ -->
+
+    <script src='src/script/script.js'>
+    </script>
+</body>
+
+</html>

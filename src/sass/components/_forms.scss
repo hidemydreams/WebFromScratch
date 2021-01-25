@@ -1,0 +1,51 @@
+.form {
+  padding: 20px;
+  position: relative;
+  margin-bottom: 40px;
+  @media (max-width: $smallest) {
+    display: flex;
+    flex-direction: column;
+  }
+  text-align: center;
+}
+
+.form input, .form textarea {
+  background-color: transparent;
+  font-weight: 300;
+  padding: 10px 0px 10px 10px;
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: $base-color;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+  font-weight: 300;
+  color: $base-color;
+}
+
+.form__name {
+  border: none;
+  border-bottom: 1px solid $base-color;
+}
+
+.form__email {
+  border: none;
+  border-bottom: 1px solid $base-color;
+}
+
+.form__message {
+  display: block;
+  resize: none;
+  font-weight: 600;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid $base-color;
+
+
+  @media (max-width: $smallest) {
+    margin-bottom: 30px;
+  }
+}
+

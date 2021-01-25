@@ -1,0 +1,87 @@
+// Main class for Button
+.btn {
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: lighten($base-color, 10%);
+  color: white;
+  padding: 0.5rem;
+  transition: .2s;
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+}
+
+// Main Class for Modal Button
+
+.modal__btn {
+  background-color: rgba(white, 0.8);
+
+  &:hover {
+    background-color: lighten($base-color, 10%);
+}
+}
+
+// Accordion Buttons
+
+.accordion__question button {
+  margin-left: 10px;
+}
+
+.toggle-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+// Contact Form Buttons
+
+.form__btn {
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  justify-self: center;
+  padding: 10px 60px;
+  font-size: 1rem;
+  border-radius: 36px;
+}
+
+// Articles Top Buttons 
+
+.articles {
+
+  &__btns {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    padding: 10px;
+    &:hover, &:active, &:focus {
+      background-color: darken($base-color, 10%);
+    }
+  }
+}
+
+// Newsletter btn 
+
+.newsletter__btn {
+  padding: 5px;
+}
+
+
+
+// Modal Buttons ***********************
+// Login and Register Buttons
+
+.log__btn,
+.reg__btn {
+  padding: 10px;
+  border-radius: 10px;
+
+
+}
+

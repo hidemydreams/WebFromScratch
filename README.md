@@ -1,6 +1,6 @@
 # WebFromScratch
 
-![Project Logo](assets/img/logo.svg)
+![Project Logo](src/img/logo.svg)
 
 Simple and easy to use website, which offers you the best information and newest features from the web development sphere. Start your journey now !
 
