@@ -7,17 +7,46 @@
     display: flex;
     margin-top: 20px;
     @media (max-width: $medium) {
-        margin-top: 100px;
+        margin-top: 20px;
     }
     @media (max-width: $small) {
-        margin-top: 120px;
+        margin-top: 0px;
     }
     @media (max-width: $smallest) {
         align-items: flex-start;
-        padding: 0 15px;
-        margin-top: 80px;
         margin-left: 0px;
     }
+}
+
+#hero__nav-logo {
+  
+
+  &:hover #logo-w {
+    fill: #00A3FF;
+    fill-opacity: 0.71;
+  }
+
+  &:hover #logo-f {
+    fill: #FF4BA2;
+    fill-opacity: 0.71;
+  }
+}
+
+#logo-w {
+  fill: #FF4BA2;
+  fill-opacity: 0.71;
+  transition: .3s;
+}
+
+#logo-f {
+  fill: #00A3FF;
+  transition: .3s;
+  fill-opacity: 0.71;
+}
+
+#logo-s {
+  fill: #FFB800;
+  transition: .3s;
 }
 
 .hero__title {
@@ -87,130 +116,227 @@
     }
 }
 
-// <!-- ************* NEWSLETTER SECTION ************ -->
-.newsletter {
-    margin-bottom: 60px;
-    &__title {
-        max-width: 250px;
-    }
-    &__content {
-        margin-top: 50px;
-        text-align: center;
-    }
-    &__img {
-        margin-bottom: 30px;
-    }
-    &__form {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-        input {
-            border: 1px solid $base-color;
-            padding: 10px;
-            width: 100%;
-            max-width: 620px;
-            color: $text-color;
-            border-right: none;
-            outline: none;
-            &::placeholder {
-                color: $base-color;
-            }
-        }
-        button {
-            background-color: rgba($base-color, 0.6);
-            padding: 5px;
-            color: white;
-            transition: .2s;
-            &:hover {
-                background-color: rgba($base-color, 0.8);
-            }
-        }
-    }
-    &__desc {
-        font-weight: 300;
-        max-width: 500px;
-        font-style: italic;
-        margin: 0 auto;
-    }
-}
+
+
 
 // <!-- *************  ARTICLES SECTION *************  -->
 .articles {
     margin-bottom: 50px;
+
+    &__box {
+      display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    }
     &__title {
         margin-bottom: 30px;
         max-width: 200px;
     }
-    &__box {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+    &__item {
+
+      &:nth-child(1) {
+        grid-row: 1/3;
+        background-color: rgba(255, 228, 159, 1);
+    
         @media (max-width: $small) {
-            grid-template-columns: repeat(2, 1fr);
+          grid-column: 1/3;
         }
+        
+      }
+    
+      &:nth-child(2) {
+        background-color: rgba(151, 206, 238, 1);
+        grid-column: 2/4;
+    
+        @media (max-width: $small) {
+          grid-column: 1/3;
+        }
+      }
+    
+      &:nth-child(3), &:nth-child(4) {
+        @media (max-width: $smallest) {
+          display: none;
+        }
+      }
+    
+      &:hover {
+        transform: scale(1.01);
+      }
     }
-    /*&__item {
-  }*/
-}
+  }
+
+  
+
 
 // ARTICLE --------
 .article {
-    color: white;
-    background-color: rgba(255, 158, 205, 1);
+  color: white;
+  background-color: rgba(255, 158, 205, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  cursor: pointer;
+  transition: .2s;
+
+  &__title {
+    text-align:left;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    text-align:left;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  &__link {
+    align-self: flex-end;
+  }
+}
+
+// ************* NEWS SECTION  *****
+.news {
+
+  margin-bottom: 40px;
+
+  &__title {
+
+    margin-bottom: 30px;
+    max-width: 150px;
+
+  }
+
+  &__content {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 30%;
+    background-color: rgba($base-color, 0.8);
+    color: white;
+    padding: 15px;
+    margin: auto;
+    max-width: 350px;
+    margin: 0 15px;
     cursor: pointer;
-    transition: .2s;
+
+
+    @media (max-width: $small) {
+      justify-content: space-evenly;
+      flex-basis: 45%;
+    }
+
+    @media (max-width: $smallest) {
+      justify-content: center;
+      margin: 0 auto;
+      flex-basis: initial;
+    }
+
+
+
     &:nth-child(1) {
-        grid-row: 1/3;
-        background-color: rgba(255, 228, 159, 1);
-        @media (max-width: $small) {
-            grid-column: 1/3;
-        }
+      @media (max-width: $small) {
+        display: none;
+      }
     }
+
     &:nth-child(2) {
-        background-color: rgba(151, 206, 238, 1);
-        grid-column: 2/4;
-        @media (max-width: $small) {
-            grid-column: 1/3;
-        }
+      @media (max-width: $smallest) {
+        display: none;
+      }
     }
-    &:nth-child(3),
-    &:nth-child(4) {
-        @media (max-width: $smallest) {
-            display: none;
-        }
+  }
+
+  &__desc {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    background-color: $base-color;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+
+    &:nth-child(n+2) {
+      background-color: lighten($base-color, 30%);
     }
-    &:nth-child(5) {
-        background-color: rgba(151, 206, 238, 1);
-        grid-column: 1/3;
-        @media (max-width: $small) {
-            grid-column: 1/3;
-        }
+  }
+}
+
+
+// <!-- ************* NEWSLETTER SECTION ************ -->
+
+.newsletter {
+
+  margin-bottom: 60px;
+
+  &__title {
+
+    max-width: 250px;
+  }
+
+  &__content {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    input {
+      border: 1px solid $base-color;
+      padding: 10px;
+      width: 100%;
+      max-width: 620px;
+      color: $text-color;
+      border-right: none;
+      outline: none;
+
+      &::placeholder {
+        color: $base-color;
+      }
     }
-    &:nth-child(6) {
-        @media (max-width: $small) {
-            grid-column: 1/3;
-        }
+
+    button {
+      background-color:rgba($base-color, 0.6);
+      padding: 5px;
+      color: white;
+      transition: .2s;
+
+
+      &:hover {
+        background-color:rgba($base-color, 0.8);
+      }
     }
-    &:hover {
-        transform: scale(1.01);
-    }
-    &__title {
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    &__info {
-        text-align: left;
-        margin-bottom: 10px;
-        line-height: 1.5;
-    }
-    &__link {
-        align-self: flex-end;
-    }
+  }
+
+  &__desc {
+    font-weight: 300;
+    max-width: 500px;
+    font-style: italic;
+    margin: 0 auto;
+  }
 }
 
 // ************* ABOUT SECTION ***********
@@ -398,56 +524,6 @@
             display: none;
         }
     }
-}
+  }
 
-// ************* NEWS SECTION  *****
-.news {
-    margin-bottom: 40px;
-    &__title {
-        margin-bottom: 20px;
-        max-width: 150px;
-    }
-    &__content {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__item {
-        background-color: rgba($base-color, 0.8);
-        color: white;
-        padding: 15px;
-        margin: auto;
-        max-width: 350px;
-        margin: 0 15px;
-        cursor: pointer;
-        &:nth-child(1) {
-            @media (max-width: $small) {
-                display: none;
-            }
-        }
-        &:nth-child(2) {
-            @media (max-width: $smallest) {
-                display: none;
-            }
-        }
-    }
-    &__desc {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    &__dots {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-    }
-    &__dot {
-        width: 10px;
-        height: 10px;
-        background-color: $base-color;
-        border-radius: 50%;
-        margin: 0 10px;
-        cursor: pointer;
-        &:nth-child(n+2) {
-            background-color: lighten($base-color, 30%);
-        }
-    }
-}
+ 
