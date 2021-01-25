@@ -215,10 +215,16 @@ let mistakeModal = document.querySelector('.mistake_popup');
 let mistakeBtn = document.querySelector('.btn_article');
 if (mistakePopup) {
     mistakePopup.addEventListener('click', (e) => {
-        e.preventDefault()
-        body.style.overflow = 'hidden'
-        mistakeModal.classList.add('show-modal')
+        e.preventDefault();
+        body.style.overflow = 'hidden';
+        mistakeModal.classList.add('show-modal');
     })
+
+    mistakeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        body.style.overflow = 'auto';
+        mistakeModal.classList.remove('show-modal');
+    } )
 }
 
 
@@ -237,24 +243,6 @@ registrBtn.addEventListener('click', () => {
 })
 }
 
-// Cards Links 
-
-let cards = document.querySelectorAll(".topics__card");
-for (let i=0; i<cards.length; i++) {
-  cards[i].addEventListener('click', function() {
-    let link = this.querySelector(".card__link");
-    link.click();
-  });
-};
-
-let articles = document.querySelectorAll(".article");
-for (let i=0; i<cards.length; i++) {
-  cards[i].addEventListener('click', function() {
-    let link = this.querySelector(".article__link");
-    link.click();
-  });
-};
-
 
 
 
@@ -265,17 +253,17 @@ for (let i=0; i<cards.length; i++) {
 const articlesItems = [
     {
       id: 1,
-      title: "CSS",
+      title: "Nested Media Queries",
       category: "css",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-      link: ""
+      desc: `Brief article which will give you the understanding of the power of nested mediaq queries.`,
+      link: "https://www.bram.us/2021/01/11/nested-media-queries/"
     },
     {
       id: 2,
-      title: "CSS",
+      title: "Understanding Clip Path in CSS",
       category: "css",
-      desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
-      link: ""
+      desc: `The clip-path CSS property creates a clipping region that sets what part of an element should be shown. Parts that are inside the region are shown, while those outside are hidden.`,
+      link: "https://ishadeed.com/article/clip-path/"
     },
     {
       id: 3,
@@ -295,8 +283,8 @@ const articlesItems = [
       id: 5,
       title: "GIT",
       category: "git",
-      desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
-      link: ""
+      desc: `15 Git Hacks to Save your Life as a Developer.`,
+      link: "https://medium.com/@gitship/15-git-hacks-to-save-your-life-as-a-developer-aa8808846dbb"
     },
     {
       id: 6,
@@ -328,10 +316,10 @@ const articlesItems = [
     },
     {
       id: 10,
-      title: "HTML",
+      title: "HTML Semantics",
       category: "html",
-      desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
-      link: ""
+      desc: `Short article about HTML semantic tags and how important is using them.`,
+      link: "https://www.w3schools.com/html/html5_semantic_elements.asp"
     },
   ];
 
@@ -347,6 +335,9 @@ if (btnContainer) {
 window.addEventListener('DOMContentLoaded', () => {
   displayArticlesItems(articlesItems)
   displayItemsBtns()
+  articlesInnerLink()
+
+  
 });
 
 
@@ -361,7 +352,7 @@ function displayArticlesItems(articleItems) {
     <p class="article__info">
     ${item.desc}
     </p>
-    <a href="${item.link}" class="article__link read-more">Read More ></a>
+    <a href="${item.link}" target="_blank" class="article__link read-more">Read More ></a>
 </div>`
   })
 
@@ -444,6 +435,39 @@ if (newsletterBtn) {
     })
 }
 
+// Cards Links 
+
+let cards = document.querySelectorAll(".topics__card");
+for (let i=0; i<cards.length; i++) {
+  cards[i].addEventListener('click', function() {
+    let link = this.querySelector(".card__link");
+    link.click();
+  });
+};
+
+articlesInnerLink()
+
+function articlesInnerLink() {
+  let articles = document.querySelectorAll(".article");
+for (let i=0; i<articles.length; i++) {
+  articles[i].addEventListener('click', function() {
+    let link = this.querySelector(".article__link");
+    link.click();
+  });
+};
+}
+
+ ///fixed top bar sql
+ if (document.getElementById("fix_menu")) {
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+    if ( document.documentElement.scrollTop > 120) {
+      document.getElementById("fix_menu").className = "fixed_article_menu";
+    } else {
+      document.getElementById("fix_menu").className = "";
+    }
+  }
+}
 
 
 
