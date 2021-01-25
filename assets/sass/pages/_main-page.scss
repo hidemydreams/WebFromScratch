@@ -22,6 +22,37 @@
   }
 }
 
+#hero__nav-logo {
+  
+
+  &:hover #logo-w {
+    fill: #00A3FF;
+    fill-opacity: 0.71;
+  }
+
+  &:hover #logo-f {
+    fill: #FF4BA2;
+    fill-opacity: 0.71;
+  }
+}
+
+#logo-w {
+  fill: #FF4BA2;
+  fill-opacity: 0.71;
+  transition: .3s;
+}
+
+#logo-f {
+  fill: #00A3FF;
+  transition: .3s;
+  fill-opacity: 0.71;
+}
+
+#logo-s {
+  fill: #FFB800;
+  transition: .3s;
+}
+
 .hero__title {
   font-size: 5rem;
   line-height: 0.8;
@@ -98,6 +129,192 @@
 }
 
 
+
+
+// <!-- *************  ARTICLES SECTION *************  -->
+
+
+.articles {
+
+  margin-bottom: 50px;
+
+  &__title {
+    margin-bottom: 30px;
+    max-width: 200px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    @media (max-width: $small) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+
+    &:nth-child(1) {
+      grid-row: 1/3;
+      background-color: rgba(255, 228, 159, 1);
+  
+      @media (max-width: $small) {
+        grid-column: 1/3;
+      }
+      
+    }
+  
+    &:nth-child(2) {
+      background-color: rgba(151, 206, 238, 1);
+      grid-column: 2/4;
+  
+      @media (max-width: $small) {
+        grid-column: 1/3;
+      }
+    }
+  
+    &:nth-child(3), &:nth-child(4) {
+      @media (max-width: $smallest) {
+        display: none;
+      }
+    }
+  
+    &:nth-child(5) {
+      background-color: rgba(151, 206, 238, 1);
+      grid-column: 1/3;
+  
+      @media (max-width: $small) {
+        grid-column: 1/3;
+      }
+    }
+  
+    &:nth-child(6) {
+  
+      @media (max-width: $small) {
+        grid-column: 1/3;
+      }
+    }
+  
+    &:hover {
+      transform: scale(1.01);
+    }
+
+  }
+}
+
+// ARTICLE --------
+
+
+.article {
+  color: white;
+  background-color: rgba(255, 158, 205, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  cursor: pointer;
+  transition: .2s;
+
+  &__title {
+    text-align:left;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    text-align:left;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  &__link {
+    align-self: flex-end;
+  }
+}
+
+// ************* NEWS SECTION  *****
+.news {
+
+  margin-bottom: 40px;
+
+  &__title {
+
+    margin-bottom: 30px;
+    max-width: 150px;
+
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-basis: 30%;
+    background-color: rgba($base-color, 0.8);
+    color: white;
+    padding: 15px;
+    margin: auto;
+    max-width: 350px;
+    margin: 0 15px;
+    cursor: pointer;
+
+
+    @media (max-width: $small) {
+      justify-content: space-evenly;
+      flex-basis: 45%;
+    }
+
+    @media (max-width: $smallest) {
+      justify-content: center;
+      margin: 0 auto;
+      flex-basis: initial;
+    }
+
+
+
+    &:nth-child(1) {
+      @media (max-width: $small) {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @media (max-width: $smallest) {
+        display: none;
+      }
+    }
+  }
+
+  &__desc {
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    background-color: $base-color;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+
+    &:nth-child(n+2) {
+      background-color: lighten($base-color, 30%);
+    }
+  }
+}
+
+
 // <!-- ************* NEWSLETTER SECTION ************ -->
 
 .newsletter {
@@ -156,106 +373,6 @@
     max-width: 500px;
     font-style: italic;
     margin: 0 auto;
-  }
-}
-
-// <!-- *************  ARTICLES SECTION *************  -->
-
-
-.articles {
-
-  margin-bottom: 50px;
-
-  &__title {
-    margin-bottom: 30px;
-    max-width: 200px;
-  }
-
-  &__box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-
-    @media (max-width: $small) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  &__item {
-  }
-}
-
-// ARTICLE --------
-
-
-.article {
-  color: white;
-  background-color: rgba(255, 158, 205, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  cursor: pointer;
-  transition: .2s;
-
-  &:nth-child(1) {
-    grid-row: 1/3;
-    background-color: rgba(255, 228, 159, 1);
-
-    @media (max-width: $small) {
-      grid-column: 1/3;
-    }
-    
-  }
-
-  &:nth-child(2) {
-    background-color: rgba(151, 206, 238, 1);
-    grid-column: 2/4;
-
-    @media (max-width: $small) {
-      grid-column: 1/3;
-    }
-  }
-
-  &:nth-child(3), &:nth-child(4) {
-    @media (max-width: $smallest) {
-      display: none;
-    }
-  }
-
-  &:nth-child(5) {
-    background-color: rgba(151, 206, 238, 1);
-    grid-column: 1/3;
-
-    @media (max-width: $small) {
-      grid-column: 1/3;
-    }
-  }
-
-  &:nth-child(6) {
-
-    @media (max-width: $small) {
-      grid-column: 1/3;
-    }
-  }
-
-  &:hover {
-    transform: scale(1.01);
-  }
-
-  &__title {
-    text-align:left;
-    margin-bottom: 20px;
-  }
-
-  &__info {
-    text-align:left;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-
-  &__link {
-    align-self: flex-end;
   }
 }
 
@@ -475,73 +592,6 @@
   
     @media (max-width: $smallest) {
       display: none;
-    }
-  }
-}
-
-// ************* NEWS SECTION  *****
-
-
-
-.news {
-
-  margin-bottom: 40px;
-
-  &__title {
-
-    margin-bottom: 20px;
-    max-width: 150px;
-
-  }
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__item {
-    background-color: rgba($base-color, 0.8);
-    color: white;
-    padding: 15px;
-    margin: auto;
-    max-width: 350px;
-    margin: 0 15px;
-    cursor: pointer;
-
-    &:nth-child(1) {
-      @media (max-width: $small) {
-        display: none;
-      }
-    }
-
-    &:nth-child(2) {
-      @media (max-width: $smallest) {
-        display: none;
-      }
-    }
-  }
-
-  &__desc {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  &__dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  &__dot {
-    width: 10px;
-    height: 10px;
-    background-color: $base-color;
-    border-radius: 50%;
-    margin: 0 10px;
-    cursor: pointer;
-
-    &:nth-child(n+2) {
-      background-color: lighten($base-color, 30%);
     }
   }
 }

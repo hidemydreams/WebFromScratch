@@ -33,10 +33,22 @@
   opacity: 1;
 }
 
+.modal__link {
+  display: flex;
+  align-items: center;
+  color: white;
+  white-space: nowrap;
+
+  i {
+    margin-left: 5px;
+  }
+ }
+
 // Registration Form PopUps CSS
 .log__modal, .reg__modal {
   max-width: 250px;
   width: 100%;
+  padding: 20px;
   max-height: 400px;
   height: 100%;
 
@@ -78,6 +90,7 @@
   padding: 40px;
   display: flex;
   justify-content: space-evenly;
+  max-width: 250px;
 
   @media (max-width: $smallest) {
     padding: 10px 20px;
@@ -87,7 +100,6 @@
 
   h3 {
     font-size: 40px;
-    text-align: center;
     margin-bottom: 20px;
 
     @media (max-width: $smallest) {
@@ -97,9 +109,6 @@
 
   p {
     font-size: 20px;
-    max-width: 200px;
-    margin: 0 auto;
-    text-align: center;
     margin-bottom: 20px;
     @media (max-width: $smallest) {
       font-size: 13px;
@@ -351,4 +360,32 @@
   width: 100px;
   text-align: center;
 }
+
+// NEWSLETTER POPUP
+.newsletter {
+
+		&__popup {
+		}
+
+		&__modal {
+      color: white;
+      padding: 20px;
+      max-width: 200px;
+      width: 100%;
+		}
+
+		&__popup-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-align: left;
+		}
+
+		&__popup-desc {
+      margin-bottom: 10px;
+		}
+
+		&__close {
+		}
+}
+
 
