@@ -41,321 +41,302 @@
         <!-- --------------------------------MAIN--------------------------------- -->
         <main>
 
-             <!-- Article Section (SQL) -->
+            <!--PopUps-->
+            <div class="popup log__popup">
+                <div class="modal log__modal">
+                    <h3 class=" modal__item log__title">Log In</h3>
+                    <input placeholder='Email' class=' modal__item log__login' type="text">
+                    <input placeholder='Password' class='modal__item log__pass' type="password">
+                    <button class="btn modal__item log__btn">Log in</button>
+                    <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+            </div>
+            <div class="popup reg__popup">
+                <div class="modal reg__modal ">
+                    <h3 class=" modal__item reg__title">Sign Up</h3>
+                    <input placeholder='Email' class=' modal__item reg__login' type="text">
+                    <input placeholder='Password' class='modal__item log__pass' type="password">
+                    <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
+                    <button class="btn modal__item reg__btn">Sign Up</button>
+                    <a href="fullpage-registration.html" class="modal__link">Full Page <i class="far fa-arrow-alt-circle-right"></i></a>
+                </div>
+            </div>
+
+             <!-- Article Section  -->
         
         <section class="sql">          
             <div class="container">
 
-                <div id="fix_menu" > 
-                    <div id="article_menu" class="main-text article_right_menu">
-    
-                        <ul class="article_menu1"> 
-                        <li type="disc" class="article_li"><a href="#title1" class="mainmenu1">Home SQL</a></li>   
-                        <li type="disc" class="article_li"><a href="#topic1" class="mainmenu1">TABLE</a></li>                    
-                                         
-                        <li type="disc"  class="article_li"><a href="#topic2" class="mainmenu1">DATA ENTRY</a></li>                    
-                        <li type="disc" class="article_li"><a href="#topic3" class="mainmenu1">SELECT</a></li>                    
-                        <li type="disc" class="article_li"><a href="#topic4" class="mainmenu1">WHERE</a></li>                    
-                        <li type="disc" class="article_li"><a href="#topic5" class="mainmenu1">AND/OR</a></li>   
-                        <li type="disc" class="article_li"><a href="#topic6" class="mainmenu1">IN/BETWEEN/LIKE</a></li>   
-                        <li type="disc" class="article_li"><a href="#topic7" class="mainmenu1">FUNCTIONS</a></li>   
-                        <li type="disc" class="article_li"><a href="#topic8" class="mainmenu1">ATTACHED SELECT</a></li>   
-                        <li type="disc" class="article_li"><a href="#topic9" class="mainmenu1">ATTACHMENT OF TABLES</a></li>   
-                        <li type="disc" class="article_li"><a href="#topic10" class="mainmenu1">ALIASES</a></li>   
-                        <li type="disc" class="article_li"><a href="#topic11" class="mainmenu1">UPDATE</a></li>    
-                        <li type="disc" class="article_li"><a href="#topic12" class="mainmenu1">REMOVING RECORDS FROM THE TABLE</a></li> 
-                        <li type="disc" class="article_li"><a href="#topic13" class="mainmenu1">DELETING TABLES</a></li> 
-                        <li type="disc" class="article_li"><a href="#topic14" class="mainmenu1">CONCLUSION</a></li>                             
-                        </ul>
-                    </div> 
-                    </div>
-
-                
-                <div class="title article_title">
-                  <h1 id="title1" > What is SQL ?</h1>
-                   <!---- <a href="article-SQL.html" class="title article__title">What is SQL</a></li> -->
-                   <h6 id="title2">At the end of this topic you will:</h6>
-                  
-                    <ul class="main-text article_title">                    
-                        <li type="disc"><span>to know basic principles SQL</span></li>                    
-                        <li type="disc"><span>create tables</span></li> 
-                        <li type="disc"><span>to use SQL</span></li>                    
-                        <li type="disc"><span>make simlpe queries</span></li> 
-                      </ul>
-
-                </div>
-            
-                <div class="article_topic">
-                   
-                    <h1 id="topic0" class="topic">Every self-respecting web developer should know SQL. </h1>
-                    <p class="desc article__text"> 
-                                                
-                        Although it has existed since the 70s of last century, it is still very widely used, and without it it will be difficult to create something serious.<br>
-                        
-                        Most full-stack frameworks are able to work with SQL. Among them: ActiveRecord, Doctrine, Hibernate and many others. Despite this, sometimes you have to “dirty hands” and go into real SQL.<br>
-                        
-                        That is why we have prepared a short introduction, in which we will walk through the fundamental things in SQL. We strongly recommend you to try all the examples below yourself, because, as you know, theory is nothing without practice.<br>
-                        Well, here we go!
-                    </p>
-                    <br><br>
-
-                    <h1 id="topic1" class="topic">LET’S CREATE A TABLE </h1>
-                    <p class="desc article__text"> 
-                                                
-                        In order to create a table in SQL, the expression CREATE TABLE is used. It accepts as parameters all columns that we want to enter, as well as their data types.
-
-                        Let’s create a table called “Months”, which will have three columns:<br><br>
-
-                        <b>id</b> – in other words, the ordinal number of the month (integer type or int)<br>
-                        <b>name</b> – month name (string or varchar(10) (10 characters – maximum string length))<br>
-                        <b>days</b> – number of days in a certain month (integer type or int)<br><br>
-                        The code will look like this:<br>
-
-                        <b>CREATE TABLE months (id int, name varchar(10), days int);</b><br><br>
-
-                        Also, when creating tables, it’s customary to add the so-called primary key. This is a column where the values are unique.
-
-                        Most often, the primary key column is id, but in our case it can also be name, since the names of all months are unique. For more information, please follow this link.
-                    </p>
-                    <br><br>
-                    
-                    <h1 id="topic2" class="topic">DATA ENTRY           </h1>
-                    <p class="desc article__text"> 
-                                                
-                        Now let’s add a couple of months to our plaque. You can do that with the <b>&lt;INSERT></INSERT></b> command. There are two different ways to use INSERT:<br><br>
-
-                        The first method does not involve specifying column names, but only takes the values in the order they are in the table.<br>
-                        
-                        <b>INSERT INTO months VALUES (1, 'January',31);</b><br><br>
-                        
-                        The first method is shorter than the second, but if we want to add more columns in the future, all previous requests will not work. We should use the second method to solve this problem.<br>
-                        
-                        Its essence is that we specify the names of columns before entering the data.<br>
-                        
-                        <b>INSERT INTO months (id,name,days) VALUES (2,'February',29);</b><br><br>
-                        
-                        If we don’t specify one of the columns, we’ll write NULL or the default value, but that’s a different story.
-                    
-                    </p>
-                    <br>
-
-                    <h1 id="topic3" class="topic">SELECT    </h1>
-                    <p class="desc article__text"> 
-                                                
-                        This query is used when we need to show data in a table. Probably the easiest example of SELECT usage is the following query:<br>
-
-                        <b>SELECT * FROM characters </b><br><br>
-
-                        The result of this query is a table with all data in the table. An asterisk (*) sign means that we want to show all columns from the table without exception.<br>
-
-                        Since there is usually more than one table in the database, we need to specify the name of the table from which we want to see the data. We can do this by using the FROM keyword.<br>
-
-                        When you only need some columns from a table, you can specify their names by comma instead of an asterisk.<br>
-
-                        <b>SELECT name, weapon FROM characters</b><br><br>
 
-                        Also, sometimes we need to sort the output. For this we use ORDER BY “column name”. ORDER BY has two modifiers: ASC (ascending) (default) and DESC (descending).<br>
-
-                        <b>SELECT name, weapon FROM "characters" ORDER BY name DESC</b>
-
-                    </p>
-                    <br>
-
-                    <h1 id="topic4" class="topic">WHERE </h1>
-                    <p class="desc article__text"> 
-                                                
-                        Now we know how to show only specific columns, but what if we want to include only some specific rows in the output? We use WHERE for that. This keyword allows us to filter the data by a specific condition.</b>
-
-                        In the next query, we will only output characters that use the gun as a weapon.</br>
-
-                        <b>SELECT *<br>
-                        FROM characters<br>
-                        WHERE weapon = 'pistol';<br></b>
-                    </p>
-                    <br>
-
-                    <h1 id="topic5" class="topic">AND/OR</h1>
-                    <p class="desc article__text"> 
-                                                
-                        Conditions in WHERE can be written using logical operators (AND/OR) and mathematical comparison operators (=, <, >, <=, >=, <>).<br>
-
-                        For example, we have a tablet that records data on 4 of the best selling music albums of all time. Let’s display only those that are rock genre, and sales were less than 50 million copies.<br>
-
-                        <b>SELECT *<br>
-                        FROM albums<br>
-                        WHERE genre = 'rock' AND sales_in_millions <= 50<br>
-                        ORDER BY released<br></b>
-                    </p>
-                    <br>
-
-                    <h1 id="topic6" class="topic">IN/BETWEEN/LIKE</h1>
-                    <p class="desc article__text"> 
-                        Conditions in WHERE can be written using several other commands, which are:<br>
-
-                        <b>IN </b>– compares the value in a column with several possible values and returns true if the value matches at least one value<br>
-                        <b>BETWEEN </b>– checks if the value is in a certain interval<br>
-                        <b>LIKE </b>– looking for a pattern<br><br>
-                        For example, we can make a query to display data about albums in pop or soul genre:<br>
-                        
-                        <b>SELECT * FROM albums WHERE genre IN ('pop', 'soul');</b><br><br>
-                        
-                        If we want to output all albums that were released between 1975 and 1985, we can use the following record:<br>
-                        
-                        <b>SELECT * FROM albums WHERE released BETWEEN 1975 AND 1985;</b><br><br>
-                        
-                        Also, if we want to output all albums that have an ‘R’ in their title, we can use the following record:<br>
-                        
-                        <b>SELECT * FROM albums WHERE album LIKE '%R%';</b><br><br>
-                        
-                        The % sign means any sequence of characters (0 characters also counts as a sequence).
-                        
-                        If we want to output all albums with ‘R’ as the first letter in their title, the record will change slightly:<br>
-                        
-                        <b>SELECT * FROM albums WHERE album LIKE 'R%';</b><br><br>
-                        
-                        SQL also has an inversion. For example, try to write NOT before any logical expression in the condition (NOT BETWEEN and so on).
-                    </p>
-                    <br>
-
-                    <h1 id="topic7" class="topic">FUNCTIONS</h1>
-                    <p class="desc article__text"> 
-                                                
-                        SQL is full of built-in functions for performing various operations. We will show you only the most frequently used functions:<br>
-
-                        <b>COUNT()</b> – returns the number of lines<br>
-                        <b>SUM() </b>– returns the sum of all fields with numerical values in them<br>
-                        <b>AVG()</b> – returns the average value among rows<br>
-                        <b>MIN()/MAX() </b>– returns minimum/maximum value among rows<br><br>
-                        To display the year of release of the oldest album, you can use the following query in the table:<br>
-
-                        <b>SELECT MAX(released) FROM albums;</b><br><br>
-
-                        Note that if you write a query asking, for example, for the name and average of something, you will get an error in the output.
-
-                        Let’s say that you are writing such a query:<br>
-
-                        <b>SELECT name, avg(age) FROM students;</b><br><br>
-
-                        To avoid the error, you should add the following line:<br>
-
-                        <b>GROUP BY name</b><br><br>
-
-                        The reason for this is that the avg(age) record is aggregated and you need to group the values by name.
-                     </p>
-                     <br>
-
-                    <h1 id="topic8" class="topic">ATTACHED SELECT </h1>
-                    <p class="desc article__text"> 
-                                                
-                        In the previous steps, we learned how to make simple calculations with data. If we want to use the result of these calculations, we often need to use so-called nested queries. Let’s say we need to display the artist, the album and the year of the oldest album in the table.<br>
-
-                        You can display these columns using the following query:<br>
-
-                        <b>SELECT artist, album, released FROM albums;<br><br></b>
-
-                        We also know how to get the earliest year available:<br>
-
-                        <b>SELECT MIN(released) FROM album;<br><br></b>
-
-                        You can merge these queries in WHERE:<br>
-
-                        <b>SELECT artist,album,released<br>
-                        FROM albums<br>
-                        WHERE released = (<br>
-                        SELECT MIN(released) FROM albums<br>
-                        );</b>
-                    </p>
-                    <br>
-
-                    <h1 id="topic9" class="topic">ATTACHMENT OF TABLES</h1>
-                    <p class="desc article__text"> 
-                                                
-                        In complex databases, we most often have several linked tables. For example, we have two tables: about video games and about developers.<br>
-
-                        In video_games table we have developer_id column, in this case it is so called foreign_key. To make it easier to understand, developer_id is a link between two tables.<br>
-
-                        If we want to display all information about the game, including information about its developer, we need to connect the second table. To do this, we can use INNER JOIN:<br><br>
-
-                        <b>SELECT video_games.name, video_games.genre, game_developers.name, game_developers.country.<br>
-                        FROM video_games<br>
-                        INNER JOIN game_developers<br>
-                        ON video_games.developer_id = game_developers.id;</b><br><br>
-
-                        This is probably the simplest example of using JOIN. There are several other ways to use it. For more information, please follow this link.<br>
-
-                    </p>
-                    <br>
-
-
-                    <h1 id="topic10" class="topic">ALIASES</h1>
-                    <p class="desc article__text"> 
-                                                
-                        If you look at the previous example, you will notice that there are two columns named equally: “name”. This can often be confusing. The solution to this problem are pseudonyms. By the way, they help make the column name more beautiful or understandable when necessary.<br>
-
-                        To assign an alias to a column, you can use the keyword AS:<br><br>
-                        
-                        <b>SELECT games.name, games.genre, devs.name AS developer, devs.country<br>
-                        FROM video_games AS games<br>
-                        INNER JOIN game_developers AS devs<br>
-                        ON games.developer_id = devs.id;</b><br>
-                    </p>
-                    <br>
-
-                    <h1 id="topic11" class="topic">UPDATE </h1>
-                    <p class="desc article__text"> 
-                                                
-                        Often, we need to change the data in the table. In SQL, this is done using UPDATE.
-
-                        Using UPDATE includes:<br>
-
-                        selecting the table that contains the field we want to change<br>
-                        new value entry<br>
-                        using WHERE to indicate a specific location in the table<br><br>
-                        Let’s say we have a table of the most highly regarded shows of all time. However, we have a problem: “Game of Thrones” is marked as a comedy and we definitely need to change that:<br><br>
-
-                        <b>UPDATE tv_series.<br>
-                        SET genre = 'drama'<br>
-                        WHERE name = 'Game of Thrones';</b><br>
-                    </p>
-                    <br>
-
-                    <h1 id="topic12" class="topic">REMOVING RECORDS FROM THE TABLE </h1>
-                    <p class="desc article__text"> 
-                                                
-                        Deleting a record from a table via SQL is a very simple operation. All you need to do is designate what we want to delete.<br>
-
-                        <b>DELETE FROM tv_series<br>
-                        WHERE id = 4;</b><br><br>
-
-                        Note: make sure you use WHERE when you delete an entry from the table. Otherwise, you will delete all records from the table without wanting to.
-
-
-                    </p>
-                    <br>
-
-                    <h1 id="topic13" class="topic">DELETING TABLES</h1>
-                    <p class="desc article__text"> 
-                                                
-                        If we want to remove all data from the table, but leave the table itself, we should use the TRUNCATE command:
-
-                        <b>TRUNCATE TABLE table_name;</b><br><br>
-
-                        If we want to remove the table itself, we should use the DROP command:
-
-                        <b>DROP TABLE table_name;</b><br>
-
-                    </p>
-                    <br>
-
-                    <h1 id="topic14" class="topic">CONCLUSION</h1>
-                    <p class="desc article__text"> 
-                                                
-                        On this note, we conclude this SQL tutorial. Of course, that’s not all, and there is still a lot to learn to fully master, but this introduction will give you an incentive to further explore.
-
-
-                    </p>
-                    <br>
-
+                <div class="container_titleTopic_menu">
+                    <div class="container_title_topic">
+
+                        <!-- Article Title Section -->
+                        <div class="title article_title">
+                            <h1 id="article_title1" > What is SQL ?</h1>
+                             <!---- <a href="article-SQL.html" class="title article__title">What is SQL</a></li> -->
+                            <h6 id="article_title2">At the end of this topic you will:</h6>                  
+                            <ul class="main-text article_title">                    
+                                <li type="disc"><span>to know basic principles SQL</span></li>                    
+                                <li type="disc"><span>create tables</span></li> 
+                                <li type="disc"><span>to use SQL</span></li>                    
+                                <li type="disc"><span>make simlpe queries</span></li> 
+                            </ul>
+                        </div>
+
+                        <!-- Article Topic Section -->
+                        <div class="article_topic">                   
+                            <h1 id="topic0" class="topic"> WHY SHOULD WE  KNOW SQL</h1>
+                            <p class="desc article__text"> 
+                                                        
+                                Although it has existed since the 70s of last century, it is still very widely used, and without it it will be difficult to create something serious.<br>
+                                
+                                Most full-stack frameworks are able to work with SQL. Among them: ActiveRecord, Doctrine, Hibernate and many others. Despite this, sometimes you have to “dirty hands” and go into real SQL.<br>
+                                
+                                That is why we have prepared a short introduction, in which we will walk through the fundamental things in SQL. We strongly recommend you to try all the examples below yourself, because, as you know, theory is nothing without practice.<br>
+                                Well, here we go!
+                            </p><br><br>
+
+                            <h1 id="topic1" class="topic">LET’S CREATE A TABLE </h1>
+                            <p class="desc article__text">                                                 
+                                In order to create a table in SQL, the expression CREATE TABLE is used. It accepts as parameters all columns that we want to enter, as well as their data types.
+
+                                Let’s create a table called “Months”, which will have three columns:<br><br>
+
+                                <b>id</b> – in other words, the ordinal number of the month (integer type or int)<br>
+                                <b>name</b> – month name (string or varchar(10) (10 characters – maximum string length))<br>
+                                <b>days</b> – number of days in a certain month (integer type or int)<br><br>
+                                The code will look like this:<br>
+
+                                <b>CREATE TABLE months (id int, name varchar(10), days int);</b><br><br>
+
+                                Also, when creating tables, it’s customary to add the so-called primary key. This is a column where the values are unique.
+
+                                Most often, the primary key column is id, but in our case it can also be name, since the names of all months are unique. For more information, please follow this link.
+                            </p> <br><br>
+                            
+                            <h1 id="topic2" class="topic">DATA ENTRY           </h1>
+                            <p class="desc article__text"> 
+                                                        
+                                Now let’s add a couple of months to our plaque. You can do that with the <b>&lt;INSERT></INSERT></b> command. There are two different ways to use INSERT:<br><br>
+
+                                The first method does not involve specifying column names, but only takes the values in the order they are in the table.<br>
+                                
+                                <b>INSERT INTO months VALUES (1, 'January',31);</b><br><br>
+                                
+                                The first method is shorter than the second, but if we want to add more columns in the future, all previous requests will not work. We should use the second method to solve this problem.<br>
+                                
+                                Its essence is that we specify the names of columns before entering the data.<br>
+                                
+                                <b>INSERT INTO months (id,name,days) VALUES (2,'February',29);</b><br><br>
+                                
+                                If we don’t specify one of the columns, we’ll write NULL or the default value, but that’s a different story.
+                            
+                            </p>
+                            <br>
+
+                            <h1 id="topic3" class="topic">SELECT    </h1>
+                            <p class="desc article__text"> 
+                                                        
+                                This query is used when we need to show data in a table. Probably the easiest example of SELECT usage is the following query:<br>
+
+                                <b>SELECT * FROM characters </b><br><br>
+
+                                The result of this query is a table with all data in the table. An asterisk (*) sign means that we want to show all columns from the table without exception.<br>
+
+                                Since there is usually more than one table in the database, we need to specify the name of the table from which we want to see the data. We can do this by using the FROM keyword.<br>
+
+                                When you only need some columns from a table, you can specify their names by comma instead of an asterisk.<br>
+
+                                <b>SELECT name, weapon FROM characters</b><br><br>
+
+                                Also, sometimes we need to sort the output. For this we use ORDER BY “column name”. ORDER BY has two modifiers: ASC (ascending) (default) and DESC (descending).<br>
+
+                                <b>SELECT name, weapon FROM "characters" ORDER BY name DESC</b>
+
+                            </p>
+                            <br>
+
+                            <h1 id="topic4" class="topic">WHERE </h1>
+                            <p class="desc article__text"> 
+                                                        
+                                Now we know how to show only specific columns, but what if we want to include only some specific rows in the output? We use WHERE for that. This keyword allows us to filter the data by a specific condition.</b>
+
+                                In the next query, we will only output characters that use the gun as a weapon.</br>
+
+                                <b>SELECT *<br>
+                                FROM characters<br>
+                                WHERE weapon = 'pistol';<br></b>
+                            </p>
+                            <br>
+
+                            <h1 id="topic5" class="topic">AND/OR</h1>
+                            <p class="desc article__text"> 
+                                                        
+                                Conditions in WHERE can be written using logical operators (AND/OR) and mathematical comparison operators (=, <, >, <=, >=, <>).<br>
+
+                                For example, we have a tablet that records data on 4 of the best selling music albums of all time. Let’s display only those that are rock genre, and sales were less than 50 million copies.<br>
+
+                                <b>SELECT *<br>
+                                FROM albums<br>
+                                WHERE genre = 'rock' AND sales_in_millions <= 50<br>
+                                ORDER BY released<br></b>
+                            </p>
+                            <br>
+
+                            <h1 id="topic6" class="topic">IN/BETWEEN/LIKE</h1>
+                            <p class="desc article__text"> 
+                                Conditions in WHERE can be written using several other commands, which are:<br>
+
+                                <b>IN </b>– compares the value in a column with several possible values and returns true if the value matches at least one value<br>
+                                <b>BETWEEN </b>– checks if the value is in a certain interval<br>
+                                <b>LIKE </b>– looking for a pattern<br><br>
+                                For example, we can make a query to display data about albums in pop or soul genre:<br>
+                                
+                                <b>SELECT * FROM albums WHERE genre IN ('pop', 'soul');</b><br><br>
+                                
+                                If we want to output all albums that were released between 1975 and 1985, we can use the following record:<br>
+                                
+                                <b>SELECT * FROM albums WHERE released BETWEEN 1975 AND 1985;</b><br><br>
+                                
+                                Also, if we want to output all albums that have an ‘R’ in their title, we can use the following record:<br>
+                                
+                                <b>SELECT * FROM albums WHERE album LIKE '%R%';</b><br><br>
+                                
+                                The % sign means any sequence of characters (0 characters also counts as a sequence).
+                                
+                                If we want to output all albums with ‘R’ as the first letter in their title, the record will change slightly:<br>
+                                
+                                <b>SELECT * FROM albums WHERE album LIKE 'R%';</b><br><br>
+                                
+                                SQL also has an inversion. For example, try to write NOT before any logical expression in the condition (NOT BETWEEN and so on).
+                            </p>
+                            <br>
+
+                            <h1 id="topic7" class="topic">FUNCTIONS</h1>
+                            <p class="desc article__text"> 
+                                                        
+                                SQL is full of built-in functions for performing various operations. We will show you only the most frequently used functions:<br>
+
+                                <b>COUNT()</b> – returns the number of lines<br>
+                                <b>SUM() </b>– returns the sum of all fields with numerical values in them<br>
+                                <b>AVG()</b> – returns the average value among rows<br>
+                                <b>MIN()/MAX() </b>– returns minimum/maximum value among rows<br><br>
+                                To display the year of release of the oldest album, you can use the following query in the table:<br>
+
+                                <b>SELECT MAX(released) FROM albums;</b><br><br>
+
+                                Note that if you write a query asking, for example, for the name and average of something, you will get an error in the output.
+
+                                Let’s say that you are writing such a query:<br>
+
+                                <b>SELECT name, avg(age) FROM students;</b><br><br>
+
+                                To avoid the error, you should add the following line:<br>
+
+                                <b>GROUP BY name</b><br><br>
+
+                                The reason for this is that the avg(age) record is aggregated and you need to group the values by name.
+                            </p>
+                            <br>
+
+                            <h1 id="topic8" class="topic">ATTACHED SELECT </h1>
+                            <p class="desc article__text"> 
+                                                        
+                                In the previous steps, we learned how to make simple calculations with data. If we want to use the result of these calculations, we often need to use so-called nested queries. Let’s say we need to display the artist, the album and the year of the oldest album in the table.<br>
+
+                                You can display these columns using the following query:<br>
+
+                                <b>SELECT artist, album, released FROM albums;<br><br></b>
+
+                                We also know how to get the earliest year available:<br>
+
+                                <b>SELECT MIN(released) FROM album;<br><br></b>
+
+                                You can merge these queries in WHERE:<br>
+
+                                <b>SELECT artist,album,released<br>
+                                FROM albums<br>
+                                WHERE released = (<br>
+                                SELECT MIN(released) FROM albums<br>
+                                );</b>
+                            </p>
+                            <br>
+
+                            <h1 id="topic9" class="topic">ATTACHMENT OF TABLES</h1>
+                            <p class="desc article__text">                                                 
+                                In complex databases, we most often have several linked tables. For example, we have two tables: about video games and about developers.<br>
+
+                                In video_games table we have developer_id column, in this case it is so called foreign_key. To make it easier to understand, developer_id is a link between two tables.<br>
+
+                                If we want to display all information about the game, including information about its developer, we need to connect the second table. To do this, we can use INNER JOIN:<br><br>
+
+                                <b>SELECT video_games.name, video_games.genre, game_developers.name, game_developers.country.<br>
+                                FROM video_games<br>
+                                INNER JOIN game_developers<br>
+                                ON video_games.developer_id = game_developers.id;</b><br><br>
+
+                                This is probably the simplest example of using JOIN. There are several other ways to use it. For more information, please follow this link.<br>
+                            </p>
+                            <br>
+
+
+                            <h1 id="topic10" class="topic">ALIASES</h1>
+                            <p class="desc article__text">                                                
+                                If you look at the previous example, you will notice that there are two columns named equally: “name”. This can often be confusing. The solution to this problem are pseudonyms. By the way, they help make the column name more beautiful or understandable when necessary.<br>
+
+                                To assign an alias to a column, you can use the keyword AS:<br><br>
+                                
+                                <b>SELECT games.name, games.genre, devs.name AS developer, devs.country<br>
+                                FROM video_games AS games<br>
+                                INNER JOIN game_developers AS devs<br>
+                                ON games.developer_id = devs.id;</b><br>
+                            </p>
+                            <br>
+
+                            <h1 id="topic11" class="topic">UPDATE </h1>
+                            <p class="desc article__text"> 
+                                                        
+                                Often, we need to change the data in the table. In SQL, this is done using UPDATE.
+                                Using UPDATE includes:<br>
+                                selecting the table that contains the field we want to change<br>
+                                new value entry<br>
+                                using WHERE to indicate a specific location in the table<br><br>
+                                Let’s say we have a table of the most highly regarded shows of all time. However, we have a problem: “Game of Thrones” is marked as a comedy and we definitely need to change that:<br><br>
+
+                                <b>UPDATE tv_series.<br>
+                                SET genre = 'drama'<br>
+                                WHERE name = 'Game of Thrones';</b><br>
+                            </p>
+                            <br>
+
+                            <h1 id="topic12" class="topic">REMOVING RECORDS FROM THE TABLE </h1>
+                            <p class="desc article__text">                                                 
+                                Deleting a record from a table via SQL is a very simple operation. All you need to do is designate what we want to delete.<br>
+                                <b>DELETE FROM tv_series<br>
+                                WHERE id = 4;</b><br><br>
+                                Note: make sure you use WHERE when you delete an entry from the table. Otherwise, you will delete all records from the table without wanting to.
+                            </p>
+                            <br>
+
+                            <h1 id="topic13" class="topic">DELETING TABLES</h1>
+                            <p class="desc article__text">                                                 
+                                If we want to remove all data from the table, but leave the table itself, we should use the TRUNCATE command:
+
+                                <b>TRUNCATE TABLE table_name;</b><br>
+
+                                If we want to remove the table itself, we should use the DROP command:
+
+                                <b>DROP TABLE table_name;</b>
+                            </p>
+                            <br>
+
+                            <h1 id="topic14" class="topic">CONCLUSION</h1>
+                            <p class="desc article__text">                                                 
+                                On this note, we conclude this SQL tutorial. Of course, that’s not all, and there is still a lot to learn to fully master, but this introduction will give you an incentive to further explore.
+                            </p>
+                            <br>
+                        </div>
 
                  </div>
                  <!-----Bar-------->
@@ -383,6 +364,159 @@
                         </p>
                     </div>
                 </div>
+
+                <!----Pop Up rating------->
+                <div class="popup rating_popup">
+                    <div class="modal rating_modal">
+                        <p class="popup_rat">Thank Your For Your Grading</p>
+                        <button class="btn_rating"><i class="far fa-times-circle"></i></button>
+                    </div>
+                </div>
+
+
+                <!----Pop Up comments-------->
+
+                <div class="popup comments_popup">
+                    <div class="modal comments_modal">
+                        <p class=" comments_title ">Leave Your Comment!</p>
+                        <div class=" comments_comment">
+                            <input class="name_comment " placeholder="Name " type="text ">
+                            <textarea placeholder="Your Comment" class="message_comment " name=" "></textarea>
+                        </div>
+
+                        <button class="btn button_article ">Send</button>
+
+                        <div class=" items_comments ">
+                            <div class="item_comment comment ">
+                                <p class=" comment_name ">Nazar</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                    to make a type specimen book.</p>
+                            </div>
+                            <div class="item_comments comment ">
+                                <p class=" comment_name ">Tatsiana</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                    to make a type specimen book.</p>
+                            </div>
+                            <div class="item_comments comment ">
+                                <p class=" comment_name">Natalia</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                    to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_quit">Quit</button>
+
+                    </div>
+                </div>
+
+
+
+                <!-----Pop up Tasks-->
+                <div class="popup tasks_popup">
+                    <div class="modal tasks_modal">
+                        <p class="popup_title ">Tasks for Topic 1:</p>
+                        <div class="task ">
+                            <h4>Task1</h4>
+                            <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="task ">
+                            <h4>Task1</h4>
+                            <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="task ">
+                            <h4>Task1</h4>
+                            <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="task ">
+                            <h4>Task1</h4>
+                            <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                make a type specimen book.
+                            </p>
+                        </div>
+
+                        <button class="btn btn_tasks">Quit</button>
+
+                    </div>
+                </div>
+
+
+
+
+                <!----------Pop Up Mistake-->
+                <div class="popup mistake_popup">
+                    <div class="modal mistake_modal ">
+                        <p class="pop_up_mistakes ">Found Mistakes? Help Us!</p>
+
+                        <div class="mistakes ">
+                            <input class="email " placeholder="Your name " type="text ">
+                            <textarea placeholder="Describe any mistakes you found, or maybe some material is outdated... " type="email " class="message " name=" "></textarea>
+                        </div>
+
+                        <button class="btn btn_article ">Send</button>
+
+                    </div>
+                 
+
+                </div>
+
+
+
+
+                    </div>
+                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+                
+                 <!-- Article Menu Section -->
+                    <div id="article_menu" class="main-text article_right_menu">    
+                     
+                        <div id="fix_menu" >   
+                            <ul class="article_menu1"> 
+                            <li type="disc" class="article_li"><a href="#article_title1" class="mainmenu1">Home SQL</a></li>   
+                            <li type="disc" class="article_li"><a href="#topic1" class="mainmenu1">TABLES</a></li>          
+                            <!-- <li type="disc"  class="article_li"><a href="#topic2" class="mainmenu1">DATA ENTRY</a></li>                     -->
+                            <li type="disc" class="article_li"><a href="#topic3" class="mainmenu1">SELECT </a></li>                    
+                            <li type="disc" class="article_li"><a href="#topic4" class="mainmenu1">OPERATORS</a></li>                    
+                            <!--<li type="disc" class="article_li"><a href="#topic5" class="mainmenu1">AND/OR</a></li>   
+                            <li type="disc" class="article_li"><a href="#topic6" class="mainmenu1">IN/BETWEEN/LIKE</a></li>    -->
+                            <li type="disc" class="article_li"><a href="#topic7" class="mainmenu1">FUNCTIONS</a></li>   
+                            <!-- <li type="disc" class="article_li"><a href="#topic8" class="mainmenu1">ATTACHED SELECT</a></li>   
+                            <li type="disc" class="article_li"><a href="#topic9" class="mainmenu1">ATTACHMENT OF TABLES</a></li>    -->
+                            <li type="disc" class="article_li"><a href="#topic10" class="mainmenu1">OTHER</a></li>   
+                            <!-- <li type="disc" class="article_li"><a href="#topic11" class="mainmenu1">UPDATE</a></li>    
+                            <li type="disc" class="article_li"><a href="#topic12" class="mainmenu1">REMOVING RECORDS FROM THE TABLE</a></li> 
+                            <li type="disc" class="article_li"><a href="#topic13" class="mainmenu1">DELETING TABLES</a></li> 
+                            <li type="disc" class="article_li"><a href="#topic14" class="mainmenu1">CONCLUSION</a></li>                              -->
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+
+
+               
+            </div>
+
+
         </section>
 
 

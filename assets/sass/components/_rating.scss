@@ -3,6 +3,14 @@
         padding-left: 110px;
     }
     
+    @media (max-width: $small) {
+        .rating-area {
+            padding-left: 0px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    }
+    
     .rate_article {
         font-size: 18px;
         padding-top: 10px;
