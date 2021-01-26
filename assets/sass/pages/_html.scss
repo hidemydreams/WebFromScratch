@@ -20,7 +20,7 @@
     padding: 15px;
 }
 
-.a bout_items li {
+.about_items li {
     color: $accent-pink;
     padding-bottom: 15px;
 }
@@ -50,13 +50,14 @@ code {
 
 .list_tags {
     overflow: auto;
-    height: 200px;
+    height: 100px;
     color: $accent-pink;
     margin-top: 20px;
     margin-bottom: 20px;
     max-width: 200px;
     width: 100%;
     margin-left: 45%;
+    font-size: 20px;
 }
 
 .main_tags {
