@@ -229,21 +229,25 @@ if (mistakePopup) {
 
     })
 };
+if (mistakeBtn) {
+    mistakeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        mistakeModal.classList.remove('show-modal');
+        responsePopup.classList.add('show-modal');
+    })
+
+}
 
 
-
-mistakeBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    mistakeModal.classList.remove('show-modal');
-    responsePopup.classList.add('show-modal');
-})
 
 let responseBtn = document.querySelector('.btn_res');
-responseBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    responsePopup.classList.remove('show-modal');
-})
+if (responseBtn) {
+    responseBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        responsePopup.classList.remove('show-modal');
+    })
+}
 
 // Redirection to OOPS.html
 
@@ -482,11 +486,11 @@ if (document.getElementById("fix_menu")) {
 }
 // Preloader 
 
-preloader()
+//preloader()
 
-function preloader() {
-    let preloader = document.querySelector('.preloader');
-    window.addEventListener('load', () => {
-        preloader.classList.add('hide-preloader');
-    })
-}
+// function preloader() {
+//     let preloader = document.querySelector('.preloader');
+//     window.addEventListener('load', () => {
+//         preloader.classList.add('hide-preloader');
+//     })
+// }

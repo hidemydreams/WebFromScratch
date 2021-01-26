@@ -1766,6 +1766,23 @@ footer * {
   background-color: #269adb;
 }
 
+@media (max-width: 991.98px) {
+  .tasks_modal {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .tasks_modal {
+    max-width: 280px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .tasks_modal .task1 {
+    font-size: 10px;
+  }
+}
 /*-----pop Up Response-----*/
 .response_modal {
   display: flex;

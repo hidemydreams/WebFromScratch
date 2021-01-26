@@ -351,6 +351,25 @@
     background-color: darken($base-color, 10%);
 }
 
+@media(max-width:$medium) {
+    .tasks_modal {
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+@media(max-width: $smallest) {
+    .tasks_modal {
+        max-width: 280px;
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        .task1 {
+            font-size: 10px;
+        }
+    }
+}
+
 
 /*-----pop Up Response-----*/
 
