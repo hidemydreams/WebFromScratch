@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--------FONTS------>
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap" rel="stylesheet">
-    <!-------FONT AWESOME ICONS------->
+    <!-- FONT AWESOME ICONS -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- -----STYLE.CSS---- -->
-    <link rel="stylesheet" href="src/style/style.css">
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="style/style.css">
     <!-- ANIMATE CSS  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- -----FAVICON-------- -->
+    <!-- FAVICON -->
     <link rel="shortcut icon" type="image/jpg" href="src/img/favicon.ico">
     <title>WebFromScratch</title>
 </head>
@@ -22,9 +22,8 @@
 
 
     <div class="wrapper">
-        <!-- ------------------------------HEADER-------------------------------- -->
+        <!-- HEADER- -->
         <header>
-
             <nav class="navigation">
                 <a href="index.html" class="nav__logo hero__nav-logo"><svg id="hero__nav-logo" width="150" height="70" viewBox="0 0 732 511" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path id='logo-w' d="M22.428 3.36996H80.99L135.191 365.956L203.098 5.23897H252.938L321.468 367.825L374.423 3.36996H431.739L350.749 508H299.663L229.264 134.2L158.242 508H104.664L22.428 3.36996Z"/>
@@ -44,7 +43,102 @@
                     <a href="#!" class="nav__reg">Sign Up</a>
                 </div>
             </nav>
+        </header>
 
+
+
+        <!-- MAIN -->
+        <main>
+            <!-- Topic Cards -->
+            <section class="topics">
+                <div class="container">
+                    <h3 class="title topics__title">Choose The Topic You Need</h3>
+                    <p class="desc topics__desc">Here you can choose any topic you would like. Some brief information with short explanations and main concepts are waiting for you.</p>
+                <div class="topics__items">
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            HTML
+                        </h3>
+                        <p class="card__desc">
+                            HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications.
+                        </p>
+                        <div class="card__lower">
+                            <a href="html-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            CSS
+                        </h3>
+                        <p class="card__desc">
+                            CSS stands for Cascading Style Sheets. It is the coding language that gives a website its look and layout.
+                        </p>
+                        <div class="card__lower">
+                            <a href="css-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            Javascript
+                        </h3>
+                        <p class="card__desc">
+                            JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
+                        </p>
+                        <div class="card__lower">
+                            <a href="js-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            SQL
+                        </h3>
+                        <p class="card__desc">
+                            Structured Query Language, commonly known as SQL, is a standard programming language for relational databases.
+                        </p>
+                        <div class="card__lower">
+                            <a href="sql-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            Basics
+                        </h3>
+                        <p class="card__desc">
+                            Learn the basics of computer programming to truly understand what stays behind multiple processes.
+                        </p>
+                        <div class="card__lower">
+                            <a href="basic-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topics__card card">
+                        <h3 class="card__title">
+                            GIT
+                        </h3>
+                        <p class="card__desc">
+                            Git is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.
+                        </p>
+                        <div class="card__lower">
+                            <a hrefgit-page.html" class="card__link">
+                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+            <!-- Vertical Bar -->
             <div class="vertical__bar animate__animated animate__fadeInLeft animate__delay-1s">
                 <div class="vertical__content">
                     <div class="vertical__menu">
@@ -93,98 +187,6 @@
                 </div>
             </div>
 
-        </header>
-
-
-
-        <!-- --------------------------------MAIN--------------------------------- -->
-        <main>
-            <section class="topics">
-                <div class="container">
-                    <h3 class="title topics__title">Choose The Topic You Need</h3>
-                    <p class="desc topics__desc">Here you can choose any topic you would like. Some brief information with short explanations and main concepts are waiting for you.</p>
-                <div class="topics__items">
-                    <div class="topics__card card">
-                        <h3 class="card__title">
-                            HTML
-                        </h3>
-                        <p class="card__desc">
-                            HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications.
-                        </p>
-                        <div class="card__lower">
-                            <a href="learning-topics/html-page.html" class="card__link">
-                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="topics__card card">
-                        <h3 class="card__title">
-                            CSS
-                        </h3>
-                        <p class="card__desc">
-                            CSS stands for Cascading Style Sheets. It is the coding language that gives a website its look and layout.
-                        </p>
-                        <div class="card__lower">
-                            <a href="learning-topics/css-page.html" class="card__link">
-                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="topics__card card">
-                        <h3 class="card__title">
-                            Javascript
-                        </h3>
-                        <p class="card__desc">
-                            JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.
-                        </p>
-                        <div class="card__lower">
-                            <a href="learning-topics/js-page.html" class="card__link">
-                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="topics__card card">
-                        <h3 class="card__title">
-                            SQL
-                        </h3>
-                        <p class="card__desc">
-                            Structured Query Language, commonly known as SQL, is a standard programming language for relational databases.
-                        </p>
-                        <div class="card__lower">
-                            <a href="learning-topics/sql-page.html" class="card__link">
-                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="topics__card card">
-                        <h3 class="card__title">
-                            Basics
-                        </h3>
-                        <p class="card__desc">
-                            Learn the basics of computer programming to truly understand what stays behind multiple processes.
-                        </p>
-                        <div class="card__lower">
-                            <a href="learning-topics/basic-page.html" class="card__link">
-                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="topics__card card">
-                        <h3 class="card__title">
-                            GIT
-                        </h3>
-                        <p class="card__desc">
-                            Git is a free, open-source distributed version control system. It keeps track of projects and files as they change over time with the help of different contributors.
-                        </p>
-                        <div class="card__lower">
-                            <a href="learning-topics/git-page.html" class="card__link">
-                                Read More <span class="card__arrow"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </section>
         </main>
 
 
@@ -339,7 +341,22 @@
         </div>
     </div>
 
-    <!-- ------JS SCRIPT------ -->
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__first">
+
+            </div>
+            <div class="preloader__second">
+                
+            </div>
+            <div class="preloader__third">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- JS SCRIPT -->
 
     <script src='src/script/script.js'>
     </script>
