@@ -222,6 +222,13 @@
     margin-top: 10px;
 }
 
+@media(max-width: $smallest) {
+    .rating_modal {
+        max-width: 250px;
+        width: 100%;
+    }
+}
+
 
 /*----------------------Pop Up Comments--------------------------------*/
 

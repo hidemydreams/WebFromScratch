@@ -1641,6 +1641,12 @@ footer * {
   margin-top: 10px;
 }
 
+@media (max-width: 575.98px) {
+  .rating_modal {
+    max-width: 250px;
+    width: 100%;
+  }
+}
 /*----------------------Pop Up Comments--------------------------------*/
 .comments_modal {
   border: none;

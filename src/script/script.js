@@ -486,11 +486,11 @@ if (document.getElementById("fix_menu")) {
 }
 // Preloader 
 
-//preloader()
+preloader()
 
-// function preloader() {
-//     let preloader = document.querySelector('.preloader');
-//     window.addEventListener('load', () => {
-//         preloader.classList.add('hide-preloader');
-//     })
-// }
+function preloader() {
+    let preloader = document.querySelector('.preloader');
+    window.addEventListener('load', () => {
+        preloader.classList.add('hide-preloader');
+    })
+}
