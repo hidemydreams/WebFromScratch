@@ -1,3 +1,9 @@
+let button = document.querySelectorAll('button')
+button.forEach((item) => {
+  item.addEventListener('click', (e)=> {
+    e.preventDefault()
+  })
+})
 // PopUp Windows for Login And Registration
 
 let body = document.querySelector('body')

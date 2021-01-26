@@ -1,3 +1,4 @@
+
 .title {
   color: $headings-color;
   font-size: 3rem;
@@ -18,4 +19,16 @@
 .desc {
   font-size: 1.3rem;
   color: $text-color;
+}
+
+.topic {
+
+  font-size: 1.3rem;
+  text-transform: capitalize;
+
+  p {
+    margin-bottom: 10px;
+    color: $text-color;
+    font-size: 1.3rem;
+  }
 }
