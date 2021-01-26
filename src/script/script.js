@@ -248,12 +248,6 @@ registrBtn.addEventListener('click', () => {
     window.location.href = 'oops.html'
 })
 }
-
-
-
-
-
-
 // Articles Filter
 
 const articlesItems = [
@@ -343,7 +337,6 @@ window.addEventListener('DOMContentLoaded', () => {
   displayItemsBtns()
   articlesInnerLink()
 
-  
 });
 
 
@@ -474,6 +467,18 @@ for (let i=0; i<articles.length; i++) {
     }
   }
 }
+
+// Preloader 
+
+preloader()
+function preloader() {
+  let preloader = document.querySelector('.preloader');
+  window.addEventListener('load', () => {
+    preloader.classList.add('hide-preloader');
+  })
+}
+
+
 
 
 
