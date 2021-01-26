@@ -239,7 +239,11 @@ mistakeBtn.addEventListener('click', (e) => {
     responsePopup.classList.add('show-modal');
 })
 
-
+let responseBtn = document.querySelector('.btn_res');
+responseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    responsePopup.classList.remove('show-modal');
+})
 
 // Redirection to OOPS.html
 
