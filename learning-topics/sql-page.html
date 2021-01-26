@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- RESET.CSS AND STYLE.CSS -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/src/style/style.css">
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/jpg" href="src/img/favicon.ico">
-    <title>WebFromScratch SQL</title>
+    <link rel="shortcut icon" type="image/jpg" href="/src/img/favicon.ico">
+    <title>WebFromScratch</title>
 </head>
 
 
@@ -24,7 +24,7 @@
         <!-- HEADER-->
         <header>
             <nav class="navigation">
-                <a href="index.html" class="nav__logo hero__nav-logo"><svg id="hero__nav-logo" width="150" height="70"
+                <a href="/index.html" class="nav__logo hero__nav-logo"><svg id="hero__nav-logo" width="150" height="70"
                         viewBox="0 0 732 511" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id='logo-w'
                             d="M22.428 3.36996H80.99L135.191 365.956L203.098 5.23897H252.938L321.468 367.825L374.423 3.36996H431.739L350.749 508H299.663L229.264 134.2L158.242 508H104.664L22.428 3.36996Z" />
@@ -36,9 +36,9 @@
                     </svg></a>
                 <ul class="navigation__list">
                     <li>
-                        <a class="nav__link hero__nav-link" href="articles.html">Articles</a> </li>
+                        <a class="nav__link hero__nav-link" href="/articles.html">Articles</a> </li>
                     <li>
-                        <a class="nav__link hero__nav-link" href="topic-cards.html">Learning</a>
+                        <a class="nav__link hero__nav-link" href="/topic-cards.html">Learning</a>
                     </li>
                 </ul>
                 <div class="nav__registration">
@@ -103,7 +103,7 @@
                                     <h4 id="topic1" class="sql__topic-title">Let's create a table!</h4>
 
                                         <p>
-                                            In order to create a table in SQL, the expression <b>CREATE TABLE</b> is used.It
+                                            In order to create a table in SQL, the expression CREATE TABLE is used.It
                                             accepts
                                             as parameters all columns that we want to enter, as well as their data
                                             types.Let’s create a table called “Months”, which will have three columns:
@@ -118,8 +118,9 @@
                                             string
                                             length))
                                         </p>
+                                        <b>days </b>
                                         <p>
-                                            <b>days</b>  – number of days in a certain month (integer type or int)
+                                            <b>days </b> – number of days in a certain month (integer type or int)
                                             The code will look like this:
                                         </p>
                                         <p>
@@ -145,7 +146,7 @@
                                         </p>
                                         
                                         <p>There are two different ways to use
-                                            <b>INSERT</b>:</p>
+                                            INSERT:</p>
 
 
                                         <p>
@@ -212,13 +213,13 @@
                                             instead of an asterisk.
                                         </p>
 
-                                        <code class="code-block">SELECT name, weapon  FROM characters</code>
+                                        <code class="code-block">SELECT name, weapon FROM characters</code>
 
 
                                         <p>
                                             Also, sometimes we need to sort the output. For this we use ORDER BY
                                             “column name”.
-                                            <b>ORDER BY</b> has two modifiers: <b>ASC</b> (ascending) (default) and <b>DESC</b>
+                                            ORDER BY has two modifiers: ASC (ascending) (default) and DESC
                                             (descending).
                                         </p>
 
@@ -234,7 +235,7 @@
                                         <p>
                                             Now we know how to show only specific columns, but what if we want to
                                             include only
-                                            some specific rows in the output? We use <b>WHERE</b> for that. This keyword
+                                            some specific rows in the output? We use WHERE for that. This keyword
                                             allows us to
                                             filter the data by a specific condition. 
 
@@ -263,9 +264,9 @@
                                     </p>
 
                                     <p>
-                                        <code class="code-block">SELECT *
+                                        SELECT *
                                         FROM albums
-                                        WHERE genre = 'rock' AND sales_in_millions &lt;= 50 ORDER BY released  </code></p>
+                                        WHERE genre = 'rock' AND sales_in_millions &lt;= 50 ORDER BY released  </p>
                                             </div> </div> <!-- SQL Topic 6 -->
                                             <div class="sql__topic topic">
                                                 <h4 id="topic6" class="sql__topic-title">IN/BETWEEN/LIKE</h4>
@@ -276,33 +277,37 @@
                                                 </p>
 
                                                 <p>
-                                                    <b>IN</b>  – compares the value in a column with
+                                                    IN  – compares the value in a column with
                                                     several possible values and returns
                                                     true if the value matches at least one value
                                                 </p>
                                                 <p>
-                                                    <b>BETWEEN</b>  – checks if the value is in a certain
+                                                    BETWEEN  – checks if the value is in a certain
                                                     interval
                                                 </p>
                                                 <p>
-                                                    <b>LIKE</b>  – looking for a pattern
-                                                </p>
-                                                <p>
+                                                    LIKE  – looking for a pattern
                                                     For example, we can make a query to display data
                                                     about albums in pop or soul
                                                     genre:
                                                 </p>
-                                                
-                                                 <code class="code-block">SELECT * FROM albums WHERE genre IN ('pop',
+
+                                                <p>
+                                                    SELECT * FROM albums WHERE genre IN ('pop',
                                                     'soul');
-                                                </code>
-                                                
+                                                </p>
+
                                                 <p>
                                                     If we want to output all albums that were released
                                                     between 1975 and 1985, we can use
                                                     the following record:
                                                 </p>
-                
+
+                                                <p>
+                                                    co
+                                                </p>
+
+
                                                 <code class="code-block">
                                                     SELECT * FROM albums WHERE released BETWEEN 197 SELECT * FROM albums
                                                     WHERE released BETWEEN 1975
@@ -314,24 +319,25 @@
                                                     ‘R’ in their title, we can use
                                                     the following record:
                                                 </p>
-                                                <code class="code-block">
+                                                <p>
                                                     SELECT * FROM albums WHERE album LIKE '%R%';
-                                                </code>
+                                                </p>
 
                                                 <p>
                                                     The % sign means any sequence of characters (0
                                                     characters also counts as a
                                                     sequence).
                                                 </p>
-                                                
+
+
                                                 <p>
                                                     If we want to output all albums with ‘R’ as the
                                                     first letter in their title, the
                                                     record will change slightly:
                                                 </p>
 
-                                                <code class="code-block">SELECT * FROM albums WHERE album LIKE
-                                                    'R%'; </code>
+
+
 
                                                 <p>
 
@@ -340,7 +346,9 @@
                                                     expression in the condition (NOT BETWEEN and so on).
 
                                                 </p>
-                                                
+
+                                                <code class="code-block">SELECT * FROM albums WHERE album LIKE
+                                                    'R%'; </code>
 
                                             </div>
 
@@ -355,17 +363,17 @@
                                                     </p>
 
                                                     <p>
-                                                        <b>COUNT()</b>  – returns the number of lines
+                                                        COUNT()  – returns the number of lines
                                                     </p>
                                                     <p>
-                                                       <b>SUM()</b>  – returns the sum of all fields with numerical
+                                                        SUM()  – returns the sum of all fields with numerical
                                                         values in them
                                                     </p>
                                                     <p>
-                                                        <b>AVG() </b> – returns the average value among rows
+                                                        AVG()  – returns the average value among rows
                                                     </p>
                                                     <p>
-                                                        <b>MIN()/MAX() </b> – returns minimum/maximum value among
+                                                        MIN()/MAX()  – returns minimum/maximum value among
                                                         rows
                                                     </p>
                                                     <p>
@@ -375,9 +383,9 @@
                                                         in the table:
                                                     </p>
 
-                                                    <code class="code-block">
-                                                        SELECT MAX(released) FROM albums;
-                                                    </code>
+                                                    <p>
+                                                        co
+                                                    </p>
 
                                                     <p>
                                                         Note that if you write a query asking, for example, for the
@@ -387,7 +395,10 @@
 
                                                         Let’s say that you are writing such a query:
                                                     </p>
-                                                    
+
+                                                    <code class="code-block">SELECT MAX(released) FROM albums;</code>
+
+
                                                     <code class="code-block">SELECT name, avg(age) FROM students;</code>
 
 
@@ -395,9 +406,9 @@
                                                         To avoid the error, you should add the following line:
                                                     </p>
 
-                                                    <code class="code-block">
+                                                    <p>
                                                         GROUP BY name 
-                                                    </code>
+                                                    </p>
 
                                                     <p>
                                                         The reason for this is that the avg(age) record is
@@ -427,29 +438,29 @@
                                                         You can display these columns using the following query:
                                                     </p>
 
-                                                    <code class="code-block">
+                                                    <p>
                                                         SELECT artist, album, released FROM albums; 
-                                                    </code>
+                                                    </p>
 
                                                     <p>
                                                         We also know how to get the earliest year available:
                                                     </p>
 
-                                                    <code class="code-block">
+                                                    <p>
                                                         SELECT MIN(released) FROM album; 
-                                                    </code>
+                                                    </p>
 
                                                     <p>
                                                         You can merge these queries in WHERE:
                                                     </p>
 
-                                                    <code class="code-block">
+                                                    <p>
                                                         SELECT artist,album,released
                                                         FROM albums
                                                         WHERE released = (
                                                         SELECT MIN(released) FROM albums
                                                         ); 
-                                                    </code>
+                                                    </p>
 
                                             </div>
 
@@ -483,14 +494,14 @@
                                                     JOIN:
                                                 </p>
 
-                                                <code class="code-block">
+                                                <p>
                                                     SELECT video_games.name, video_games.genre,
                                                     game_developers.name,
                                                     game_developers.country.
                                                     FROM video_games
                                                     INNER JOIN game_developers
                                                     ON video_games.developer_id = game_developers.id; 
-                                                </code>
+                                                </p>
 
                                                 <p>
                                                     This is probably the simplest example of using JOIN. There are
@@ -522,13 +533,13 @@
                                                     To assign an alias to a column, you can use the keyword AS:
                                                 </p>
 
-                                                <code class="code-block">
+                                                <p>
                                                     SELECT games.name, games.genre, devs.name AS developer,
                                                     devs.country
                                                     FROM video_games AS games
                                                     INNER JOIN game_developers AS devs
                                                     ON games.developer_id = devs.id; 
-                                                </code>
+                                                </p>
 
                                             </div>
 
@@ -539,21 +550,11 @@
                                                 <p>
                                                     Often, we need to change the data in the table. In SQL, this is
                                                     done using
-                                                    <b>UPDATE.</b>
-                                                </p> 
-                                                <p>  
+                                                    UPDATE.
                                                     Using UPDATE includes:
-                                                </p> 
-                                                <p>
-                                                    - selecting the table that contains the field we want to change
-                                                </p> 
-                                                <p>
-                                                    - new value entry;
-                                                </p> 
-                                                <p>
-                                                    - using WHERE to indicate a specific location in the table.
-                                                </p> 
-                                                <p>
+                                                    selecting the table that contains the field we want to change
+                                                    new value entry
+                                                    using WHERE to indicate a specific location in the table
                                                     Let’s say we have a table of the most highly regarded shows of
                                                     all time.
                                                     However, we
@@ -583,10 +584,10 @@
                                                     need to
                                                     do is designate what we want to delete.
                                                 </p>
-                                                <code class="code-block">
+                                                <p>
                                                     DELETE FROM tv_series
                                                     WHERE id = 4; 
-                                                </code>
+                                                </p>
                                                 <p>
                                                     Note: make sure you use WHERE when you delete an entry from the
                                                     table.
@@ -603,21 +604,21 @@
                                                     If we want to remove all data from the table, but leave the
                                                     table itself, we
                                                     should
-                                                    use the <b>TRUNCATE</b> command:
+                                                    use the TRUNCATE command:
                                                 </p>
 
-                                                <code class="code-block">
+                                                <p>
                                                     TRUNCATE TABLE table_name; 
-                                                </code>
+                                                </p>
 
                                                 <p>
-                                                    If we want to remove the table itself, we should use the <b>DROP</b>
+                                                    If we want to remove the table itself, we should use the DROP
                                                     command:
                                                 </p>
 
-                                                <code class="code-block">
+                                                <p>
                                                     DROP TABLE table_name; 
-                                                </code>
+                                                </p>
 
                                             </div>
 
@@ -1021,26 +1022,11 @@
         </div>
     </div>
 
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader__content">
-            <div class="preloader__first">
-
-            </div>
-            <div class="preloader__second">
-                
-            </div>
-            <div class="preloader__third">
-                
-            </div>
-        </div>
-    </div>
-
 
 
     <!--  JS SCRIPT -->
 
-    <script src='src/script/script.js'>
+    <script src='/src/script/script.js'>
     </script>
 </body>
 
