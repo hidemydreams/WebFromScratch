@@ -1,0 +1,36 @@
+/*---- Lower Bar -------*/
+
+.link_popups {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 4px solid $base-color;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  max-width: 950px;
+}
+
+.link_popups a {
+  color: $text-color;
+}
+
+.link_comments {
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: $small) {
+  .link_popups {
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+  .link_tasks {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+}

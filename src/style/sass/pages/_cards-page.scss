@@ -1,0 +1,42 @@
+.topics {
+  
+  &__title {
+      margin-bottom: 20px;
+  @media (max-width: $smallest) {
+      margin-top: 20px;
+      text-align: center;
+  }
+  }
+
+  &__desc {
+      max-width: 300px;
+      @media (max-width: $smallest) {
+          text-align: center;
+          margin: 0 auto;
+      }
+  }
+
+  &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-top: 50px;
+  }
+
+  &__card {
+      background-color: $base-color;
+      color: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      cursor: pointer;
+  }
+
+  &__link {
+      color: white;
+  }
+
+  &__wrapper {
+      display: block;
+  }
+}

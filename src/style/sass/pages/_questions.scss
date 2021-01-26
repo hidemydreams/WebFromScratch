@@ -1,0 +1,35 @@
+// ********** QUESTIONS SECTION *********
+.questions__title {
+  @media (max-width: $smallest) {
+      margin-top: 20px;
+  }
+  margin-bottom: 30px;
+  max-width: 200px;
+}
+
+.questions__desc {
+  max-width: 800px;
+  margin: 20px 0px;
+}
+
+.questions__row {
+  display: flex;
+  @media (max-width: $medium) {
+      flex-direction: column;
+  }
+  @media (max-width: $small) {
+      margin-top: 0px;
+  }
+}
+
+.questions__img {
+  img {
+      @media (max-width: $medium) {
+          max-width: 10px;
+          height: auto;
+      }
+      @media (max-width: $smallest) {
+          display: none;
+      }
+  }
+}

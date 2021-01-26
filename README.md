@@ -1,6 +1,6 @@
 # WebFromScratch
 
-![Project Logo](assets/img/logo.svg)
+![Project Logo](src/img/logo.svg)
 
 Simple and easy to use website, which offers you the best information and newest features from the web development sphere. Start your journey now !
 
@@ -12,12 +12,15 @@ Mainly this website aims those who are new to web development. It contains a lot
 
 For the time being our website contains:
 
-- Basics
-- HTML
-- CSS
-- JS
-- SQL
-- GIT
+- Learning
+  - Basics
+  - HTML
+  - CSS
+  - JS
+  - SQL
+  - GIT
+- Articles section with newest features
+- News Section
 
 _This training project was developed by students of **remote_ru_dev_nov20** group of the [Wild Code School](https://www.wildcodeschool.com/en-GB)_
 
