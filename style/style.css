@@ -1954,6 +1954,7 @@ label {
   padding: 5px 10px 10px;
   top: 2px;
   font-size: 23px;
+  color: #ff4ba2;
 }
 
 .nav__back {
@@ -1968,7 +1969,7 @@ label {
 .menu, .menu__submenu {
   list-style: none;
   padding: 0;
-  color: #fff;
+  color: white;
   overflow: hidden;
 }
 
@@ -2025,7 +2026,7 @@ label {
 }
 
 .nav__check:checked + .nav__showmenu {
-  color: white;
+  color: #ff4ba2;
 }
 
 .menu__check:checked ~ .menu__submenu {
