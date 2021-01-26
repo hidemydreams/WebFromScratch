@@ -100,7 +100,7 @@
 
                                 <!-- SQL Topic 1 -->
                                 <div class="sql__topic topic">
-                                    <h4 id="topic1" class="sql__topic-title">Let's create a table!</h1>
+                                    <h4 id="topic1" class="sql__topic-title">Let's create a table!</h4>
 
                                         <p>
                                             In order to create a table in SQL, the expression CREATE TABLE is used.It
@@ -137,16 +137,13 @@
                                 </div>
                                 <!-- SQL Topic 2 -->
                                 <div class="sql__topic topic">
-                                    <h4 id="topic2" class="sql__topic-title">Data Entry</h1>
+                                    <h4 id="topic2" class="sql__topic-title">Data Entry</h4>
 
                                         <p>
-                                            Now let’s add a couple of months to our plaque. You can do that with the
+                                            Now let’s add a couple of months to our plaque. You can do that with the 
+                                            &lt;INSERT> command.
                                         </p>
-
-                                        <code class="code-block">
-                                            &lt;INSERT></INSERT> command.
-                                        </code>
-
+                                        
                                         <p>There are two different ways to use
                                             INSERT:</p>
 
@@ -173,7 +170,7 @@
                                         </p>
 
                                         <p>
-                                            INSERT INTO months (id,name,days) VALUES (2,'February',29);
+                                            <code class="code-block">INSERT INTO months (id,name,days) VALUES (2,'February',29);</code>
                                         </p>
 
                                         <p>
@@ -251,12 +248,12 @@
 
                                 <!-- SQL Topic 5 -->
                                 <div class="sql__topic topic">
-                                    <h1 id="topic5" class="sql__topic-title">AND/OR</h4>
+                                    <h4 id="topic5" class="sql__topic-title">AND/OR</h4>
 
                                     <p>
                                         Conditions in WHERE can be written using logical operators (AND/OR) and
                                         mathematical
-                                        comparison operators (=, <,>, <=,>=, <>).
+                                        comparison operators (=,  &lt; , >, &lt;=, >=, &lt;>).
 
                                                     For example, we have a tablet that records data on 4 of the best
                                                     selling
@@ -268,10 +265,10 @@
                                     <p>
                                         SELECT *
                                         FROM albums
-                                        WHERE genre = 'rock' AND sales_in_millions <= 50 ORDER BY released  </p>
+                                        WHERE genre = 'rock' AND sales_in_millions &lt;= 50 ORDER BY released  </p>
                                             </div> </div> <!-- SQL Topic 6 -->
                                             <div class="sql__topic topic">
-                                                <h1 id="topic6" class="sql__topic-title">IN/BETWEEN/LIKE</h4>
+                                                <h4 id="topic6" class="sql__topic-title">IN/BETWEEN/LIKE</h4>
 
                                                 <p>
                                                     Conditions in WHERE can be written using several
@@ -468,7 +465,7 @@
 
                                             <!-- SQL TOPIC 9  -->
                                             <div class="sql__topic topic">
-                                                <h1 id="topic9" class="sql__topic-title">ATTACHMENT OF TABLES</h4>
+                                                <h4 id="topic9" class="sql__topic-title">ATTACHMENT OF TABLES</h4>
                                                 <p>
                                                     In complex databases, we most often have several linked tables.
                                                     For example,
@@ -517,7 +514,7 @@
 
                                             <!-- SQL Topic 10 -->
                                             <div class="sql__topic topic">
-                                                <h1 id="topic10" class="sql__topic-title">ALIASES</h4>
+                                                <h4 id="topic10" class="sql__topic-title">ALIASES</h4>
 
                                                 <p>
                                                     If you look at the previous example, you will notice that there
@@ -547,7 +544,7 @@
 
                                             <!-- SQL Topic 11 -->
                                             <div class="sql__topic topic">
-                                                <h1 id="topic11" class="sql__topic-title">UPDATE </h4>
+                                                <h4 id="topic11" class="sql__topic-title">UPDATE </h4>
 
                                                 <p>
                                                     Often, we need to change the data in the table. In SQL, this is
@@ -647,7 +644,7 @@
 
                                     <div id="fix_menu">
                                         <ul class="article_menu1">
-                                            <li class="article_li"><a href="#article_title1"
+                                            <li class="article_li"><a href="#sql__title"
                                                     class="mainmenu1">Home
                                                     SQL</a></li>
                                             <li class="article_li"><a href="#topic1"
@@ -904,8 +901,9 @@
         <div class="modal comments_modal">
             <p class=" comments_title ">Leave Your Comment!</p>
             <div class=" comments_comment">
-                <input class="name_comment " placeholder="Name " type="text ">
-                <textarea placeholder="Your Comment" class="message_comment " name=" "></textarea>
+                <input class="name_comment " placeholder="Name " type="text">
+                <text
+                area placeholder="Your Comment" class="message_comment " name=" "></textarea>
             </div>
 
             <button class="btn button_article modal__btn">Send</button>
@@ -969,7 +967,7 @@
                 </p>
             </div>
             <div class="task ">
-                <h1>Task1</h4>
+                <h4>Task1</h4>
                     <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         Ipsum
                         has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
