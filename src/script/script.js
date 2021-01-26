@@ -255,12 +255,6 @@ if (logBtn) {
         window.location.href = 'oops.html'
     })
 }
-
-
-
-
-
-
 // Articles Filter
 
 const articlesItems = [{
@@ -349,15 +343,16 @@ if (btnContainer) {
         displayItemsBtns()
         articlesInnerLink()
 
-
     });
 
+};
 
 
 
-    function displayArticlesItems(articleItems) {
-        let displayItems = articleItems.map((item) => {
-            return `<div class="articles__card article">
+
+function displayArticlesItems(articleItems) {
+    let displayItems = articleItems.map((item) => {
+        return `<div class="articles__card article">
     <h3 class="article__title">
         ${item.title}
     </h3>
@@ -366,51 +361,51 @@ if (btnContainer) {
     </p>
     <a href="${item.link}" target="_blank" class="article__link read-more">Read More ></a>
 </div>`
-        })
+    })
 
-        displayItems = displayItems.join('');
-        sectionWithItems.innerHTML = displayItems
-    }
+    displayItems = displayItems.join('');
+    sectionWithItems.innerHTML = displayItems
+}
 
-    function displayItemsBtns() {
+function displayItemsBtns() {
 
-        //adding new items if there are no such
-        const categories = articlesItems.reduce((values, item) => {
-            if (!values.includes(item.category)) {
-                values.push(item.category)
-            }
-            return values
-        }, ['all'])
+    //adding new items if there are no such
+    const categories = articlesItems.reduce((values, item) => {
+        if (!values.includes(item.category)) {
+            values.push(item.category)
+        }
+        return values
+    }, ['all'])
 
-        let categoryBtns = categories.map((item) => {
-            return `<button type="button" class="btn articles__btn" data-id="${item}">
+    let categoryBtns = categories.map((item) => {
+        return `<button type="button" class="btn articles__btn" data-id="${item}">
     ${item}
   </button>`
-        }).join('')
+    }).join('')
 
-        btnContainer.innerHTML = categoryBtns;
-        // selecting buttons
-        const filterBtns = btnContainer.querySelectorAll('.articles__btn');
+    btnContainer.innerHTML = categoryBtns;
+    // selecting buttons
+    const filterBtns = btnContainer.querySelectorAll('.articles__btn');
 
-        // filter items 
+    // filter items 
 
-        filterBtns.forEach((btn) => {
-            btn.addEventListener('click', (e) => {
-                const category = e.currentTarget.dataset.id;
-                const itemCategory = articlesItems.filter((articleItem) => {
-                    if (articleItem.category === category) {
-                        return articleItem
-                    }
-                })
-                if (category === 'all') {
-                    displayArticlesItems(articlesItems);
-                } else {
-                    displayArticlesItems(itemCategory);
+    filterBtns.forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+            const category = e.currentTarget.dataset.id;
+            const itemCategory = articlesItems.filter((articleItem) => {
+                if (articleItem.category === category) {
+                    return articleItem
                 }
             })
+            if (category === 'all') {
+                displayArticlesItems(articlesItems);
+            } else {
+                displayArticlesItems(itemCategory);
+            }
         })
-    }
+    })
 }
+
 
 // NewsLetter PopUps
 
@@ -480,4 +475,14 @@ if (document.getElementById("fix_menu")) {
             document.getElementById("fix_menu").className = "";
         }
     }
+}
+// Preloader 
+
+preloader()
+
+function preloader() {
+    let preloader = document.querySelector('.preloader');
+    window.addEventListener('load', () => {
+        preloader.classList.add('hide-preloader');
+    })
 }
