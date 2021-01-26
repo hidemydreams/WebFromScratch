@@ -1,0 +1,65 @@
+// Social Icons
+
+.vertical__menu > i {
+  color: white;
+  transition: 0.3s;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.vertical__menu i:hover {
+  color: $base-color;
+}
+
+.close-burger {
+  display: none;
+}
+
+// Burger Icon
+
+.burger-icon {
+  display: none;
+
+  @media (max-width: $small) {
+    display: block;
+  }
+}
+
+// Accordion Icons
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
+
+// Vertical Bar Icons
+
+.vertical__icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 4px;
+  background-color:rgba(172, 208, 243, 0.52);
+  min-height: 300px;
+  justify-content: space-evenly;
+  padding: 0 100px;
+
+  @media (max-width: $smallest) {
+    display: none;
+  }
+}
+.fa-stack .fa-square {
+  color: $base-color;
+  transition: 0.3s;
+}
+
+.fa-stack:hover .fa-square {
+  color: $btn-hover-color;
+}
+  

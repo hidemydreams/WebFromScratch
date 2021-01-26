@@ -1,0 +1,15 @@
+.articles__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+  @media (max-width: $smallest) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.articles__card {
+  background-color: rgba(151, 206, 238, 1);
+
+  
+}

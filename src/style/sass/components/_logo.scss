@@ -1,0 +1,43 @@
+// Sidebar Logo
+
+.sidebar__logo img {
+  max-width: 35px;
+  display: none;
+
+@media (max-width: $small) {
+  display: block;
+}
+}
+
+// Main Logo
+
+#hero__nav-logo {
+  
+
+  &:hover #logo-w {
+    fill: #00A3FF;
+    fill-opacity: 0.71;
+  }
+
+  &:hover #logo-f {
+    fill: #FF4BA2;
+    fill-opacity: 0.71;
+  }
+}
+
+#logo-w {
+  fill: #FF4BA2;
+  fill-opacity: 0.71;
+  transition: .3s;
+}
+
+#logo-f {
+  fill: #00A3FF;
+  transition: .3s;
+  fill-opacity: 0.71;
+}
+
+#logo-s {
+  fill: #FFB800;
+  transition: .3s;
+}

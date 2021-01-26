@@ -1,0 +1,376 @@
+// Main Modals And PopUps Settings
+.popup {
+    position: fixed;
+    background-color: rgba(77, 77, 77, 0.35);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 200;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba($base-color, 0.9);
+    border-radius: 20px;
+    justify-content: space-evenly;
+    z-index: 201;
+}
+
+.modal__link {
+    color: white;
+}
+
+.show-modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+// Registration Form PopUps CSS
+.log__modal,
+.reg__modal {
+    max-width: 250px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    h3 {
+        color: white;
+        font-size: 45px;
+    }
+    input {
+        padding: 1.5vh;
+        border: none;
+        outline: none;
+        border-radius: 10vh;
+        background-color: lighten($base-color, 5%);
+        color: white;
+        transition: .2s;
+    }
+    input:hover {
+        background-color: lighten($base-color, 10%);
+    }
+    input::placeholder {
+        color: white;
+    }
+}
+
+.log__btn,
+.reg__btn {
+    background-color: lighten($base-color, 5%);
+    &:hover {
+        background-color: lighten($base-color, 10%);
+    }
+}
+
+// Contact PopUp CSS
+.contact__modal {
+    color: white;
+    padding: 20px;
+    display: flex;
+    max-width: 180px;
+    text-align: left;
+    justify-content: space-evenly;
+    @media (max-width: $smallest) {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        @media (max-width: $smallest) {
+            font-size: 20px;
+        }
+    }
+    p {
+        font-size: 20px;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        @media (max-width: $smallest) {
+            font-size: 13px;
+        }
+    }
+    button {
+        background-color: lighten($base-color, 5%);
+    }
+}
+
+
+/*----------Pop Up Raiting------------*/
+
+.rating_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.popup_rat {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.popup_text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/*---------Pop Up---------*/
+
+.mistake_modal {
+    border: none;
+    border-radius: 30px;
+    max-width: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.pop_up_mistakes {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.mistake_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    input {
+        margin-bottom: 10px;
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        outline: none;
+        width: 100%;
+        padding: 10px 0px 0px 10px;
+        &::placeholder {
+            color: white;
+            font-size: 0.8rem;
+        }
+    }
+    textarea {
+        margin-bottom: 15px;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 4px solid white;
+        padding: 10px 0px 0px 10px;
+        border: 2px solid white;
+        width: 100%;
+        display: block;
+        &::placeholder {
+            color: white;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.newsletter {
+    /*	&__popup {
+		}*/
+    &__modal {
+        color: white;
+        padding: 20px;
+        max-width: 180px;
+        text-align: left;
+    }
+    &__popup-title {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+    &__popup-desc {
+        margin-bottom: 20px;
+    }
+    /*&__close {}*/
+}
+
+
+/*----------Pop Up Raiting------------*/
+
+.popup_rat {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+
+.popup_text {
+    margin-top: 10px;
+}
+
+
+/*----------------------Pop Up Comments--------------------------------*/
+
+.comments_modal {
+    border: none;
+    border-radius: 30px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.comments_title {
+    font-size: 24px;
+    padding-top: 5px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.comments_comment {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    &::placeholder {
+        color: white;
+    }
+}
+
+.name_comment {
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid white;
+    padding: 10px 0px 0px 10px;
+    outline: none;
+    width: 15%;
+    margin-right: 5px;
+    color: rgba(0, 25, 55, 1);
+    &::placeholder {
+        color: white;
+    }
+}
+
+.message_comment {
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 10px 0px 10px 10px;
+    outline: none;
+    transition: border-bottom 0.2s;
+    color: rgba(0, 25, 55, 1);
+    width: 100%;
+    display: block;
+    &::placeholder {
+        color: white;
+    }
+}
+
+.items_comments {
+    border: 4px solid white;
+    overflow-y: scroll;
+    height: 200px;
+    color: white;
+}
+
+.items_comments::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+.comment_name {
+    text-align: center;
+    width: 20%;
+    margin-right: 10px;
+    border-right: 4px solid $headings-color;
+    padding-top: 15px;
+}
+
+.mistake_item textarea::placeholder {
+    color: white;
+}
+
+
+/*-------popup_tasks__popup--------------*/
+
+.tasks_modal {
+    border: none;
+    border-radius: 30px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.popup_title {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tasks,
+.mistakes {
+    display: inline-block;
+    width: 100px;
+}
+
+.tasks_modal h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal__btn {
+    padding: 10px;
+    background-color: darken($base-color, 10%);
+}
+
+
+/*-----pop Up Response-----*/
+
+.response_modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.popup_res {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
