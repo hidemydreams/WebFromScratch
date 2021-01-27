@@ -569,49 +569,231 @@
 
                             <!-- GIT Topic 19 -->
                             <div class="sql__topic topic">
-                                <h4 id="topic19" class="sql__topic-title">ADVANCED</h4>
+                                <h4 id="topic19" class="sql__topic-title">2.Reverting a file to a previous version</h4>
                                 <p>
-                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
-                                    come in handy.
+                                    Git allows us to return any selected file back to the way it was in a certain commit. This is done via the familiar git 
+                                    checkout command, which we used earlier to switch branches, but can also be used to swtich between commits (it's pretty 
+                                    common in Git for one command to be used for multiple seemingly unrelated tasks).
                                 </p>
+                                <p>
+                                    In the following example we will take hello.txt and reverse everything we've done to it since the initial commit. 
+                                    To do so we have to supply the id of the commit we want to go back to, as well as the full path to our file.<br>
+                                </p>
+                                <code class="code-block">
+                                    $ git checkout 09bd8cc1 hello.txt
+                                </code>
                                                                 
                             </div>
 
                             <!-- GIT Topic 20 -->
                             <div class="sql__topic topic">
-                                <h4 id="topic20" class="sql__topic-title">ADVANCED</h4>
+                                <h4 id="topic20" class="sql__topic-title">3. Fixing a commit</h4>
                                 <p>
-                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
-                                    come in handy.
+                                    If you notice that you've made a typo in your commit message, or you've forgotten to add a file and you see right 
+                                    after you commit, you can easily fix this with git commit --amend. This will add everything from the last commit back 
+                                    to the staging area, and attempt to make a new commit. This gives you a chance to fix your commit message or add more files
+                                    to the staging area.
                                 </p>
+                                <p>
+                                    For more complex fixes that aren't in the last commit (or if you've pushed your changes already), you've got to use git revert. 
+                                     This will take all the changes that a commit has introduced, reverse them, and create a new commit that is the exact opposite.<br>
+    
+                                </p>
+                                <p>
+                                    The newest commit can be accessed by the HEAD alias.
+                                </p> 
+                                <code class="code-block">
+                                    $ git revert HEAD
+                                </code>
+                                <p>
+                                    For other commits it's best to use an id.
+                                </p>
+                                <code class="code-block">
+                                    $ git revert b10cc123
+                                </code>
+                                <p>
+                                When reverting older commits, keep in mind that merge conflicts are very likely to appear. This happens when a file has been
+                                altered by another more recent commit, and now Git cannot find the right lines to revert, since they aren't there anymore.<br>
+                                </p> 
                                                                 
                             </div>
 
                             <!-- GIT Topic 21 -->
                             <div class="sql__topic topic">
-                                <h4 id="topic21" class="sql__topic-title">ADVANCED</h4>
+                                <h4 id="topic21" class="sql__topic-title">4. Resolving Merge Conflicts</h4>
                                 <p>
-                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
-                                    come in handy.
+                                    Apart from the scenario depicted in the previous point, conflicts regularly appear when merging branches or pulling someone 
+                                    else's work. Sometimes conflicts are handled automatically by git, but other times the person dealing with them has to decide
+                                    (and usually handpick) what code stays and what is removed.
                                 </p>
-                                                                
+                                     
+                                <p>
+                                    Let's look at an example where we're trying to merge two branches called john_branch and tim_branch. Both John and Tim are writing
+                                    in the same file a function that displays all the elements in an array.
+                                </p>
+                                <p>
+                                    John is using a for loop:
+                                </p>
+                               
+                                <code class="code-block">
+                                    // Use a for loop to console.log contents.
+                                    for(var i=0; i&lt;arr.length; i++) {
+                                                console.log(arr[i]);
+                                          }
+                                </code>
+                             
+                                <p>
+                                    Tim prefers forEach:
+                                </p>
+                                <code class="code-block">
+                                    // Use forEach to console.log contents.<br>
+                                    arr.forEach(function(item) {<br>
+                                        console.log(item);<br>
+                                    });
+                                </code>
+                                <p>
+                                    They both commit their code on their respective branch. Now if they try to merge the two branches they will see the 
+                                    following error message:
+                                </p> 
+
+                                <code class="code-block">
+                                    $ git merge tim_branch <br>
+    
+                                    Auto-merging print_array.js<br>
+                                    CONFLICT (content): Merge conflict in print_array.js<br>
+                                    Automatic merge failed; fix conflicts and then commit the result.
+                                </code>
+
+                                <p>
+                                    Git wasn't able to merge the branches automatically, so now it's up to the devs to manually resolve the conflict. 
+                                     If they open the file where the conflict resides, they'll see that Git has inserted a marker on the conflicting lines.<br>
+    
+                                </p>
+                               
+                                <code class="code-block">
+                                    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
+                                    // Use a for loop to console.log contents<br>.
+                                    for(var i=0; i&lt;arr.length; i++) {<br>
+                                        console.log(arr[i]);<br>
+                                    }<br>
+                                    =======<br>
+                                    // Use forEach to console.log contents.<br>
+                                    arr.forEach(function(item) {<br>
+                                        console.log(item);<br>
+                                    });<br>
+                                    >>>>>>> Tim's commit.
+                                </code>
+                             
+                                <p>
+                                    Above the ===== we have the current HEAD commit, and below the conflicting one. This way we can clearly see the differences, 
+                                    and decide which is the better version, or write a new one all together. In this situation we go for the latter and rewrite 
+                                    the whole thing, removing the markers to let Git know we're done.
+                                </p>
+                                <code class="code-block">
+                                    // Not using for loop or forEach.<br>
+                                    // Use Array.toString() to console.log contents.<br>
+                                    console.log(arr.toString());
+                                </code>
+                                <p>
+                                    When everything is set, a merge commit has to be done to finish the process.
+                                </p> 
+                                <code class="code-block">
+                                    $ git add -A<br>
+                                   $ git commit -m "Array printing conflict resolved."
+                                </code>
+                                <p>
+                                    As you can see this process is quite tiresome and can get extremely hard to deal with in large projects. Most developers
+                                    prefer to resolve conflicts with the help of a GUI client, which makes things much easier. To run a graphical client use git
+                                    mergetool.
+                                 </p> 
+
                             </div>
 
                             <!-- GIT Topic 22 -->
                             <div class="sql__topic topic">
-                                <h4 id="topic22" class="sql__topic-title">ADVANCED</h4>
+                                <h4 id="topic22" class="sql__topic-title">5. Setting up .gitignore</h4>
                                 <p>
-                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
-                                    come in handy.
+                                    In most projects there are files or entire folders that we don't want to ever commit. We can make sure that they aren't 
+                                    accidentally included in our git add -A by creating a .gitignore file:
+                                </p>
+                                <p>
+                                    1. Manually create a text file called .gitignore and save it in your project's directory.
+                                </p>    
+                                    
+                                <p>
+                                    2. Inside, list the names of files/directories to be ignored, each on a new line.
+                                 
+                                </p>
+                                <p>
+                                    3. The .gitignore itself has to be added, committed and pushed, as it is just like any other file in the project.
+                                 
+                                </p>
+
+                                <p>
+                                    Good examples for files to be ignored are:
+                                </p> 
+                                <p>
+                                    -log files
+                                </p>  
+                                    -task runner builds    
+                                <p>
+                                     
+                                </p> 
+                                    -the node_modules folder in node.js projects
+                                <p>
+                                    -folders created by IDEs like Netbeans and IntelliJ</b>
+                                    
+                                </p>   
+                                <p>
+                                    -personal developer notes
+                                </p>     
+                                <p>
+                                    A .gitignore banning all of the above will look like this:</b>
+                                        
+                                </p> 
+                                
+                                <code class="code-block">
+                                    *.log<br>
+                                    build/
+                                    node_modules/
+                                    .idea/
+                                    my_notes.txt
+                                </code>
+                               
+                                <p>                                        
+                                    
+                                    The slash at the end of some of the lines signals that this is a folder and we are ignoring everything inside it recursively.
+                                    The asterisk serves it's usual function as a wild card.
                                 </p>
                                                                 
                             </div>
+
                             <!-- GIT Topic 23 -->
                             <div class="sql__topic topic">
-                                <h4 id="topic23" class="sql__topic-title">ADVANCED</h4>
+                                <h4 id="topic23" class="sql__topic-title">CONCLUSION</h4>
                                 <p>
-                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
-                                    come in handy.
+                                    This ends our tutorial on git! We tried our best to bring you only the most important information you need, presented as short 
+                                    and concise as possible.
+                                 </p>     
+                                <p>
+                                    Git is quite complex and has a lot more features and tricks to offer. If you wish to find out more, here are some learning 
+                                    resources we recommend
+                                </p>     
+                                <p>
+
+                                    The official Git docs, including a whole book and video lessons - here.
+                                </p>     
+                                <p>   
+                                    Getting git right - Atlassian's collection of tutorials and articles - here.
+                                </p>     
+                                <p>    
+                                    A list of GUI clients - here.
+                                </p>     
+                                <p>    
+                                    Git cheat sheet (PDF) - here.
+                                </p>     
+                                <p>   
+                                    Online tool for generating .gitignore files - here.
                                 </p>
                                                                 
                             </div>
@@ -664,7 +846,7 @@
                                     </li>
                                     <li class="article_li"><a href="#topic17" class="mainmenu1">ADVANCED</a>
                                     </li>
-                                    <li class="article_li"><a href="#topic17" class="mainmenu1">CONCLUSION</a>
+                                    <li class="article_li"><a href="#topic23" class="mainmenu1">CONCLUSION</a>
                                     </li>   
                                 </ul>
 
@@ -680,7 +862,7 @@
                                         <li><a class="menu__item" href="#topic8">REMOTE REPOSITORIES</a></li>
                                         <li><a class="menu__item" href="#topic13">BRANCHES</a></li>
                                         <li><a class="menu__item" href="#topic17">ADVANCED</a></li>
-                                        <li><a class="menu__item" href="#topic16">CONCLUSION</a></li>
+                                        <li><a class="menu__item" href="#topic23">CONCLUSION</a></li>
                                     </ul>
                                 </nav>
 
