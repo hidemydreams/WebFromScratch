@@ -352,9 +352,7 @@ if (btnContainer) {
         articlesInnerLink()
 
     });
-
 };
-
 
 
 

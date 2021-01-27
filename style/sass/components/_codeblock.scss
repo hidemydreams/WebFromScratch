@@ -7,4 +7,9 @@
   padding: 20px;
   font-size: 16px;
   margin: 30px 0px;
+
+  @media (max-width: $smallest) {
+    padding: 10px;
+    font-size: 13px;
+  }
 }
