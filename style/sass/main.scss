@@ -14,7 +14,6 @@
 @import "layouts/lower_bar";
 @import "layouts/sidenav";
 @import "layouts/preloader";
-
 // Components
 @import "components/logo";
 @import "components/buttons";
@@ -28,8 +27,6 @@
 @import "components/rating";
 @import "components/modals";
 @import "components/codeblock";
-
-
 // Pages
 @import "pages/hero";
 @import "pages/cards-page";
@@ -44,3 +41,4 @@
 @import "pages/about";
 @import "pages/news";
 @import "pages/articles-section";
+@import "pages/css-page";
