@@ -338,10 +338,6 @@ window.addEventListener('DOMContentLoaded', () => {
   articlesInnerLink()
 
 });
-
-
-
-
 function displayArticlesItems(articleItems) {
   let displayItems = articleItems.map((item)=> {
     return `<div class="articles__card article">
