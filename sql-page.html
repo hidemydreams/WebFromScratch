@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap" rel="stylesheet">
     <!--FONT AWESOME ICONS-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- RESET.CSS AND STYLE.CSS -->
     <link rel="stylesheet" href="style/style.css">
     <!-- FAVICON -->
@@ -74,155 +72,108 @@
                                 <!-- SQL Topic 0 -->
                                 <div class="sql_topic topic">
                                     <h4 id="topic0" class="sql__topic-title"> Why should we know SQL?</h4>
-                                        <p>
-                                            Although it has existed since the 70s of last century, it is still very
-                                            widely
-                                            used, and without it it will be difficult to create something serious.
-                                        </p>
-                                        <p>
-                                            Most full-stack frameworks are able to work with SQL. Among them:
-                                            ActiveRecord,
-                                            Doctrine, Hibernate and many others. Despite this, sometimes you have to
-                                            “dirty
-                                            hands” and go into real SQL.
-                                        </p>
+                                    <p>
+                                        Although it has existed since the 70s of last century, it is still very widely used, and without it it will be difficult to create something serious.
+                                    </p>
+                                    <p>
+                                        Most full-stack frameworks are able to work with SQL. Among them: ActiveRecord, Doctrine, Hibernate and many others. Despite this, sometimes you have to “dirty hands” and go into real SQL.
+                                    </p>
 
-                                        <p>
-                                            That is why we have prepared a short introduction, in which we will walk
-                                            through
-                                            the
-                                            fundamental things in SQL. We strongly recommend you to try all the examples
-                                            below
-                                            yourself, because, as you know, theory is nothing without practice.
-                                            Well, here we go!
-                                        </p>
+                                    <p>
+                                        That is why we have prepared a short introduction, in which we will walk through the fundamental things in SQL. We strongly recommend you to try all the examples below yourself, because, as you know, theory is nothing without practice. Well, here we go!
+                                    </p>
                                 </div>
 
                                 <!-- SQL Topic 1 -->
                                 <div class="sql__topic topic">
                                     <h4 id="topic1" class="sql__topic-title">Let's create a table!</h4>
 
-                                        <p>
-                                            In order to create a table in SQL, the expression <b>CREATE TABLE</b> is used.It
-                                            accepts
-                                            as parameters all columns that we want to enter, as well as their data
-                                            types.Let’s create a table called “Months”, which will have three columns:
-                                        </p>
-                                        <p>
-                                            <b>id </b> – in other words, the ordinal number of the month (integer
-                                            type or
-                                            int)
-                                        </p>
-                                        <p>
-                                            <b>name </b> – month name (string or varchar(10) (10 characters – maximum
-                                            string
-                                            length))
-                                        </p>
-                                        <p>
-                                            <b>days</b>  – number of days in a certain month (integer type or int)
-                                            The code will look like this:
-                                        </p>
-                                        <p>
-                                            Also, when creating tables, it’s customary to add the so-called primary
-                                            key. This is
-                                            a column where the values are unique.
-                                        </p>
+                                    <p>
+                                        In order to create a table in SQL, the expression <b>CREATE TABLE</b> is used.It accepts as parameters all columns that we want to enter, as well as their data types.Let’s create a table called “Months”, which will
+                                        have three columns:
+                                    </p>
+                                    <p>
+                                        <b>id </b> – in other words, the ordinal number of the month (integer type or int)
+                                    </p>
+                                    <p>
+                                        <b>name </b> – month name (string or varchar(10) (10 characters – maximum string length))
+                                    </p>
+                                    <p>
+                                        <b>days</b> – number of days in a certain month (integer type or int) The code will look like this:
+                                    </p>
+                                    <p>
+                                        Also, when creating tables, it’s customary to add the so-called primary key. This is a column where the values are unique.
+                                    </p>
 
-                                        <p>
-                                            Most often, the primary key column is id, but in our case it can also be
-                                            name, since
-                                            the names of all months are unique. For more information, please follow
-                                            this link.
-                                        </p>
+                                    <p>
+                                        Most often, the primary key column is id, but in our case it can also be name, since the names of all months are unique. For more information, please follow this link.
+                                    </p>
                                 </div>
                                 <!-- SQL Topic 2 -->
                                 <div class="sql__topic topic">
                                     <h4 id="topic2" class="sql__topic-title">Data Entry</h4>
 
-                                        <p>
-                                            Now let’s add a couple of months to our plaque. You can do that with the 
-                                            &lt;INSERT> command.
-                                        </p>
-                                        
-                                        <p>There are two different ways to use
-                                            <b>INSERT</b>:</p>
+                                    <p>
+                                        Now let’s add a couple of months to our plaque. You can do that with the &lt;INSERT> command.
+                                    </p>
+
+                                    <p>There are two different ways to use
+                                        <b>INSERT</b>:</p>
 
 
-                                        <p>
-                                            he first method does not involve specifying column names, but only
-                                            takes the values
-                                            in the order they are in the table.
-                                        </p>
+                                    <p>
+                                        he first method does not involve specifying column names, but only takes the values in the order they are in the table.
+                                    </p>
 
-                                        <p>
-                                            <code class="code-block">INSERT INTO months VALUES (1, 'January',31);</code>
-                                        </p>
+                                    <p>
+                                        <code class="code-block">INSERT INTO months VALUES (1, 'January',31);</code>
+                                    </p>
 
-                                        <p>
-                                            The first method is shorter than the second, but if we want to add more
-                                            columns in
-                                            the future, all previous requests will not work. We should use the
-                                            second method to
-                                            solve this problem.
+                                    <p>
+                                        The first method is shorter than the second, but if we want to add more columns in the future, all previous requests will not work. We should use the second method to solve this problem. Its essence is that we specify the names of columns before entering
+                                        the data.
+                                    </p>
 
-                                            Its essence is that we specify the names of columns before entering the
-                                            data.
-                                        </p>
+                                    <p>
+                                        <code class="code-block">INSERT INTO months (id,name,days) VALUES (2,'February',29);</code>
+                                    </p>
 
-                                        <p>
-                                            <code class="code-block">INSERT INTO months (id,name,days) VALUES (2,'February',29);</code>
-                                        </p>
-
-                                        <p>
-                                            If we don’t specify one of the columns, we’ll write NULL or the default
-                                            value, but
-                                            that’s a different story.
-                                        </p>
+                                    <p>
+                                        If we don’t specify one of the columns, we’ll write NULL or the default value, but that’s a different story.
+                                    </p>
                                 </div>
 
                                 <!-- SQL Topic 3 -->
                                 <div class="sql__topic topic">
                                     <h4 id="topic3" class="sql__topic-title">SELECT </h4>
 
-                                        <p>
-                                            This query is used when we need to show data in a table. Probably the
-                                            easiest
-                                            example of SELECT usage is the following query:
-                                        </p>
+                                    <p>
+                                        This query is used when we need to show data in a table. Probably the easiest example of SELECT usage is the following query:
+                                    </p>
 
-                                        <code class="code-block">SELECT * FROM characters</code>
+                                    <code class="code-block">SELECT * FROM characters</code>
 
-                                        <p>
-                                            The result of this query is a table with all data in the table. An
-                                            asterisk (*) sign
-                                            means that we want to show all columns from the table without exception.
-                                        </p>
+                                    <p>
+                                        The result of this query is a table with all data in the table. An asterisk (*) sign means that we want to show all columns from the table without exception.
+                                    </p>
 
-                                        <p>
-                                            Since there is usually more than one table in the database, we need to
-                                            specify the
-                                            name of the table from which we want to see the data. We can do this by
-                                            using the
-                                            FROM keyword.
-                                        </p>
+                                    <p>
+                                        Since there is usually more than one table in the database, we need to specify the name of the table from which we want to see the data. We can do this by using the FROM keyword.
+                                    </p>
 
-                                        <p>
-                                            When you only need some columns from a table, you can specify their
-                                            names by comma
-                                            instead of an asterisk.
-                                        </p>
+                                    <p>
+                                        When you only need some columns from a table, you can specify their names by comma instead of an asterisk.
+                                    </p>
 
-                                        <code class="code-block">SELECT name, weapon  FROM characters</code>
+                                    <code class="code-block">SELECT name, weapon  FROM characters</code>
 
 
-                                        <p>
-                                            Also, sometimes we need to sort the output. For this we use ORDER BY
-                                            “column name”.
-                                            <b>ORDER BY</b> has two modifiers: <b>ASC</b> (ascending) (default) and <b>DESC</b>
-                                            (descending).
-                                        </p>
+                                    <p>
+                                        Also, sometimes we need to sort the output. For this we use ORDER BY “column name”.
+                                        <b>ORDER BY</b> has two modifiers: <b>ASC</b> (ascending) (default) and <b>DESC</b> (descending).
+                                    </p>
 
-                                        <code class="code-block">SELECT name, weapon FROM "characters" ORDER BY name
+                                    <code class="code-block">SELECT name, weapon FROM "characters" ORDER BY name
                                             DESC</code>
 
 
@@ -231,17 +182,11 @@
                                 <!-- SQL Topic 4 -->
                                 <div class="sql__topic topic">
                                     <h4 id="topic4" class="sql__topic-title">WHERE </h4>
-                                        <p>
-                                            Now we know how to show only specific columns, but what if we want to
-                                            include only
-                                            some specific rows in the output? We use <b>WHERE</b> for that. This keyword
-                                            allows us to
-                                            filter the data by a specific condition. 
-
-                                            In the next query, we will only output characters that use the gun as a
-                                            weapon.
-                                        </p>
-                                            <code class="code-block">SELECT *
+                                    <p>
+                                        Now we know how to show only specific columns, but what if we want to include only some specific rows in the output? We use <b>WHERE</b> for that. This keyword allows us to filter the data by a specific condition.
+                                        In the next query, we will only output characters that use the gun as a weapon.
+                                    </p>
+                                    <code class="code-block">SELECT *
                                                 FROM characters
                                                 WHERE weapon = 'pistol'; </code>
                                 </div>
@@ -251,199 +196,152 @@
                                     <h4 id="topic5" class="sql__topic-title">AND/OR</h4>
 
                                     <p>
-                                        Conditions in WHERE can be written using logical operators (AND/OR) and
-                                        mathematical
-                                        comparison operators (=,  &lt; , >, &lt;=, >=, &lt;>).
-
-                                                    For example, we have a tablet that records data on 4 of the best
-                                                    selling
-                                                    music albums of all time. Let’s display only those that are rock
-                                                    genre,
-                                                    and sales were less than 50 million copies.
+                                        Conditions in WHERE can be written using logical operators (AND/OR) and mathematical comparison operators (=, &lt; , >, &lt;=, >=, &lt;>). For example, we have a tablet that records data on 4 of the best selling music albums of all time. Let’s display
+                                        only those that are rock genre, and sales were less than 50 million copies.
                                     </p>
 
                                     <p>
                                         <code class="code-block">SELECT *
                                         FROM albums
                                         WHERE genre = 'rock' AND sales_in_millions &lt;= 50 ORDER BY released  </code></p>
-                                            </div> </div> <!-- SQL Topic 6 -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic6" class="sql__topic-title">IN/BETWEEN/LIKE</h4>
+                                </div>
+                            </div>
+                            <!-- SQL Topic 6 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic6" class="sql__topic-title">IN/BETWEEN/LIKE</h4>
 
-                                                <p>
-                                                    Conditions in WHERE can be written using several
-                                                    other commands, which are:
-                                                </p>
+                                <p>
+                                    Conditions in WHERE can be written using several other commands, which are:
+                                </p>
 
-                                                <p>
-                                                    <b>IN</b>  – compares the value in a column with
-                                                    several possible values and returns
-                                                    true if the value matches at least one value
-                                                </p>
-                                                <p>
-                                                    <b>BETWEEN</b>  – checks if the value is in a certain
-                                                    interval
-                                                </p>
-                                                <p>
-                                                    <b>LIKE</b>  – looking for a pattern
-                                                </p>
-                                                <p>
-                                                    For example, we can make a query to display data
-                                                    about albums in pop or soul
-                                                    genre:
-                                                </p>
-                                                
-                                                 <code class="code-block">SELECT * FROM albums WHERE genre IN ('pop',
+                                <p>
+                                    <b>IN</b> – compares the value in a column with several possible values and returns true if the value matches at least one value
+                                </p>
+                                <p>
+                                    <b>BETWEEN</b> – checks if the value is in a certain interval
+                                </p>
+                                <p>
+                                    <b>LIKE</b> – looking for a pattern
+                                </p>
+                                <p>
+                                    For example, we can make a query to display data about albums in pop or soul genre:
+                                </p>
+
+                                <code class="code-block">SELECT * FROM albums WHERE genre IN ('pop',
                                                     'soul');
                                                 </code>
-                                                
-                                                <p>
-                                                    If we want to output all albums that were released
-                                                    between 1975 and 1985, we can use
-                                                    the following record:
-                                                </p>
-                
-                                                <code class="code-block">
+
+                                <p>
+                                    If we want to output all albums that were released between 1975 and 1985, we can use the following record:
+                                </p>
+
+                                <code class="code-block">
                                                     SELECT * FROM albums WHERE released BETWEEN 197 SELECT * FROM albums
                                                     WHERE released BETWEEN 1975
                                                     AND 1985;
                                                 </code>
 
-                                                <p>
-                                                    Also, if we want to output all albums that have an
-                                                    ‘R’ in their title, we can use
-                                                    the following record:
-                                                </p>
-                                                <code class="code-block">
+                                <p>
+                                    Also, if we want to output all albums that have an ‘R’ in their title, we can use the following record:
+                                </p>
+                                <code class="code-block">
                                                     SELECT * FROM albums WHERE album LIKE '%R%';
                                                 </code>
 
-                                                <p>
-                                                    The % sign means any sequence of characters (0
-                                                    characters also counts as a
-                                                    sequence).
-                                                </p>
-                                                
-                                                <p>
-                                                    If we want to output all albums with ‘R’ as the
-                                                    first letter in their title, the
-                                                    record will change slightly:
-                                                </p>
+                                <p>
+                                    The % sign means any sequence of characters (0 characters also counts as a sequence).
+                                </p>
 
-                                                <code class="code-block">SELECT * FROM albums WHERE album LIKE
+                                <p>
+                                    If we want to output all albums with ‘R’ as the first letter in their title, the record will change slightly:
+                                </p>
+
+                                <code class="code-block">SELECT * FROM albums WHERE album LIKE
                                                     'R%'; </code>
 
-                                                <p>
+                                <p>
 
-                                                    SQL also has an inversion. For example, try to write
-                                                    NOT before any logical
-                                                    expression in the condition (NOT BETWEEN and so on).
+                                    SQL also has an inversion. For example, try to write NOT before any logical expression in the condition (NOT BETWEEN and so on).
 
-                                                </p>
-                                                
+                                </p>
 
-                                            </div>
 
-                                            <!-- SQL TOPIC 7  -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic7" class="sql__topic-title">FUNCTIONS</h4>
-                                                    <p>
-                                                        SQL is full of built-in functions for performing various
-                                                        operations. We will
-                                                        show
-                                                        you only the most frequently used functions:
-                                                    </p>
+                            </div>
 
-                                                    <p>
-                                                        <b>COUNT()</b>  – returns the number of lines
-                                                    </p>
-                                                    <p>
-                                                       <b>SUM()</b>  – returns the sum of all fields with numerical
-                                                        values in them
-                                                    </p>
-                                                    <p>
-                                                        <b>AVG() </b> – returns the average value among rows
-                                                    </p>
-                                                    <p>
-                                                        <b>MIN()/MAX() </b> – returns minimum/maximum value among
-                                                        rows
-                                                    </p>
-                                                    <p>
-                                                        To display the year of release of the oldest album, you can
-                                                        use the
-                                                        following query
-                                                        in the table:
-                                                    </p>
+                            <!-- SQL TOPIC 7  -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic7" class="sql__topic-title">FUNCTIONS</h4>
+                                <p>
+                                    SQL is full of built-in functions for performing various operations. We will show you only the most frequently used functions:
+                                </p>
 
-                                                    <code class="code-block">
+                                <p>
+                                    <b>COUNT()</b> – returns the number of lines
+                                </p>
+                                <p>
+                                    <b>SUM()</b> – returns the sum of all fields with numerical values in them
+                                </p>
+                                <p>
+                                    <b>AVG() </b> – returns the average value among rows
+                                </p>
+                                <p>
+                                    <b>MIN()/MAX() </b> – returns minimum/maximum value among rows
+                                </p>
+                                <p>
+                                    To display the year of release of the oldest album, you can use the following query in the table:
+                                </p>
+
+                                <code class="code-block">
                                                         SELECT MAX(released) FROM albums;
                                                     </code>
 
-                                                    <p>
-                                                        Note that if you write a query asking, for example, for the
-                                                        name and average
-                                                        of
-                                                        something, you will get an error in the output.
+                                <p>
+                                    Note that if you write a query asking, for example, for the name and average of something, you will get an error in the output. Let’s say that you are writing such a query:
+                                </p>
 
-                                                        Let’s say that you are writing such a query:
-                                                    </p>
-                                                    
-                                                    <code class="code-block">SELECT name, avg(age) FROM students;</code>
+                                <code class="code-block">SELECT name, avg(age) FROM students;</code>
 
 
-                                                    <p>
-                                                        To avoid the error, you should add the following line:
-                                                    </p>
+                                <p>
+                                    To avoid the error, you should add the following line:
+                                </p>
 
-                                                    <code class="code-block">
+                                <code class="code-block">
                                                         GROUP BY name 
                                                     </code>
 
-                                                    <p>
-                                                        The reason for this is that the avg(age) record is
-                                                        aggregated and you need
-                                                        to group
-                                                        the values by name.
-                                                    </p>
+                                <p>
+                                    The reason for this is that the avg(age) record is aggregated and you need to group the values by name.
+                                </p>
 
-                                            </div>
+                            </div>
 
-                                            <!-- SQL TOPIC 8  -->
+                            <!-- SQL TOPIC 8  -->
 
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic8" class="sql__topic-title">ATTACHED SELECT </h4>
-                                                    <p>
-                                                        In the previous steps, we learned how to make simple
-                                                        calculations with data.
-                                                        If we
-                                                        want to use the result of these calculations, we often need
-                                                        to use so-called
-                                                        nested
-                                                        queries. Let’s say we need to display the artist, the album
-                                                        and the year of
-                                                        the
-                                                        oldest album in the table.
+                            <div class="sql__topic topic">
+                                <h4 id="topic8" class="sql__topic-title">ATTACHED SELECT </h4>
+                                <p>
+                                    In the previous steps, we learned how to make simple calculations with data. If we want to use the result of these calculations, we often need to use so-called nested queries. Let’s say we need to display the artist, the album and the year of the oldest
+                                    album in the table. You can display these columns using the following query:
+                                </p>
 
-                                                        You can display these columns using the following query:
-                                                    </p>
-
-                                                    <code class="code-block">
+                                <code class="code-block">
                                                         SELECT artist, album, released FROM albums; 
                                                     </code>
 
-                                                    <p>
-                                                        We also know how to get the earliest year available:
-                                                    </p>
+                                <p>
+                                    We also know how to get the earliest year available:
+                                </p>
 
-                                                    <code class="code-block">
+                                <code class="code-block">
                                                         SELECT MIN(released) FROM album; 
                                                     </code>
 
-                                                    <p>
-                                                        You can merge these queries in WHERE:
-                                                    </p>
+                                <p>
+                                    You can merge these queries in WHERE:
+                                </p>
 
-                                                    <code class="code-block">
+                                <code class="code-block">
                                                         SELECT artist,album,released
                                                         FROM albums
                                                         WHERE released = (
@@ -451,39 +349,24 @@
                                                         ); 
                                                     </code>
 
-                                            </div>
+                            </div>
 
-                                            <!-- SQL TOPIC 9  -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic9" class="sql__topic-title">ATTACHMENT OF TABLES</h4>
-                                                <p>
-                                                    In complex databases, we most often have several linked tables.
-                                                    For example,
-                                                    we have
-                                                    two tables: about video games and about developers.
-                                                </p>
+                            <!-- SQL TOPIC 9  -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic9" class="sql__topic-title">ATTACHMENT OF TABLES</h4>
+                                <p>
+                                    In complex databases, we most often have several linked tables. For example, we have two tables: about video games and about developers.
+                                </p>
 
-                                                <p>
-                                                    In video_games table we have developer_id column, in this case
-                                                    it is so
-                                                    called
-                                                    foreign_key. To make it easier to understand, developer_id is a
-                                                    link between
-                                                    two
-                                                    tables.
-                                                </p>
+                                <p>
+                                    In video_games table we have developer_id column, in this case it is so called foreign_key. To make it easier to understand, developer_id is a link between two tables.
+                                </p>
 
-                                                <p>
-                                                    If we want to display all information about the game, including
-                                                    information
-                                                    about
-                                                    its developer, we need to connect the second table. To do this,
-                                                    we can use
-                                                    INNER
-                                                    JOIN:
-                                                </p>
+                                <p>
+                                    If we want to display all information about the game, including information about its developer, we need to connect the second table. To do this, we can use INNER JOIN:
+                                </p>
 
-                                                <code class="code-block">
+                                <code class="code-block">
                                                     SELECT video_games.name, video_games.genre,
                                                     game_developers.name,
                                                     game_developers.country.
@@ -492,37 +375,27 @@
                                                     ON video_games.developer_id = game_developers.id; 
                                                 </code>
 
-                                                <p>
-                                                    This is probably the simplest example of using JOIN. There are
-                                                    several other
-                                                    ways to
-                                                    use it. For more information, please follow this link.
-                                                </p>
+                                <p>
+                                    This is probably the simplest example of using JOIN. There are several other ways to use it. For more information, please follow this link.
+                                </p>
 
-                                            </div>
+                            </div>
 
 
-                                            <!-- SQL Topic 10 -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic10" class="sql__topic-title">ALIASES</h4>
+                            <!-- SQL Topic 10 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic10" class="sql__topic-title">ALIASES</h4>
 
-                                                <p>
-                                                    If you look at the previous example, you will notice that there
-                                                    are two
-                                                    columns
-                                                    named equally: “name”. This can often be confusing. The solution
-                                                    to this
-                                                    problem are
-                                                    pseudonyms. By the way, they help make the column name more
-                                                    beautiful or
-                                                    understandable when necessary.
-                                                </p>
+                                <p>
+                                    If you look at the previous example, you will notice that there are two columns named equally: “name”. This can often be confusing. The solution to this problem are pseudonyms. By the way, they help make the column name more beautiful or understandable
+                                    when necessary.
+                                </p>
 
-                                                <p>
-                                                    To assign an alias to a column, you can use the keyword AS:
-                                                </p>
+                                <p>
+                                    To assign an alias to a column, you can use the keyword AS:
+                                </p>
 
-                                                <code class="code-block">
+                                <code class="code-block">
                                                     SELECT games.name, games.genre, devs.name AS developer,
                                                     devs.country
                                                     FROM video_games AS games
@@ -530,118 +403,94 @@
                                                     ON games.developer_id = devs.id; 
                                                 </code>
 
-                                            </div>
+                            </div>
 
-                                            <!-- SQL Topic 11 -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic11" class="sql__topic-title">UPDATE </h4>
+                            <!-- SQL Topic 11 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic11" class="sql__topic-title">UPDATE </h4>
 
-                                                <p>
-                                                    Often, we need to change the data in the table. In SQL, this is
-                                                    done using
-                                                    <b>UPDATE.</b>
-                                                </p> 
-                                                <p>  
-                                                    Using UPDATE includes:
-                                                </p> 
-                                                <p>
-                                                    - selecting the table that contains the field we want to change
-                                                </p> 
-                                                <p>
-                                                    - new value entry;
-                                                </p> 
-                                                <p>
-                                                    - using WHERE to indicate a specific location in the table.
-                                                </p> 
-                                                <p>
-                                                    Let’s say we have a table of the most highly regarded shows of
-                                                    all time.
-                                                    However, we
-                                                    have a problem: “Game of Thrones” is marked as a comedy and we
-                                                    definitely
-                                                    need to
-                                                    change that:
-                                                </p>
+                                <p>
+                                    Often, we need to change the data in the table. In SQL, this is done using
+                                    <b>UPDATE.</b>
+                                </p>
+                                <p>
+                                    Using UPDATE includes:
+                                </p>
+                                <p>
+                                    - selecting the table that contains the field we want to change
+                                </p>
+                                <p>
+                                    - new value entry;
+                                </p>
+                                <p>
+                                    - using WHERE to indicate a specific location in the table.
+                                </p>
+                                <p>
+                                    Let’s say we have a table of the most highly regarded shows of all time. However, we have a problem: “Game of Thrones” is marked as a comedy and we definitely need to change that:
+                                </p>
 
 
-                                                <code class="code-block">
+                                <code class="code-block">
                                                     UPDATE tv_series.
                                                     SET genre = 'drama'
                                                     WHERE name = 'Game of Thrones';
                                                 </code>
 
 
-                                            </div>
+                            </div>
 
-                                            <!-- SQL Topic 12 -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic12" class="sql__topic-title">REMOVING RECORDS FROM THE
-                                                    TABLE </h4>
-                                                <p>
-                                                    Deleting a record from a table via SQL is a very simple
-                                                    operation. All you
-                                                    need to
-                                                    do is designate what we want to delete.
-                                                </p>
-                                                <code class="code-block">
+                            <!-- SQL Topic 12 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic12" class="sql__topic-title">REMOVING RECORDS FROM THE TABLE </h4>
+                                <p>
+                                    Deleting a record from a table via SQL is a very simple operation. All you need to do is designate what we want to delete.
+                                </p>
+                                <code class="code-block">
                                                     DELETE FROM tv_series
                                                     WHERE id = 4; 
                                                 </code>
-                                                <p>
-                                                    Note: make sure you use WHERE when you delete an entry from the
-                                                    table.
-                                                    Otherwise,
-                                                    you will delete all records from the table without wanting to.
-                                                </p>
-                                            </div>
+                                <p>
+                                    Note: make sure you use WHERE when you delete an entry from the table. Otherwise, you will delete all records from the table without wanting to.
+                                </p>
+                            </div>
 
-                                            <!-- SQL Topic 13 -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic13" class="sql__topic-title">DELETING TABLES</h4>
+                            <!-- SQL Topic 13 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic13" class="sql__topic-title">DELETING TABLES</h4>
 
-                                                <p>
-                                                    If we want to remove all data from the table, but leave the
-                                                    table itself, we
-                                                    should
-                                                    use the <b>TRUNCATE</b> command:
-                                                </p>
+                                <p>
+                                    If we want to remove all data from the table, but leave the table itself, we should use the <b>TRUNCATE</b> command:
+                                </p>
 
-                                                <code class="code-block">
+                                <code class="code-block">
                                                     TRUNCATE TABLE table_name; 
                                                 </code>
 
-                                                <p>
-                                                    If we want to remove the table itself, we should use the <b>DROP</b>
-                                                    command:
-                                                </p>
+                                <p>
+                                    If we want to remove the table itself, we should use the <b>DROP</b> command:
+                                </p>
 
-                                                <code class="code-block">
+                                <code class="code-block">
                                                     DROP TABLE table_name; 
                                                 </code>
 
-                                            </div>
+                            </div>
 
-                                            <!-- SQL Topic 14 -->
-                                            <div class="sql__topic topic">
-                                                <h4 id="topic14" class="sql__topic-title">CONCLUSION</h4>
-                                                <p>
-                                                    On this note, we conclude this SQL tutorial. Of course, that’s
-                                                    not all, and
-                                                    there is
-                                                    still a lot to learn to fully master, but this introduction will
-                                                    give you an
-                                                    incentive to further explore.
-                                                </p>
-                                            </div>
+                            <!-- SQL Topic 14 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic14" class="sql__topic-title">CONCLUSION</h4>
+                                <p>
+                                    On this note, we conclude this SQL tutorial. Of course, that’s not all, and there is still a lot to learn to fully master, but this introduction will give you an incentive to further explore.
+                                </p>
+                            </div>
 
 
-                                            <!-- SQL TOPICS DIV -->
-                                </div>
+                            <!-- SQL TOPICS DIV -->
+                        </div>
 
 
 
-                                <div id="article_menu" class="main-text article_right_menu">
-
+                        <div id="article_menu" class="main-text article_right_menu">
                                     <div id="fix_menu">
                                         
                                                                                    
@@ -649,27 +498,22 @@
                                             <li class="article_li"><a href="#sql__title"
                                                     class="mainmenu1">Home
                                                     SQL</a></li>
-                                            <li class="article_li"><a href="#topic1"
-                                                    class="mainmenu1">TABLES</a>
-                                            </li>
-                                            <!-- <li type="disc"  class="article_li"><a href="#topic2" class="mainmenu1">DATA ENTRY</a></li>                     -->
-                                            <li class="article_li"><a href="#topic3"
-                                                    class="mainmenu1">SELECT </a>
-                                            </li>
-                                            <li class="article_li"><a href="#topic4"
-                                                    class="mainmenu1">OPERATORS</a>
-                                            </li>
-                                            <!--<li type="disc" class="article_li"><a href="#topic5" class="mainmenu1">AND/OR</a></li>   
+                                    <li class="article_li"><a href="#topic1" class="mainmenu1">TABLES</a>
+                                    </li>
+                                    <!-- <li type="disc"  class="article_li"><a href="#topic2" class="mainmenu1">DATA ENTRY</a></li>                     -->
+                                    <li class="article_li"><a href="#topic3" class="mainmenu1">SELECT </a>
+                                    </li>
+                                    <li class="article_li"><a href="#topic4" class="mainmenu1">OPERATORS</a>
+                                    </li>
+                                    <!--<li type="disc" class="article_li"><a href="#topic5" class="mainmenu1">AND/OR</a></li>   
 <li type="disc" class="article_li"><a href="#topic6" class="mainmenu1">IN/BETWEEN/LIKE</a></li>    -->
-                                            <li class="article_li"><a href="#topic7"
-                                                    class="mainmenu1">FUNCTIONS</a>
-                                            </li>
-                                            <!-- <li type="disc" class="article_li"><a href="#topic8" class="mainmenu1">ATTACHED SELECT</a></li>   
+                                    <li class="article_li"><a href="#topic7" class="mainmenu1">FUNCTIONS</a>
+                                    </li>
+                                    <!-- <li type="disc" class="article_li"><a href="#topic8" class="mainmenu1">ATTACHED SELECT</a></li>   
 <li type="disc" class="article_li"><a href="#topic9" class="mainmenu1">ATTACHMENT OF TABLES</a></li>    -->
-                                            <li class="article_li"><a href="#topic10"
-                                                    class="mainmenu1">OTHER</a>
-                                            </li>
-                                            <!-- <li type="disc" class="article_li"><a href="#topic11" class="mainmenu1">UPDATE</a></li>    
+                                    <li class="article_li"><a href="#topic10" class="mainmenu1">OTHER</a>
+                                    </li>
+                                    <!-- <li type="disc" class="article_li"><a href="#topic11" class="mainmenu1">UPDATE</a></li>    
 <li type="disc" class="article_li"><a href="#topic12" class="mainmenu1">REMOVING RECORDS FROM THE TABLE</a></li> 
 <li type="disc" class="article_li"><a href="#topic13" class="mainmenu1">DELETING TABLES</a></li> 
 <li type="disc" class="article_li"><a href="#topic14" class="mainmenu1">CONCLUSION</a></li>                              -->
@@ -695,34 +539,41 @@
                                         <!-- <i class="burger-icon fas fa-bars"></i> -->
                                     </div>
                                 </div>
-
-                            </div>
-
-                            <!-- Lower Row -->
-                            <div class="link_popups">
-                                <!-- Comments -->
-                                <div class="div"><a href="" class="link_comments">Comments <i
-                                            class="fas fa-comment"></i></a></div>
-                                <!-- Rating -->
-                                <div class="rating-area">
-                                    <p class=rate_article> Rate This Article!</p>
-                                    <input type="radio" id="star-5" name="rating" value="5">
-                                    <label class="star" for="star-5" title="mark «5»"></label>
-                                    <input type="radio" id="star-4" name="rating" value="4">
-                                    <label class="star" for="star-4" title="mark «4»"></label>
-                                    <input type="radio" id="star-3" name="rating" value="3">
-                                    <label class="star" for="star-3" title="mark «3»"></label>
-                                    <input type="radio" id="star-2" name="rating" value="2">
-                                    <label class="star" for="star-2" title="mark «2»"></label>
-                                    <input type="radio" id="star-1" name="rating" value="1">
-                                    <label class="star" for="star-1" title="mark «1»"></label>
-                                </div>
-                                <!-- Tasks -->
-                                <div><a class="tasks" href="">Tasks to Practice</a></div>
-                                <!-- Mistakes  -->
-                                <div><a class="mistakes" href="">Found Mistakes? Help Us!</a></div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Lower Row -->
+                    <div class="link_popups">
+                        <!-- Comments -->
+                        <div class="div"><a href="" class="link_comments">Comments <i
+                                            class="fas fa-comment"></i></a></div>
+                        <!-- Rating -->
+                        <div class="rating-area">
+                            <p class=rate_article> Rate This Article!</p>
+                            <input type="radio" id="star-5" name="rating" value="5">
+                            <label class="star" for="star-5" title="mark «5»"></label>
+                            <input type="radio" id="star-4" name="rating" value="4">
+                            <label class="star" for="star-4" title="mark «4»"></label>
+                            <input type="radio" id="star-3" name="rating" value="3">
+                            <label class="star" for="star-3" title="mark «3»"></label>
+                            <input type="radio" id="star-2" name="rating" value="2">
+                            <label class="star" for="star-2" title="mark «2»"></label>
+                            <input type="radio" id="star-1" name="rating" value="1">
+                            <label class="star" for="star-1" title="mark «1»"></label>
+                        </div>
+                        <!-- Tasks -->
+                        <div class="link_tasks">
+                            <p class="tasks">
+                                <a href="">Tasks to Practice</a>
+                            </p>
+                            <p class="mistakes">
+                                <a href="">Found Mistakes? Help Us!</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </section>
 
 
@@ -896,7 +747,8 @@
                         <li><a href="#!" class="search__result">CS Cheatsheets</a></li>
                         <li><a href="#!" class="search__result">JS Cheatsheet</a></li>
                         <li><a href="#!" class="search__result">:nth-child Cheatsheet</a></li>
-                        <li><a href="#!" class="search__result"></a>SQL Cheatsheet</li>
+                        <li>
+                            <a href="#!" class="search__result"></a>SQL Cheatsheet</li>
                     </ul>
                 </div>
             </div>
@@ -922,8 +774,7 @@
             <p class=" comments_title ">Leave Your Comment!</p>
             <div class=" comments_comment">
                 <input class="name_comment " placeholder="Name " type="text">
-                <text
-                area placeholder="Your Comment" class="message_comment " name=" "></textarea>
+                <text area placeholder="Your Comment" class="message_comment " name=" "></textarea>
             </div>
 
             <button class="btn button_article modal__btn">Send</button>
@@ -963,7 +814,7 @@
         <div class="modal tasks_modal">
             <p class="popup_title ">Tasks for Topic 1:</p>
             <div class="task ">
-                <h1>Task1</h1>
+                <h4>Task1</h4>
                 <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                     has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of type and scrambled it to
@@ -971,7 +822,7 @@
                 </p>
             </div>
             <div class="task ">
-                <h1>Task1</h1>
+                <h4>Task1</h4>
                 <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                     has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of type and scrambled it to
@@ -979,7 +830,7 @@
                 </p>
             </div>
             <div class="task ">
-                <h1>Task1</h1>
+                <h4>Task1</h4>
                 <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                     has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of type and scrambled it to
@@ -1008,14 +859,23 @@
     <div class="popup mistake_popup">
         <div class="modal mistake_modal ">
             <p class="pop_up_mistakes ">Found Mistakes? Help Us!</p>
-            <div class="mistakes ">
+            <div class="mistake_item ">
                 <input class="email" placeholder="Your name" type="text">
                 <textarea placeholder="Describe any mistakes you found, or maybe some material is outdated... "
                     class="message" name="message"></textarea>
             </div>
-            <button class="btn btn_article modal__btn ">Send</button>
+            <button class="btn btn_mistake modal__btn ">Send</button>
         </div>
     </div>
+    <!------Response Pop Up-->
+
+</div>
+<div class="popup response_popup">
+    <div class="modal response_modal">
+        <p class="popup_res">Thank Your For Your Response</p>
+        <button class="btn modal__btn btn_res"><i class="far fa-times-circle"></i></button>
+    </div>
+</div>
 
 
     <!-- PopUps -->

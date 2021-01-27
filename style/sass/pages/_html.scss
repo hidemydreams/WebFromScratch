@@ -1,7 +1,6 @@
 .history h1 {
-    font-size: 90px;
-    font-weight: 300;
-    margin: 20px;
+    font-size: 70px;
+    margin-bottom: 20px;
     line-height: 74.1%;
     color: $headings-color;
 }
@@ -10,21 +9,29 @@
     color: $headings-color;
 }
 
-.about_items li::marker {
+.about_HTML h2 {
+    color: $headings-color;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about_items {
+    padding: 15px;
+}
+
+.about_items li {
     color: $accent-pink;
-    margin-left: 10px;
-    font-size: 50px;
+    padding-bottom: 15px;
 }
 
 .about_items li span {
     color: $text-color;
-    padding: 10px;
 }
 
 .html {
     color: $text-color;
-    text-align: justify;
-    text-indent: 15px;
+    line-height: 1.5rem;
 }
 
 .HTML h2 {
@@ -35,3 +42,108 @@
     color: $text-color;
     text-align: center;
 }
+
+code {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list_tags {
+    overflow: auto;
+    height: 100px;
+    color: $accent-pink;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 200px;
+    width: 100%;
+    margin-left: 45%;
+    font-size: 20px;
+}
+
+.main_tags {
+    font-size: 24px;
+    color: $headings-color;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* .me ssageDialog img {
+          height: 70px;
+        width: 70px;
+        right:50px;
+        position: ab        transform: scale(1.01);
+    }
+  
+      
+      .messageDialog img:hover {       
+          transform: scale(1.2);
+          //-webkit-animation: 0.1s tremor ease-out infinite;  
+          //animation: 0.1s tremor ease-out infinite;    
+  
+      }
+      
+//     vibro messageDialog
+ //      @-webkit-keyframes tremor {
+ //          0%, 25% {
+ //              left: -1px;
+ //              top:-1px;
+  //             -webkit-transform: translateX(-4%);
+  //             transform: translateX(-4%);
+//           }
+  //         50%, 100% {
+//               left: 1px;
+ //              top: 1px;
+ //              -webkit-transform: translateX(4%);
+ //              transform: translateX(4%);
+ //          }
+  //     }
+  //     @-moz-keyframes tremor {
+//           0%, 25% {
+ //              left: -1px;
+ //              -webkit-transform: translateX(-4%);
+  //             transform: translateX(-4%);
+//         }
+//         50%, 100% {
+//             left: 1px;
+//             -webkit-transform: translateX(4%);
+//             transform: translateX(4%);
+//         }
+  //     }
+//       @-ms-keyframes tremor {
+  //         0%, 25% {
+//               left: -1px;
+ //              -webkit-transform: translateX(-4%);
+ //              transform: translateX(-4%);
+ //          }
+ //          50%, 100% {
+  //             left: 1px;
+  //             -webkit-transform: translateX(4%);
+//               transform: translateX(4%);
+//         }
+//     }
+//     @-o-keyframes tremor {
+  //         0%, 25% {
+//               left: -1px;
+//             -webkit-transform: translateX(-4%);
+//             transform: translateX(-4%);
+//         }
+ //          50%, 100% {
+ //              left: 1px;
+///             transform: translateX(4%);
+//         }
+//     }
+//     @keyframes tremor {
+//         0%, 25% {
+//             left: -1px;
+  //             -webkit-transform: translateX(-4%);
+//               transform: translateX(-4%);
+ //          }
+ //          50%, 100% {
+ //              left: 1px;
+ //              -webkit-transform: translateX(4%);
+  //             transform: translateX(4%);
+  //         }
+//       }*/
+
+@media (max-width: $smallest) {}
