@@ -772,8 +772,15 @@ footer * {
     justify-content: space-between;
   }
 }
-#fix_menu {
+.article_right_menu {
+  padding-top: 40px;
+  width: 25%;
+  margin-left: 1%;
+}
+
+.fixed_article_menu {
   position: sticky;
+  top: 3em;
 }
 
 .article_li {

@@ -1,10 +1,16 @@
  //Article Menu Section
  .article_right_menu {
+  padding-top: 40px;
+  //   float:right; 
+  width:25%; 
+  margin-left:1%;
   
   }
-
-  #fix_menu {
-    position: sticky;
+  .fixed_article_menu {
+  position: sticky;
+  //opacity: .6;
+  //min-height: 2em;
+  top:  3em;
   }
   
   .article_li {
