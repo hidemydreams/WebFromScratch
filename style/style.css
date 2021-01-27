@@ -2260,51 +2260,6 @@ label {
   background-color: #269adb;
 }
 
-.history h1 {
-  font-size: 70px;
-  margin-bottom: 20px;
-  line-height: 74.1%;
-  color: #52aee2;
-}
-
-.history h3 {
-  color: #52aee2;
-}
-
-.about_HTML h2 {
-  color: #52aee2;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.about_items {
-  padding: 15px;
-}
-
-.about_items li {
-  color: #ff4ba2;
-  padding-bottom: 15px;
-}
-
-.about_items li span {
-  color: #4f91d9;
-}
-
-.html {
-  color: #4f91d9;
-  line-height: 1.5rem;
-}
-
-.HTML h2 {
-  font-size: 40px;
-  line-height: 85.6%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #4f91d9;
-  text-align: center;
-}
-
 code {
   font-size: 18px;
   font-weight: 500;
@@ -2318,7 +2273,6 @@ code {
   margin-bottom: 20px;
   max-width: 200px;
   width: 100%;
-  margin-left: 45%;
   font-size: 20px;
 }
 
@@ -2326,7 +2280,6 @@ code {
   font-size: 24px;
   color: #52aee2;
   font-weight: 600;
-  text-align: center;
 }
 
 /* .me ssageDialog img {
@@ -2815,6 +2768,14 @@ code {
 }
 .articles__item:hover {
   transform: scale(1.01);
+}
+
+.topic li {
+  color: #4f91d9;
+}
+
+.topic ul {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
