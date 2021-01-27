@@ -14,16 +14,17 @@
     <!-- RESET.CSS AND STYLE.CSS -->
     <link rel="stylesheet" href="style/style.css">
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/jpg" href="/src/img/favicon.ico">
+    <link rel="shortcut icon" type="image/jpg" href="src/img/favicon.ico">
+    <title>WebFromScratch SQL</title>
 </head>
 
 
 <body>
     <div class="wrapper">
-        <!-- ------------------------------HEADER-------------------------------- -->
+        <!-- HEADER-->
         <header>
             <nav class="navigation">
-                <a href="/index.html" class="nav__logo hero__nav-logo"><svg id="hero__nav-logo" width="150" height="70"
+                <a href="index.html" class="nav__logo hero__nav-logo"><svg id="hero__nav-logo" width="150" height="70"
                         viewBox="0 0 732 511" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path id='logo-w'
                             d="M22.428 3.36996H80.99L135.191 365.956L203.098 5.23897H252.938L321.468 367.825L374.423 3.36996H431.739L350.749 508H299.663L229.264 134.2L158.242 508H104.664L22.428 3.36996Z" />
@@ -48,491 +49,760 @@
             </nav>
         </header>
 
-
-
         <!-- MAIN -->
         <main>
-            <!-- Article Section  -->
+            <!-- Git Section  -->
             <section class="sql">
                 <div class="container">
-                    <div class="container_titleTopic_menu">
-                        <div class="container_title_topic">
-
-                            <!-- Article Title Section -->
-                            <div class="title article_title">
-                                <h1 id="article_title1"> Learn GIT</h1>
-                                <!---- <a href="article-SQL.html" class="title article__title">What is SQL</a></li> -->
-                                <h6 id="article_title2">At the end of this topic you will:</h6>
-                                <ul class="main-text article_title">
-                                    <li type="disc"><span>to know how to install GIT</span></li>
-                                    <li type="disc"><span>create and clone new repositories</span></li>
-                                    <li type="disc"><span>to make new commits </span></li>
-                                    <li type="disc"><span>to switch and merge branches</span></li>
+                    <div class="sql__container-for-text-menu">
+                        <div class="sql__container-topic">
+                            <!-- Git WELCOME Section -->
+                            <div class="title welcome sql__welcome">
+                                <h2 id="sql__title"> Learn GIT</h2>
+                                <h3 id="sql__subtitle">At the end of this topic you will:</h3>
+                                <ul class="main-text sql__text-points">
+                                    <li><span>to know how to install GIT</span></li>
+                                    <li><span>create and clone new repositories</span></li>
+                                    <li><span>to make new commits </span></li>
+                                    <li><span>to switch and merge branches</span></li>
                                 </ul>
                             </div>
 
-                            <!-- Article Topic Section -->
-                            <div class="article_topic">
-                                <h1 id="topic0" class="topic">    </h1>
-                                <div class="article_topic">
-                   
-                                    <h1 id="topic0" class="topic">Learn Git </h1>
-                                    <p class="desc article__text"> 
-                                                                
+                            <!-- Git Topics  -->
+                            <div class="sql__topics topics">
+
+                                <!-- Git Topic 0 -->
+                                <div class="sql_topic topic">
+                                    <h4 id="topic0" class="sql__topic-title"> LEARN GIT </h4>
+                                    <p>
                                         Git has exploded in popularity in recent years. The version control system is used by huge open source
-                                         projects like Linux with thousands of contributors, teams of various sizes, solo developers and even students.
-                                        <br>
-                                        
+                                        projects like Linux with thousands of contributors, teams of various sizes, solo developers and even students.
+                                    </p>
+                                    <p>
                                         Beginners are often terrified by all the cryptic commands and arguments that git requires. But you don't 
                                         need to know all of that to get started. You can begin by mastering a handful of the most often used ones, 
                                         and then slowly build from there. And this is exactly what we will teach you today. Let's begin!
-                                    </p> <br>
-                                
-                                    <h1 id="topic1" class="topic"> The basics</h1>
-                                    <p class="desc article__text"> 
-                                                                
+                                    </p> 
+                                    
+                                </div>
+
+                                <!-- Git Topic 1 -->
+                                <div class="sql__topic topic">
+                                    <h4 id="topic1" class="sql__topic-title">THE BASICS</h4>
+
+                                    <p>
                                         Git is a collection of command line utilities that track and record changes in files (most often source code, but you can track 
-                                        anything you wish). With it you can restore old versions of your project, compare, analyze, merge changes and more. This process 
-                                        is referred to as version control. There are a number of version control systems that do this job. You may have heard some of
-                                         them - SVN, Mercurial, Perforce, CVS, Bitkeeper and more.<br>
+                                    anything you wish). With it you can restore old versions of your project, compare, analyze, merge changes and more. This process 
+                                    is referred to as version control. There are a number of version control systems that do this job. You may have heard some of
+                                    them - SVN, Mercurial, Perforce, CVS, Bitkeeper and more.
+                                    </p>
+                                    <p>
                                         Git is decentralized, which means that it doesn't depend on a central server to keep old versions of your files. Instead it works
-                                         fully locally by storing this data as a folder on your hard drive, which we call a repository. However you can store a copy of
-                                          your repository online, which makes it easy for multiple people to collaborate and work on the same code. This is what websites 
-                                          ike GitHub and BitBucket are used for.
-                                        
-                                    </p>   
-                                    <p class="desc article__text">     
-                                        <b>1. Installing Git</b> <br>
-                                        Installing Git on your machine is straightforward:<br>
-                                
-                                        <b>Linux</b> - Simply open up a new terminal and install git via your distribution's package manager. For Ubuntu the command is: 
-                                        sudo apt-get install git<br>
+                                    fully locally by storing this data as a folder on your hard drive, which we call a repository. However you can store a copy of
+                                    your repository online, which makes it easy for multiple people to collaborate and work on the same code. This is what websites 
+                                    ike GitHub and BitBucket are used for.
+                                    </p>
+                                    
+                                </div>
+                                <!-- GIT Topic 2 -->
+                                <div class="sql__topic topic">
+                                    <h4 id="topic2" class="sql__topic-title">1. Installing Git</h4>
+
+                                    <p>
+                                        Installing Git on your machine is straightforward:
+                                    </p>
+
+                                    <p><b>Linux</b> - Simply open up a new terminal and install git via your distribution's package manager. For Ubuntu the command is: 
+                                        sudo apt-get install git
+
+                                    <p>
                                         <b>Windows</b> we recommend git for windows as it offers both a GUI client and a BASH comand line emulator.
-                                        <br>
+                                    </p>
+
+                                    <p>
                                         <b>OS X </b> - The easiest way is to install homebrew, and then just run brew install git from your terminal.
-                                        <br> 
-                                                                       
+                                    </p>
+
+                                    <p>
                                         If you are an absolute beginner, then a graphical git client is a must. We recommend GitHub Desktop and Sourcetree, but 
                                         there are many other good and free ones online. Getting to know the basic git commands is still important even if you use a GUI 
-                                        app, so for the remaining of this lesson, this will be our only focus.<br>
-                                    </p>   
-                                    <p class="desc article__text">    
-                                        <b>2. Configuring Git</b><br>
+                                        app, so for the remaining of this lesson, this will be our only focus.
+                                    </p>
+                                    
+                                </div>
+
+                                <!-- GIT Topic 3 -->
+                                <div class="sql__topic topic">
+                                    <h4 id="topic3" class="sql__topic-title">2. Configuring Git</h4>
+
+                                    <p>
                                         Now that we've installed git on our computer, we will need to add some quick configurations. There are a lot of options that 
-                                        can be fiddled with, but we are going to set up the most important ones: our username and email. Open a terminal and run these 
-                                        commands:<br>
-                                
-                                        $ git config --global user.name "My Name"<br>
-                                        $ git config --global user.email myEmail@example.com<br>
+                                    can be fiddled with, but we are going to set up the most important ones: our username and email. Open a terminal and run these 
+                                    commands:
+                                    </p>
+
+                                    <code class="code-block"> $ git config --global user.name "My Name"<br>
+                                        $ git config --global user.email myEmail@example.com</code>
+
+                                    <p>
                                         Every action we do in Git will now have a stamp with our name and address on it. This way users always know who did what and 
                                         everything is way more organized.
-                                        <br>
-                                    </p>   
-                                    <p class="desc article__text"> 
-                                        <b>3. Creating a new repository - git init</b><br>
+                                    </p>
+
+                                    
+                                </div>
+
+                                <!-- GIT Topic 4 -->
+                                <div class="sql__topic topic">
+                                    <h4 id="topic4" class="sql__topic-title">3. Creating a new repository - git init</h4>
+                                    <p>
                                         As we mentioned earlier, git stores its files and history directly as a folder in your project. To set up a new repository,
-                                         we need to open a terminal, navigate to our project directory and run git init. This will enable Git for this particular folder
-                                         and create a hidden .git directory where the repository history and configuration will be stored.
-                                        <br>
-                                        Create a folder on your Desktop called git_exercise, open a new terminal and enter the following:
-                                        <br>
-                                        $ cd Desktop/git_exercise/<br>
-                                        $ git init<br>
-                                        The command line should respond with something along the lines of:<br>
-                                     
-                                        Initialized empty Git repository in /home/user/Desktop/git_exercise/.git/<br>
+                                    we need to open a terminal, navigate to our project directory and run git init. This will enable Git for this particular folder
+                                    and create a hidden .git directory where the repository history and configuration will be stored.
+                                    </p>
+                                    <p>
+                                    Create a folder on your Desktop called git_exercise, open a new terminal and enter the following:
+                                    </p>       
+                                    <code class="code-block">$ cd Desktop/git_exercise/<br>
+                                        $ git init
+                                    </code>
+                                    <p>
+                                        The command line should respond with something along the lines of:
+                                    </p>       
+                                    <code class="code-block">Initialized empty Git repository in /home/user/Desktop/git_exercise/.git/
+
+                                    </code>
+                                    <p>
                                         This means that our repo has been successfully created but is still empty. Now create a simple text file called hello.txt and 
                                         save it in the git_exercise folder.
-                                        <br>
-                                    </p>   
-                                    <p class="desc article__text"> 
-                                        <b>4. Checking the status - git status</b><br>
+                                    </p>  
+
+                                </div>
+
+
+
+                                <!-- GIT Topic 5 -->
+                                <div class="sql__topic topic">
+                                    <h4 id="topic5" class="sql__topic-title">4. Checking the status - git status</h4>
+
+                                    <p>
                                         Git status is another must-know command that returns information about the current state of the repository: is everything up 
                                         to date, what's new, what's changed, and so on. Running git status in our newly created repo should return the following:
-                                        <br>
-                                        $ git status<br>
-                                
-                                        On branch master<br>
-                                
-                                        Initial commit<br>
-                                
-                                        Untracked files:<br>
-                                        (use "git add ..." to include in what will be committed)<br>
-                                
-                                            hello.txt<br>
-                                        The returned message states that hello.txt is untracked. This means that the file is new and Git doesn't know yet if it should
-                                         keep track of the changes happening to that file or just ignore it. To acknowledge the new file, we need to stage it.
-                                        <br>
-                                    </p>   
-                                    <p class="desc article__text"> 
-                                        <b>5. Staging - git add</b><br>
-                                        Git has the concept of a "staging area". You can think of this like a blank canvas, which holds the changes which you would like
-                                         to commit. It starts out empty, but you can add files to it (or even single lines and parts of files) with the git add command, 
-                                         and finally commit everything (create a snapshot) with git commit.
-                                        <br>
-                                        In our case we have only one file so let's add that:<br>
-                                
-                                        $ git add hello.txt<br>
-                                        If we want to add everything in the directory, we can use:<br>
-                                
-                                        $ git add -A<br>
-                                        Checking the status again should return a different response from before.<br>
-                                        
-                                        $ git status<br>
-                                        On branch master<br>
-                                
-                                        Initial commit<br>
-                                
-                                        Changes to be committed:<br>
-                                        (use "git rm --cached ..." to unstage)<br>
-                                
-                                            new file:   hello.txt<br>
-                                        Our file is ready to be commited. The status message also tells us what has changed about the files in the staging area -
-                                         in this case its new file, but it can be modified or deleted, depending on what has happened to a file since the last git add.
-                                        
-                                        <br>
-                                        
-                                    </p>   
-                                    <p class="desc article__text"> 
-                                
-                                        <b>6. Commiting - git commit</b><br>
-                                        A commit represents the state of our repository at a given point in time. It's like a snapshot, which we can go back to and 
-                                        see how thing were when we took it.
-                                        <br>
-                                        To create a new commit we need to have at least one change added to the staging area (we just did that with git add) and run the 
-                                        following:
-                                        <br>
-                                        $ git commit -m "Initial commit."<br>
-                                        This will create a new commit with all the changes from the staging area (adding hello.txt). The -m "Initial commmit" part is 
-                                        a custom user-written description that summarizes the changes done in that commit. It is considered a good practice to commit 
-                                        often and always write meaningful commit messages.
-                                        
-                                    </p><br>
-                                    
-                                    
-                                    <h1 id="topic2" class="topic">Remote repositories</h1>
-                                    <p class="desc article__text"> 
-                                        Right now our commit is local - it exist only in the .git folder. Although a local repository is useful by itself, in most cases
-                                         we will want to share our work and deploy it to a server or a repository hosting service.
-                                    </p>   
-                                    <p class="desc article__text"> 
-                                        <b>1. Connecting to a remote repository - git remote add</b>
-                                        In order to upload something to a remote repo, we first have to establish a connection with it. For the sake of this tutorial 
-                                        our repository's address will be https://github.com/tutorialzine/awesome-project. We advise you to go ahead and create your own 
-                                        empty repository at GitHub, BitBucket or any other service. The registration and setup may take a while, but all services offer
-                                        good step-by-step guides to help you.<br>
-                                        
-                                        To link our local repository with the one on GitHub, we execute the following line in the terminal:<br>
-                                        
-                                        # This is only an example. Replace the URI with your own repository address.
-                                        $ git remote add origin https://github.com/tutorialzine/awesome-project.git
-                                        A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. 
-                                        Traditionally the main remote repository in git is called origin.
-                                    </p>   
-                                    <p class="desc article__text">     
-                                        <b>2. Uploading to a server - git push</b>
-                                        Now it's time to transfer our local commits to the server. This process is called a push, and is done every time we want to update 
-                                        the remote repository.<br>
-                                        
-                                        The Git command to do this is git push and takes two parameters - the name of the remote repo (we called ours origin) and the 
-                                        branch to push to (master is the default branch for every repo).<br>
-                                        
-                                        <b>$ git push origin master<br></b>
-                                        
-                                        Counting objects: 3, done.<br>
-                                        Writing objects: 100% (3/3), 212 bytes | 0 bytes/s, done.<br>
-                                        Total 3 (delta 0), reused 0 (delta 0)<br>
-                                        To https://github.com/tutorialzine/awesome-project.git<br>
-                                         * [new branch]      master -> master<br>
-                                        Depending on the service you're using, you will need to authenticate yourself for the push to go through. If everything was done
-                                        correctly, when you go in your web browser to the remote repository created earlier, hello.txt should be available there.
-                                    </p>   
-                                    <p class="desc article__text">     
-                                        <b>3. Cloning a repository - git clone</b>
-                                        At this point, people can see and browse through your remote repository on Github. They can download it locally and have a fully 
-                                        working copy of your project with the git clone command:<br>
-                                        <b>$ git clone https://github.com/tutorialzine/awesome-project.git</b><br>
-                                        A new local respository is automatically created, with the github version configured as a remote.
-                                    </p>   
-                                    <p class="desc article__text">     
-                                        <b>4. Getting changes from a server - git pull</b>
-                                        If you make updates to your repository, people can download your changes with a single command - pull:<br>
-                                        
-                                        <b>$ git pull origin master</b><br>
-                                        
-                                        From https://github.com/tutorialzine/awesome-project<br>
-                                         * branch            master     -> FETCH_HEAD<br>
-                                        Already up-to-date.<br>
-                                        Since nobody else has commited since we cloned, there weren't any changes to download.                      
-                                
-                                    
-                                    </p><br>
-                                                                 
-                                    <h1 id="topic3" class="topic">Branches  </h1>
-                                    <p class="desc article__text"> 
-                                                                
-                                        When developing a new feature, it is considered a good practice to work on a copy of the original project, called a branch. 
-                                        Branches have their own history and isolate their changes from one another, until you decide to merge them back together. 
-                                        This is done for a couple of reasons:<br>
-                                
-                                        An already working, stable version of the code won't be broken.<br>
-                                        Many features can be safely developed at once by different people.<br>
-                                        Developers can work on their own branch, without the risk of their codebase changing due to someone else's work.<br>
-                                        When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.<br>
-                                    </p>   
-                                    <p class="desc article__text">     
-                                        <B>1. Creating new branches - git branch</B>
-                                        The default branch of every repository is called master. To create additional branches use the git branch <name> command:<br>
-                                        
-                                        $ git branch amazing_new_feature<br>
-                                        This just creates the new branch, which at this point is exactly the same as our master.<br>
-                                    </p>   
-                                    <p class="desc article__text">     
-                                        
-                                        <b>2. Switching branches - git checkout<br></b>
-                                        Now, when we run git branch, we will see there are two options available:<br>
-                                        
-                                        $ git branch<br>
-                                          amazing_new_feature<br>
-                                        * master<br>
-                                        Master is the current branch and is marked with an asterisk. However, we want to work on our new amazing features, so we need
-                                         to switch to the other branch. This is done with the git checkout command, expecting one parameter - the branch to switch to.<br>
-                                        
-                                        $ git checkout amazing_new_feature<br>
-                                    </p>   
-                                    <p class="desc article__text">     
-                                        <b>3. Merging branches - git merge<br></b>
-                                        Our "amazing new feature" is going to be just another text file called feature.txt. We will create it, add it, and commit it.<br>
-                                        
-                                        $ git add feature.txt<br>
-                                        $ git commit -m "New feature complete."<br>
-                                        The new feature is complete, we can go back to the master branch.<br>
-                                        
-                                        $ git checkout master<br>
-                                        Now, if we open our project in the file browser, we'll notice that feature.txt has disappeared. That's because we are back 
-                                        in the master branch, and here feature.txt was never created. To bring it in, we need to git merge the two branches together, 
-                                        applying the changes done in amazing_new_feature to the main version of the project.<br>
-                                        
-                                        git merge amazing_new_feature<br>
-                                        The master branch is now up to date. The awesome_new_feature branch is no longer needed and can be removed.<br>
-                                        
-                                        git branch -d amazing_new_feature<br><br>                                        
-                                
                                     </p>
-                                
-                                     
-                                    <h1 id="topic4" class="topic">Advanced
-                                    </h1>
-                                    <p class="desc article__text"> 
-                                        In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
-                                        come in handy.<br>
-                                
-                                        <b>1. Checking difference between commits</b>
-                                        Every commit has it's unique id in the form of a string of numbers and symbols. To see a list of all commits and their ids we 
-                                        can use git log:
-                                        <br>
-                                                                      
-                                       
-                                        <!-- <code class="code_article"  > -->
-                                                $ git log<br>  
-                                            
-                                            commit ba25c0ff30e1b2f0259157b42b9f8f5d174d80d7<br>  
-                                            Author: Tutorialzine<br>  
-                                            Date:   Mon May 30 17:15:28 2016 +0300<br>  
-                                            
-                                                New feature complete<br>  
-                                            
-                                            commit b10cc1238e355c02a044ef9f9860811ff605c9b4<br>  
-                                            Author: Tutorialzine<br>  
-                                            Date:   Mon May 30 16:30:04 2016 +0300<br>  
-                                            
-                                                Added content to hello.txt<br>  
-                                            
-                                            commit 09bd8cc171d7084e78e4d118a2346b7487dca059<br>  
-                                            Author: Tutorialzine<br>  
-                                            Date:   Sat May 28 17:52:14 2016 +0300<br>  
-                                            
-                                                Initial commit 
-                                        <!-- </code> -->
-                                        <br><br>
-                                              
-                                     
-                                        As you can see the ids are really long, but when working with them it's not necessary to copy the whole thing - 
-                                        the first several symbols are usually enough.<br>
-                                        To see what was new in a commit we can run git show [commit]:<br>
+
+                                    
+                                    <code class="code-block">
+                                            $ git status<br>
+
+                                            On branch master<br>
                                         
-                                        <!-- <code class="code_article" > -->
-                                            $ git show b10cc123<br>
-                                            
-                                            commit b10cc1238e355c02a044ef9f9860811ff605c9b4<br>
-                                            Author: Tutorialzine<br>
-                                            Date:   Mon May 30 16:30:04 2016 +0300<br>
-                                            
-                                                Added content to hello.txt<br>
-                                            
-                                            diff --git a/hello.txt b/hello.txt<br>
-                                            index e69de29..b546a21 100644<br>
-                                            --- a/hello.txt<br>
-                                            +++ b/hello.txt<br>
-                                            @@ -0,0 +1 @@<br>
-                                            +Nice weather today, isn't it?<br>
-                                            To see the difference between any two commits we can use git diff with the [commit-from]..[commit-to] syntax:<br>
-                                            
-                                            $ git diff 09bd8cc..ba25c0ff<br>
-                                            
-                                            diff --git a/feature.txt b/feature.txt<br>
-                                            new file mode 100644<br>
-                                            index 0000000..e69de29<br>
-                                            diff --git a/hello.txt b/hello.txt<br>
-                                            index e69de29..b546a21 100644<br>
-                                            --- a/hello.txt<br>
-                                            +++ b/hello.txt<br>
-                                            @@ -0,0 +1 @@<br>
-                                            +Nice weather today, isn't it?<br>
-                                        <!-- </code> -->
-                                        We've compared the first commit to the last one, so we see all the changes that have ever been made. Usually it's easier
-                                         to do this using the git difftool command which brings up a graphical client showing all differences side-to-side.
-                                    </p>   
-                                    <p class="desc article__text">       
-                                        <b>2.Reverting a file to a previous version</b><br>
-                                        Git allows us to return any selected file back to the way it was in a certain commit. This is done via the familiar git 
-                                        checkout command, which we used earlier to switch branches, but can also be used to swtich between commits (it's pretty 
-                                        common in Git for one command to be used for multiple seemingly unrelated tasks).<br>
+                                            Initial commit<br>
                                         
-                                        In the following example we will take hello.txt and reverse everything we've done to it since the initial commit. 
-                                        To do so we have to supply the id of the commit we want to go back to, as well as the full path to our file.<br>
+                                            Untracked files:<br>
+                                            (use "git add ..." to include in what will be committed)<br>
                                         
-                                        $ git checkout 09bd8cc1 hello.txt
-                                    </p>   
-                                    <p class="desc article__text">   
-                                          <b> 3. Fixing a commit</b> <br>
-                                        If you notice that you've made a typo in your commit message, or you've forgotten to add a file and you see right 
-                                        after you commit, you can easily fix this with git commit --amend. This will add everything from the last commit back 
-                                        to the staging area, and attempt to make a new commit. This gives you a chance to fix your commit message or add more files
-                                        to the staging area.<br>
-                                        
-                                        For more complex fixes that aren't in the last commit (or if you've pushed your changes already), you've got to use git revert. 
-                                        This will take all the changes that a commit has introduced, reverse them, and create a new commit that is the exact opposite.<br>
-                                        
-                                        The newest commit can be accessed by the HEAD alias.<br>
-                                        
-                                        $ git revert HEAD<br>
-                                        For other commits it's best to use an id.<br>
-                                        
-                                        $ git revert b10cc123<br>
-                                        When reverting older commits, keep in mind that merge conflicts are very likely to appear. This happens when a file has been
-                                         altered by another more recent commit, and now Git cannot find the right lines to revert, since they aren't there anymore.<br>
-                                    </p>   
-                                    <p class="desc article__text">       
-                                        <b>4. Resolving Merge Conflicts</b>
-                                        Apart from the scenario depicted in the previous point, conflicts regularly appear when merging branches or pulling someone 
-                                        else's work. Sometimes conflicts are handled automatically by git, but other times the person dealing with them has to decide
-                                         (and usually handpick) what code stays and what is removed.<br>
-                                        
-                                        Let's look at an example where we're trying to merge two branches called john_branch and tim_branch. Both John and Tim are writing
-                                         in the same file a function that displays all the elements in an array.<br>
-                                        
-                                        John is using a for loop:<br>
-                                        // Use a for loop to console.log contents.<br>
-                                        for(var i=0; i<arr.length; i++) {<br>
-                                            console.log(arr[i]);<br>
-                                        }
-                                        Tim prefers forEach:<br>
-                                        
-                                        // Use forEach to console.log contents.<br>
-                                        arr.forEach(function(item) {<br>
-                                            console.log(item);<br>
-                                        });<br>
-                                        They both commit their code on their respective branch. Now if they try to merge the two branches they will see the 
-                                        following error message:<br>
-                                        
-                                        $ git merge tim_branch <br>
-                                        
-                                        Auto-merging print_array.js<br>
-                                        CONFLICT (content): Merge conflict in print_array.js<br>
-                                        Automatic merge failed; fix conflicts and then commit the result.<br>
-                                        Git wasn't able to merge the branches automatically, so now it's up to the devs to manually resolve the conflict. 
-                                        If they open the file where the conflict resides, they'll see that Git has inserted a marker on the conflicting lines.<br>
-                                        
-                                        <<<<<<< HEAD<br>
-                                        // Use a for loop to console.log contents<br>.
-                                        for(var i=0; i<arr.length; i++) {<br>
-                                            console.log(arr[i]);<br>
-                                        }<br>
-                                        =======<br>
-                                        // Use forEach to console.log contents.<br>
-                                        arr.forEach(function(item) {<br>
-                                            console.log(item);<br>
-                                        });<br>
-                                        >>>>>>> Tim's commit.<br>
-                                        Above the ===== we have the current HEAD commit, and below the conflicting one. This way we can clearly see the differences, 
-                                        and decide which is the better version, or write a new one all together. In this situation we go for the latter and rewrite 
-                                        the whole thing, removing the markers to let Git know we're done.<br>
-                                        
-                                        // Not using for loop or forEach.<br>
-                                        // Use Array.toString() to console.log contents.<br>
-                                        console.log(arr.toString());<br>
-                                        When everything is set, a merge commit has to be done to finish the process.<br>
-                                        
-                                        $ git add -A<br>
-                                        $ git commit -m "Array printing conflict resolved."<br>
-                                        As you can see this process is quite tiresome and can get extremely hard to deal with in large projects. Most developers
-                                         prefer to resolve conflicts with the help of a GUI client, which makes things much easier. To run a graphical client use git
-                                          mergetool.<br>
-                                    </p>   
-                                    <p class="desc article__text">       
-                                        <b>5. Setting up .gitignore</b>
-                                        In most projects there are files or entire folders that we don't want to ever commit. We can make sure that they aren't 
-                                        accidentally included in our git add -A by creating a .gitignore file:</b>
-                                        
-                                        Manually create a text file called .gitignore and save it in your project's directory.</b>
-                                        Inside, list the names of files/directories to be ignored, each on a new line.</b>
-                                        The .gitignore itself has to be added, committed and pushed, as it is just like any other file in the project.</b>
-                                        Good examples for files to be ignored are:</b>
-                                        
-                                        log files</b>
-                                        task runner builds</b>
-                                        the node_modules folder in node.js projects</b>
-                                        folders created by IDEs like Netbeans and IntelliJ</b>
-                                        personal developer notes</b>
-                                        A .gitignore banning all of the above will look like this:</b>
-                                        
-                                        *.log</b>
-                                        build/</b>
-                                        node_modules/</b>
-                                        .idea/</b>
-                                        my_notes.txt</b>
-                                        The slash at the end of some of the lines signals that this is a folder and we are ignoring everything inside it recursively.
-                                        The asterisk serves it's usual function as a wild card.<br></b><br>
-                                       
-                                    </p>                                
-                                
-                                    <h1 id="topic5" class="topic">CONCLUSION</h1>
-                                    <p class="desc article__text"> 
-                                                                
-                                        This ends our tutorial on git! We tried our best to bring you only the most important information you need, presented as short 
-                                        and concise as possible.<br>
-                                
-                                        Git is quite complex and has a lot more features and tricks to offer. If you wish to find out more, here are some learning 
-                                        resources we recommend:<br>
-                                
-                                        The official Git docs, including a whole book and video lessons - here.<br>
-                                        Getting git right - Atlassian's collection of tutorials and articles - here.<br>
-                                        A list of GUI clients - here.<br>
-                                        Git cheat sheet (PDF) - here.<br>
-                                        Online tool for generating .gitignore files - here.<br>
-                                
-                                    </p>  <br>
-                                                                
+                                                hello.txt
+                                    </code>
+                                    <p>   
+                                        The returned message states that hello.txt is untracked. This means that the file is new and Git doesn't know yet if it should
+                                        keep track of the changes happening to that file or just ignore it. To acknowledge the new file, we need to stage it.
+                                      
+                                    </p>
+
                                 </div>
+                            </div>
+                            <!-- GIT Topic 6 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic6" class="sql__topic-title">5. Staging - git add</h4>
+
+                                <p>
+                                    Git has the concept of a "staging area". You can think of this like a blank canvas, which holds the changes which you would like
+                                    to commit. It starts out empty, but you can add files to it (or even single lines and parts of files) with the git add command, 
+                                    and finally commit everything (create a snapshot) with git commit.
+                                </p>
+
+                                <p>
+                                    In our case we have only one file so let's add that:
+                                </p>
+                                
+
+                                <code class="code-block">$ git add hello.txt
+                                </code>
+
+                                <p>
+                                    If we want to add everything in the directory, we can use:
+                                </p>
+
+                                <code class="code-block">
+                                    $ git add -A
+                                </code>
+
+                                <p>
+                                    Checking the status again should return a different response from before.
+                                </p>
+                                <code class="code-block">
+                                    $ git status<br>
+                                    On branch master<br>
+                                
+                                    Initial commit<br>
+                                
+                                    Changes to be committed:<br>
+                                    (use "git rm --cached ..." to unstage)<br>
+                                
+                                        new file:   hello.txt
+                                </code>
+
+                                <p>
+                                    Our file is ready to be commited. The status message also tells us what has changed about the files in the staging area -
+                                    in this case its new file, but it can be modified or deleted, depending on what has happened to a file since the last git add.
+    
+                                </p>
+
+                               
+                            </div>
+
+                            <!-- GIT TOPIC 7  -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic7" class="sql__topic-title">6. Commiting - git commit</h4>
+                                <p>
+                                    A commit represents the state of our repository at a given point in time. It's like a snapshot, which we can go back to and 
+                                     see how thing were when we took it.
+   
+                                </p>
+
+                                <p>
+                                    To create a new commit we need to have at least one change added to the staging area (we just did that with git add) and run the 
+                                    following:
+                                </p>
+                                <code class="code-block">
+                                    $ git commit -m "Initial commit."
+                                </code>
+                                <p>
+                                    This will create a new commit with all the changes from the staging area (adding hello.txt). The -m "Initial commmit" part is 
+                                    a custom user-written description that summarizes the changes done in that commit. It is considered a good practice to commit 
+                                    often and always write meaningful commit messages.
+                                </p>
+                                                               
+                            </div>
+
+                            <!-- GIT TOPIC 8  -->
+
+                            <div class="sql__topic topic">
+                                <h4 id="topic8" class="sql__topic-title">REMOTE REPOSITORIES</h4>
+                                <p>
+                                    Right now our commit is local - it exist only in the .git folder. Although a local repository is useful by itself, in most cases
+                                    we will want to share our work and deploy it to a server or a repository hosting service.
+                                </p>
+                                                             
+
+                            </div>
+
+                            <!-- GIT  TOPIC 9  -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic9" class="sql__topic-title">1. Connecting to a remote repository - git remote add</h4>
+                                <p>
+                                    In order to upload something to a remote repo, we first have to establish a connection with it. For the sake of this tutorial 
+                                    our repository's address will be https://github.com/tutorialzine/awesome-project. We advise you to go ahead and create your own 
+                                    empty repository at GitHub, BitBucket or any other service. The registration and setup may take a while, but all services offer
+                                    good step-by-step guides to help you.
+                                </p>
+
+                                <p>
+                                    To link our local repository with the one on GitHub, we execute the following line in the terminal:
+                                </p>
+                               
+                                <code class="code-block">
+                                    # This is only an example. Replace the URI with your own repository address.<br>
+                                     $ git remote add origin https://github.com/tutorialzine/awesome-project.git
+                                </code>
+
+                                <p>
+                                    A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. 
+                                    Traditionally the main remote repository in git is called origin.
+                                </p>
 
                             </div>
 
 
-                            <!-----Lower Row-------->
+                            <!-- GIT Topic 10 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic10" class="sql__topic-title">2. Uploading to a server - git push</h4>
+
+                                <p>
+                                    Now it's time to transfer our local commits to the server. This process is called a push, and is done every time we want to update 
+                                    the remote repository.
+                                </p>
+
+                                <p>
+                                    The Git command to do this is git push and takes two parameters - the name of the remote repo (we called ours origin) and the 
+                                    branch to push to (master is the default branch for every repo).
+                                </p>
+
+                                <code class="code-block">
+                                    $ git push origin master<br>
+    
+                                    Counting objects: 3, done.<br>
+                                    Writing objects: 100% (3/3), 212 bytes | 0 bytes/s, done.<br>
+                                    Total 3 (delta 0), reused 0 (delta 0)<br>
+                                    To https://github.com/tutorialzine/awesome-project.git<br>
+                                    * [new branch]      master -> master
+                                </code>
+                                <p>
+                                Depending on the service you're using, you will need to authenticate yourself for the push to go through. If everything was done
+                                correctly, when you go in your web browser to the remote repository created earlier, hello.txt should be available there.
+                                </p>
+
+                            </div>
+
+                            <!-- GIT Topic 11 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic11" class="sql__topic-title">3. Cloning a repository - git clone </h4>
+
+                                <p>
+                                    At this point, people can see and browse through your remote repository on Github. They can download it locally and have a fully 
+                                    working copy of your project with the git clone command:
+                                </p>
+                                <code class="code-block">
+                                    $ git clone https://github.com/tutorialzine/awesome-project.git
+                                </code>
+                                <p>
+                                    A new local respository is automatically created, with the github version configured as a remote.
+                                </p>
+
+                            </div>
+
+                            <!-- GIT Topic 12 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic12" class="sql__topic-title">4. Getting changes from a server - git pull </h4>
+                                <p>
+                                    If you make updates to your repository, people can download your changes with a single command - pull:
+                                </p>
+                                <code class="code-block">
+                                    $ git pull origin master<br>
+    
+                                    From https://github.com/tutorialzine/awesome-project<br>
+                                    * branch            master     -> FETCH_HEAD<br>
+                                    Already up-to-date.
+                                </code>
+                                <p>
+                                    Since nobody else has commited since we cloned, there weren't any changes to download.                      
+
+                                </p>
+                            </div>
+
+                            <!--GIT Topic 13 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic13" class="sql__topic-title">BRANCHES</h4>
+
+                                <p>
+                                    When developing a new feature, it is considered a good practice to work on a copy of the original project, called a branch. 
+                                    Branches have their own history and isolate their changes from one another, until you decide to merge them back together. 
+                                    This is done for a couple of reasons:
+                                </p>
+                                <p>
+                                    - An already working, stable version of the code won't be broken.
+                                </p>
+                                <p>
+                                    Many features can be safely developed at once by different people.</p>
+                                <p>
+                                    Developers can work on their own branch, without the risk of their codebase changing due to someone else's work.<br>
+                                </p>
+                                <p>
+                                    When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.<br>
+                                </p>
+
+                                
+                            </div>
+
+                            <!-- GIT Topic 14 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic14" class="sql__topic-title">1. Creating new branches - git branch</h4>
+                                <p>
+                                    The default branch of every repository is called master. To create additional branches use the git branch <name> command:
+                                </p>
+                                <code class="code-block">
+                                    $ git branch amazing_new_feature
+                                </code>
+                                <p>
+                                    This just creates the new branch, which at this point is exactly the same as our master.
+                                </p>
+
+                            </div>
+                            <!-- GIT Topic 15 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic15" class="sql__topic-title">2. Switching branches - git checkout</h4>
+                                <p>
+                                    Now, when we run git branch, we will see there are two options available:<br>
+                                </p>
+                                <code class="code-block">
+                                    $ git branch<br>
+                                    amazing_new_feature<br>
+                                  * master
+                                </code>
+                                <p>
+                                    Master is the current branch and is marked with an asterisk. However, we want to work on our new amazing features, so we need
+                                to switch to the other branch. This is done with the git checkout command, expecting one parameter - the branch to switch to.<br>
+                                </p>
+                                <code class="code-block">
+                                    $ git checkout amazing_new_feature
+                                </code>
+                            </div>
+
+                            <!-- GIT Topic 16 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic16" class="sql__topic-title">3. Merging branches - git merge</h4>
+                                <p>
+                                    Our "amazing new feature" is going to be just another text file called feature.txt. We will create it, add it, and commit it.<br>
+                                </p>
+                                <code class="code-block">
+                                    $ git add feature.txt<br>
+                                    $ git commit -m "New feature complete."
+                                </code>
+                                <p>
+                                    The new feature is complete, we can go back to the master branch.
+                                 </p>
+                                <code class="code-block">
+                                    $ git checkout master
+                                </code>
+
+                                <p>
+                                    Now, if we open our project in the file browser, we'll notice that feature.txt has disappeared. That's because we are back 
+                                    in the master branch, and here feature.txt was never created. To bring it in, we need to git merge the two branches together, 
+                                    applying the changes done in amazing_new_feature to the main version of the project.
+                                </p>
+                                <code class="code-block">
+                                    git merge amazing_new_feature
+                                </code>
+                                <p>
+                                    The master branch is now up to date. The awesome_new_feature branch is no longer needed and can be removed.<br>
+                                </p>
+                                <code class="code-block">
+                                    git branch -d amazing_new_feature
+                                </code>
+                                
+                            </div>
+
+
+                            <!-- GIT Topic 17 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic17" class="sql__topic-title">ADVANCED</h4>
+                                <p>
+                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
+                                    come in handy.
+                                </p>
+                                                                
+                            </div>
+
+
+                                <!-- GIT Topic 18 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic18" class="sql__topic-title">1. Checking difference between commits</h4>
+                                <p>
+                                    Every commit has it's unique id in the form of a string of numbers and symbols. To see a list of all commits and their ids we 
+                                    can use git log:
+                                </p>
+                                <code class="code-block">
+                                    $ git log<br>  
+                                    
+                                    commit ba25c0ff30e1b2f0259157b42b9f8f5d174d80d7<br>  
+                                    Author: Tutorialzine<br>  
+                                    Date:   Mon May 30 17:15:28 2016 +0300<br>  
+                                    
+                                        New feature complete<br>  
+                                    
+                                    commit b10cc1238e355c02a044ef9f9860811ff605c9b4<br>  
+                                    Author: Tutorialzine<br>  
+                                    Date:   Mon May 30 16:30:04 2016 +0300<br>  
+                                    
+                                        Added content to hello.txt<br>  
+                                    
+                                    commit 09bd8cc171d7084e78e4d118a2346b7487dca059<br>  
+                                    Author: Tutorialzine<br>  
+                                    Date:   Sat May 28 17:52:14 2016 +0300<br>  
+                                    
+                                        Initial commit 
+                                </code>
+                                <p>
+                                    As you can see the ids are really long, but when working with them it's not necessary to copy the whole thing - 
+                                    the first several symbols are usually enough.
+                                    To see what was new in a commit we can run git show [commit]:
+                                </p>
+                                <code class="code-block">
+                                    $ git show b10cc123<br>
+        
+                                    commit b10cc1238e355c02a044ef9f9860811ff605c9b4<br>
+                                    Author: Tutorialzine<br>
+                                    Date:   Mon May 30 16:30:04 2016 +0300<br>
+                                    
+                                        Added content to hello.txt<br>
+                                    
+                                    diff --git a/hello.txt b/hello.txt<br>
+                                    index e69de29..b546a21 100644<br>
+                                    --- a/hello.txt<br>
+                                    +++ b/hello.txt<br>
+                                    @@ -0,0 +1 @@<br>
+                                    +Nice weather today, isn't it?
+                                </code>
+
+                                <p>
+                                    To see the difference between any two commits we can use git diff with the [commit-from]..[commit-to] syntax:<br>
+                                 </p>
+                                <code class="code-block">
+                                    $ git diff 09bd8cc..ba25c0ff<br>
+        
+                                    diff --git a/feature.txt b/feature.txt<br>
+                                    new file mode 100644<br>
+                                    index 0000000..e69de29<br>
+                                    diff --git a/hello.txt b/hello.txt<br>
+                                    index e69de29..b546a21 100644<br>
+                                    --- a/hello.txt<br>
+                                    +++ b/hello.txt<br>
+                                    @@ -0,0 +1 @@<br>
+                                    +Nice weather today, isn't it?
+                                </code>
+                                <p>
+                                    We've compared the first commit to the last one, so we see all the changes that have ever been made. Usually it's easier
+                                    to do this using the git difftool command which brings up a graphical client showing all differences side-to-side.
+                                </p>   
+                                
+                            </div>
+
+                            <!-- GIT Topic 19 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic19" class="sql__topic-title">2.Reverting a file to a previous version</h4>
+                                <p>
+                                    Git allows us to return any selected file back to the way it was in a certain commit. This is done via the familiar git 
+                                    checkout command, which we used earlier to switch branches, but can also be used to swtich between commits (it's pretty 
+                                    common in Git for one command to be used for multiple seemingly unrelated tasks).
+                                </p>
+                                <p>
+                                    In the following example we will take hello.txt and reverse everything we've done to it since the initial commit. 
+                                    To do so we have to supply the id of the commit we want to go back to, as well as the full path to our file.<br>
+                                </p>
+                                <code class="code-block">
+                                    $ git checkout 09bd8cc1 hello.txt
+                                </code>
+                                                                
+                            </div>
+
+                            <!-- GIT Topic 20 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic20" class="sql__topic-title">3. Fixing a commit</h4>
+                                <p>
+                                    If you notice that you've made a typo in your commit message, or you've forgotten to add a file and you see right 
+                                    after you commit, you can easily fix this with git commit --amend. This will add everything from the last commit back 
+                                    to the staging area, and attempt to make a new commit. This gives you a chance to fix your commit message or add more files
+                                    to the staging area.
+                                </p>
+                                <p>
+                                    For more complex fixes that aren't in the last commit (or if you've pushed your changes already), you've got to use git revert. 
+                                     This will take all the changes that a commit has introduced, reverse them, and create a new commit that is the exact opposite.<br>
+    
+                                </p>
+                                <p>
+                                    The newest commit can be accessed by the HEAD alias.
+                                </p> 
+                                <code class="code-block">
+                                    $ git revert HEAD
+                                </code>
+                                <p>
+                                    For other commits it's best to use an id.
+                                </p>
+                                <code class="code-block">
+                                    $ git revert b10cc123
+                                </code>
+                                <p>
+                                When reverting older commits, keep in mind that merge conflicts are very likely to appear. This happens when a file has been
+                                altered by another more recent commit, and now Git cannot find the right lines to revert, since they aren't there anymore.<br>
+                                </p> 
+                                                                
+                            </div>
+
+                            <!-- GIT Topic 21 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic21" class="sql__topic-title">4. Resolving Merge Conflicts</h4>
+                                <p>
+                                    Apart from the scenario depicted in the previous point, conflicts regularly appear when merging branches or pulling someone 
+                                    else's work. Sometimes conflicts are handled automatically by git, but other times the person dealing with them has to decide
+                                    (and usually handpick) what code stays and what is removed.
+                                </p>
+                                     
+                                <p>
+                                    Let's look at an example where we're trying to merge two branches called john_branch and tim_branch. Both John and Tim are writing
+                                    in the same file a function that displays all the elements in an array.
+                                </p>
+                                <p>
+                                    John is using a for loop:
+                                </p>
+                               
+                                <code class="code-block">
+                                    // Use a for loop to console.log contents.
+                                    for(var i=0; i&lt;arr.length; i++) {
+                                                console.log(arr[i]);
+                                          }
+                                </code>
+                             
+                                <p>
+                                    Tim prefers forEach:
+                                </p>
+                                <code class="code-block">
+                                    // Use forEach to console.log contents.<br>
+                                    arr.forEach(function(item) {<br>
+                                        console.log(item);<br>
+                                    });
+                                </code>
+                                <p>
+                                    They both commit their code on their respective branch. Now if they try to merge the two branches they will see the 
+                                    following error message:
+                                </p> 
+
+                                <code class="code-block">
+                                    $ git merge tim_branch <br>
+    
+                                    Auto-merging print_array.js<br>
+                                    CONFLICT (content): Merge conflict in print_array.js<br>
+                                    Automatic merge failed; fix conflicts and then commit the result.
+                                </code>
+
+                                <p>
+                                    Git wasn't able to merge the branches automatically, so now it's up to the devs to manually resolve the conflict. 
+                                     If they open the file where the conflict resides, they'll see that Git has inserted a marker on the conflicting lines.<br>
+    
+                                </p>
+                               
+                                <code class="code-block">
+                                    &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
+                                    // Use a for loop to console.log contents<br>.
+                                    for(var i=0; i&lt;arr.length; i++) {<br>
+                                        console.log(arr[i]);<br>
+                                    }<br>
+                                    =======<br>
+                                    // Use forEach to console.log contents.<br>
+                                    arr.forEach(function(item) {<br>
+                                        console.log(item);<br>
+                                    });<br>
+                                    >>>>>>> Tim's commit.
+                                </code>
+                             
+                                <p>
+                                    Above the ===== we have the current HEAD commit, and below the conflicting one. This way we can clearly see the differences, 
+                                    and decide which is the better version, or write a new one all together. In this situation we go for the latter and rewrite 
+                                    the whole thing, removing the markers to let Git know we're done.
+                                </p>
+                                <code class="code-block">
+                                    // Not using for loop or forEach.<br>
+                                    // Use Array.toString() to console.log contents.<br>
+                                    console.log(arr.toString());
+                                </code>
+                                <p>
+                                    When everything is set, a merge commit has to be done to finish the process.
+                                </p> 
+                                <code class="code-block">
+                                    $ git add -A<br>
+                                   $ git commit -m "Array printing conflict resolved."
+                                </code>
+                                <p>
+                                    As you can see this process is quite tiresome and can get extremely hard to deal with in large projects. Most developers
+                                    prefer to resolve conflicts with the help of a GUI client, which makes things much easier. To run a graphical client use git
+                                    mergetool.
+                                 </p> 
+
+                            </div>
+
+                            <!-- GIT Topic 22 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic22" class="sql__topic-title">5. Setting up .gitignore</h4>
+                                <p>
+                                    In most projects there are files or entire folders that we don't want to ever commit. We can make sure that they aren't 
+                                    accidentally included in our git add -A by creating a .gitignore file:
+                                </p>
+                                <p>
+                                    1. Manually create a text file called .gitignore and save it in your project's directory.
+                                </p>    
+                                    
+                                <p>
+                                    2. Inside, list the names of files/directories to be ignored, each on a new line.
+                                 
+                                </p>
+                                <p>
+                                    3. The .gitignore itself has to be added, committed and pushed, as it is just like any other file in the project.
+                                 
+                                </p>
+
+                                <p>
+                                    Good examples for files to be ignored are:
+                                </p> 
+                                <p>
+                                    -log files
+                                </p>  
+                                    -task runner builds    
+                                <p>
+                                     
+                                </p> 
+                                    -the node_modules folder in node.js projects
+                                <p>
+                                    -folders created by IDEs like Netbeans and IntelliJ</b>
+                                    
+                                </p>   
+                                <p>
+                                    -personal developer notes
+                                </p>     
+                                <p>
+                                    A .gitignore banning all of the above will look like this:</b>
+                                        
+                                </p> 
+                                
+                                <code class="code-block">
+                                    *.log<br>
+                                    build/
+                                    node_modules/
+                                    .idea/
+                                    my_notes.txt
+                                </code>
+                               
+                                <p>                                        
+                                    
+                                    The slash at the end of some of the lines signals that this is a folder and we are ignoring everything inside it recursively.
+                                    The asterisk serves it's usual function as a wild card.
+                                </p>
+                                                                
+                            </div>
+
+                            <!-- GIT Topic 23 -->
+                            <div class="sql__topic topic">
+                                <h4 id="topic23" class="sql__topic-title">CONCLUSION</h4>
+                                <p>
+                                    This ends our tutorial on git! We tried our best to bring you only the most important information you need, presented as short 
+                                    and concise as possible.
+                                 </p>     
+                                <p>
+                                    Git is quite complex and has a lot more features and tricks to offer. If you wish to find out more, here are some learning 
+                                    resources we recommend
+                                </p>     
+                                <p>
+
+                                    The official Git docs, including a whole book and video lessons - here.
+                                </p>     
+                                <p>   
+                                    Getting git right - Atlassian's collection of tutorials and articles - here.
+                                </p>     
+                                <p>    
+                                    A list of GUI clients - here.
+                                </p>     
+                                <p>    
+                                    Git cheat sheet (PDF) - here.
+                                </p>     
+                                <p>   
+                                    Online tool for generating .gitignore files - here.
+                                </p>
+                                                                
+                            </div>
+
+                            <!-- Lower Row -->
                             <div class="link_popups">
                                 <!-- Comments -->
-                                <div class="div"><a href="" class="link_comments">Comments <i class="fas fa-comment"></i></a></div>
+                                <div class="div"><a href="" class="link_comments">Comments <i
+                                            class="fas fa-comment"></i></a></div>
                                 <!-- Rating -->
                                 <div class="rating-area">
                                     <p class=rate_article> Rate This Article!</p>
@@ -548,33 +818,60 @@
                                     <label class="star" for="star-1" title="mark «1»"></label>
                                 </div>
                                 <!-- Tasks -->
-                                <div><a class="tasks" href="">Tasks to Practice</a></div>
-                                <!-- Mistakes  -->
-                                <div><a class="mistakes" href="">Found Mistakes? Help Us!</a></div>
+                                <div class="link_tasks">
+                                    <p class="tasks">
+                                        <a href="">Tasks to Practice</a>
+                                    </p>
+                                    <p class="mistakes">
+                                        <a href="">Found Mistakes? Help Us!</a>
+                                    </p>
+                                </div>
                             </div>
+                            <!-- SQL TOPICS DIV -->
                         </div>
 
-                        <!-- Article Menu Section -->
+
+                        <!-- Menu  -->
                         <div id="article_menu" class="main-text article_right_menu">
-
                             <div id="fix_menu">
+
+
                                 <ul class="article_menu1">
-                                    <li type="disc" class="article_li"><a href="#article_title1" class="mainmenu1">Home GIT</a></li>
-                                    <li type="disc" class="article_li"><a href="#topic1" class="mainmenu1">BASICS</a>
+                                    <li class="article_li"><a href="#sql__title" class="mainmenu1">Home GIT</a></li>
+                                    <li class="article_li"><a href="#topic1" class="mainmenu1">BASICS</a>
                                     </li>
-                                    <li type="disc"  class="article_li"><a href="#topic2" class="mainmenu1">REMOTE REPOSITORIES</a></li>                   
-                                    <li type="disc" class="article_li"><a href="#topic3" class="mainmenu1">BRANCHES</a>
+                                    <li class="article_li"><a href="#topic8" class="mainmenu1">REMOTE REPOSITORIES </a>
                                     </li>
-                                    <li type="disc" class="article_li"><a href="#topic4" class="mainmenu1">ADVANCED</a>
+                                    <li class="article_li"><a href="#topic13" class="mainmenu1">BRANCHES</a>
                                     </li>
-                                                    
+                                    <li class="article_li"><a href="#topic17" class="mainmenu1">ADVANCED</a>
+                                    </li>
+                                    <li class="article_li"><a href="#topic23" class="mainmenu1">CONCLUSION</a>
+                                    </li>   
                                 </ul>
+
+
+                                <!-- burger sql menu</i> -->
+                                <nav class="nav_sql_menu">
+                                    <input class="nav__check" type="checkbox" id="showmenu" />
+                                    <label class="nav__showmenu" for="showmenu">&#9776;</label>
+                                    <label class="nav__back" for="showmenu"></label>
+                                    <ul class="menu">
+                                        <li><a class="menu__item" href="#sql__title">Home GIT</a></li>
+                                        <li><a class="menu__item" href="#topic1">BASICS</a></li>
+                                        <li><a class="menu__item" href="#topic8">REMOTE REPOSITORIES</a></li>
+                                        <li><a class="menu__item" href="#topic13">BRANCHES</a></li>
+                                        <li><a class="menu__item" href="#topic17">ADVANCED</a></li>
+                                        <li><a class="menu__item" href="#topic23">CONCLUSION</a></li>
+                                    </ul>
+                                </nav>
+
+
+                                <!-- <i class="burger-icon fas fa-bars"></i> -->
                             </div>
                         </div>
+
                     </div>
-
-
-
                 </div>
 
 
@@ -582,7 +879,7 @@
 
 
 
-
+            <!-- Vertical Bar -->
             <div class="vertical__bar">
                 <div class="vertical__content">
                     <div class="vertical__menu">
@@ -595,7 +892,7 @@
                     </div>
                     <ul class="burger__list">
                         <li><a href="articles.html" class="burger__link">Articles</a></li>
-                <li><a href="topic-cards.html" class="burger__link">Learning</a></li>
+                        <li><a href="topic-cards.html" class="burger__link">Learning</a></li>
                     </ul>
                     <div class="registration">
                         <a href="" class="burger__log">Login</a>
@@ -632,79 +929,73 @@
             </div>
         </main>
 
-
-
-        <!-- ------------------------------FOOTER--------------------------------- -->
         <!-- Footer  -->
-    <footer>
-        <div class="container">
-            <div class="footer__row">
-                <div class="footer__column">
-                    <h4 class="footer__title">
-                        Menu
-                    </h4>
-                    <ul class="footer__list">
-                        <li><a href="index.html" class="footer__link">Home</a></li>
-                        <li><a href="index.html#questions-section" class="footer__link">Faq</a></li>
-                        <li><a href="topic-cards.html" class="footer__link">Learning</a></li>
-                        <li><a href="index.html#about" class="footer__link">About</a></li>
-                        <li><a href="index.html#form-section" class="footer__link">Contact</a></li>
-                        <li><a href="articles.html" class="footer__link">Articles</a></li>
-                        <li><a href="index.html#newsletter-section" class="footer__link">Newsletter</a></li>
-                    </ul>
-                </div>
-                <div class="footer__column">
-                    <h4 class="footer__title">
-                        Topics
-                    </h4>
-                    <ul class="footer__list">
-                        <li><a href="html-page.html" class="footer__link">HTML</a></li>
-                        <li><a href="js-page.html" class="footer__link">JS</a></li>
-                        <li><a href="css-page.html" class="footer__link">CSS</a></li>
-                        <li><a href="basic-page.html" class="footer__link">Basics</a></li>
-                        <li><a href="sql-page.html" class="footer__link">SQL</a></li>
-                        <li><a href="git-page.html" class="footer__link">GIT</a></li>
-                    </ul>
-                </div>
-                <div class="footer__info">
-                    <p>WebFromScratch</p>
-                    <p>Educational Project.</p>
-                    <p>Created by Wild Code School Students.</p>
-                    <p>All Rights Reserved.</p>
-                </div>
-                <div class="footer__icons">
-                    <a href="#!" class="footer__icon">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-square fa-stack-2x"></i>
-                            <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                          </span>
-                    </a>
-                    <a href="https://github.com/hidemydreams/WebFromScratch" class="footer__icon">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-square fa-stack-2x"></i>
-                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                          </span>
-                    </a>
-                    <a href="#!" class="footer__icon">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-square fa-stack-2x"></i>
-                            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                          </span>
-                    </a>
-                    <a href="#!" class="footer__icon">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-square fa-stack-2x"></i>
-                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
-                          </span>
-                    </a>
+        <footer>
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column">
+                        <h1 class="footer__title">
+                            Menu
+                        </h1>
+                        <ul class="footer__list">
+                            <li><a href="/index.html" class="footer__link">Home</a></li>
+                            <li><a href="/index.html#questions-section" class="footer__link">Faq</a></li>
+                            <li><a href="/topic-cards.html" class="footer__link">Learning</a></li>
+                            <li><a href="/index.html#about" class="footer__link">About</a></li>
+                            <li><a href="/index.html#form-section" class="footer__link">Contact</a></li>
+                            <li><a href="/articles.html" class="footer__link">Articles</a></li>
+                            <li><a href="/index.html#newsletter-section" class="footer__link">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h1 class="footer__title">
+                            Topics
+                        </h1>
+                        <ul class="footer__list">
+                            <li><a href="html-page.html" class="footer__link">HTML</a></li>
+                            <li><a href="js-page.html" class="footer__link">JS</a></li>
+                            <li><a href="css-page.html" class="footer__link">CSS</a></li>
+                            <li><a href="basic-page.html" class="footer__link">Basics</a></li>
+                            <li><a href="sql-page.html" class="footer__link">SQL</a></li>
+                            <li><a href="git-page.html" class="footer__link">GIT</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__info">
+                        <p>WebFromScratch</p>
+                        <p>Educational Project.</p>
+                        <p>Created by Wild Code School Students.</p>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                    <div class="footer__icons">
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="https://github.com/hidemydreams/WebFromScratch" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a href="#!" class="footer__icon">
+                            <span class="fa-stack fa-4x">
+                                <i class="fas fa-square fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
-
-
-
 
 
 
@@ -757,7 +1048,8 @@
                         <li><a href="#!" class="search__result">CS Cheatsheets</a></li>
                         <li><a href="#!" class="search__result">JS Cheatsheet</a></li>
                         <li><a href="#!" class="search__result">:nth-child Cheatsheet</a></li>
-                        <li><a href="#!" class="search__result"></a>SQL Cheatsheet</li>
+                        <li>
+                            <a href="#!" class="search__result"></a>SQL Cheatsheet</li>
                     </ul>
                 </div>
             </div>
@@ -767,26 +1059,26 @@
         </div>
     </div>
 
-    <!----Pop Up rating------->
+    <!-- Pop Up rating -->
     <div class="popup rating_popup">
         <div class="modal rating_modal">
             <p class="popup_rat">Thank Your For Your Grading</p>
-            <button class="btn_rating modal__btn">Exit</button>
+            <button class="btn btn_rating modal__btn">Exit</button>
         </div>
     </div>
 
 
-    <!----Pop Up comments-------->
+    <!-- Pop Up comments -->
 
     <div class="popup comments_popup">
         <div class="modal comments_modal">
             <p class=" comments_title ">Leave Your Comment!</p>
             <div class=" comments_comment">
-                <input class="name_comment " placeholder="Name " type="text ">
-                <textarea placeholder="Your Comment" class="message_comment " name=" "></textarea>
+                <input class="name_comment" placeholder="Name " type="text">
+                <textarea placeholder="Your Comment" class="message_comment" name="comment"></textarea>
             </div>
 
-            <button class="btn button_article ">Send</button>
+            <button class="btn button_article modal__btn">Send</button>
 
             <div class=" items_comments ">
                 <div class="item_comment comment ">
@@ -818,7 +1110,7 @@
 
 
 
-    <!-----Pop up Tasks-->
+    <!-- Pop up Tasks -->
     <div class="popup tasks_popup">
         <div class="modal tasks_modal">
             <p class="popup_title ">Tasks for Topic 1:</p>
@@ -848,7 +1140,8 @@
             </div>
             <div class="task ">
                 <h4>Task1</h4>
-                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum
                     has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
                     galley of type and scrambled it to
                     make a type specimen book.
@@ -867,23 +1160,31 @@
     <div class="popup mistake_popup">
         <div class="modal mistake_modal ">
             <p class="pop_up_mistakes ">Found Mistakes? Help Us!</p>
-            <div class="mistakes ">
-                <input class="email " placeholder="Your name " type="text ">
+            <div class="mistake_item ">
+                <input class="email" placeholder="Your name" type="text">
                 <textarea placeholder="Describe any mistakes you found, or maybe some material is outdated... "
-                    type="email " class="message" name=" "></textarea>
+                    class="message" name="message"></textarea>
             </div>
-            <button class="btn btn_article modal__btn ">Send</button>
+            <button class="btn btn_mistake modal__btn ">Send</button>
+        </div>
+    </div>
+    <!-- Response Pop Up-->
+
+    <div class="popup response_popup">
+        <div class="modal response_modal">
+            <p class="popup_res">Thank Your For Your Response</p>
+            <button class="btn modal__btn btn_res"><i class="far fa-times-circle"></i></button>
         </div>
     </div>
 
 
-    <!--PopUps-->
+    <!-- PopUps -->
     <div class="popup log__popup">
         <div class="modal log__modal">
             <h3 class=" modal__item log__title">Log In</h3>
             <input placeholder='Email' class=' modal__item log__login' type="text">
             <input placeholder='Password' class='modal__item log__pass' type="password">
-            <button class="btn modal__item log__btn">Log in</button>
+            <button class="btn modal__item log__btn modal__btn">Log in</button>
             <a href="fullpage-registration.html" class="modal__link">Full Page <i
                     class="far fa-arrow-alt-circle-right"></i></a>
         </div>
@@ -894,34 +1195,33 @@
             <input placeholder='Email' class=' modal__item reg__login' type="text">
             <input placeholder='Password' class='modal__item log__pass' type="password">
             <input placeholder='Repeat your password' class='modal__item reg__pass' type="password">
-            <button class="btn modal__item reg__btn">Sign Up</button>
+            <button class="btn modal__item reg__btn modal__btn">Sign Up</button>
             <a href="fullpage-registration.html" class="modal__link">Full Page <i
                     class="far fa-arrow-alt-circle-right"></i></a>
         </div>
     </div>
 
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader__content">
+            <div class="preloader__first">
+
+            </div>
+            <div class="preloader__second">
+
+            </div>
+            <div class="preloader__third">
+
+            </div>
+        </div>
+    </div>
 
 
-    <!-- ------JS SCRIPT------ -->
 
-    <script src='/src/script/script.js'>
+    <!--  JS SCRIPT -->
+
+    <script src='src/script/script.js'>
     </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
