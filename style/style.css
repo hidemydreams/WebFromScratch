@@ -772,10 +772,8 @@ footer * {
     justify-content: space-between;
   }
 }
-.article_right_menu {
-  padding-top: 40px;
-  width: 25%;
-  margin-left: 1%;
+#fix_menu {
+  position: sticky;
 }
 
 .article_li {
@@ -841,13 +839,27 @@ label {
 }
 
 .nav__showmenu {
-  display: block;
+  display: none;
   position: fixed;
   right: 2px;
   z-index: 3;
   padding: 5px;
   font-size: 23px;
   color: #ff4ba2;
+}
+@media (max-width: 575.98px) {
+  .nav__showmenu {
+    display: block;
+  }
+}
+
+.nav__back {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.3s;
 }
 
 .menu, .menu__submenu {
@@ -2096,6 +2108,7 @@ label {
 .sql__container-for-text-menu {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .sql__container-topic {
