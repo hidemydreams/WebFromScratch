@@ -633,18 +633,11 @@ footer {
   padding-top: 30px;
   margin-top: 20px;
 }
-footer * {
-  margin-bottom: 20px;
-}
-
-.footer__icon span {
-  font-size: 20px;
-}
 
 .footer__row {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 @media (max-width: 575.98px) {
@@ -680,10 +673,44 @@ footer * {
 .footer__info {
   text-align: center;
 }
+@media (max-width: 575.98px) {
+  .footer__info {
+    align-self: center;
+    text-align: center;
+  }
+}
 .footer__info p {
   margin-bottom: 20px;
 }
 
+.footer__developers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 575.98px) {
+  .footer__developers {
+    align-self: center;
+    text-align: center;
+  }
+}
+.footer__developer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer__developer-img img {
+  max-width: 70px;
+  margin-bottom: 15px;
+}
+.footer__developer-name {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+.footer___email {
+  margin-bottom: 5px;
+}
 .vertical__bar {
   height: 100vh;
   background-color: rgba(82, 174, 226, 0.6);
@@ -2513,8 +2540,6 @@ code {
 @media (max-width: 575.98px) {
   .form-section__title {
     margin-top: 30px;
-    text-align: center;
-    font-size: 2rem;
   }
 }
 
