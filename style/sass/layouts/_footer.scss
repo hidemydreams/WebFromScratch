@@ -5,6 +5,10 @@ footer {
   margin-top: 20px;
 }
 
+.footer__icon span {
+  font-size: 20px;
+}
+
 .footer__row {
   display: flex;
   justify-content: space-evenly;
@@ -26,10 +30,17 @@ footer {
 
 .footer__title {
   margin-bottom: 20px;
+  font-size: 1.2rem;
+  
 }
 
 .footer__list li {
   margin-bottom: 15px;
+  transition: .2s;
+
+  &:hover {
+    transform: translateX(5px);
+  }
 }
 
 
@@ -37,10 +48,6 @@ footer {
   text-transform: uppercase;
   color: white;
   transition: .2s;
-
-  &:hover {
-    color: darken(white, 5%)
-  }
 }
 
 .footer__info {

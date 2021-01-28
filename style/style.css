@@ -656,6 +656,10 @@ footer {
   margin-top: 20px;
 }
 
+.footer__icon span {
+  font-size: 20px;
+}
+
 .footer__row {
   display: flex;
   justify-content: space-evenly;
@@ -678,19 +682,21 @@ footer {
 
 .footer__title {
   margin-bottom: 20px;
+  font-size: 1.2rem;
 }
 
 .footer__list li {
   margin-bottom: 15px;
+  transition: 0.2s;
+}
+.footer__list li:hover {
+  transform: translateX(5px);
 }
 
 .footer__link {
   text-transform: uppercase;
   color: white;
   transition: 0.2s;
-}
-.footer__link:hover {
-  color: #f2f2f2;
 }
 
 .footer__info {
@@ -1210,6 +1216,8 @@ label {
   max-width: 400px;
   margin: 0 auto;
   border: 1px solid #52aee2;
+  height: 200px;
+  overflow-y: auto;
 }
 @media (max-width: 575.98px) {
   .form__message {
@@ -1581,6 +1589,14 @@ label {
   margin-top: 5px;
 }
 
+.search__result.hide {
+  display: none;
+}
+
+.red-mark {
+  background-color: rgba(255, 75, 162, 0.2);
+}
+
 .rating-area {
   overflow: hidden;
   padding-left: 110px;
@@ -1652,6 +1668,7 @@ label {
   visibility: hidden;
   opacity: 0;
   transition: 0.2s;
+  padding: 0 15px;
 }
 
 .modal {
@@ -1784,13 +1801,11 @@ label {
 
 /*---------Pop Up---------*/
 .mistake_modal {
-  border: none;
   border-radius: 30px;
   max-width: 300px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+  max-height: 300px;
+  height: 100%;
   padding: 20px;
   color: white;
   text-align: center;
@@ -1808,6 +1823,8 @@ label {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  max-height: 300px;
+  height: 100%;
 }
 .mistake_item input {
   margin-bottom: 10px;
@@ -1816,7 +1833,11 @@ label {
   color: white;
   outline: none;
   width: 100%;
-  padding: 10px 0px 0px 10px;
+  padding: 10px;
+  transition: 0.2s;
+}
+.mistake_item input:hover {
+  background-color: #3ca4de;
 }
 .mistake_item input::placeholder {
   color: white;
@@ -1830,11 +1851,16 @@ label {
   padding: 10px 0px 0px 10px;
   border: 2px solid white;
   width: 100%;
-  display: block;
+  height: 100%;
+  transition: 0.2s;
+  resize: none;
 }
 .mistake_item textarea::placeholder {
   color: white;
   font-size: 0.8rem;
+}
+.mistake_item textarea:hover {
+  background-color: #3ca4de;
 }
 
 .newsletter {
@@ -2223,19 +2249,17 @@ label {
   }
 }
 
+.tabs__outer {
+  display: flex;
+  justify-content: center;
+}
+
 .registration-section {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media (max-width: 575.98px) {
-  .registration-section {
-    left: 56%;
-    width: 200px;
-  }
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .reg__logo {

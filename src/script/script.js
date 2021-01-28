@@ -4,6 +4,7 @@ button.forEach((item) => {
             e.preventDefault()
         })
     })
+
     // PopUp Windows for Login And Registration
 
 let body = document.querySelector('body')
@@ -232,15 +233,12 @@ if (mistakePopup) {
 if (mistakeBtn) {
     mistakeBtn.addEventListener('click', (e) => {
         e.preventDefault();
-
         mistakeModal.classList.remove('show-modal');
         responsePopup.classList.add('show-modal');
+        body.style.overflow = 'auto';
     })
 
 }
-
-
-
 let responseBtn = document.querySelector('.btn_res');
 if (responseBtn) {
     responseBtn.addEventListener('click', (e) => {
@@ -493,7 +491,7 @@ function preloader() {
     })
 }
 
-// Envelope PopUp
+// Envelope Copy to ClipBoard and PopUp
 
 let envelope = document.querySelector('.envelope');
 let envelopePop = document.querySelector('.envelope__popup');
@@ -517,4 +515,37 @@ function copyToClipboard() {
     textarea.select();
     document.execCommand('copy');
     document.body.removeChild(textarea);
+}
+
+
+// Search 
+
+let searchInput = document.querySelector('.search-input');
+searchInput.addEventListener('input', () => {
+    let val = searchInput.value.trim('');
+    let searchItems = document.querySelectorAll('.search__result');
+
+    if (val != '') {
+        searchItems.forEach((elem) => {
+            if (elem.innerText.search(RegExp(val,"gi")) == -1) {
+                elem.classList.add('hide');
+                elem.innerHTML = elem.innerText;
+            } else {
+                elem.classList.remove('hide');
+                let string = elem.innerText;
+                elem.innerHTML = makeMarkedLetter(string,elem.innerText.search(RegExp(val,"gi")), val.length )
+            }
+        })
+    } else {
+        searchItems.forEach((elem) => {
+            elem.classList.remove('hide');
+            elem.innerHTML = elem.innerText;
+        })
+    }
+} )
+
+function makeMarkedLetter(str,pos,len) {
+
+
+    return `${str.slice(0, pos)}<span class="red-mark">${str.slice(pos, pos + len)}</span>${str.slice(pos+len)}`
 }
