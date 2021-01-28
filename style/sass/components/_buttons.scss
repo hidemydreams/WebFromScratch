@@ -63,6 +63,7 @@
   &__btn {
     padding: 10px 20px;
     margin: 10px;
+    border-radius: 20px;
     &:hover, &:active, &:focus {
       background-color: darken($base-color, 10%);
     }
