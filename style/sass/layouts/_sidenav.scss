@@ -82,7 +82,10 @@ label {cursor: pointer;}
     display: block;
   }
   
-  position: fixed;
+  //add for link stay
+  position: relative;
+
+
   right: 2px;
   z-index: 3;
   //margin-left: -10px;
