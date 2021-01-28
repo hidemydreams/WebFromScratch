@@ -48,7 +48,6 @@
   background-color:rgba(172, 208, 243, 0.52);
   min-height: 300px;
   justify-content: space-evenly;
-  padding: 0 100px;
 
   @media (max-width: $smallest) {
     display: none;
@@ -61,5 +60,40 @@
 
 .fa-stack:hover .fa-square {
   color: $btn-hover-color;
+}
+
+// Envelope Icon
+
+.envelope {
+  cursor: pointer;
+  position: relative;
+
+  &__popup {
+    position: absolute;
+    min-width: 130px;
+    width: 100%;
+    left: 45px;
+    top: -10px;
+    z-index: 1000;
+    background-color: $accent-pink;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__popup-title {
+    color: white;
+    font-size: 16px;
+
+    i {
+      margin-left: 5px;
+    }
+  }
+}
+
+.active.envelope__popup {
+  animation: envelope-pop 1s ease-in-out forwards;
 }
   

@@ -13,6 +13,7 @@ footer {
 
   @media (max-width: $smallest) {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -60,28 +61,27 @@ footer {
   &__developers {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
-    @media (max-width: $smallest) {
-      align-self: center;
-      text-align: center;
-    }
+    // @media (max-width: $smallest) {
+    //   align-self: center;
+    //   text-align: center;
+    // }
   }
 
   &__developer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
   }
 
   &__developer-img img{
-    max-width: 70px;
-    margin-bottom: 15px;
+    max-width: 35px;
+    margin-right: 10px;
   }
 
   &__developer-name {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-bottom: 5px;
   }
 

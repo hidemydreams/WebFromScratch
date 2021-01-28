@@ -492,3 +492,29 @@ function preloader() {
         preloader.classList.add('hide-preloader');
     })
 }
+
+// Envelope PopUp
+
+let envelope = document.querySelector('.envelope');
+let envelopePop = document.querySelector('.envelope__popup');
+
+
+envelope.addEventListener('click', () => {
+    envelopePop.classList.add('active');
+    copyToClipboard()
+})
+
+envelopePop.addEventListener('animationend', ()=> {
+    envelopePop.classList.remove('active');
+})
+
+function copyToClipboard() {
+    const textarea = document.createElement('textarea')
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'absolute';
+    textarea.value = 'webfromscratch@gmail.com'
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+}

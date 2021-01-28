@@ -6,3 +6,28 @@
       transform: translateY(5px)
   }
 }
+
+@keyframes envelope-pop {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+    top: -10px;
+  }
+
+  40% {
+    opacity: 1;
+    pointer-events: auto;
+    top: 10px;
+  }
+  80% {
+    opacity: 1;
+    pointer-events: auto;
+    top: 10px;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+    top: -10px;
+  }
+}

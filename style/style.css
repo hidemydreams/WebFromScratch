@@ -537,6 +537,28 @@ input {
     transform: translateY(5px);
   }
 }
+@keyframes envelope-pop {
+  0% {
+    opacity: 0;
+    pointer-events: none;
+    top: -10px;
+  }
+  40% {
+    opacity: 1;
+    pointer-events: auto;
+    top: 10px;
+  }
+  80% {
+    opacity: 1;
+    pointer-events: auto;
+    top: 10px;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+    top: -10px;
+  }
+}
 .navigation {
   display: flex;
   align-items: center;
@@ -643,6 +665,7 @@ footer {
 @media (max-width: 575.98px) {
   .footer__row {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -686,26 +709,19 @@ footer {
 .footer__developers {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-@media (max-width: 575.98px) {
-  .footer__developers {
-    align-self: center;
-    text-align: center;
-  }
+  align-items: flex-start;
 }
 .footer__developer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
 .footer__developer-img img {
-  max-width: 70px;
-  margin-bottom: 15px;
+  max-width: 35px;
+  margin-right: 10px;
 }
 .footer__developer-name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 5px;
 }
 .footer___email {
@@ -717,7 +733,6 @@ footer {
   width: 40px;
   top: 0;
   left: 0;
-  overflow: hidden;
   z-index: 200;
   position: fixed;
   transition: 0.5s;
@@ -1245,7 +1260,6 @@ label {
   background-color: rgba(172, 208, 243, 0.52);
   min-height: 300px;
   justify-content: space-evenly;
-  padding: 0 100px;
 }
 @media (max-width: 575.98px) {
   .vertical__icons {
@@ -1260,6 +1274,36 @@ label {
 
 .fa-stack:hover .fa-square {
   color: #269adb;
+}
+
+.envelope {
+  cursor: pointer;
+  position: relative;
+}
+.envelope__popup {
+  position: absolute;
+  min-width: 130px;
+  width: 100%;
+  left: 45px;
+  top: -10px;
+  z-index: 1000;
+  background-color: #ff4ba2;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+}
+.envelope__popup-title {
+  color: white;
+  font-size: 16px;
+}
+.envelope__popup-title i {
+  margin-left: 5px;
+}
+
+.active.envelope__popup {
+  animation: envelope-pop 1s ease-in-out forwards;
 }
 
 .read-more {
