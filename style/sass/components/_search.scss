@@ -117,4 +117,12 @@
         }
     }
   }
+
+  .search__result.hide {
+      display: none;
+  }
+
+  .red-mark {
+      background-color: rgba(#FF4BA2, 0.2);
+  }
   
