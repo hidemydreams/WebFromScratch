@@ -29,6 +29,8 @@
     margin-bottom: 10px;
     color: $text-color;
     font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.3;
 
     @media (max-width: $smallest) {
       font-size: 1.2rem;

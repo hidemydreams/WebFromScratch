@@ -177,29 +177,11 @@ if (ratingBtn) {
 
 
 
-//PopUp for comments
-let taskBtn = document.querySelector('.link_comments');
-let taskModal = document.querySelector('.comments_popup');
-if (taskBtn) {
-    taskBtn.addEventListener('click', (e) => {
-        body.style.overflow = 'hidden'
-        e.preventDefault()
-        taskModal.classList.add('show-modal');
-    })
-}
 
-
-let quitBtn = document.querySelector('.btn_quit');
-if (quitBtn) {
-    quitBtn.addEventListener('click', () => {
-        body.style.overflow = 'auto'
-        taskModal.classList.remove('show-modal');
-    })
-}
 //PopUp for tasks
 let tasksBtn = document.querySelector('.tasks');
 let tasksModal = document.querySelector('.tasks_popup');
-if (taskBtn) {
+if (tasksBtn) {
     tasksBtn.addEventListener('click', (e) => {
         body.style.overflow = 'hidden'
         e.preventDefault()
@@ -545,7 +527,73 @@ searchInput.addEventListener('input', () => {
 } )
 
 function makeMarkedLetter(str,pos,len) {
-
-
     return `${str.slice(0, pos)}<span class="red-mark">${str.slice(pos, pos + len)}</span>${str.slice(pos+len)}`
 }
+
+// Comments Block 
+
+// Like
+
+likeComments()
+
+function likeComments() {
+    let likeBtn = document.querySelectorAll('.comment__action i');
+likeBtn.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+        if (e.target.dataset.id === 'like') {
+            let likesSum = +e.currentTarget.nextElementSibling.innerText;
+            likesSum += 1
+            e.currentTarget.nextElementSibling.innerText = likesSum;
+        } else {
+            let likesSum = +e.currentTarget.nextElementSibling.innerText;
+            if (likesSum !== 0) {
+                likesSum -= 1
+                e.currentTarget.nextElementSibling.innerText = likesSum;
+            }
+        }
+    })
+})
+}
+
+// Add Comment 
+
+let sendCommentBtn = document.querySelector('.comments__btn');
+let commentTextarea = document.querySelector('.comments__textarea');
+let commentsSection = document.querySelector('.comments__items');
+
+sendCommentBtn.addEventListener('click', () => {
+    if (commentTextarea.value !== '') {
+        let newComment = document.createElement('div')
+        newComment.classList.add('comment')
+        newComment.innerHTML = `
+        <div class="comment__avatar">
+
+        </div>
+        <div class="comment__content">
+            <div class="comment__name">
+                <span class="comment__initial">Guest</span>
+                <span class="comment__dot"></span>
+                <span class="comment__time">2 days ago</span>
+            </div>
+            <div class="comment__text">
+                <p>${commentTextarea.value}</p>
+            </div>
+            <div class="comment__actions">
+                <p class="comment__action">
+                    <i data-id="like" class="far fa-thumbs-up"></i>
+                <span class="comment__like-counter">0</span>
+                </p>
+                <div class="comment__action">
+                    <i data-id="dislike" class="far fa-thumbs-down"></i>               
+                <span class="comment__dislike-counter">0</span>
+                </div>
+                <div class="comment__reply">
+                    Reply
+                </div>
+            </div>
+        </div>`
+        commentsSection.insertBefore(newComment, commentsSection.firstChild)
+        commentTextarea.value = ''
+    }
+    likeComments()
+})
