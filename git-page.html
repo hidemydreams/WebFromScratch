@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Ropa+Sans&display=swap" rel="stylesheet">
     <!--FONT AWESOME ICONS-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- RESET.CSS AND STYLE.CSS -->
     <link rel="stylesheet" href="style/style.css">
     <!-- FAVICON -->
@@ -75,15 +73,13 @@
                                 <div class="sql_topic topic">
                                     <h4 id="topic0" class="sql__topic-title"> Learn GIT </h4>
                                     <p>
-                                        Git has exploded in popularity in recent years. The version control system is used by huge open source
-                                        projects like Linux with thousands of contributors, teams of various sizes, solo developers and even students.
+                                        Git has exploded in popularity in recent years. The version control system is used by huge open source projects like Linux with thousands of contributors, teams of various sizes, solo developers and even students.
                                     </p>
                                     <p>
-                                        Beginners are often terrified by all the cryptic commands and arguments that git requires. But you don't 
-                                        need to know all of that to get started. You can begin by mastering a handful of the most often used ones, 
-                                        and then slowly build from there. And this is exactly what we will teach you today. Let's begin!
-                                    </p> 
-                                    
+                                        Beginners are often terrified by all the cryptic commands and arguments that git requires. But you don't need to know all of that to get started. You can begin by mastering a handful of the most often used ones, and then slowly build from there. And this
+                                        is exactly what we will teach you today. Let's begin!
+                                    </p>
+
                                 </div>
 
                                 <!-- Git Topic 1 -->
@@ -91,18 +87,14 @@
                                     <h4 id="topic1" class="sql__topic-title">THE BASICS</h4>
 
                                     <p>
-                                        Git is a collection of command line utilities that track and record changes in files (most often source code, but you can track 
-                                    anything you wish). With it you can restore old versions of your project, compare, analyze, merge changes and more. This process 
-                                    is referred to as version control. There are a number of version control systems that do this job. You may have heard some of
-                                    them - SVN, Mercurial, Perforce, CVS, Bitkeeper and more.
+                                        Git is a collection of command line utilities that track and record changes in files (most often source code, but you can track anything you wish). With it you can restore old versions of your project, compare, analyze, merge changes and more. This process
+                                        is referred to as version control. There are a number of version control systems that do this job. You may have heard some of them - SVN, Mercurial, Perforce, CVS, Bitkeeper and more.
                                     </p>
                                     <p>
-                                        Git is decentralized, which means that it doesn't depend on a central server to keep old versions of your files. Instead it works
-                                    fully locally by storing this data as a folder on your hard drive, which we call a repository. However you can store a copy of
-                                    your repository online, which makes it easy for multiple people to collaborate and work on the same code. This is what websites 
-                                    ike GitHub and BitBucket are used for.
+                                        Git is decentralized, which means that it doesn't depend on a central server to keep old versions of your files. Instead it works fully locally by storing this data as a folder on your hard drive, which we call a repository. However you can store a copy
+                                        of your repository online, which makes it easy for multiple people to collaborate and work on the same code. This is what websites ike GitHub and BitBucket are used for.
                                     </p>
-                                    
+
                                 </div>
                                 <!-- GIT Topic 2 -->
                                 <div class="sql__topic topic">
@@ -112,23 +104,21 @@
                                         Installing Git on your machine is straightforward:
                                     </p>
 
-                                    <p><b>Linux</b> - Simply open up a new terminal and install git via your distribution's package manager. For Ubuntu the command is: 
-                                        sudo apt-get install git
+                                    <p><b>Linux</b> - Simply open up a new terminal and install git via your distribution's package manager. For Ubuntu the command is: sudo apt-get install git
 
-                                    <p>
-                                        <b>Windows</b> we recommend git for windows as it offers both a GUI client and a BASH comand line emulator.
-                                    </p>
+                                        <p>
+                                            <b>Windows</b> we recommend git for windows as it offers both a GUI client and a BASH comand line emulator.
+                                        </p>
 
-                                    <p>
-                                        <b>OS X </b> - The easiest way is to install homebrew, and then just run brew install git from your terminal.
-                                    </p>
+                                        <p>
+                                            <b>OS X </b> - The easiest way is to install homebrew, and then just run brew install git from your terminal.
+                                        </p>
 
-                                    <p>
-                                        If you are an absolute beginner, then a graphical git client is a must. We recommend GitHub Desktop and Sourcetree, but 
-                                        there are many other good and free ones online. Getting to know the basic git commands is still important even if you use a GUI 
-                                        app, so for the remaining of this lesson, this will be our only focus.
-                                    </p>
-                                    
+                                        <p>
+                                            If you are an absolute beginner, then a graphical git client is a must. We recommend GitHub Desktop and Sourcetree, but there are many other good and free ones online. Getting to know the basic git commands is still important even if you use a GUI app,
+                                            so for the remaining of this lesson, this will be our only focus.
+                                        </p>
+
                                 </div>
 
                                 <!-- GIT Topic 3 -->
@@ -136,46 +126,42 @@
                                     <h4 id="topic3" class="sql__topic-title">2. Configuring Git</h4>
 
                                     <p>
-                                        Now that we've installed git on our computer, we will need to add some quick configurations. There are a lot of options that 
-                                    can be fiddled with, but we are going to set up the most important ones: our username and email. Open a terminal and run these 
-                                    commands:
+                                        Now that we've installed git on our computer, we will need to add some quick configurations. There are a lot of options that can be fiddled with, but we are going to set up the most important ones: our username and email. Open a terminal and run these
+                                        commands:
                                     </p>
 
                                     <code class="code-block"> $ git config --global user.name "My Name"<br>
                                         $ git config --global user.email myEmail@example.com</code>
 
                                     <p>
-                                        Every action we do in Git will now have a stamp with our name and address on it. This way users always know who did what and 
-                                        everything is way more organized.
+                                        Every action we do in Git will now have a stamp with our name and address on it. This way users always know who did what and everything is way more organized.
                                     </p>
 
-                                    
+
                                 </div>
 
                                 <!-- GIT Topic 4 -->
                                 <div class="sql__topic topic">
                                     <h4 id="topic4" class="sql__topic-title">3. Creating a new repository - git init</h4>
                                     <p>
-                                        As we mentioned earlier, git stores its files and history directly as a folder in your project. To set up a new repository,
-                                    we need to open a terminal, navigate to our project directory and run git init. This will enable Git for this particular folder
-                                    and create a hidden .git directory where the repository history and configuration will be stored.
+                                        As we mentioned earlier, git stores its files and history directly as a folder in your project. To set up a new repository, we need to open a terminal, navigate to our project directory and run git init. This will enable Git for this particular folder
+                                        and create a hidden .git directory where the repository history and configuration will be stored.
                                     </p>
                                     <p>
-                                    Create a folder on your Desktop called git_exercise, open a new terminal and enter the following:
-                                    </p>       
+                                        Create a folder on your Desktop called git_exercise, open a new terminal and enter the following:
+                                    </p>
                                     <code class="code-block">$ cd Desktop/git_exercise/<br>
                                         $ git init
                                     </code>
                                     <p>
                                         The command line should respond with something along the lines of:
-                                    </p>       
+                                    </p>
                                     <code class="code-block">Initialized empty Git repository in /home/user/Desktop/git_exercise/.git/
 
                                     </code>
                                     <p>
-                                        This means that our repo has been successfully created but is still empty. Now create a simple text file called hello.txt and 
-                                        save it in the git_exercise folder.
-                                    </p>  
+                                        This means that our repo has been successfully created but is still empty. Now create a simple text file called hello.txt and save it in the git_exercise folder.
+                                    </p>
 
                                 </div>
 
@@ -186,11 +172,10 @@
                                     <h4 id="topic5" class="sql__topic-title">4. Checking the status - git status</h4>
 
                                     <p>
-                                        Git status is another must-know command that returns information about the current state of the repository: is everything up 
-                                        to date, what's new, what's changed, and so on. Running git status in our newly created repo should return the following:
+                                        Git status is another must-know command that returns information about the current state of the repository: is everything up to date, what's new, what's changed, and so on. Running git status in our newly created repo should return the following:
                                     </p>
 
-                                    
+
                                     <code class="code-block">
                                             $ git status<br>
 
@@ -203,10 +188,9 @@
                                         
                                                 hello.txt
                                     </code>
-                                    <p>   
-                                        The returned message states that hello.txt is untracked. This means that the file is new and Git doesn't know yet if it should
-                                        keep track of the changes happening to that file or just ignore it. To acknowledge the new file, we need to stage it.
-                                      
+                                    <p>
+                                        The returned message states that hello.txt is untracked. This means that the file is new and Git doesn't know yet if it should keep track of the changes happening to that file or just ignore it. To acknowledge the new file, we need to stage it.
+
                                     </p>
 
                                 </div>
@@ -216,15 +200,14 @@
                                 <h4 id="topic6" class="sql__topic-title">5. Staging - git add</h4>
 
                                 <p>
-                                    Git has the concept of a "staging area". You can think of this like a blank canvas, which holds the changes which you would like
-                                    to commit. It starts out empty, but you can add files to it (or even single lines and parts of files) with the git add command, 
+                                    Git has the concept of a "staging area". You can think of this like a blank canvas, which holds the changes which you would like to commit. It starts out empty, but you can add files to it (or even single lines and parts of files) with the git add command,
                                     and finally commit everything (create a snapshot) with git commit.
                                 </p>
 
                                 <p>
                                     In our case we have only one file so let's add that:
                                 </p>
-                                
+
 
                                 <code class="code-block">$ git add hello.txt
                                 </code>
@@ -253,36 +236,32 @@
                                 </code>
 
                                 <p>
-                                    Our file is ready to be commited. The status message also tells us what has changed about the files in the staging area -
-                                    in this case its new file, but it can be modified or deleted, depending on what has happened to a file since the last git add.
-    
+                                    Our file is ready to be commited. The status message also tells us what has changed about the files in the staging area - in this case its new file, but it can be modified or deleted, depending on what has happened to a file since the last git add.
+
                                 </p>
 
-                               
+
                             </div>
 
                             <!-- GIT TOPIC 7  -->
                             <div class="sql__topic topic">
                                 <h4 id="topic7" class="sql__topic-title">6. Commiting - git commit</h4>
                                 <p>
-                                    A commit represents the state of our repository at a given point in time. It's like a snapshot, which we can go back to and 
-                                     see how thing were when we took it.
-   
+                                    A commit represents the state of our repository at a given point in time. It's like a snapshot, which we can go back to and see how thing were when we took it.
+
                                 </p>
 
                                 <p>
-                                    To create a new commit we need to have at least one change added to the staging area (we just did that with git add) and run the 
-                                    following:
+                                    To create a new commit we need to have at least one change added to the staging area (we just did that with git add) and run the following:
                                 </p>
                                 <code class="code-block">
                                     $ git commit -m "Initial commit."
                                 </code>
                                 <p>
-                                    This will create a new commit with all the changes from the staging area (adding hello.txt). The -m "Initial commmit" part is 
-                                    a custom user-written description that summarizes the changes done in that commit. It is considered a good practice to commit 
+                                    This will create a new commit with all the changes from the staging area (adding hello.txt). The -m "Initial commmit" part is a custom user-written description that summarizes the changes done in that commit. It is considered a good practice to commit
                                     often and always write meaningful commit messages.
                                 </p>
-                                                               
+
                             </div>
 
                             <!-- GIT TOPIC 8  -->
@@ -290,10 +269,9 @@
                             <div class="sql__topic topic">
                                 <h4 id="topic8" class="sql__topic-title">REMOTE REPOSITORIES</h4>
                                 <p>
-                                    Right now our commit is local - it exist only in the .git folder. Although a local repository is useful by itself, in most cases
-                                    we will want to share our work and deploy it to a server or a repository hosting service.
+                                    Right now our commit is local - it exist only in the .git folder. Although a local repository is useful by itself, in most cases we will want to share our work and deploy it to a server or a repository hosting service.
                                 </p>
-                                                             
+
 
                             </div>
 
@@ -301,24 +279,21 @@
                             <div class="sql__topic topic">
                                 <h4 id="topic9" class="sql__topic-title">1. Connecting to a remote repository - git remote add</h4>
                                 <p>
-                                    In order to upload something to a remote repo, we first have to establish a connection with it. For the sake of this tutorial 
-                                    our repository's address will be https://github.com/tutorialzine/awesome-project. We advise you to go ahead and create your own 
-                                    empty repository at GitHub, BitBucket or any other service. The registration and setup may take a while, but all services offer
-                                    good step-by-step guides to help you.
+                                    In order to upload something to a remote repo, we first have to establish a connection with it. For the sake of this tutorial our repository's address will be https://github.com/tutorialzine/awesome-project. We advise you to go ahead and create your own
+                                    empty repository at GitHub, BitBucket or any other service. The registration and setup may take a while, but all services offer good step-by-step guides to help you.
                                 </p>
 
                                 <p>
                                     To link our local repository with the one on GitHub, we execute the following line in the terminal:
                                 </p>
-                               
+
                                 <code class="code-block">
                                     # This is only an example. Replace the URI with your own repository address.<br>
                                      $ git remote add origin https://github.com/tutorialzine/awesome-project.git
                                 </code>
 
                                 <p>
-                                    A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. 
-                                    Traditionally the main remote repository in git is called origin.
+                                    A project may have many remote repositories at the same time. To be able to tell them apart we give them different names. Traditionally the main remote repository in git is called origin.
                                 </p>
 
                             </div>
@@ -329,13 +304,11 @@
                                 <h4 id="topic10" class="sql__topic-title">2. Uploading to a server - git push</h4>
 
                                 <p>
-                                    Now it's time to transfer our local commits to the server. This process is called a push, and is done every time we want to update 
-                                    the remote repository.
+                                    Now it's time to transfer our local commits to the server. This process is called a push, and is done every time we want to update the remote repository.
                                 </p>
 
                                 <p>
-                                    The Git command to do this is git push and takes two parameters - the name of the remote repo (we called ours origin) and the 
-                                    branch to push to (master is the default branch for every repo).
+                                    The Git command to do this is git push and takes two parameters - the name of the remote repo (we called ours origin) and the branch to push to (master is the default branch for every repo).
                                 </p>
 
                                 <code class="code-block">
@@ -348,8 +321,7 @@
                                     * [new branch]      master -> master
                                 </code>
                                 <p>
-                                Depending on the service you're using, you will need to authenticate yourself for the push to go through. If everything was done
-                                correctly, when you go in your web browser to the remote repository created earlier, hello.txt should be available there.
+                                    Depending on the service you're using, you will need to authenticate yourself for the push to go through. If everything was done correctly, when you go in your web browser to the remote repository created earlier, hello.txt should be available there.
                                 </p>
 
                             </div>
@@ -359,8 +331,7 @@
                                 <h4 id="topic11" class="sql__topic-title">3. Cloning a repository - git clone </h4>
 
                                 <p>
-                                    At this point, people can see and browse through your remote repository on Github. They can download it locally and have a fully 
-                                    working copy of your project with the git clone command:
+                                    At this point, people can see and browse through your remote repository on Github. They can download it locally and have a fully working copy of your project with the git clone command:
                                 </p>
                                 <code class="code-block">
                                     $ git clone https://github.com/tutorialzine/awesome-project.git
@@ -385,7 +356,7 @@
                                     Already up-to-date.
                                 </code>
                                 <p>
-                                    Since nobody else has commited since we cloned, there weren't any changes to download.                      
+                                    Since nobody else has commited since we cloned, there weren't any changes to download.
 
                                 </p>
                             </div>
@@ -395,9 +366,8 @@
                                 <h4 id="topic13" class="sql__topic-title">BRANCHES</h4>
 
                                 <p>
-                                    When developing a new feature, it is considered a good practice to work on a copy of the original project, called a branch. 
-                                    Branches have their own history and isolate their changes from one another, until you decide to merge them back together. 
-                                    This is done for a couple of reasons:
+                                    When developing a new feature, it is considered a good practice to work on a copy of the original project, called a branch. Branches have their own history and isolate their changes from one another, until you decide to merge them back together. This
+                                    is done for a couple of reasons:
                                 </p>
                                 <p>
                                     - An already working, stable version of the code won't be broken.
@@ -411,7 +381,7 @@
                                     When unsure what's best, multiple versions of the same feature can be developed on separate branches and then compared.<br>
                                 </p>
 
-                                
+
                             </div>
 
                             <!-- GIT Topic 14 -->
@@ -440,8 +410,7 @@
                                   * master
                                 </code>
                                 <p>
-                                    Master is the current branch and is marked with an asterisk. However, we want to work on our new amazing features, so we need
-                                to switch to the other branch. This is done with the git checkout command, expecting one parameter - the branch to switch to.<br>
+                                    Master is the current branch and is marked with an asterisk. However, we want to work on our new amazing features, so we need to switch to the other branch. This is done with the git checkout command, expecting one parameter - the branch to switch to.<br>
                                 </p>
                                 <code class="code-block">
                                     $ git checkout amazing_new_feature
@@ -460,15 +429,14 @@
                                 </code>
                                 <p>
                                     The new feature is complete, we can go back to the master branch.
-                                 </p>
+                                </p>
                                 <code class="code-block">
                                     $ git checkout master
                                 </code>
 
                                 <p>
-                                    Now, if we open our project in the file browser, we'll notice that feature.txt has disappeared. That's because we are back 
-                                    in the master branch, and here feature.txt was never created. To bring it in, we need to git merge the two branches together, 
-                                    applying the changes done in amazing_new_feature to the main version of the project.
+                                    Now, if we open our project in the file browser, we'll notice that feature.txt has disappeared. That's because we are back in the master branch, and here feature.txt was never created. To bring it in, we need to git merge the two branches together, applying
+                                    the changes done in amazing_new_feature to the main version of the project.
                                 </p>
                                 <code class="code-block">
                                     git merge amazing_new_feature
@@ -479,7 +447,7 @@
                                 <code class="code-block">
                                     git branch -d amazing_new_feature
                                 </code>
-                                
+
                             </div>
 
 
@@ -487,19 +455,17 @@
                             <div class="sql__topic topic">
                                 <h4 id="topic17" class="sql__topic-title">ADVANCED</h4>
                                 <p>
-                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to 
-                                    come in handy.
+                                    In the last section of this tutorial, we are going to take a look at some more advanced techniques that are very likely to come in handy.
                                 </p>
-                                                                
+
                             </div>
 
 
-                                <!-- GIT Topic 18 -->
+                            <!-- GIT Topic 18 -->
                             <div class="sql__topic topic">
                                 <h4 id="topic18" class="sql__topic-title">1. Checking difference between commits</h4>
                                 <p>
-                                    Every commit has it's unique id in the form of a string of numbers and symbols. To see a list of all commits and their ids we 
-                                    can use git log:
+                                    Every commit has it's unique id in the form of a string of numbers and symbols. To see a list of all commits and their ids we can use git log:
                                 </p>
                                 <code class="code-block">
                                     $ git log<br>  
@@ -523,9 +489,7 @@
                                         Initial commit 
                                 </code>
                                 <p>
-                                    As you can see the ids are really long, but when working with them it's not necessary to copy the whole thing - 
-                                    the first several symbols are usually enough.
-                                    To see what was new in a commit we can run git show [commit]:
+                                    As you can see the ids are really long, but when working with them it's not necessary to copy the whole thing - the first several symbols are usually enough. To see what was new in a commit we can run git show [commit]:
                                 </p>
                                 <code class="code-block">
                                     $ git show b10cc123<br>
@@ -546,7 +510,7 @@
 
                                 <p>
                                     To see the difference between any two commits we can use git diff with the [commit-from]..[commit-to] syntax:<br>
-                                 </p>
+                                </p>
                                 <code class="code-block">
                                     $ git diff 09bd8cc..ba25c0ff<br>
         
@@ -561,47 +525,41 @@
                                     +Nice weather today, isn't it?
                                 </code>
                                 <p>
-                                    We've compared the first commit to the last one, so we see all the changes that have ever been made. Usually it's easier
-                                    to do this using the git difftool command which brings up a graphical client showing all differences side-to-side.
-                                </p>   
-                                
+                                    We've compared the first commit to the last one, so we see all the changes that have ever been made. Usually it's easier to do this using the git difftool command which brings up a graphical client showing all differences side-to-side.
+                                </p>
+
                             </div>
 
                             <!-- GIT Topic 19 -->
                             <div class="sql__topic topic">
                                 <h4 id="topic19" class="sql__topic-title">2.Reverting a file to a previous version</h4>
                                 <p>
-                                    Git allows us to return any selected file back to the way it was in a certain commit. This is done via the familiar git 
-                                    checkout command, which we used earlier to switch branches, but can also be used to swtich between commits (it's pretty 
-                                    common in Git for one command to be used for multiple seemingly unrelated tasks).
+                                    Git allows us to return any selected file back to the way it was in a certain commit. This is done via the familiar git checkout command, which we used earlier to switch branches, but can also be used to swtich between commits (it's pretty common in Git
+                                    for one command to be used for multiple seemingly unrelated tasks).
                                 </p>
                                 <p>
-                                    In the following example we will take hello.txt and reverse everything we've done to it since the initial commit. 
-                                    To do so we have to supply the id of the commit we want to go back to, as well as the full path to our file.<br>
+                                    In the following example we will take hello.txt and reverse everything we've done to it since the initial commit. To do so we have to supply the id of the commit we want to go back to, as well as the full path to our file.<br>
                                 </p>
                                 <code class="code-block">
                                     $ git checkout 09bd8cc1 hello.txt
                                 </code>
-                                                                
+
                             </div>
 
                             <!-- GIT Topic 20 -->
                             <div class="sql__topic topic">
                                 <h4 id="topic20" class="sql__topic-title">3. Fixing a commit</h4>
                                 <p>
-                                    If you notice that you've made a typo in your commit message, or you've forgotten to add a file and you see right 
-                                    after you commit, you can easily fix this with git commit --amend. This will add everything from the last commit back 
-                                    to the staging area, and attempt to make a new commit. This gives you a chance to fix your commit message or add more files
-                                    to the staging area.
+                                    If you notice that you've made a typo in your commit message, or you've forgotten to add a file and you see right after you commit, you can easily fix this with git commit --amend. This will add everything from the last commit back to the staging area,
+                                    and attempt to make a new commit. This gives you a chance to fix your commit message or add more files to the staging area.
                                 </p>
                                 <p>
-                                    For more complex fixes that aren't in the last commit (or if you've pushed your changes already), you've got to use git revert. 
-                                     This will take all the changes that a commit has introduced, reverse them, and create a new commit that is the exact opposite.<br>
-    
+                                    For more complex fixes that aren't in the last commit (or if you've pushed your changes already), you've got to use git revert. This will take all the changes that a commit has introduced, reverse them, and create a new commit that is the exact opposite.<br>
+
                                 </p>
                                 <p>
                                     The newest commit can be accessed by the HEAD alias.
-                                </p> 
+                                </p>
                                 <code class="code-block">
                                     $ git revert HEAD
                                 </code>
@@ -612,36 +570,33 @@
                                     $ git revert b10cc123
                                 </code>
                                 <p>
-                                When reverting older commits, keep in mind that merge conflicts are very likely to appear. This happens when a file has been
-                                altered by another more recent commit, and now Git cannot find the right lines to revert, since they aren't there anymore.<br>
-                                </p> 
-                                                                
+                                    When reverting older commits, keep in mind that merge conflicts are very likely to appear. This happens when a file has been altered by another more recent commit, and now Git cannot find the right lines to revert, since they aren't there anymore.<br>
+                                </p>
+
                             </div>
 
                             <!-- GIT Topic 21 -->
                             <div class="sql__topic topic">
                                 <h4 id="topic21" class="sql__topic-title">4. Resolving Merge Conflicts</h4>
                                 <p>
-                                    Apart from the scenario depicted in the previous point, conflicts regularly appear when merging branches or pulling someone 
-                                    else's work. Sometimes conflicts are handled automatically by git, but other times the person dealing with them has to decide
-                                    (and usually handpick) what code stays and what is removed.
+                                    Apart from the scenario depicted in the previous point, conflicts regularly appear when merging branches or pulling someone else's work. Sometimes conflicts are handled automatically by git, but other times the person dealing with them has to decide (and
+                                    usually handpick) what code stays and what is removed.
                                 </p>
-                                     
+
                                 <p>
-                                    Let's look at an example where we're trying to merge two branches called john_branch and tim_branch. Both John and Tim are writing
-                                    in the same file a function that displays all the elements in an array.
+                                    Let's look at an example where we're trying to merge two branches called john_branch and tim_branch. Both John and Tim are writing in the same file a function that displays all the elements in an array.
                                 </p>
                                 <p>
                                     John is using a for loop:
                                 </p>
-                               
+
                                 <code class="code-block">
                                     // Use a for loop to console.log contents.
                                     for(var i=0; i&lt;arr.length; i++) {
                                                 console.log(arr[i]);
                                           }
                                 </code>
-                             
+
                                 <p>
                                     Tim prefers forEach:
                                 </p>
@@ -652,9 +607,8 @@
                                     });
                                 </code>
                                 <p>
-                                    They both commit their code on their respective branch. Now if they try to merge the two branches they will see the 
-                                    following error message:
-                                </p> 
+                                    They both commit their code on their respective branch. Now if they try to merge the two branches they will see the following error message:
+                                </p>
 
                                 <code class="code-block">
                                     $ git merge tim_branch <br>
@@ -665,11 +619,10 @@
                                 </code>
 
                                 <p>
-                                    Git wasn't able to merge the branches automatically, so now it's up to the devs to manually resolve the conflict. 
-                                     If they open the file where the conflict resides, they'll see that Git has inserted a marker on the conflicting lines.<br>
-    
+                                    Git wasn't able to merge the branches automatically, so now it's up to the devs to manually resolve the conflict. If they open the file where the conflict resides, they'll see that Git has inserted a marker on the conflicting lines.<br>
+
                                 </p>
-                               
+
                                 <code class="code-block">
                                     &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD<br>
                                     // Use a for loop to console.log contents<br>.
@@ -683,11 +636,10 @@
                                     });<br>
                                     >>>>>>> Tim's commit.
                                 </code>
-                             
+
                                 <p>
-                                    Above the ===== we have the current HEAD commit, and below the conflicting one. This way we can clearly see the differences, 
-                                    and decide which is the better version, or write a new one all together. In this situation we go for the latter and rewrite 
-                                    the whole thing, removing the markers to let Git know we're done.
+                                    Above the ===== we have the current HEAD commit, and below the conflicting one. This way we can clearly see the differences, and decide which is the better version, or write a new one all together. In this situation we go for the latter and rewrite the
+                                    whole thing, removing the markers to let Git know we're done.
                                 </p>
                                 <code class="code-block">
                                     // Not using for loop or forEach.<br>
@@ -696,16 +648,14 @@
                                 </code>
                                 <p>
                                     When everything is set, a merge commit has to be done to finish the process.
-                                </p> 
+                                </p>
                                 <code class="code-block">
                                     $ git add -A<br>
                                    $ git commit -m "Array printing conflict resolved."
                                 </code>
                                 <p>
-                                    As you can see this process is quite tiresome and can get extremely hard to deal with in large projects. Most developers
-                                    prefer to resolve conflicts with the help of a GUI client, which makes things much easier. To run a graphical client use git
-                                    mergetool.
-                                 </p> 
+                                    As you can see this process is quite tiresome and can get extremely hard to deal with in large projects. Most developers prefer to resolve conflicts with the help of a GUI client, which makes things much easier. To run a graphical client use git mergetool.
+                                </p>
 
                             </div>
 
@@ -713,47 +663,46 @@
                             <div class="sql__topic topic">
                                 <h4 id="topic22" class="sql__topic-title">5. Setting up .gitignore</h4>
                                 <p>
-                                    In most projects there are files or entire folders that we don't want to ever commit. We can make sure that they aren't 
-                                    accidentally included in our git add -A by creating a .gitignore file:
+                                    In most projects there are files or entire folders that we don't want to ever commit. We can make sure that they aren't accidentally included in our git add -A by creating a .gitignore file:
                                 </p>
                                 <p>
                                     1. Manually create a text file called .gitignore and save it in your project's directory.
-                                </p>    
-                                    
+                                </p>
+
                                 <p>
                                     2. Inside, list the names of files/directories to be ignored, each on a new line.
-                                 
+
                                 </p>
                                 <p>
                                     3. The .gitignore itself has to be added, committed and pushed, as it is just like any other file in the project.
-                                 
+
                                 </p>
 
                                 <p>
                                     Good examples for files to be ignored are:
-                                </p> 
+                                </p>
                                 <p>
                                     -log files
-                                </p>  
-                                       
+                                </p>
+
                                 <p>
-                                    -task runner builds  
+                                    -task runner builds
                                 </p>
                                 <p>
                                     -the node_modules folder in node.js projects
-                                </p>     
+                                </p>
                                 <p>
                                     -folders created by IDEs like Netbeans and IntelliJ
-                                    
-                                </p>   
+
+                                </p>
                                 <p>
                                     -personal developer notes
-                                </p>     
+                                </p>
                                 <p>
                                     A .gitignore banning all of the above will look like this:
-                                        
-                                </p> 
-                                
+
+                                </p>
+
                                 <code class="code-block">
                                     *.log<br>
                                     build/
@@ -761,173 +710,173 @@
                                     .idea/
                                     my_notes.txt
                                 </code>
-                               
-                                <p>                                        
-                                    
-                                    The slash at the end of some of the lines signals that this is a folder and we are ignoring everything inside it recursively.
-                                    The asterisk serves it's usual function as a wild card.
+
+                                <p>
+
+                                    The slash at the end of some of the lines signals that this is a folder and we are ignoring everything inside it recursively. The asterisk serves it's usual function as a wild card.
                                 </p>
-                                                                
+
                             </div>
 
                             <!-- GIT Topic 23 -->
                             <div class="sql__topic topic">
                                 <h4 id="topic23" class="sql__topic-title">CONCLUSION</h4>
                                 <p>
-                                    This ends our tutorial on git! We tried our best to bring you only the most important information you need, presented as short 
-                                    and concise as possible.
-                                 </p>     
+                                    This ends our tutorial on git! We tried our best to bring you only the most important information you need, presented as short and concise as possible.
+                                </p>
                                 <p>
-                                    Git is quite complex and has a lot more features and tricks to offer. If you wish to find out more, here are some learning 
-                                    resources we recommend
-                                </p>     
+                                    Git is quite complex and has a lot more features and tricks to offer. If you wish to find out more, here are some learning resources we recommend
+                                </p>
                                 <p>
 
                                     The official Git docs, including a whole book and video lessons - here.
-                                </p>     
-                                <p>   
+                                </p>
+                                <p>
                                     Getting git right - Atlassian's collection of tutorials and articles - here.
-                                </p>     
-                                <p>    
+                                </p>
+                                <p>
                                     A list of GUI clients - here.
-                                </p>     
-                                <p>    
+                                </p>
+                                <p>
                                     Git cheat sheet (PDF) - here.
-                                </p>     
-                                <p>   
+                                </p>
+                                <p>
                                     Online tool for generating .gitignore files - here.
                                 </p>
-                                                                
+
                             </div>
 
                             <!-- Lower Row -->
                             <div class="link_popups">
                                 <!-- Comments -->
-                                <div class="div"><a href="" class="link_comments">Comments <i
-                                            class="fas fa-comment"></i></a></div>
-                               <!-- Rating -->
-                               <div class="rating-area">
-                                <p class=rate_article> Rate This Article!</p>
-                                <input type="radio" id="star-5" name="rating" value="5">
-                                <label class="star" for="star-5" title="mark «5»"></label>
-                                <input type="radio" id="star-4" name="rating" value="4">
-                                <label class="star" for="star-4" title="mark «4»"></label>
-                                <input type="radio" id="star-3" name="rating" value="3">
-                                <label class="star" for="star-3" title="mark «3»"></label>
-                                <input type="radio" id="star-2" name="rating" value="2">
-                                <label class="star" for="star-2" title="mark «2»"></label>
-                                <input type="radio" id="star-1" name="rating" value="1">
-                                <label class="star" for="star-1" title="mark «1»"></label>
-                            </div>
-                            <div class="link__mistakes">
-                                <p class="mistakes">
-                                    <a href="">Found Mistakes? Help Us!</a>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Comments  -->
-                        <div class="comments">
-                            <!-- Comments Input -->
-                            <div class="comments__write">
-                                <div class="comments__avatar">
-
+                                <div class="link_tasks">
+                                    <p class="tasks">
+                                        <a href="">Tasks to Practice</a>
+                                    </p>
                                 </div>
-                                <textarea placeholder="Join the conversation..." name="comment" class="comments__textarea"></textarea>
-                                <button class="btn comments__btn">Send</button>
+                                <!-- Rating -->
+                                <div class="rating-area">
+                                    <p class=rate_article> Rate This Article!</p>
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label class="star" for="star-5" title="mark «5»"></label>
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label class="star" for="star-4" title="mark «4»"></label>
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label class="star" for="star-3" title="mark «3»"></label>
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label class="star" for="star-2" title="mark «2»"></label>
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label class="star" for="star-1" title="mark «1»"></label>
+                                </div>
+                                <div class="link__mistakes">
+                                    <p class="mistakes">
+                                        <a href="">Found Mistakes? Help Us!</a>
+                                    </p>
+                                </div>
                             </div>
-                            <!-- Comment  -->
-                            <div class="comments__items">
-                                <div class="comments__item comment">
-                                    <div class="comment__avatar">
+                            <!-- Comments  -->
+                            <div class="comments">
+                                <!-- Comments Input -->
+                                <div class="comments__write">
+                                    <div class="comments__avatar">
 
                                     </div>
-                                    <div class="comment__content">
-                                        <div class="comment__name">
-                                            <span class="comment__initial">Nazar</span>
-                                            <span class="comment__dot"></span>
-                                            <span class="comment__time">2 days ago</span>
-                                        </div>
-                                        <div class="comment__text">
-                                            <p>awesome website. thank you!</p>
-                                        </div>
-                                        <div class="comment__actions">
-                                            <p class="comment__action">
-                                                <i data-id="like" class="far fa-thumbs-up"></i>
-                                            <span class="comment__like-counter">1</span>
-                                            </p>
-                                            <div class="comment__action">
-                                                <i data-id="dislike" class="far fa-thumbs-down"></i>
-                                            
-                                            <span class="comment__dislike-counter">0</span>
-                                            </div>
-                                            <div class="comment__reply">
-                                                Reply
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <textarea placeholder="Join the conversation..." name="comment" class="comments__textarea"></textarea>
+                                    <button class="btn comments__btn">Send</button>
                                 </div>
                                 <!-- Comment  -->
-                                <div class="comments__item comment">
-                                    <div class="comment__avatar">
+                                <div class="comments__items">
+                                    <div class="comments__item comment">
+                                        <div class="comment__avatar">
 
-                                    </div>
-                                    <div class="comment__content">
-                                        <div class="comment__name">
-                                            <span class="comment__initial">Natalia</span>
-                                            <span class="comment__dot"></span>
-                                            <span class="comment__time">2 days ago</span>
                                         </div>
-                                        <div class="comment__text">
-                                            <p>Amazing!!</p>
-                                        </div>
-                                        <div class="comment__actions">
-                                            <p class="comment__action">
-                                                <i data-id="like" class="far fa-thumbs-up"></i>
-                                            <span class="comment__like-counter">5</span>
-                                            </p>
-                                            <div class="comment__action">
-                                                <i data-id="dislike" class="far fa-thumbs-down"></i>
-                                            
-                                            <span class="comment__dislike-counter">0</span>
+                                        <div class="comment__content">
+                                            <div class="comment__name">
+                                                <span class="comment__initial">Nazar</span>
+                                                <span class="comment__dot"></span>
+                                                <span class="comment__time">2 days ago</span>
                                             </div>
-                                            <div class="comment__reply">
-                                                Reply
+                                            <div class="comment__text">
+                                                <p>awesome website. thank you!</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment  -->
-                                <div class="comments__item comment">
-                                    <div class="comment__avatar">
+                                            <div class="comment__actions">
+                                                <p class="comment__action">
+                                                    <i data-id="like" class="far fa-thumbs-up"></i>
+                                                    <span class="comment__like-counter">1</span>
+                                                </p>
+                                                <div class="comment__action">
+                                                    <i data-id="dislike" class="far fa-thumbs-down"></i>
 
-                                    </div>
-                                    <div class="comment__content">
-                                        <div class="comment__name">
-                                            <span class="comment__initial">Tatsiana</span>
-                                            <span class="comment__dot"></span>
-                                            <span class="comment__time">2 days ago</span>
-                                        </div>
-                                        <div class="comment__text">
-                                            <p>i loved this article!</p>
-                                        </div>
-                                        <div class="comment__actions">
-                                            <p class="comment__action">
-                                                <i data-id="like" class="far fa-thumbs-up"></i>
-                                            <span class="comment__like-counter">2</span>
-                                            </p>
-                                            <div class="comment__action">
-                                                <i data-id="dislike" class="far fa-thumbs-down"></i>
-                                            
-                                            <span class="comment__dislike-counter">3</span>
+                                                    <span class="comment__dislike-counter">0</span>
+                                                </div>
+                                                <div class="comment__reply">
+                                                    Reply
+                                                </div>
                                             </div>
-                                            <div class="comment__reply">
-                                                Reply
+                                        </div>
+                                    </div>
+                                    <!-- Comment  -->
+                                    <div class="comments__item comment">
+                                        <div class="comment__avatar">
+
+                                        </div>
+                                        <div class="comment__content">
+                                            <div class="comment__name">
+                                                <span class="comment__initial">Natalia</span>
+                                                <span class="comment__dot"></span>
+                                                <span class="comment__time">2 days ago</span>
+                                            </div>
+                                            <div class="comment__text">
+                                                <p>Amazing!!</p>
+                                            </div>
+                                            <div class="comment__actions">
+                                                <p class="comment__action">
+                                                    <i data-id="like" class="far fa-thumbs-up"></i>
+                                                    <span class="comment__like-counter">5</span>
+                                                </p>
+                                                <div class="comment__action">
+                                                    <i data-id="dislike" class="far fa-thumbs-down"></i>
+
+                                                    <span class="comment__dislike-counter">0</span>
+                                                </div>
+                                                <div class="comment__reply">
+                                                    Reply
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Comment  -->
+                                    <div class="comments__item comment">
+                                        <div class="comment__avatar">
+
+                                        </div>
+                                        <div class="comment__content">
+                                            <div class="comment__name">
+                                                <span class="comment__initial">Tatsiana</span>
+                                                <span class="comment__dot"></span>
+                                                <span class="comment__time">2 days ago</span>
+                                            </div>
+                                            <div class="comment__text">
+                                                <p>i loved this article!</p>
+                                            </div>
+                                            <div class="comment__actions">
+                                                <p class="comment__action">
+                                                    <i data-id="like" class="far fa-thumbs-up"></i>
+                                                    <span class="comment__like-counter">2</span>
+                                                </p>
+                                                <div class="comment__action">
+                                                    <i data-id="dislike" class="far fa-thumbs-down"></i>
+
+                                                    <span class="comment__dislike-counter">3</span>
+                                                </div>
+                                                <div class="comment__reply">
+                                                    Reply
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                             <!-- SQL TOPICS DIV -->
                         </div>
 
@@ -939,23 +888,23 @@
 
                                 <ul class="article_menu1">
                                     <li class="article_li"><a href="#sql__title" class="mainmenu1">Home GIT</a></li>
-                                    <li class="article_li"><a href="#topic1" class="mainmenu1">BASICS</a>
+                                    <li class="article_li"><a href="#topic1" class="mainmenu1">Basics</a>
                                     </li>
-                                    <li class="article_li"><a href="#topic8" class="mainmenu1">REMOTE REPOSITORIES </a>
+                                    <li class="article_li"><a href="#topic8" class="mainmenu1">Remote Repositories </a>
                                     </li>
-                                    <li class="article_li"><a href="#topic13" class="mainmenu1">BRANCHES</a>
+                                    <li class="article_li"><a href="#topic13" class="mainmenu1">Branches</a>
                                     </li>
-                                    <li class="article_li"><a href="#topic17" class="mainmenu1">ADVANCED</a>
+                                    <li class="article_li"><a href="#topic17" class="mainmenu1">Advanced</a>
                                     </li>
-                                    <li class="article_li"><a href="#topic23" class="mainmenu1">CONCLUSION</a>
-                                    </li>   
+                                    <li class="article_li"><a href="#topic23" class="mainmenu1">Conclusion</a>
+                                    </li>
                                 </ul>
 
 
-                                 <!-- burger sql menu</i> -->
-                                 <nav class="nav_sql_menu">
-                                    <div class="nav__showmenu" for="showmenu" >
-                                        <img src="src/img/arrow-btn.svg" alt="Open Button">                 
+                                <!-- burger sql menu</i> -->
+                                <nav class="nav_sql_menu">
+                                    <div class="nav__showmenu" for="showmenu">
+                                        <img src="src/img/arrow-btn.svg" alt="Open Button">
                                     </div>
                                     <ul class="menu">
                                         <div class="nav__back">
@@ -1192,24 +1141,18 @@
             <div class=" items_comments ">
                 <div class="item_comment comment ">
                     <p class=" comment_name ">Nazar</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it
-                        to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.</p>
                 </div>
                 <div class="item_comments comment ">
                     <p class=" comment_name ">Tatsiana</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it
-                        to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.</p>
                 </div>
                 <div class="item_comments comment ">
                     <p class=" comment_name">Natalia</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it
-                        to make a type specimen book.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book.</p>
                 </div>
             </div>
             <button class="btn btn_quit modal__btn">Quit</button>
@@ -1225,35 +1168,26 @@
             <p class="popup_title ">Tasks for Topic 1:</p>
             <div class="task ">
                 <h4>Task1</h4>
-                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to
-                    make a type specimen book.
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
                 </p>
             </div>
             <div class="task ">
                 <h4>Task1</h4>
-                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to
-                    make a type specimen book.
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
                 </p>
             </div>
             <div class="task ">
                 <h4>Task1</h4>
-                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to
-                    make a type specimen book.
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
                 </p>
             </div>
             <div class="task ">
                 <h4>Task1</h4>
-                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                    Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                    galley of type and scrambled it to
-                    make a type specimen book.
+                <p class="task1 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book.
                 </p>
             </div>
 
@@ -1271,8 +1205,7 @@
             <p class="pop_up_mistakes ">Found Mistakes? Help Us!</p>
             <div class="mistake_item ">
                 <input class="email" placeholder="Your name" type="text">
-                <textarea placeholder="Describe any mistakes you found, or maybe some material is outdated... "
-                    class="message" name="message"></textarea>
+                <textarea placeholder="Describe any mistakes you found, or maybe some material is outdated... " class="message" name="message"></textarea>
             </div>
             <button class="btn btn_mistake modal__btn ">Send</button>
         </div>
