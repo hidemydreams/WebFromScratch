@@ -242,97 +242,6 @@
 }
 
 
-/*----------------------Pop Up Comments--------------------------------*/
-
-.comments_modal {
-    border: none;
-    border-radius: 30px;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
-    padding: 20px;
-}
-
-.comments_title {
-    font-size: 24px;
-    padding-top: 5px;
-    color: white;
-    text-align: center;
-    padding-bottom: 10px;
-    font-weight: 300;
-}
-
-.comments_comment {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    &::placeholder {
-        color: white;
-    }
-}
-
-.name_comment {
-    border: none;
-    background-color: transparent;
-    border-bottom: 4px solid white;
-    padding: 10px 0px 0px 10px;
-    outline: none;
-    width: 15%;
-    margin-right: 5px;
-    color: rgba(0, 25, 55, 1);
-    &::placeholder {
-        color: white;
-    }
-}
-
-.message_comment {
-    background-color: transparent;
-    border: 3px solid white;
-    padding: 10px 0px 10px 10px;
-    outline: none;
-    transition: border-bottom 0.2s;
-    color: rgba(0, 25, 55, 1);
-    width: 100%;
-    display: block;
-    &::placeholder {
-        color: white;
-    }
-}
-
-.items_comments {
-    border: 4px solid white;
-    overflow-y: scroll;
-    height: 200px;
-    color: white;
-}
-
-.items_comments::-webkit-scrollbar {
-    width: 0.8vw;
-}
-
-.comment {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10px;
-}
-
-.comment_name {
-    text-align: center;
-    width: 20%;
-    margin-right: 10px;
-    border-right: 4px solid $headings-color;
-    padding-top: 15px;
-}
-
-.mistake_item textarea::placeholder {
-    color: white;
-}
-
-
 /*-------popup_tasks__popup--------------*/
 
 .tasks_modal {
@@ -358,6 +267,10 @@
 .mistakes {
     display: inline-block;
     width: 100px;
+}
+
+.mistake_item textarea::placeholder {
+    color: white;
 }
 
 .tasks_modal h4 {

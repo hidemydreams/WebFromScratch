@@ -1,0 +1,120 @@
+.comments {
+
+  display: flex;
+  flex-direction: column;
+
+  &__write {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media (max-width: $smallest) {
+      flex-direction: column;
+
+      * {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__avatar {
+    background-color: grey;
+    display: block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  &__textarea {
+    max-width: 500px;
+    width: 100%;
+    resize: none;
+    align-items: center;
+    padding: 10px;
+    outline: none;
+    border: 1px solid $base-color;
+    color: $text-color;
+    margin-right: 10px;
+
+    &::placeholder {
+      color: $text-color;
+    }
+   }
+
+   &__send {
+     
+   }
+}
+
+// Comment 
+
+
+.comment {
+
+  color: $text-color;
+  display: flex;
+  margin-bottom: 20px;
+
+  &__avatar {
+    background-color: grey;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__content {
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+
+    * {
+      margin: 0 3px;
+    }
+  }
+
+  &__initial {
+    
+  }
+
+  &__dot {
+    background-color: #FF4BA2;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+  }
+
+  &__time {
+  }
+
+  &__text {
+    margin-top: 5px;
+  }
+
+  &__actions {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  &__action {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  &__like-counter {
+  }
+
+  &__dislike-counter {
+  }
+
+  &__reply {
+    cursor: pointer;
+  }
+}

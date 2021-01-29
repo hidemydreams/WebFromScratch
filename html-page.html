@@ -480,9 +480,12 @@
 
                             <!-- Lower Row -->
                             <div class="link_popups">
-                                <!-- Comments -->
-                                <div class="div"><a href="" class="link_comments">Comments <i
-                                            class="fas fa-comment"></i></a></div>
+                                <!-- Tasks -->
+                                <div class="link_tasks">
+                                    <p class="tasks">
+                                        <a href="">Tasks to Practice</a>
+                                    </p>
+                                </div>
                                 <!-- Rating -->
                                 <div class="rating-area">
                                     <p class=rate_article> Rate This Article!</p>
@@ -497,14 +500,113 @@
                                     <input type="radio" id="star-1" name="rating" value="1">
                                     <label class="star" for="star-1" title="mark «1»"></label>
                                 </div>
-                                <!-- Tasks -->
-                                <div class="link_tasks">
-                                    <p class="tasks">
-                                        <a href="">Tasks to Practice</a>
-                                    </p>
+                                <div class="link__mistakes">
                                     <p class="mistakes">
                                         <a href="">Found Mistakes? Help Us!</a>
                                     </p>
+                                </div>
+                            </div>
+                            <!-- Comments  -->
+                            <div class="comments">
+                                <!-- Comments Input -->
+                                <div class="comments__write">
+                                    <div class="comments__avatar">
+
+                                    </div>
+                                    <textarea placeholder="Join the conversation..." name="comment" class="comments__textarea"></textarea>
+                                    <button class="btn comments__btn">Send</button>
+                                </div>
+                                <!-- Comment  -->
+                                <div class="comments__items">
+                                    <div class="comments__item comment">
+                                        <div class="comment__avatar">
+    
+                                        </div>
+                                        <div class="comment__content">
+                                            <div class="comment__name">
+                                                <span class="comment__initial">Nazar</span>
+                                                <span class="comment__dot"></span>
+                                                <span class="comment__time">2 days ago</span>
+                                            </div>
+                                            <div class="comment__text">
+                                                <p>awesome website. thank you!</p>
+                                            </div>
+                                            <div class="comment__actions">
+                                                <p class="comment__action">
+                                                    <i data-id="like" class="far fa-thumbs-up"></i>
+                                                <span class="comment__like-counter">1</span>
+                                                </p>
+                                                <div class="comment__action">
+                                                    <i data-id="dislike" class="far fa-thumbs-down"></i>
+                                                
+                                                <span class="comment__dislike-counter">0</span>
+                                                </div>
+                                                <div class="comment__reply">
+                                                    Reply
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Comment  -->
+                                    <div class="comments__item comment">
+                                        <div class="comment__avatar">
+    
+                                        </div>
+                                        <div class="comment__content">
+                                            <div class="comment__name">
+                                                <span class="comment__initial">Natalia</span>
+                                                <span class="comment__dot"></span>
+                                                <span class="comment__time">2 days ago</span>
+                                            </div>
+                                            <div class="comment__text">
+                                                <p>Amazing!!</p>
+                                            </div>
+                                            <div class="comment__actions">
+                                                <p class="comment__action">
+                                                    <i data-id="like" class="far fa-thumbs-up"></i>
+                                                <span class="comment__like-counter">5</span>
+                                                </p>
+                                                <div class="comment__action">
+                                                    <i data-id="dislike" class="far fa-thumbs-down"></i>
+                                                
+                                                <span class="comment__dislike-counter">0</span>
+                                                </div>
+                                                <div class="comment__reply">
+                                                    Reply
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Comment  -->
+                                    <div class="comments__item comment">
+                                        <div class="comment__avatar">
+    
+                                        </div>
+                                        <div class="comment__content">
+                                            <div class="comment__name">
+                                                <span class="comment__initial">Tatsiana</span>
+                                                <span class="comment__dot"></span>
+                                                <span class="comment__time">2 days ago</span>
+                                            </div>
+                                            <div class="comment__text">
+                                                <p>i loved this article!</p>
+                                            </div>
+                                            <div class="comment__actions">
+                                                <p class="comment__action">
+                                                    <i data-id="like" class="far fa-thumbs-up"></i>
+                                                <span class="comment__like-counter">2</span>
+                                                </p>
+                                                <div class="comment__action">
+                                                    <i data-id="dislike" class="far fa-thumbs-down"></i>
+                                                
+                                                <span class="comment__dislike-counter">3</span>
+                                                </div>
+                                                <div class="comment__reply">
+                                                    Reply
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- SQL TOPICS DIV -->
@@ -533,27 +635,20 @@
                                 </ul>
 
 
-                                <!-- burger sql menu</i> -->
-                                <nav class="nav_sql_menu">
-                                    <input class="nav__check" type="checkbox" id="showmenu" />
-                                    <label class="nav__showmenu" for="showmenu" >
-                                        <!-- <i class="far fa-arrow-alt-circle-left"></i> -->
-                                        <img src="src/img/arrow-btn.png" alt="">                                           
-
-                                    </label>
-                                   
+                                 <!-- burger sql menu</i> -->
+                                 <nav class="nav_sql_menu">
+                                    <div class="nav__showmenu" for="showmenu" >
+                                        <img src="src/img/arrow-btn.svg" alt="Open Button">                 
+                                    </div>
                                     <ul class="menu">
-                                        <li>
-                                        <label class="nav__back" for="showmenu">
-                                            <img src="src/img/exit-btn.png" alt="">
-                                       </label> </li>
+                                        <div class="nav__back">
+                                            <img src="src/img/exit-btn.svg" alt="Back Buttin">
+                                        </div>
                                         <li><a class="menu__item" href="#sql__title">Home</a></li>
-                                        <li><a class="menu__item" href="#topic1">MAIN TAGS</a></li>
-                                        <li><a class="menu__item" href="#topic3">TEXT</a></li>
-                                        <li><a class="menu__item" href="#topic4">HYPERLINKS</a></li>
-                                        <li><a class="menu__item" href="#topic5">IMAGES</a></li>
-                                        <li><a class="menu__item" href="#topic6">TABLE</a></li>
-
+                                        <li><a class="menu__item" href="#topic3">Select</a></li>
+                                        <li><a class="menu__item" href="#topic4">Operators</a></li>
+                                        <li><a class="menu__item" href="#topic7">Functions</a></li>
+                                        <li><a class="menu__item" href="#topic10">Other</a></li>
                                     </ul>
                                 </nav>
 
@@ -591,12 +686,17 @@
                         <a href="" class="burger__reg">Sign Up</a>
                     </div>
                     <div class="vertical__icons">
-                        <a href="#!" class="vertical__icon">
+                        <div class="vertical__icon envelope">
                             <span class="fa-stack fa-4x">
                                 <i class="fas fa-square fa-stack-2x"></i>
                                 <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
                             </span>
-                        </a>
+                            <div class="envelope__popup">
+                                <h4 class="envelope__popup-title">
+                                    Copied Email! <i class="fas fa-clipboard-check"></i>
+                                </h4>
+                            </div>
+                        </div>
                         <a href="https://github.com/hidemydreams/WebFromScratch" target="_blank" class="vertical__icon">
                             <span class="fa-stack fa-4x">
                                 <i class="fas fa-square fa-stack-2x"></i>
