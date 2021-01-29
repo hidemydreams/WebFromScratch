@@ -561,39 +561,61 @@ let sendCommentBtn = document.querySelector('.comments__btn');
 let commentTextarea = document.querySelector('.comments__textarea');
 let commentsSection = document.querySelector('.comments__items');
 
-sendCommentBtn.addEventListener('click', () => {
-    if (commentTextarea.value !== '') {
-        let newComment = document.createElement('div')
-        newComment.classList.add('comment')
-        newComment.innerHTML = `
-        <div class="comment__avatar">
+if (sendCommentBtn) {
+    sendCommentBtn.addEventListener('click', () => {
+        if (commentTextarea.value !== '') {
+            let newComment = document.createElement('div')
+            newComment.classList.add('comment')
+            newComment.innerHTML = `
+            <div class="comment__avatar">
+    
+            </div>
+            <div class="comment__content">
+                <div class="comment__name">
+                    <span class="comment__initial">Guest</span>
+                    <span class="comment__dot"></span>
+                    <span class="comment__time">2 days ago</span>
+                </div>
+                <div class="comment__text">
+                    <p>${commentTextarea.value}</p>
+                </div>
+                <div class="comment__actions">
+                    <p class="comment__action">
+                        <i data-id="like" class="far fa-thumbs-up"></i>
+                    <span class="comment__like-counter">0</span>
+                    </p>
+                    <div class="comment__action">
+                        <i data-id="dislike" class="far fa-thumbs-down"></i>               
+                    <span class="comment__dislike-counter">0</span>
+                    </div>
+                    <div class="comment__reply">
+                        Reply
+                    </div>
+                </div>
+            </div>`
+            commentsSection.insertBefore(newComment, commentsSection.firstChild)
+            commentTextarea.value = ''
+        }
+        likeComments()
+    })
+}
 
-        </div>
-        <div class="comment__content">
-            <div class="comment__name">
-                <span class="comment__initial">Guest</span>
-                <span class="comment__dot"></span>
-                <span class="comment__time">2 days ago</span>
-            </div>
-            <div class="comment__text">
-                <p>${commentTextarea.value}</p>
-            </div>
-            <div class="comment__actions">
-                <p class="comment__action">
-                    <i data-id="like" class="far fa-thumbs-up"></i>
-                <span class="comment__like-counter">0</span>
-                </p>
-                <div class="comment__action">
-                    <i data-id="dislike" class="far fa-thumbs-down"></i>               
-                <span class="comment__dislike-counter">0</span>
-                </div>
-                <div class="comment__reply">
-                    Reply
-                </div>
-            </div>
-        </div>`
-        commentsSection.insertBefore(newComment, commentsSection.firstChild)
-        commentTextarea.value = ''
-    }
-    likeComments()
+
+
+// Show Topic Side Nav 
+
+let showBtn = document.querySelector('.nav__showmenu');
+let sideNav = document.querySelector('.nav_sql_menu');
+let closeNav = document.querySelector('.nav__back')
+
+if (showBtn) {
+showBtn.addEventListener('click', ()=> {
+    sideNav.classList.add('shown');
 })
+}
+
+if (closeNav) {
+    closeNav.addEventListener('click', ()=> {
+        sideNav.classList.remove('shown');
+        console.log('ok')
+})}
