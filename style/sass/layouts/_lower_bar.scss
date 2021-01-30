@@ -10,22 +10,9 @@
     max-width: 950px;
 }
 
-.link_popups a {
-    color: $text-color;
-}
-
-.link_tasks {
-    margin-top: 30px;
-}
-
 @media (max-width: $small) {
     .link_popups {
         flex-direction: column-reverse;
         align-items: center;
-    }
-    .link_tasks {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
     }
 }

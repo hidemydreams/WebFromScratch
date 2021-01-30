@@ -16,6 +16,15 @@ let regPopUp = document.querySelector('.reg__popup');
 let outsidePopUp = document.querySelectorAll('.popup');
 let sidebarLogin = document.querySelector('.burger__log');
 let sidebarReg = document.querySelector('.burger__reg');
+let allModals = document.querySelectorAll('.modal')
+
+const showAllPopups = () => {
+    outsidePopUp.forEach((popup) => {
+        popup.classList.add('popup-show')
+    })
+}
+
+setTimeout(showAllPopups, 5000)
 
 if (loginBtn) {
     loginBtn.addEventListener('click', () => {
@@ -261,52 +270,52 @@ const articlesItems = [{
     },
     {
         id: 3,
-        title: "HTML",
+        title: "HTML Article Tag",
         category: "html",
-        desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
-        link: ""
+        desc: `HTML element which represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable`,
+        link: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
     },
     {
         id: 4,
-        title: "Javascript",
+        title: "Event Delegations",
         category: "javascript",
-        desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
-        link: ""
+        desc: `What is event delegation in javascript?`,
+        link: "https://medium.com/@bretdoucette/part-4-what-is-event-delegation-in-javascript-f5c8c0de2983"
     },
     {
         id: 5,
-        title: "GIT",
+        title: "GIT Hacks",
         category: "git",
         desc: `15 Git Hacks to Save your Life as a Developer.`,
         link: "https://medium.com/@gitship/15-git-hacks-to-save-your-life-as-a-developer-aa8808846dbb"
     },
     {
         id: 6,
-        title: "Basics",
+        title: "What is Computer Science?",
         category: "basics",
-        desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
-        link: ""
+        desc: `What is computer science, really? Here’s a quick guide on the basics of computer science, plus how to get started learning more!`,
+        link: "https://www.uopeople.edu/blog/the-basics-of-computer-science-how-to-get-started/#:~:text=Computer%20science%20is%20the%20study,everywhere%20in%20our%20everyday%20lives."
     },
     {
         id: 7,
-        title: "SQL",
+        title: "Top SQL Articles",
         category: "sql",
-        desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
-        link: ""
+        desc: `List of Top SQL Articles Published in 2019 `,
+        link: "https://learnsql.com/blog/19-best-sql-articles-for-beginners-published-in-2019/"
     },
     {
         id: 8,
-        title: "Javascript",
+        title: "Javascript functions",
         category: "javascript",
-        desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
-        link: ""
+        desc: `Javascript function closures`,
+        link: "https://www.w3schools.com/js/js_function_closures.asp"
     },
     {
         id: 9,
-        title: "Basics",
+        title: "Basics to learn coding",
         category: "basics",
-        desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
-        link: ""
+        desc: `What is Computer Programming? Basics to Learn Coding`,
+        link: "https://www.guru99.com/computer-programming-tutorial.html"
     },
     {
         id: 10,
@@ -330,7 +339,6 @@ if (btnContainer) {
         displayArticlesItems(articlesItems)
         displayItemsBtns()
         articlesInnerLink()
-
     });
 };
 
@@ -391,6 +399,7 @@ function displayItemsBtns() {
         })
     })
 }
+
 
 
 // NewsLetter PopUps
@@ -472,6 +481,7 @@ function preloader() {
         preloader.classList.add('hide-preloader');
     })
 }
+
 
 // Envelope Copy to ClipBoard and PopUp
 
@@ -619,3 +629,23 @@ if (closeNav) {
         sideNav.classList.remove('shown');
         console.log('ok')
 })}
+
+
+// Scroll Bar 
+
+window.addEventListener('scroll', () => {
+    scrollProgress()
+})
+
+
+
+function scrollProgress() {
+    let indicator = document.querySelector('.scroll__indicator');
+    if (indicator) {
+    let scrollHeight = document.documentElement.scrollTop
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (scrollHeight / height) * 100;
+    indicator.style.width = scrolled + '%';
+    }
+}
+

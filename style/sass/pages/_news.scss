@@ -28,6 +28,10 @@
     margin: 0 15px;
     cursor: pointer;
 
+    &:hover {
+      background-color: darken($base-color, 5%);
+    }
+
 
     @media (max-width: $small) {
       justify-content: space-evenly;

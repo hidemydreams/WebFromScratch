@@ -44,7 +44,7 @@
     <!-- STYLE.CSS -->
     <link rel="stylesheet" href="style/style.css">
     <!-- ANIMATE CSS  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/jpg" href="src/img/favicon.ico">
     <title>WebFromScratch</title>
@@ -202,11 +202,11 @@
                                 target="_blank" class="news__link read-more article__link">Read More ></a>
                         </div>
                     </div>
-                    <div class="news__dots">
+                    <!-- <div class="news__dots">
                         <div class="news__dot"></div>
                         <div class="news__dot"></div>
                         <div class="news__dot"></div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -579,11 +579,12 @@
                 </h3>
                 <div class="search__results">
                     <ul>
-                        <li><a href="#!" class="search__result">HTML</a></li>
-                        <li><a href="#!" class="search__result">CSS</a></li>
-                        <li><a href="#!" class="search__result">Basics</a></li>
-                        <li><a href="#!" class="search__result">SQL</a></li>
-                        <li><a href="#!" class="search__result">Javascript</a></li>
+                        <li><a href="html-page.html" class="search__result">HTML</a></li>
+                        <li><a href="css-page.html" class="search__result">CSS</a></li>
+                        <li><a href="basic-page.html" class="search__result">Basics</a></li>
+                        <li><a href="sql-page.html" class="search__result">SQL</a></li>
+                        <li><a href="js-page.html" class="search__result">Javascript</a></li>
+                        <li><a href="git-page.html" class="search__result">GIT</a></li>
                     </ul>
                 </div>
             </div>
@@ -593,9 +594,16 @@
                 </h3>
                 <div class="search__results">
                     <ul>
-                        <li><a href="#!" class="search__result">Animations Crash Course</a></li>
-                        <li><a href="#!" class="search__result">Margin Collapse</a></li>
-                        <li><a href="#!" class="search__result">Small guide to SCSS</a></li>
+                        <li><a href="#!" class="search__result">Nested Media Queries</a></li>
+                        <li><a href="#!" class="search__result">Understanding Clip Path in CSS</a></li>
+                        <li><a href="#!" class="search__result">HTML Article Tag</a></li>
+                        <li><a href="#!" class="search__result">Event Delegations</a></li>
+                        <li><a href="#!" class="search__result">GIT Hacks</a></li>
+                        <li><a href="#!" class="search__result">What is Computer Science?</a></li>
+                        <li><a href="#!" class="search__result">Top SQL Articles</a></li>
+                        <li><a href="#!" class="search__result">Javascript functions</a></li>
+                        <li><a href="#!" class="search__result">Basics to learn coding</a></li>
+                        <li><a href="#!" class="search__result">HTML Semantics</a></li>
                     </ul>
                 </div>
             </div>
@@ -648,6 +656,7 @@
     <!-- Contact PopUp -->
     <div class="popup contact__popup">
         <div class="modal contact__modal">
+            <div class="smiley-face"><i class="far fa-smile-beam"></i></div>
             <h3 class="contact__popup-title">Thank Your For Your Question</h3>
             <p class="contact__popup-desc">
                 We will try to answer to you as soon as it is possible. Thank your for your patience!
@@ -659,6 +668,7 @@
     <!-- Contact PopUp No Info -->
     <div class="popup contact__popup contact__popup-empty">
         <div class="modal contact__modal">
+            <div class="sad-face"><i class="far fa-sad-tear"></i></div>
             <h3 class="contact__popup-title">Oops, looks like something went wrong!</h3>
             <p class="contact__popup-desc">
                 It seems like you haven't filled in one of the input fields.
@@ -670,6 +680,7 @@
     <!-- Newsletter PopUp -->
     <div class="popup newsletter__popup">
         <div class="modal newsletter__modal">
+            <div class="smiley-face"><i class="far fa-smile-beam"></i></div>
             <h3 class="newsletter__popup-title">Thank You!</h3>
             <p class="newsletter__popup-desc">
                 First message is already sent to your email !
@@ -681,6 +692,7 @@
     <!-- Newsletter no Value PopUp -->
     <div class="popup newsletter__popup newsletter__popup-empty">
         <div class="modal newsletter__modal">
+            <div class="sad-face"><i class="far fa-sad-tear"></i></div>
             <h3 class="newsletter__popup-title">Please enter your email!</h3>
             <p class="newsletter__popup-desc">
                 You didn't provide your email so we don't know where to send you our newsletter :(
@@ -692,6 +704,7 @@
     <!-- Newsletter no Value PopUp -->
     <div class="popup newsletter__popup newsletter__popup-wrong">
         <div class="modal newsletter__modal">
+            <div class="sad-face"><i class="far fa-sad-tear"></i></div>
             <h3 class="newsletter__popup-title">Please enter correct email!</h3>
             <p class="newsletter__popup-desc">
                 It seems like something went wrong and you typed wrong email.

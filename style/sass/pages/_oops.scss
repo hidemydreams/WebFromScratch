@@ -4,24 +4,27 @@
 
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $text-color;
-    text-align: center;
   }
 
-  &__img {
-    margin-bottom: 30px;
+  &__icon {
+    font-size: 20rem;
+  }
+
+  &__text {
+    max-width: 300px;
+    margin-right: 40px;
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 5px;
   }
 
   &__desc {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     margin-bottom: 10px;
   }
 

@@ -1,3 +1,4 @@
+
 .articles__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -10,6 +11,10 @@
 
 .articles__card {
   background-color: rgba(151, 206, 238, 1);
+}
 
-  
+.articles__desc {
+  font-size: 1.3rem;
+  max-width: 300px;
+  margin-bottom: 30px;
 }

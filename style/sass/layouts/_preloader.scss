@@ -31,21 +31,18 @@
 }
 
 .preloader__first {
-  border-top: 3px solid #FF4BA2;
-
+  border-top: 3px solid $accent-pink;
   animation-name: first;
 
 }
 
 .preloader__second {
-  border-right: 3px solid #00A3FF;
-
+  border-right: 3px solid $base-color;
  animation-name: second;
 }
 
 .preloader__third {
-  border-bottom: 3px solid #FFB800;
-
+  border-bottom: 3px solid $accent-yellow;
   animation-name: third;
 }
 
